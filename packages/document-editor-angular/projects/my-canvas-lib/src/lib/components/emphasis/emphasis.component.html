@@ -1,0 +1,39 @@
+<!-- First section: Undo, Redo -->
+<mat-button-toggle-group name="fontStyle" aria-label="Font Style" multiple>
+  <!-- Undo Button -->
+  <mat-button-toggle value="undo" (click)="handleUndo()">
+    <span class="material-icons md-18">undo</span>
+  </mat-button-toggle>
+
+  <!-- Redo Button -->
+  <mat-button-toggle value="redo" (click)="handleRedo()">
+    <span class="material-icons md-18">redo</span>
+  </mat-button-toggle>
+</mat-button-toggle-group>
+
+
+<!-- Second section: Bold, Italic, Underline -->
+<mat-button-toggle-group name="textStyle" aria-label="Text Style" multiple>
+  <!-- Bold Button -->
+  <mat-button-toggle value="bold" (click)="toggleFormat('Bold')">
+    <span class="material-icons md-18">format_bold</span>
+  </mat-button-toggle>
+
+  <!-- Italic Button -->
+  <mat-button-toggle value="italic" (click)="toggleFormat('Italic')">
+    <span class="material-icons md-18">format_italic</span>
+  </mat-button-toggle>
+
+  <!-- Underline Button -->
+  <mat-button-toggle value="underline" (click)="toggleFormat('Underline')">
+    <span class="material-icons md-18">format_underlined</span>
+  </mat-button-toggle>
+</mat-button-toggle-group>
+
+
+<!-- Third section: Image upload button -->
+<mat-button-toggle-group name="imageUpload" aria-label="Image Upload">
+  <mat-button-toggle class="upload-image-button">
+    <app-image-upload-button (imageSelected)="onImageSelected($event)"></app-image-upload-button>
+  </mat-button-toggle>
+</mat-button-toggle-group>

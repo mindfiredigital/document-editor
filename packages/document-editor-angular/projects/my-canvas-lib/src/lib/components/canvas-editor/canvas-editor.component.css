@@ -1,0 +1,10 @@
+.editor > div {
+    margin: 0px;
+  }
+  
+  .canvas-editor {
+    position: relative;
+  }
+  
+  .canvas-editor-main {
+  }
