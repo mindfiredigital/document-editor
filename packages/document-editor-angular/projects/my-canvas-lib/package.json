@@ -1,0 +1,25 @@
+{
+  "name": "@mindfiredigital/angular-canvas-editor",
+  "version": "0.0.1",
+  "scripts": {
+    "storybook": "ng run my-canvas-lib:storybook",
+    "build-storybook": "ng run my-canvas-lib:serve-storybook",
+    "build": "ng build my-canvas-lib"
+  },
+  "peerDependencies": {
+    "@angular/common": "^17.2.0",
+    "@angular/core": "^17.2.0",
+    "@angular/material": "^17.2.2"
+  },
+  "dependencies": {
+    "@mindfiredigital/canvas-editor": "^1.0.5",
+    "@storybook/addon-essentials": "^7.6.17",
+    "@storybook/addon-interactions": "^7.6.17",
+    "@storybook/addon-links": "^7.6.17",
+    "@storybook/angular": "^7.6.17",
+    "@storybook/blocks": "^7.6.17",
+    "@storybook/test": "^7.6.17",
+    "tslib": "^2.3.0"
+  },
+  "sideEffects": false
+}

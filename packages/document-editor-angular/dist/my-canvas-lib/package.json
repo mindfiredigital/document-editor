@@ -1,0 +1,33 @@
+{
+  "name": "@itzmytestorg/angular-test-lib",
+  "version": "0.0.1",
+  "peerDependencies": {
+    "@angular/common": "^17.2.0",
+    "@angular/core": "^17.2.0",
+    "@angular/material": "^17.2.2"
+  },
+  "dependencies": {
+    "@mindfiredigital/canvas-editor": "^1.0.5",
+    "@storybook/addon-essentials": "^7.6.17",
+    "@storybook/addon-interactions": "^7.6.17",
+    "@storybook/addon-links": "^7.6.17",
+    "@storybook/angular": "^7.6.17",
+    "@storybook/blocks": "^7.6.17",
+    "@storybook/test": "^7.6.17",
+    "tslib": "^2.3.0"
+  },
+  "sideEffects": false,
+  "module": "fesm2022/itzmytestorg-angular-test-lib.mjs",
+  "typings": "index.d.ts",
+  "exports": {
+    "./package.json": {
+      "default": "./package.json"
+    },
+    ".": {
+      "types": "./index.d.ts",
+      "esm2022": "./esm2022/itzmytestorg-angular-test-lib.mjs",
+      "esm": "./esm2022/itzmytestorg-angular-test-lib.mjs",
+      "default": "./fesm2022/itzmytestorg-angular-test-lib.mjs"
+    }
+  }
+}

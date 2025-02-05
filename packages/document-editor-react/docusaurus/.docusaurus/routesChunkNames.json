@@ -1,0 +1,103 @@
+{
+  "/react-canvas-editor/markdown-page-ef3": {
+    "__comp": "1f391b9e",
+    "__context": {
+      "plugin": "af9803ee"
+    },
+    "content": "393be207"
+  },
+  "/react-canvas-editor/docs-d63": {
+    "__comp": "1be78505",
+    "__context": {
+      "plugin": "1c96cb4f"
+    },
+    "versionMetadata": "935f2afb"
+  },
+  "/react-canvas-editor/docs/category/contribution-guide-a45": {
+    "__comp": "14eb3368",
+    "categoryGeneratedIndex": "d4d638a6"
+  },
+  "/react-canvas-editor/docs/category/get-started-3a7": {
+    "__comp": "14eb3368",
+    "categoryGeneratedIndex": "8371896d"
+  },
+  "/react-canvas-editor/docs/category/references-7c6": {
+    "__comp": "14eb3368",
+    "categoryGeneratedIndex": "03dacec9"
+  },
+  "/react-canvas-editor/docs/category/release-79e": {
+    "__comp": "14eb3368",
+    "categoryGeneratedIndex": "ead3bd04"
+  },
+  "/react-canvas-editor/docs/category/tutorials-360": {
+    "__comp": "14eb3368",
+    "categoryGeneratedIndex": "7142ff00"
+  },
+  "/react-canvas-editor/docs/category/why-we-use-canvas-c4b": {
+    "__comp": "14eb3368",
+    "categoryGeneratedIndex": "ec1e3499"
+  },
+  "/react-canvas-editor/docs/contributors/-da6": {
+    "__comp": "17896441",
+    "content": "6f41419f"
+  },
+  "/react-canvas-editor/docs/contributors/code-of-conduct-34b": {
+    "__comp": "17896441",
+    "content": "f3ee8136"
+  },
+  "/react-canvas-editor/docs/contributors/how-to-contribute-a7b": {
+    "__comp": "17896441",
+    "content": "42f26196"
+  },
+  "/react-canvas-editor/docs/Get-started/Installation-aa6": {
+    "__comp": "17896441",
+    "content": "8f7835a5"
+  },
+  "/react-canvas-editor/docs/Get-started/quickstart-e3c": {
+    "__comp": "17896441",
+    "content": "8e62e753"
+  },
+  "/react-canvas-editor/docs/references/dom-event-f39": {
+    "__comp": "17896441",
+    "content": "bed35dad"
+  },
+  "/react-canvas-editor/docs/references/toolbar-option-ffd": {
+    "__comp": "17896441",
+    "content": "cd7ded93"
+  },
+  "/react-canvas-editor/docs/release/change-logs-335": {
+    "__comp": "17896441",
+    "content": "90d9359e"
+  },
+  "/react-canvas-editor/docs/release/release-notes-a21": {
+    "__comp": "17896441",
+    "content": "5b7d4f99"
+  },
+  "/react-canvas-editor/docs/tutorial-basics/customized-style-c86": {
+    "__comp": "17896441",
+    "content": "fc51a3c2"
+  },
+  "/react-canvas-editor/docs/tutorial-basics/customized-tool-bb9": {
+    "__comp": "17896441",
+    "content": "34897b58"
+  },
+  "/react-canvas-editor/docs/tutorial-basics/dom-handle-4e2": {
+    "__comp": "17896441",
+    "content": "e5701b7c"
+  },
+  "/react-canvas-editor/docs/what-is-document-editor-cd3": {
+    "__comp": "17896441",
+    "content": "11191d37"
+  },
+  "/react-canvas-editor/docs/Why-we-use-canvas/-ffd": {
+    "__comp": "17896441",
+    "content": "29fc1671"
+  },
+  "/react-canvas-editor/-600": {
+    "__comp": "c4f5d8e4",
+    "__context": {
+      "plugin": "af9803ee"
+    },
+    "config": "5e9f5e1a"
+  }
+}
