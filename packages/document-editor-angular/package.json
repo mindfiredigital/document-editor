@@ -1,8 +1,12 @@
 {
   "name": "@mindfiredigital/angular-canvas-editor",
-  "version": "0.0.0-deveopment",
+  "version": "0.0.0",
   "type": "module",
-  "private" : false,
+  "private": false,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mindfiredigital/document-editor.git"
+  },
   "publishConfig": {
     "registry": "https://registry.npmjs.org/",
     "access": "public"
@@ -76,16 +80,5 @@
     "LICENSE"
   ],
   "typings": "./dist/my-canvas-lib/index.d.ts",
-  "main": "./dist/my-canvas-lib/public-api.d.ts",
-  "release": {
-    "repositoryUrl": "https://github.com/mindfiredigital/angular-canvas-document-editor.git",
-    "branches": [
-      "main",
-      "next",
-      {
-        "name": "beta",
-        "prerelease": true
-      }
-    ]
-  }
+  "main": "./dist/my-canvas-lib/public-api.d.ts"
 }
