@@ -4,10 +4,11 @@
 # *.d.ts
 
 # dependencies
-/node_modules
+node_modules
+packages/examples
 /.pnp
 .pnp.js
-
+.turbo
 # testing
 /coverage
 
