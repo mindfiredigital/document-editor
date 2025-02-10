@@ -1,6 +1,7 @@
 {
   "name": "@mindfiredigital/document-editor-react",
   "version": "0.0.0",
+  "private": true,
   "repository": {
     "type": "git",
     "url": "https://github.com/mindfiredigital/document-editor.git"

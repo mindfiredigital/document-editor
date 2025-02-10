@@ -2,7 +2,7 @@
   "name": "@mindfiredigital/document-editor-core",
   "version": "0.0.0",
   "type": "module",
-  "private": false,
+  "private": true,
   "repository": {
     "type": "git",
     "url": "https://github.com/mindfiredigital/document-editor.git"
