@@ -1,5 +1,5 @@
 {
-  "name": "@mindfiredigital/document-editor-webcomponent",
+  "name": "@mindfiredigital/webcomponent-canvas-editor",
   "version": "0.0.0",
   "type": "module",
   "private": true,

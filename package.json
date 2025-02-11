@@ -1,7 +1,7 @@
 {
   "private": true,
   "name": "@mindfiredigital/documenteditor",
-  "description": "pagebuilder",
+  "description": "documenteditor",
   "workspaces": [
     "packages/*"
   ],
@@ -28,7 +28,7 @@
     ]
   },
   "keywords": [
-    "pagebuilder",
+    "documenteditor",
     "rich-page-builder",
     "html-editor",
     "typescript",
