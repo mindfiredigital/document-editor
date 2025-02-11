@@ -53,7 +53,7 @@ ${description}
   // Write to a changeset file
   fs.writeFileSync(`.changeset/auto-${Date.now()}.md`, changesetContent);
   console.log(
-    `✅ Changeset file created for package: document-editor-${packageName}`
+    `✅ Changeset file created for package: ${packageName}-canvas-editor`
   );
 } else {
   console.log(

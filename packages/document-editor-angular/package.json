@@ -8,6 +8,7 @@
     "url": "https://github.com/mindfiredigital/document-editor.git"
   },
   "publishConfig": {
+    "directory": "dist/my-canvas-lib",
     "registry": "https://registry.npmjs.org/",
     "access": "public"
   },
@@ -75,7 +76,7 @@
     "rxjs": "^7.8.1"
   },
   "files": [
-    "dist/my-canvas-lib/",
+    "*",
     "README.md",
     "LICENSE"
   ],
