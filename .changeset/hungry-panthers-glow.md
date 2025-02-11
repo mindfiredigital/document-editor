@@ -2,4 +2,4 @@
 '@mindfiredigital/angular-canvas-editor': major
 ---
 
-major release of angular package
+major release of angular-canavs-editor
