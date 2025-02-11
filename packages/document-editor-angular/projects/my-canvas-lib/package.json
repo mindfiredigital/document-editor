@@ -8,10 +8,13 @@
   },
   "peerDependencies": {
     "@angular/common": "^17.2.0",
-    "@angular/core": "^17.2.0",
-    "@angular/material": "^17.2.2"
+    "@angular/core": "^17.2.0"
   },
   "dependencies": {
+    "@angular/material": "^17.2.2",
+    "@fortawesome/angular-fontawesome": "^1.0.0",
+    "@fortawesome/fontawesome-svg-core": "^6.7.2",
+    "@fortawesome/free-solid-svg-icons": "^6.7.2",
     "@mindfiredigital/canvas-editor": "^1.0.5",
     "@storybook/addon-essentials": "^7.6.17",
     "@storybook/addon-interactions": "^7.6.17",
