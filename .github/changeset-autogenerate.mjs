@@ -45,7 +45,7 @@ if (packageName) {
 
   // Generate changeset content
   const changesetContent = `---
-'@mindfiredigital/document-editor-${packageName}': ${changeType}
+'@mindfiredigital/${packageName}-canvas-editor': ${changeType}
 ---
 ${description}
 `;
