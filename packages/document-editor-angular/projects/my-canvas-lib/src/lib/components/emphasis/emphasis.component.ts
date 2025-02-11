@@ -2,19 +2,45 @@ import { Component, Input } from '@angular/core';
 import { MatButtonToggleModule } from '@angular/material/button-toggle';
 import { MatIconModule } from '@angular/material/icon';
 import { ImageUploadButtonComponent } from '../image-upload-button/image-upload-button.component';
-import { EditorMode, IElement, PageMode, DOMEventHandlers, RowFlex, ListType, ListStyle } from '@mindfiredigital/canvas-editor';
+import {
+  EditorMode,
+  IElement,
+  PageMode,
+  DOMEventHandlers,
+  RowFlex,
+  ListType,
+  ListStyle,
+} from '@mindfiredigital/canvas-editor';
 import { IRangeStyle } from '@mindfiredigital/canvas-editor/dist/src/editor/interface/Listener';
+import {
+  faUndo,
+  faRedo,
+  faBold,
+  faItalic,
+  faUnderline,
+  faImage,
+} from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 @Component({
   selector: 'lib-emphasis',
   standalone: true,
-  imports: [MatButtonToggleModule,ImageUploadButtonComponent],
+  imports: [
+    MatButtonToggleModule,
+    ImageUploadButtonComponent,
+    FontAwesomeModule,
+  ],
   templateUrl: './emphasis.component.html',
   styleUrl: './emphasis.component.css',
 })
 export class EmphasisComponent {
   @Input() toolbar: any;
   @Input() toolbarClass: any;
-
+  faUndo = faUndo;
+  faRedo = faRedo;
+  faBold = faBold;
+  faItalic = faItalic;
+  faUnderline = faUnderline;
+  faImage = faImage;
   contentStyles: IRangeStyle | undefined;
   alignment: string = RowFlex.LEFT;
   listType: string = '';
@@ -38,7 +64,7 @@ export class EmphasisComponent {
     if (this.formats.indexOf(format) === -1) {
       this.formats.push(format);
     } else {
-      this.formats = this.formats.filter((f) => f !== format);
+      this.formats = this.formats.filter(f => f !== format);
     }
 
     // Call appropriate formatting function
@@ -90,7 +116,7 @@ export class EmphasisComponent {
   //   this.formats = [];
   //   DOMEventHandlers.clear();
   // }
-  onImageSelected(event: { base64: string, width: number, height: number }) {
+  onImageSelected(event: { base64: string; width: number; height: number }) {
     DOMEventHandlers.setImage({
       value: event.base64,
       height: event.height,
