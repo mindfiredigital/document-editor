@@ -1,5 +1,5 @@
 {
-  "name": "@mindfiredigital/document-editor-core",
+  "name": "@mindfiredigital/core-canvas-editor",
   "version": "0.0.0",
   "type": "module",
   "private": true,
