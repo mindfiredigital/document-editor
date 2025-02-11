@@ -1,6 +1,6 @@
 {
   "name": "@mindfiredigital/angular-canvas-editor",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "type": "module",
   "private": false,
   "repository": {
@@ -8,9 +8,9 @@
     "url": "https://github.com/mindfiredigital/document-editor.git"
   },
   "publishConfig": {
-    "directory": "dist/my-canvas-lib",
     "registry": "https://registry.npmjs.org/",
-    "access": "public"
+    "access": "public",
+    "directory": "dist/my-canvas-lib"
   },
   "scripts": {
     "ng": "ng",
