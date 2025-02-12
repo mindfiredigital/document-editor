@@ -1,5 +1,11 @@
 # @mindfiredigital/angular-canvas-editor
 
+## 0.2.0
+
+### Minor Changes
+
+- changesets release
+
 ## 0.1.0
 
 ### Minor Changes
