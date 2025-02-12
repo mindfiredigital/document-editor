@@ -78,7 +78,7 @@
     "rxjs": "^7.8.1"
   },
   "files": [
-    "dist/my-canvas-lib",
+    "dist/",
     "README.md",
     "LICENSE"
   ],
