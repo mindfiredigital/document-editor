@@ -1,6 +1,7 @@
 {
   "name": "@mindfiredigital/react-canvas-editor",
   "version": "1.4.0",
+  "type": "module",
   "private": false,
   "repository": {
     "type": "git",
