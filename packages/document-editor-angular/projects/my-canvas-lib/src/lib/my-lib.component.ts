@@ -11,9 +11,12 @@ import { EditorToolbarComponent } from './components/editor-toolbar/editor-toolb
     <lib-editor-footer></lib-editor-footer>
   `,
   styles: ``,
-
+  standalone: true,
+  // Import standalone child components here:
+  imports: [
+    EditorToolbarComponent,
+    CanvasEditorComponent,
+    EditorFooterComponent,
+  ],
 })
-
-export class MyLibComponent {
-  
-}
+export class MyLibComponent {}

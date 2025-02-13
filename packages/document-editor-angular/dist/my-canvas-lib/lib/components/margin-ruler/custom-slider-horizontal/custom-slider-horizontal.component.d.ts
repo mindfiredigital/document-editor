@@ -1,7 +1,7 @@
 import { FormControl } from '@angular/forms';
 import * as i0 from "@angular/core";
 export declare class CustomSliderHorizontalComponent {
-    value: FormControl<number | null>;
+    value: FormControl<number>;
     horizontalMarks: {
         value: number;
         label: number;

@@ -1,7 +1,7 @@
 import { FormControl } from '@angular/forms';
 import * as i0 from "@angular/core";
 export declare class CustomSliderVerticalComponent {
-    value: FormControl<number | null>;
+    value: FormControl<number>;
     verticalMarks: {
         value: number;
         label: number;
