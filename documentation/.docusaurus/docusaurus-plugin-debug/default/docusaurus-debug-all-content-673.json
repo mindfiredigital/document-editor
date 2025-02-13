@@ -1,0 +1,550 @@
+{
+  "docusaurus-plugin-content-docs": {
+    "default": {
+      "loadedVersions": [
+        {
+          "versionName": "current",
+          "label": "Next",
+          "banner": null,
+          "badge": false,
+          "noIndex": false,
+          "className": "docs-version-current",
+          "path": "/react-canvas-editor/docs",
+          "tagsPath": "/react-canvas-editor/docs/tags",
+          "isLast": true,
+          "routePriority": -1,
+          "sidebarFilePath": "D:\\document-editor\\packages\\document-editor-react\\docusaurus\\sidebars.js",
+          "contentPath": "D:\\document-editor\\packages\\document-editor-react\\docusaurus\\docs",
+          "contentPathLocalized": "D:\\document-editor\\packages\\document-editor-react\\docusaurus\\i18n\\en\\docusaurus-plugin-content-docs\\current",
+          "docs": [
+            {
+              "unversionedId": "contributors/code-of-conduct",
+              "id": "contributors/code-of-conduct",
+              "title": "Code of conduct",
+              "description": "As contributors and maintainers of the React Document Editor package, we are dedicated to demonstrating respect to all individuals who contribute to this project. This respect encompasses actions such as posting issues, updating documentation, submitting pull requests, providing constructive feedback in comments, and engaging in any other project-related activities.",
+              "source": "@site/docs/contributors/code-of-conduct.md",
+              "sourceDirName": "contributors",
+              "slug": "/contributors/code-of-conduct",
+              "permalink": "/react-canvas-editor/docs/contributors/code-of-conduct",
+              "draft": false,
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 2,
+              "frontMatter": {
+                "sidebar_position": 2
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "How to Contribute",
+                "permalink": "/react-canvas-editor/docs/contributors/how-to-contribute"
+              },
+              "next": {
+                "title": "Release",
+                "permalink": "/react-canvas-editor/docs/category/release"
+              }
+            },
+            {
+              "unversionedId": "contributors/contributors",
+              "id": "contributors/contributors",
+              "title": "Contributors",
+              "description": "- Ashutosh Jena",
+              "source": "@site/docs/contributors/contributors.md",
+              "sourceDirName": "contributors",
+              "slug": "/contributors/",
+              "permalink": "/react-canvas-editor/docs/contributors/",
+              "draft": false,
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 1,
+              "frontMatter": {
+                "sidebar_position": 1
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Contribution Guide",
+                "permalink": "/react-canvas-editor/docs/category/contribution-guide"
+              },
+              "next": {
+                "title": "How to Contribute",
+                "permalink": "/react-canvas-editor/docs/contributors/how-to-contribute"
+              }
+            },
+            {
+              "unversionedId": "contributors/how-to-contribute",
+              "id": "contributors/how-to-contribute",
+              "title": "How to Contribute",
+              "description": "We genuinely appreciate your interest in contributing to the React Document Editor project. Your invaluable contributions play a pivotal role in enhancing this project. Before you embark on your journey, please take a moment to familiarize yourself with the following guidelines:",
+              "source": "@site/docs/contributors/how-to-contribute.md",
+              "sourceDirName": "contributors",
+              "slug": "/contributors/how-to-contribute",
+              "permalink": "/react-canvas-editor/docs/contributors/how-to-contribute",
+              "draft": false,
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 1,
+              "frontMatter": {
+                "sidebar_position": 1
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Contributors",
+                "permalink": "/react-canvas-editor/docs/contributors/"
+              },
+              "next": {
+                "title": "Code of conduct",
+                "permalink": "/react-canvas-editor/docs/contributors/code-of-conduct"
+              }
+            },
+            {
+              "unversionedId": "Get-started/Installation",
+              "id": "Get-started/Installation",
+              "title": "Installation",
+              "description": "The React Document Editor is a collection of npm packages, which can be found on GitHub.",
+              "source": "@site/docs/Get-started/Installation.md",
+              "sourceDirName": "Get-started",
+              "slug": "/Get-started/Installation",
+              "permalink": "/react-canvas-editor/docs/Get-started/Installation",
+              "draft": false,
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 1,
+              "frontMatter": {
+                "sidebar_position": 1
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Get Started",
+                "permalink": "/react-canvas-editor/docs/category/get-started"
+              },
+              "next": {
+                "title": "Quick Start",
+                "permalink": "/react-canvas-editor/docs/Get-started/quickstart"
+              }
+            },
+            {
+              "unversionedId": "Get-started/quickstart",
+              "id": "Get-started/quickstart",
+              "title": "Quick Start",
+              "description": "Let's explore the Document Editor in less than 5 minutes.",
+              "source": "@site/docs/Get-started/quickstart.md",
+              "sourceDirName": "Get-started",
+              "slug": "/Get-started/quickstart",
+              "permalink": "/react-canvas-editor/docs/Get-started/quickstart",
+              "draft": false,
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 2,
+              "frontMatter": {
+                "sidebar_position": 2
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Installation",
+                "permalink": "/react-canvas-editor/docs/Get-started/Installation"
+              },
+              "next": {
+                "title": "Tutorials",
+                "permalink": "/react-canvas-editor/docs/category/tutorials"
+              }
+            },
+            {
+              "unversionedId": "references/dom-event",
+              "id": "references/dom-event",
+              "title": "DOM Events",
+              "description": "| Event         |                                                                                |",
+              "source": "@site/docs/references/dom-event.md",
+              "sourceDirName": "references",
+              "slug": "/references/dom-event",
+              "permalink": "/react-canvas-editor/docs/references/dom-event",
+              "draft": false,
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 1,
+              "frontMatter": {
+                "sidebar_position": 1
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "References",
+                "permalink": "/react-canvas-editor/docs/category/references"
+              },
+              "next": {
+                "title": "Toolbar Options",
+                "permalink": "/react-canvas-editor/docs/references/toolbar-option"
+              }
+            },
+            {
+              "unversionedId": "references/toolbar-option",
+              "id": "references/toolbar-option",
+              "title": "Toolbar Options",
+              "description": "| Option     |        Purpose         |",
+              "source": "@site/docs/references/toolbar-option.md",
+              "sourceDirName": "references",
+              "slug": "/references/toolbar-option",
+              "permalink": "/react-canvas-editor/docs/references/toolbar-option",
+              "draft": false,
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 1,
+              "frontMatter": {
+                "sidebar_position": 1
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "DOM Events",
+                "permalink": "/react-canvas-editor/docs/references/dom-event"
+              },
+              "next": {
+                "title": "Contribution Guide",
+                "permalink": "/react-canvas-editor/docs/category/contribution-guide"
+              }
+            },
+            {
+              "unversionedId": "release/change-logs",
+              "id": "release/change-logs",
+              "title": "Change logs",
+              "description": "Version 1",
+              "source": "@site/docs/release/change-logs.md",
+              "sourceDirName": "release",
+              "slug": "/release/change-logs",
+              "permalink": "/react-canvas-editor/docs/release/change-logs",
+              "draft": false,
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 1,
+              "frontMatter": {
+                "sidebar_position": 1
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Release",
+                "permalink": "/react-canvas-editor/docs/category/release"
+              },
+              "next": {
+                "title": "Release notes",
+                "permalink": "/react-canvas-editor/docs/release/release-notes"
+              }
+            },
+            {
+              "unversionedId": "release/release-notes",
+              "id": "release/release-notes",
+              "title": "Release notes",
+              "description": "",
+              "source": "@site/docs/release/release-notes.md",
+              "sourceDirName": "release",
+              "slug": "/release/release-notes",
+              "permalink": "/react-canvas-editor/docs/release/release-notes",
+              "draft": false,
+              "tags": [],
+              "version": "current",
+              "frontMatter": {},
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Change logs",
+                "permalink": "/react-canvas-editor/docs/release/change-logs"
+              }
+            },
+            {
+              "unversionedId": "tutorial-basics/customized-style",
+              "id": "tutorial-basics/customized-style",
+              "title": "How to customize style",
+              "description": "Tailor the editor's user interface to align with the specific requirements of your application.",
+              "source": "@site/docs/tutorial-basics/customized-style.md",
+              "sourceDirName": "tutorial-basics",
+              "slug": "/tutorial-basics/customized-style",
+              "permalink": "/react-canvas-editor/docs/tutorial-basics/customized-style",
+              "draft": false,
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 2,
+              "frontMatter": {
+                "sidebar_position": 2
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "How to customize toolbar",
+                "permalink": "/react-canvas-editor/docs/tutorial-basics/customized-tool"
+              },
+              "next": {
+                "title": "How to use DOM events",
+                "permalink": "/react-canvas-editor/docs/tutorial-basics/dom-handle"
+              }
+            },
+            {
+              "unversionedId": "tutorial-basics/customized-tool",
+              "id": "tutorial-basics/customized-tool",
+              "title": "How to customize toolbar",
+              "description": "Customizing the user interface and actions of the editor to align with your application's requirements is essential.",
+              "source": "@site/docs/tutorial-basics/customized-tool.md",
+              "sourceDirName": "tutorial-basics",
+              "slug": "/tutorial-basics/customized-tool",
+              "permalink": "/react-canvas-editor/docs/tutorial-basics/customized-tool",
+              "draft": false,
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 1,
+              "frontMatter": {
+                "sidebar_position": 1
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Tutorials",
+                "permalink": "/react-canvas-editor/docs/category/tutorials"
+              },
+              "next": {
+                "title": "How to customize style",
+                "permalink": "/react-canvas-editor/docs/tutorial-basics/customized-style"
+              }
+            },
+            {
+              "unversionedId": "tutorial-basics/dom-handle",
+              "id": "tutorial-basics/dom-handle",
+              "title": "How to use DOM events",
+              "description": "Mastering the handling of DOM events is crucial for effective React development. Below are key events and how to use them:",
+              "source": "@site/docs/tutorial-basics/dom-handle.md",
+              "sourceDirName": "tutorial-basics",
+              "slug": "/tutorial-basics/dom-handle",
+              "permalink": "/react-canvas-editor/docs/tutorial-basics/dom-handle",
+              "draft": false,
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 3,
+              "frontMatter": {
+                "sidebar_position": 3
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "How to customize style",
+                "permalink": "/react-canvas-editor/docs/tutorial-basics/customized-style"
+              },
+              "next": {
+                "title": "References",
+                "permalink": "/react-canvas-editor/docs/category/references"
+              }
+            },
+            {
+              "unversionedId": "what-is-document-editor",
+              "id": "what-is-document-editor",
+              "title": "What is React Document Editor?",
+              "description": "react-document-editor is a tool that allows developers to integrate multipage document editor inside react application.",
+              "source": "@site/docs/what-is-document-editor.md",
+              "sourceDirName": ".",
+              "slug": "/what-is-document-editor",
+              "permalink": "/react-canvas-editor/docs/what-is-document-editor",
+              "draft": false,
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 1,
+              "frontMatter": {
+                "sidebar_position": 1
+              },
+              "sidebar": "tutorialSidebar",
+              "next": {
+                "title": "Why we use Canvas",
+                "permalink": "/react-canvas-editor/docs/category/why-we-use-canvas"
+              }
+            },
+            {
+              "unversionedId": "Why-we-use-canvas/Why-we-use-canvas",
+              "id": "Why-we-use-canvas/Why-we-use-canvas",
+              "title": "Why Canvas Editor",
+              "description": "Canvas vs HTML Editor",
+              "source": "@site/docs/Why-we-use-canvas/Why-we-use-canvas.md",
+              "sourceDirName": "Why-we-use-canvas",
+              "slug": "/Why-we-use-canvas/",
+              "permalink": "/react-canvas-editor/docs/Why-we-use-canvas/",
+              "draft": false,
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 1,
+              "frontMatter": {
+                "sidebar_position": 1
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Why we use Canvas",
+                "permalink": "/react-canvas-editor/docs/category/why-we-use-canvas"
+              },
+              "next": {
+                "title": "Get Started",
+                "permalink": "/react-canvas-editor/docs/category/get-started"
+              }
+            }
+          ],
+          "drafts": [],
+          "sidebars": {
+            "tutorialSidebar": [
+              {
+                "type": "doc",
+                "id": "what-is-document-editor"
+              },
+              {
+                "type": "category",
+                "label": "Why we use Canvas",
+                "collapsible": true,
+                "collapsed": true,
+                "items": [
+                  {
+                    "type": "doc",
+                    "id": "Why-we-use-canvas/Why-we-use-canvas"
+                  }
+                ],
+                "link": {
+                  "type": "generated-index",
+                  "slug": "/category/why-we-use-canvas",
+                  "permalink": "/react-canvas-editor/docs/category/why-we-use-canvas"
+                }
+              },
+              {
+                "type": "category",
+                "label": "Get Started",
+                "collapsible": true,
+                "collapsed": true,
+                "items": [
+                  {
+                    "type": "doc",
+                    "id": "Get-started/Installation"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "Get-started/quickstart"
+                  }
+                ],
+                "link": {
+                  "type": "generated-index",
+                  "slug": "/category/get-started",
+                  "permalink": "/react-canvas-editor/docs/category/get-started"
+                }
+              },
+              {
+                "type": "category",
+                "label": "Tutorials",
+                "collapsible": true,
+                "collapsed": true,
+                "items": [
+                  {
+                    "type": "doc",
+                    "id": "tutorial-basics/customized-tool"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "tutorial-basics/customized-style"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "tutorial-basics/dom-handle"
+                  }
+                ],
+                "link": {
+                  "type": "generated-index",
+                  "slug": "/category/tutorials",
+                  "permalink": "/react-canvas-editor/docs/category/tutorials"
+                }
+              },
+              {
+                "type": "category",
+                "label": "References",
+                "collapsible": true,
+                "collapsed": true,
+                "items": [
+                  {
+                    "type": "doc",
+                    "id": "references/dom-event"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "references/toolbar-option"
+                  }
+                ],
+                "link": {
+                  "type": "generated-index",
+                  "slug": "/category/references",
+                  "permalink": "/react-canvas-editor/docs/category/references"
+                }
+              },
+              {
+                "type": "category",
+                "label": "Contribution Guide",
+                "collapsible": true,
+                "collapsed": true,
+                "items": [
+                  {
+                    "type": "doc",
+                    "id": "contributors/contributors"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "contributors/how-to-contribute"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "contributors/code-of-conduct"
+                  }
+                ],
+                "link": {
+                  "type": "generated-index",
+                  "slug": "/category/contribution-guide",
+                  "permalink": "/react-canvas-editor/docs/category/contribution-guide"
+                }
+              },
+              {
+                "type": "category",
+                "label": "Release",
+                "collapsible": true,
+                "collapsed": true,
+                "items": [
+                  {
+                    "type": "doc",
+                    "id": "release/change-logs"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "release/release-notes"
+                  }
+                ],
+                "link": {
+                  "type": "generated-index",
+                  "slug": "/category/release",
+                  "permalink": "/react-canvas-editor/docs/category/release"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "docusaurus-plugin-content-blog": {
+    "default": {
+      "blogSidebarTitle": "Recent posts",
+      "blogPosts": [],
+      "blogListPaginated": [],
+      "blogTags": {},
+      "blogTagsListPath": "/react-canvas-editor/blog/tags",
+      "blogTagsPaginated": []
+    }
+  },
+  "docusaurus-plugin-content-pages": {
+    "default": [
+      {
+        "type": "jsx",
+        "permalink": "/react-canvas-editor/",
+        "source": "@site/src/pages/index.js"
+      },
+      {
+        "type": "mdx",
+        "permalink": "/react-canvas-editor/markdown-page",
+        "source": "@site/src/pages/markdown-page.md",
+        "title": "Markdown page example",
+        "description": "You don't need React to write simple standalone pages.",
+        "frontMatter": {
+          "title": "Markdown page example"
+        }
+      }
+    ]
+  },
+  "docusaurus-plugin-debug": {},
+  "docusaurus-theme-classic": {},
+  "docusaurus-bootstrap-plugin": {},
+  "docusaurus-mdx-fallback-plugin": {}
+}
