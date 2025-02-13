@@ -4,6 +4,12 @@ import * as i0 from "@angular/core";
 export declare class EmphasisComponent {
     toolbar: any;
     toolbarClass: any;
+    faUndo: import("@fortawesome/free-solid-svg-icons").IconDefinition;
+    faRedo: import("@fortawesome/free-solid-svg-icons").IconDefinition;
+    faBold: import("@fortawesome/free-solid-svg-icons").IconDefinition;
+    faItalic: import("@fortawesome/free-solid-svg-icons").IconDefinition;
+    faUnderline: import("@fortawesome/free-solid-svg-icons").IconDefinition;
+    faImage: import("@fortawesome/free-solid-svg-icons").IconDefinition;
     contentStyles: IRangeStyle | undefined;
     alignment: string;
     listType: string;

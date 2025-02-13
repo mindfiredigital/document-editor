@@ -1,7 +1,13 @@
 {
   "name": "@mindfiredigital/angular-canvas-editor",
   "version": "0.4.0",
-  "type": "module",
+  "scripts": {
+    "ng": "ng",
+    "start": "ng serve",
+    "build": "rm -rf dist && npm cache clean --force && ng-packagr -p projects/my-canvas-lib/ng-package.json",
+    "watch": "ng build --watch --configuration development",
+    "test": "ng test"
+  },
   "private": false,
   "repository": {
     "type": "git",
@@ -11,77 +17,51 @@
     "registry": "https://registry.npmjs.org/",
     "access": "public"
   },
-  "scripts": {
-    "ng": "ng",
-    "start": "ng serve",
-    "build": "rm -rf dist && npm cache clean --force && ng build my-canvas-lib",
-    "watch": "ng build my-lib --watch --configuration development",
-    "test": "ng test",
-    "storybook": "ng run angular-canvas-document-editor:storybook",
-    "build-lib": "rm -rf dist && npm cache clean --force && ng build my-canvas-lib"
-  },
   "dependencies": {
-    "@angular/animations": "^17.2.0",
-    "@angular/cdk": "^17.2.2",
-    "@angular/common": "^17.2.0",
-    "@angular/compiler": "^17.2.0",
-    "@angular/core": "^17.2.0",
-    "@angular/forms": "^17.2.0",
-    "@angular/material": "^17.2.2",
-    "@angular/platform-browser": "^17.2.0",
-    "@angular/platform-browser-dynamic": "^17.2.0",
-    "@angular/router": "^17.2.0",
+    "@angular/animations": "^19.1.0",
+    "@angular/common": "^19.1.0",
+    "@angular/compiler": "^19.1.0",
+    "@angular/core": "^19.1.0",
+    "@angular/forms": "^19.1.0",
+    "@angular/material": "^19.1.4",
+    "@angular/platform-browser": "^19.1.0",
     "@mindfiredigital/canvas-editor": "^1.0.5",
+    "@angular/platform-browser-dynamic": "^19.1.0",
+    "@angular/router": "^19.1.0",
     "@fortawesome/angular-fontawesome": "^1.0.0",
-    "@fortawesome/fontawesome-svg-core": "^6.7.2",
     "@fortawesome/free-solid-svg-icons": "^6.7.2",
-    "@ngrx/effects": "^18.0.2",
-    "@ngrx/store": "^18.0.2",
-    "@ngrx/store-devtools": "^18.0.2",
+    "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
-    "zone.js": "~0.14.3"
+    "zone.js": "~0.15.0"
   },
   "devDependencies": {
-    "@angular-devkit/build-angular": "^17.2.3",
-    "@angular/cli": "^17.2.3",
-    "@angular/compiler-cli": "^17.2.0",
-    "@rollup/plugin-babel": "^6.0.3",
-    "@rollup/plugin-commonjs": "^28.0.0",
-    "@rollup/plugin-json": "^6.1.0",
-    "@rollup/plugin-node-resolve": "^15.3.0",
-    "@rollup/plugin-terser": "^0.4.4",
-    "@rollup/plugin-typescript": "^12.1.0",
-    "@storybook/addon-essentials": "^7.6.17",
-    "@storybook/addon-interactions": "^7.6.17",
-    "@storybook/addon-links": "^7.6.17",
-    "@storybook/angular": "^7.6.17",
-    "@storybook/blocks": "^7.6.17",
-    "@storybook/test": "^7.6.17",
+    "@angular-devkit/build-angular": "^19.1.7",
+    "@angular/cli": "^19.1.7",
+    "@angular/compiler-cli": "^19.1.0",
     "@types/jasmine": "~5.1.0",
-    "@types/jest": "^29.5.13",
-    "jasmine-core": "~5.1.0",
+    "jasmine-core": "~5.5.0",
     "karma": "~6.4.0",
     "karma-chrome-launcher": "~3.2.0",
     "karma-coverage": "~2.2.0",
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "~2.1.0",
-    "ng-packagr": "^17.2.0",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "rollup": "^4.22.5",
-    "rollup-plugin-peer-deps-external": "^2.2.4",
-    "semantic-release": "^23.0.0",
-    "storybook": "^7.6.17",
-    "typescript": "~5.3.2"
-  },
-  "peerDependencies": {
-    "rxjs": "^7.8.1"
+    "ng-packagr": "^19.1.0",
+    "typescript": "~5.7.2"
   },
   "files": [
-    "dist/",
+    "dist",
     "README.md",
     "LICENSE"
   ],
-  "typings": "./dist/my-canvas-lib/index.d.ts",
-  "main": "./dist/my-canvas-lib/public-api.d.ts"
+  "module": "dist/my-canvas-lib/fesm2022/mindfiredigital-angular-canvas-editor.mjs",
+  "typings": "dist/my-canvas-lib/index.d.ts",
+  "exports": {
+    "./package.json": {
+      "default": "./package.json"
+    },
+    ".": {
+      "types": "./dist/my-canvas-lib/index.d.ts",
+      "default": "./dist/my-canvas-lib/fesm2022/mindfiredigital-angular-canvas-editor.mjs"
+    }
+  }
 }

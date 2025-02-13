@@ -1,5 +1,5 @@
 /**
  * Generated bundle index. Do not edit.
  */
-/// <amd-module name="@itzmytestorg/angular-test-lib" />
+/// <amd-module name="@mindfiredigital/angular-canvas-editor" />
 export * from './public-api';
