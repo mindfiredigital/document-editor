@@ -1,6 +1,6 @@
 packages:
-  # Core packages
-  - 'packages/*'            # All packages in the packages directory
+  # packages
+  - 'packages/*'            # All packages(core, react, angular, web-component) in the packages directory
   
   # Applications
   - 'apps/*'               # All applications
