@@ -6,7 +6,7 @@
 
 <br>
 
-<p align="center"> Experience powerful document creation with our React-based editor. Craft and manage multi-page documents effortlessly </p>
+<p align="center"> Experience powerful document creation with our React-based canvas editor. Craft and manage multi-page documents effortlessly </p>
 
 The `@mindfiredigital/react-canvas-editor` is a tool that allows developers to integrate multi page document editors built on top of Canvas using React.
 
@@ -472,7 +472,9 @@ DocumentEditorWebComponent({
 <br>
 
 ## Demo
+
 [React Canvas Editor](https://canvas-editor-htfx.vercel.app/)
+
 ## Contributing
 
 We welcome contributions from the community. If you'd like to contribute to the `react-document-editor` npm package, please follow our [Contributing Guidelines](CONTRIBUTING.md).
