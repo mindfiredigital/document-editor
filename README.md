@@ -12,7 +12,7 @@ The `@mindfiredigital/react-canvas-editor` is a tool that allows developers to i
 
 <br>
 
-## Table of Contents
+## Table of Content
 
 - [Why canvas over HTML Editor](#why-canvas-over-html-editor)
 - [Features](#features)
