@@ -21,7 +21,7 @@ import { DomSanitizer } from '@angular/platform-browser';
 export class MarginRulerComponent implements OnInit {
   verticalTicks: { value: number; label: number }[] = [];
   horizontalTicks: { value: number; label: number }[] = [];
-  verticalSlider: number[] = [-956, -100];
+  verticalSlider: number[] = [-200, -100];
   horizontalSlider: number[] = [120, 696];
   totalNumbersTicksHorizontal = 8;
   totalNumbersTicksVertical = 12;
