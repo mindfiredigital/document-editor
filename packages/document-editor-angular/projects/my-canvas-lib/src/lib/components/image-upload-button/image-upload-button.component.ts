@@ -1,15 +1,29 @@
 // image-upload-button.component.ts
-import { Component, EventEmitter, Output, ViewChild, ElementRef } from '@angular/core';
+import {
+  Component,
+  EventEmitter,
+  Output,
+  ViewChild,
+  ElementRef,
+} from '@angular/core';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { faImage } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-image-upload-button',
   templateUrl: './image-upload-button.component.html',
-  standalone: true
+  standalone: true,
+  imports: [FontAwesomeModule],
 })
 export class ImageUploadButtonComponent {
-  @ViewChild('fileInput', { static: false }) fileInput!: ElementRef<HTMLInputElement>;
-  @Output() imageSelected = new EventEmitter<{ base64: string, width: number, height: number }>();
-
+  @ViewChild('fileInput', { static: false })
+  fileInput!: ElementRef<HTMLInputElement>;
+  @Output() imageSelected = new EventEmitter<{
+    base64: string;
+    width: number;
+    height: number;
+  }>();
+  faImage = faImage;
   handleFileInputChange(event: Event) {
     const input = event.target as HTMLInputElement;
     if (input.files && input.files.length > 0) {
@@ -24,7 +38,7 @@ export class ImageUploadButtonComponent {
           this.imageSelected.emit({
             base64: base64Data,
             width: img.width,
-            height: img.height
+            height: img.height,
           });
         };
         img.src = base64Data;

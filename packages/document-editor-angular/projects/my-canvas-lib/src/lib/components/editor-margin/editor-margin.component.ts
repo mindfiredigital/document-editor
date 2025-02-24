@@ -8,22 +8,27 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
+import { faExpand, faFilePdf } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 @Component({
   selector: 'app-editor-margin',
   templateUrl: './editor-margin.component.html',
   styleUrls: ['./editor-margin.component.css'],
   standalone: true,
-  imports: [MatDialogModule,
+  imports: [
+    MatDialogModule,
     MatButtonModule,
     MatFormFieldModule,
     MatInputModule,
     ReactiveFormsModule,
-    MatIconModule]
+    MatIconModule,
+    FontAwesomeModule,
+  ],
 })
 export class EditorMarginComponent implements OnInit {
   marginsForm: FormGroup;
-  documentId: string = '123';  // Simulated document ID, you can get this dynamically
-
+  documentId: string = '123'; // Simulated document ID, you can get this dynamically
+  faExpand = faExpand;
   constructor(
     private fb: FormBuilder,
     public dialog: MatDialog,
@@ -33,7 +38,7 @@ export class EditorMarginComponent implements OnInit {
       top: [0],
       bottom: [0],
       left: [0],
-      right: [0]
+      right: [0],
     });
   }
 
@@ -44,17 +49,15 @@ export class EditorMarginComponent implements OnInit {
     });
 
     // Debounce form changes before saving
-    this.marginsForm.valueChanges
-      .pipe(debounceTime(500))
-      .subscribe(margins => {
-        this.documentService.setPaperMargins(margins);
-      });
+    this.marginsForm.valueChanges.pipe(debounceTime(500)).subscribe(margins => {
+      this.documentService.setPaperMargins(margins);
+    });
   }
 
   openDialog(): void {
     const dialogRef = this.dialog.open(MarginDialogComponent, {
       width: '300px',
-      data: { margins: this.marginsForm.value }
+      data: { margins: this.marginsForm.value },
     });
 
     dialogRef.afterClosed().subscribe(result => {

@@ -1,4 +1,18 @@
   mat-toolbar-row {
     display: flex;
     justify-content: center;
+    
+  }
+
+  .mat-toolbar{
+    position: fixed;
+    /* bottom: 0; */
+    left: 0;
+    top: 0;
+    width: 100%;
+    background-color: var(--default-footer-bg, #f8f9fa);
+    color: #333;
+    min-height: 40px;
+    z-index: 1000;
+    height: 1rem;
   }
