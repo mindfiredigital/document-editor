@@ -1,8 +1,44 @@
-<div style="position: relative;">
-  <!-- <lib-custom-slider-vertical [value]="verticalSlider.length ? verticalSlider : [-956, -100]" [min]="-1056" [max]="0"
+<!-- <div style="position: relative;"> -->
+<!-- <lib-custom-slider-vertical [value]="verticalSlider.length ? verticalSlider : [-956, -100]" [min]="-1056" [max]="0"
     [marks]="verticalMarks" (change)="handleChange($event)" [step]="24" [size]="'small'"
     [slots]="{ thumb: MarginRightArrow }" valueLabelDisplay="off"></lib-custom-slider-vertical>
   <lib-custom-slider-horizontal [value]="horizontalSlider.length ? horizontalSlider : [120, 696]" [min]="0" [max]="816"
     [marks]="horizontalMarks" (change)="handleChangeHorizontal($event)" [step]="24" [size]="'small'"
     [slots]="{ thumb: MarginDownArrow }" valueLabelDisplay="off"></lib-custom-slider-horizontal> -->
+<!-- </div> -->
+
+
+<div class="ruler-container">
+  <div class="ruler vertical">
+    <mat-slider class="vertical-slider"  min="-1056"
+    max="0"
+    step="24" vertical="true" (input)="handleChange($event)"
+      size="small">
+      <input matSliderThumb [(ngModel)]="verticalSlider[0]">
+    </mat-slider>
+    <div *ngFor="let tick of verticalTicks; let i = index" class="tick vertical-tick" [style.top.px]="tick.value">
+      <span class="tick-label">{{ tick.label }}</span>
+    </div>
+    <mat-slider class="vertical-slider v-end-slider" min="-1056"
+    max="0"
+    step="24" vertical="true"
+      (input)="handleChange($event)">
+      <input matSliderThumb [(ngModel)]="verticalSlider[1]">
+    </mat-slider>
+  </div>
+
+  <div class="ruler horizontal">
+    <mat-slider class="horizontal-slider" horizontal="true" min="-816" max="0" (input)="handleChangeHorizontal($event)" step="24"
+      showTickMarks>
+      <input matSliderThumb [(ngModel)]="horizontalSlider[0]">
+    </mat-slider>
+    <div *ngFor="let tick of horizontalTicks; let i = index" class="tick horizontal-tick" [style.left.px]="tick.value">
+      <span class="tick-label">{{ tick.label }}</span>
+    </div>
+
+    <mat-slider class="horizontal-slider h-end-slider" min="-816" max="0" (input)="handleChangeHorizontal($event)"
+      size="small">
+      <input matSliderThumb [(ngModel)]="horizontalSlider[1]">
+    </mat-slider>
+  </div>
 </div>

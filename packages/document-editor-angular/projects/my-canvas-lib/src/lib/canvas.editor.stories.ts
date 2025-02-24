@@ -1,33 +1,32 @@
-import { Meta, Story } from '@storybook/angular';
+import { Meta, StoryFn } from '@storybook/angular';
 import { moduleMetadata } from '@storybook/angular';
-import { CanvasLibModule } from './my-lib.component';
 import { CanvasEditorComponent } from './components/canvas-editor/canvas-editor.component';
 import { EditorFooterComponent } from './components/editor-footer/editor-footer.component';
 import { EditorToolbarComponent } from './components/editor-toolbar/editor-toolbar.component';
-
+import { MyLibComponent } from './my-lib.component';
 
 export default {
   title: 'App/CanvasEditor',
-  component: CanvasLibModule,
+  component: MyLibComponent, // ✅ Use the main component
   decorators: [
     moduleMetadata({
       imports: [
-        CanvasEditorComponent,  // Import standalone components
-        EditorFooterComponent,  // Import standalone components
-        EditorToolbarComponent  // Import standalone components
+        CanvasEditorComponent, // ✅ Import standalone components correctly
+        EditorFooterComponent,
+        EditorToolbarComponent,
       ],
     }),
   ],
   argTypes: {
     title: { control: 'text', defaultValue: 'Canvas Editor' },
   },
-} as Meta;
+} as Meta<MyLibComponent>;
 
-const Template: Story<CanvasLibModule> = (args: CanvasLibModule) => ({
+const Template: StoryFn<MyLibComponent> = (args: MyLibComponent) => ({
   props: args,
 });
 
 export const DefaultView = Template.bind({});
 DefaultView.args = {
-  title: 'Canvas Editor',
+  documentId: 'Canavas',
 };

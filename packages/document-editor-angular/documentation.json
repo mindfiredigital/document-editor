@@ -1,0 +1,2678 @@
+{
+  "pipes": [],
+  "interfaces": [
+    {
+      "name": "DocumentState",
+      "id": "interface-DocumentState-a6da1089a6dd2d19c7eac54a35b3fa6a13508f44e512cd1cf6f4f1d1237a1e84a1d92a280c984c766426763dd77a916640a815a1689e9fa738b0a9ded6dcd5cf",
+      "file": "projects/my-canvas-lib/src/lib/store/document.state.ts",
+      "deprecated": false,
+      "deprecationMessage": "",
+      "type": "interface",
+      "sourceCode": "export interface DocumentState {\n    documentId: string;\n    title: string;\n    reloadRecentDoc: boolean;\n    margins: number[];\n  }\n  \n  export const initialState: DocumentState = {\n    documentId: '',\n    title: '',\n    reloadRecentDoc: false,\n    margins: []\n  };",
+      "properties": [
+        {
+          "name": "documentId",
+          "deprecated": false,
+          "deprecationMessage": "",
+          "type": "string",
+          "optional": false,
+          "description": "",
+          "line": 2
+        },
+        {
+          "name": "margins",
+          "deprecated": false,
+          "deprecationMessage": "",
+          "type": "number[]",
+          "optional": false,
+          "description": "",
+          "line": 5
+        },
+        {
+          "name": "reloadRecentDoc",
+          "deprecated": false,
+          "deprecationMessage": "",
+          "type": "boolean",
+          "optional": false,
+          "description": "",
+          "line": 4
+        },
+        {
+          "name": "title",
+          "deprecated": false,
+          "deprecationMessage": "",
+          "type": "string",
+          "optional": false,
+          "description": "",
+          "line": 3
+        }
+      ],
+      "indexSignatures": [],
+      "kind": 165,
+      "methods": []
+    },
+    {
+      "name": "DocumentState",
+      "id": "interface-DocumentState-df0bdbef4b10f9925b80c6d9cacd7064bae5ce1363d3a224cdbd7d18646b12f790bc8569b029d77ab9203b3701d641e80dfed6a7ca00a653036e7ebf79105d21-1",
+      "file": "projects/my-canvas-lib/src/lib/components/util/documentReducer.ts",
+      "deprecated": false,
+      "deprecationMessage": "",
+      "type": "interface",
+      "sourceCode": "import { BehaviorSubject } from 'rxjs';\nimport { distinctUntilChanged } from 'rxjs/operators';\n\nexport interface DocumentState {\n  documentId: string;\n  title: string;\n  reloadRecentDoc: boolean;\n  margins: number[];\n}",
+      "properties": [
+        {
+          "name": "documentId",
+          "deprecated": false,
+          "deprecationMessage": "",
+          "type": "string",
+          "optional": false,
+          "description": "",
+          "line": 5
+        },
+        {
+          "name": "margins",
+          "deprecated": false,
+          "deprecationMessage": "",
+          "type": "number[]",
+          "optional": false,
+          "description": "",
+          "line": 8
+        },
+        {
+          "name": "reloadRecentDoc",
+          "deprecated": false,
+          "deprecationMessage": "",
+          "type": "boolean",
+          "optional": false,
+          "description": "",
+          "line": 7
+        },
+        {
+          "name": "title",
+          "deprecated": false,
+          "deprecationMessage": "",
+          "type": "string",
+          "optional": false,
+          "description": "",
+          "line": 6
+        }
+      ],
+      "indexSignatures": [],
+      "kind": 165,
+      "methods": [],
+      "isDuplicate": true,
+      "duplicateId": 1,
+      "duplicateName": "DocumentState-1"
+    }
+  ],
+  "injectables": [
+    {
+      "name": "DocumentReducerService",
+      "id": "injectable-DocumentReducerService-75f98338c72d237913972607445aaf4a426e8f576aa132667d28ca7db19b5b37b5ee0cd709ef1c8d3c66a7e8379e01f99c47c97adeda8a83eca5bedfe70a77aa",
+      "file": "projects/my-canvas-lib/src/lib/components/util/document-reducer.service.ts",
+      "properties": [
+        {
+          "name": "documentSubject",
+          "defaultValue": "new BehaviorSubject<DocumentState>(\n    this.initialState\n  )",
+          "deprecated": false,
+          "deprecationMessage": "",
+          "type": "",
+          "optional": false,
+          "description": "",
+          "line": 16,
+          "modifierKind": [121]
+        },
+        {
+          "name": "initialState",
+          "defaultValue": "{\n    documentId: '',\n    title: '',\n    reloadRecentDoc: false,\n    margins: [],\n  }",
+          "deprecated": false,
+          "deprecationMessage": "",
+          "type": "DocumentState",
+          "optional": false,
+          "description": "",
+          "line": 9
+        }
+      ],
+      "methods": [
+        {
+          "name": "getDocumentState",
+          "args": [],
+          "optional": false,
+          "returnType": "any",
+          "typeParameters": [],
+          "line": 22,
+          "deprecated": false,
+          "deprecationMessage": ""
+        },
+        {
+          "name": "reloadRecentDoc",
+          "args": [
+            {
+              "name": "reload",
+              "type": "boolean",
+              "deprecated": false,
+              "deprecationMessage": ""
+            }
+          ],
+          "optional": false,
+          "returnType": "void",
+          "typeParameters": [],
+          "line": 34,
+          "deprecated": false,
+          "deprecationMessage": "",
+          "jsdoctags": [
+            {
+              "name": "reload",
+              "type": "boolean",
+              "deprecated": false,
+              "deprecationMessage": "",
+              "tagName": {
+                "text": "param"
+              }
+            }
+          ]
+        },
+        {
+          "name": "setDocumentId",
+          "args": [
+            {
+              "name": "documentId",
+              "type": "string",
+              "deprecated": false,
+              "deprecationMessage": ""
+            }
+          ],
+          "optional": false,
+          "returnType": "void",
+          "typeParameters": [],
+          "line": 45,
+          "deprecated": false,
+          "deprecationMessage": "",
+          "jsdoctags": [
+            {
+              "name": "documentId",
+              "type": "string",
+              "deprecated": false,
+              "deprecationMessage": "",
+              "tagName": {
+                "text": "param"
+              }
+            }
+          ]
+        },
+        {
+          "name": "setDocumentMargins",
+          "args": [
+            {
+              "name": "margins",
+              "type": "any",
+              "deprecated": false,
+              "deprecationMessage": ""
+            }
+          ],
+          "optional": false,
+          "returnType": "void",
+          "typeParameters": [],
+          "line": 41,
+          "deprecated": false,
+          "deprecationMessage": "",
+          "jsdoctags": [
+            {
+              "name": "margins",
+              "type": "any",
+              "deprecated": false,
+              "deprecationMessage": "",
+              "tagName": {
+                "text": "param"
+              }
+            }
+          ]
+        },
+        {
+          "name": "setDocumentTitle",
+          "args": [
+            {
+              "name": "title",
+              "type": "string",
+              "deprecated": false,
+              "deprecationMessage": ""
+            }
+          ],
+          "optional": false,
+          "returnType": "void",
+          "typeParameters": [],
+          "line": 30,
+          "deprecated": false,
+          "deprecationMessage": "",
+          "jsdoctags": [
+            {
+              "name": "title",
+              "type": "string",
+              "deprecated": false,
+              "deprecationMessage": "",
+              "tagName": {
+                "text": "param"
+              }
+            }
+          ]
+        }
+      ],
+      "deprecated": false,
+      "deprecationMessage": "",
+      "description": "",
+      "rawdescription": "\n",
+      "sourceCode": "import { Injectable } from '@angular/core';\nimport { BehaviorSubject } from 'rxjs';\nimport { DocumentState } from './documentReducer';\n\n@Injectable({\n  providedIn: 'root',\n})\nexport class DocumentReducerService {\n  initialState: DocumentState = {\n    documentId: '',\n    title: '',\n    reloadRecentDoc: false,\n    margins: [],\n  };\n\n  private documentSubject = new BehaviorSubject<DocumentState>(\n    this.initialState\n  );\n\n  constructor() {}\n\n  getDocumentState() {\n    return this.documentSubject\n      .asObservable()\n      .pipe\n      // distinctUntilChanged() // Ensure only distinct state changes are emitted\n      ();\n  }\n\n  setDocumentTitle(title: string) {\n    this.documentSubject.next({ ...this.documentSubject.value, title });\n  }\n\n  reloadRecentDoc(reload: boolean) {\n    this.documentSubject.next({\n      ...this.documentSubject.value,\n      reloadRecentDoc: reload,\n    });\n  }\n\n  setDocumentMargins(margins: any) {\n    this.documentSubject.next({ ...this.documentSubject.value, margins });\n  }\n\n  setDocumentId(documentId: string) {\n    this.documentSubject.next({ ...this.documentSubject.value, documentId });\n  }\n}\n",
+      "constructorObj": {
+        "name": "constructor",
+        "description": "",
+        "deprecated": false,
+        "deprecationMessage": "",
+        "args": [],
+        "line": 18
+      },
+      "type": "injectable"
+    },
+    {
+      "name": "DocumentService",
+      "id": "injectable-DocumentService-9cc21b65b2192b2fde2864c6c55f7bc37220e7c2fcfaf417e13ea621d98e7205fdd27fff44be77dddf739b9b7c2454f1980e25dd1a506096bed63e8eed157224",
+      "file": "projects/my-canvas-lib/src/lib/services/document.service.ts",
+      "properties": [
+        {
+          "name": "margins$",
+          "defaultValue": "this.marginsSource.asObservable()",
+          "deprecated": false,
+          "deprecationMessage": "",
+          "type": "",
+          "optional": false,
+          "description": "",
+          "line": 10
+        },
+        {
+          "name": "marginsSource",
+          "defaultValue": "new BehaviorSubject<number[]>([100, 956, 120, 696])",
+          "deprecated": false,
+          "deprecationMessage": "",
+          "type": "",
+          "optional": false,
+          "description": "",
+          "line": 9,
+          "modifierKind": [121]
+        }
+      ],
+      "methods": [
+        {
+          "name": "getPaperMargins",
+          "args": [],
+          "optional": false,
+          "returnType": "number[]",
+          "typeParameters": [],
+          "line": 13,
+          "deprecated": false,
+          "deprecationMessage": ""
+        },
+        {
+          "name": "setPaperMargins",
+          "args": [
+            {
+              "name": "margins",
+              "type": "number[]",
+              "deprecated": false,
+              "deprecationMessage": ""
+            }
+          ],
+          "optional": false,
+          "returnType": "void",
+          "typeParameters": [],
+          "line": 18,
+          "deprecated": false,
+          "deprecationMessage": "",
+          "jsdoctags": [
+            {
+              "name": "margins",
+              "type": "number[]",
+              "deprecated": false,
+              "deprecationMessage": "",
+              "tagName": {
+                "text": "param"
+              }
+            }
+          ]
+        }
+      ],
+      "deprecated": false,
+      "deprecationMessage": "",
+      "description": "",
+      "rawdescription": "\n",
+      "sourceCode": "import { Injectable } from '@angular/core';\nimport { BehaviorSubject } from 'rxjs';\nimport { DOMEventHandlers } from '@mindfiredigital/canvas-editor'; // Import the library\n\n@Injectable({\n  providedIn: 'root',\n})\nexport class DocumentService {\n  private marginsSource = new BehaviorSubject<number[]>([100, 956, 120, 696]);\n  margins$ = this.marginsSource.asObservable();\n\n  // Get margins for a specific document\n  getPaperMargins(): number[] {\n    return this.marginsSource.value;\n  }\n\n  // Set margins using the external DOMEventHandlers.setPaperMargins function\n  setPaperMargins(margins: number[]): void {\n    DOMEventHandlers.setPaperMargins(margins); \n    this.marginsSource.next(margins);\n  }\n}\n",
+      "type": "injectable"
+    },
+    {
+      "name": "MyLibService",
+      "id": "injectable-MyLibService-870d9838ce65e43548d0594926e5cdae512a2633198199504d4b29a9fae2db2888e7c381da0d7dee938ff9871e02f9c2dc398222e53eefb6503b152b71a23cf9",
+      "file": "projects/my-canvas-lib/src/lib/my-lib.service.ts",
+      "properties": [],
+      "methods": [],
+      "deprecated": false,
+      "deprecationMessage": "",
+      "description": "",
+      "rawdescription": "\n",
+      "sourceCode": "import { Injectable } from '@angular/core';\n\n@Injectable({\n  providedIn: 'root'\n})\nexport class MyLibService {\n\n  constructor() { }\n}\n",
+      "constructorObj": {
+        "name": "constructor",
+        "description": "",
+        "deprecated": false,
+        "deprecationMessage": "",
+        "args": [],
+        "line": 6
+      },
+      "type": "injectable"
+    }
+  ],
+  "guards": [],
+  "interceptors": [],
+  "classes": [],
+  "directives": [],
+  "components": [
+    {
+      "name": "ButtonWrapperComponent",
+      "id": "component-ButtonWrapperComponent-35af370208cea7b29bcf58d01ccab939ad888e5540f938b7ffc169f36b62f6b78e02dd050a3461f8e0c78787786b8ccc9ceb03e76966b0534ed1890f3d7ae60e",
+      "file": "projects/my-canvas-lib/src/lib/components/button-wrapper/button-wrapper.component.ts",
+      "encapsulation": [],
+      "entryComponents": [],
+      "inputs": [],
+      "outputs": [],
+      "providers": [],
+      "selector": "lib-button-wrapper",
+      "styleUrls": [],
+      "styles": [],
+      "templateUrl": ["./button-wrapper.component.html"],
+      "viewProviders": [],
+      "inputsClass": [
+        {
+          "name": "title",
+          "defaultValue": "''",
+          "deprecated": false,
+          "deprecationMessage": "",
+          "line": 11,
+          "type": "string",
+          "decorators": []
+        }
+      ],
+      "outputsClass": [
+        {
+          "name": "handleClick",
+          "defaultValue": "new EventEmitter<void>()",
+          "deprecated": false,
+          "deprecationMessage": "",
+          "line": 12,
+          "type": "EventEmitter<void>"
+        }
+      ],
+      "propertiesClass": [],
+      "methodsClass": [],
+      "deprecated": false,
+      "deprecationMessage": "",
+      "hostBindings": [],
+      "hostListeners": [],
+      "description": "",
+      "rawdescription": "\n",
+      "type": "component",
+      "sourceCode": "import { Component, EventEmitter, Input, Output } from '@angular/core';\n\n@Component({\n  selector: 'lib-button-wrapper',\n  standalone: true,\n  imports: [],\n  templateUrl: './button-wrapper.component.html',\n  styleUrl: './button-wrapper.component.css',\n})\nexport class ButtonWrapperComponent {\n  @Input() title: string = '';\n  @Output() handleClick: EventEmitter<void> = new EventEmitter<void>();\n}\n",
+      "styleUrl": "./button-wrapper.component.css",
+      "assetsDirs": [],
+      "styleUrlsData": "",
+      "stylesData": "",
+      "templateData": ""
+    },
+    {
+      "name": "CanvasEditorComponent",
+      "id": "component-CanvasEditorComponent-c9329169e7a45c1ddadd3550138247373214ba826684b5e350c233a0f76fc5e75e42756f85220b0a1a0d9aafd37d73249dd3410dbb09e4edf88ea9a737dfd4eb",
+      "file": "projects/my-canvas-lib/src/lib/components/canvas-editor/canvas-editor.component.ts",
+      "encapsulation": [],
+      "entryComponents": [],
+      "inputs": [],
+      "outputs": [],
+      "providers": [],
+      "selector": "lib-canvas-editor",
+      "styleUrls": [],
+      "styles": [],
+      "templateUrl": ["./canvas-editor.component.html"],
+      "viewProviders": [],
+      "inputsClass": [],
+      "outputsClass": [],
+      "propertiesClass": [
+        {
+          "name": "canvasEditorRef",
+          "deprecated": false,
+          "deprecationMessage": "",
+          "type": "any",
+          "optional": false,
+          "description": "",
+          "line": 17
+        },
+        {
+          "name": "documentId",
+          "defaultValue": "'0'",
+          "deprecated": false,
+          "deprecationMessage": "",
+          "type": "string",
+          "optional": false,
+          "description": "",
+          "line": 16
+        },
+        {
+          "name": "dropdown",
+          "defaultValue": "{\n    left: 1180,\n    top: 250,\n    visiblity: false,\n  }",
+          "deprecated": false,
+          "deprecationMessage": "",
+          "type": "object",
+          "optional": false,
+          "description": "",
+          "line": 18
+        },
+        {
+          "name": "editorContent",
+          "defaultValue": "[]",
+          "deprecated": false,
+          "deprecationMessage": "",
+          "type": "any",
+          "optional": false,
+          "description": "",
+          "line": 23
+        },
+        {
+          "name": "instance",
+          "deprecated": false,
+          "deprecationMessage": "",
+          "type": "any",
+          "optional": false,
+          "description": "",
+          "line": 26
+        },
+        {
+          "name": "props",
+          "defaultValue": "{}",
+          "deprecated": false,
+          "deprecationMessage": "",
+          "type": "any",
+          "optional": false,
+          "description": "",
+          "line": 15
+        },
+        {
+          "name": "selectedText",
+          "defaultValue": "''",
+          "deprecated": false,
+          "deprecationMessage": "",
+          "type": "string",
+          "optional": false,
+          "description": "",
+          "line": 25
+        }
+      ],
+      "methodsClass": [
+        {
+          "name": "ngOnInit",
+          "args": [],
+          "optional": false,
+          "returnType": "void",
+          "typeParameters": [],
+          "line": 29,
+          "deprecated": false,
+          "deprecationMessage": ""
+        }
+      ],
+      "deprecated": false,
+      "deprecationMessage": "",
+      "hostBindings": [],
+      "hostListeners": [],
+      "description": "",
+      "rawdescription": "\n",
+      "type": "component",
+      "sourceCode": "import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';\n// import all necessary\n\nimport { MarginRulerComponent } from '../margin-ruler/margin-ruler.component';\nimport { DOMEventHandlers, EditorMode, PageMode } from '@mindfiredigital/canvas-editor';\n\n@Component({\n  selector: 'lib-canvas-editor',\n  standalone: true,\n  imports: [MarginRulerComponent],\n  templateUrl: './canvas-editor.component.html',\n  styleUrl: './canvas-editor.component.css',\n})\nexport class CanvasEditorComponent implements OnInit {\n  props: any = {};\n  documentId: string = '0';\n  canvasEditorRef: any;\n  dropdown = {\n    left: 1180,\n    top: 250,\n    visiblity: false,\n  };\n  editorContent: any = [];\n\n  selectedText = '';\n  instance: any;\n  constructor() {}\n\n  ngOnInit(): void {\n    const container = document.querySelector(\n      '.canvas-editor'\n    ) as HTMLDivElement;\n\n    if (container.querySelector('[editor-component=\"main\"]')) {\n      return;\n    }\n\n    const editorOptions = {\n      height: 1056,\n      width: 816,\n      mode: EditorMode.EDIT,\n      pageMode: PageMode.PAGING,\n      pageNumber: {\n        format: '{pageNo}/{pageCount}',\n      },\n      minSize: 1,\n      maxSize: 72,\n    };\n\n    // container.addEventListener('mouseup', (e) => {\n    //   _props.onSelect && _props?.onSelect(DOMEventHandlers.getSelectedText());\n    // })\n\n    // container.addEventListener('keydown', (e) => {\n    //   const text = DOMEventHandlers.getContent()?.data?.main;\n    //   setEditorContent(text);\n    //   _props?.onChange && _props?.onChange(text[0].value);\n    // })\n    DOMEventHandlers?.register(container, this.editorContent, {});\n    DOMEventHandlers?.setContent({ main: [{ value: 'hello' }] });\n  }\n}\n",
+      "styleUrl": "./canvas-editor.component.css",
+      "assetsDirs": [],
+      "styleUrlsData": "",
+      "stylesData": "",
+      "constructorObj": {
+        "name": "constructor",
+        "description": "",
+        "deprecated": false,
+        "deprecationMessage": "",
+        "args": [],
+        "line": 26
+      },
+      "implements": ["OnInit"],
+      "templateData": "<div class=\"canvas-editor-main\">\n  <div class=\"canvas-editor editor\" id=\"canvasEditorRef\">\n    <!-- <lib-margin-ruler [documentId]=\"documentId\"></lib-margin-ruler> -->\n  </div>\n</div>"
+    },
+    {
+      "name": "ColorPaletteComponent",
+      "id": "component-ColorPaletteComponent-8f49e8e6b80748dd9e694f5a81ce88d3eb0cb7007c93a8d9b73808567394353986596979841b2133d8b3c38bd9e41836688761be733885ad84ceec361da58eeb",
+      "file": "projects/my-canvas-lib/src/lib/components/color-palette/color-palette.component.ts",
+      "encapsulation": [],
+      "entryComponents": [],
+      "inputs": [],
+      "outputs": [],
+      "providers": [],
+      "selector": "app-color-palette",
+      "styleUrls": ["./color-palette.component.css"],
+      "styles": [],
+      "templateUrl": ["./color-palette.component.html"],
+      "viewProviders": [],
+      "inputsClass": [],
+      "outputsClass": [],
+      "propertiesClass": [],
+      "methodsClass": [],
+      "deprecated": false,
+      "deprecationMessage": "",
+      "hostBindings": [],
+      "hostListeners": [],
+      "description": "",
+      "rawdescription": "\n",
+      "type": "component",
+      "sourceCode": "import { Component } from '@angular/core';\n\n@Component({\n  selector: 'app-color-palette',\n  templateUrl: './color-palette.component.html',\n  styleUrls: ['./color-palette.component.css']\n})\nexport class ColorPaletteComponent {\n\n}\n",
+      "assetsDirs": [],
+      "styleUrlsData": [
+        {
+          "data": ".palette-grid {\n  width: 14.1rem;\n  display: flex;\n  flex-wrap: wrap;\n  padding: 10px;\n}\n\n.palette-item {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  height: 1.4rem;\n  width: 1.4rem;\n  margin: 2px;\n}\n\n.palette-circle {\n  width: .7rem;\n  height: .7rem;\n  border-radius: 50%;\n  cursor: pointer;\n  padding: 4px;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n}\n\n.selected {\n  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);\n}\n\n.custom-colors-label {\n  margin: 0 10px;\n}\n\n.custom-colors-container {\n  display: flex;\n  margin: 8px 10px;\n}\n",
+          "styleUrl": "./color-palette.component.css"
+        }
+      ],
+      "stylesData": "",
+      "templateData": "<!-- <ng-container>\n    <mat-popover\n      [open]=\"!!anchorEl\"\n      [anchorEl]=\"anchorEl\"\n      (close)=\"onClose()\"\n      [anchorOrigin]=\"{ vertical: 'bottom', horizontal: 'center' }\"\n      [transformOrigin]=\"{ vertical: 'top', horizontal: 'center' }\"\n    >\n      <div class=\"palette-grid\">\n        <div *ngFor=\"let color of colors; let i = index\" class=\"palette-item\">\n          <div\n            class=\"palette-circle\"\n            [ngStyle]=\"{ 'background-color': color }\"\n            (click)=\"handleColor(color)\"\n            [ngClass]=\"{ 'selected': color === definedColor }\"\n          >\n            <mat-icon *ngIf=\"color === definedColor\">check</mat-icon>\n          </div>\n        </div>\n      </div>\n  \n      <div class=\"custom-colors-label\">\n        <mat-typography variant=\"body2\" class=\"bold\">CUSTOM</mat-typography>\n      </div>\n  \n      <div class=\"custom-colors-container\">\n        <div *ngFor=\"let color of customColors\" class=\"palette-item\">\n          <div\n            class=\"palette-circle\"\n            [ngStyle]=\"{ 'background-color': color }\"\n            (click)=\"handleColor(color)\"\n            [ngClass]=\"{ 'selected': color === definedColor }\"\n          >\n            <mat-icon *ngIf=\"color === definedColor\">check</mat-icon>\n          </div>\n        </div>\n  \n        <button mat-icon-button (click)=\"handleClick($event)\">\n          <mat-icon>color_lens</mat-icon>\n        </button>\n      </div>\n    </mat-popover>\n  \n    <app-color-picker\n      *ngIf=\"colorPickerAnchor\"\n      [anchorEl]=\"colorPickerAnchor\"\n      [color]=\"definedColor\"\n      [feature]=\"feature\"\n      (close)=\"colorPickerHandleClose()\"\n    ></app-color-picker>\n  </ng-container>\n   -->"
+    },
+    {
+      "name": "CustomSliderHorizontalComponent",
+      "id": "component-CustomSliderHorizontalComponent-fb28a2af05fec177ee64ab5b5d36e8a681ffab3585db80d2ac3e6b8c10c4e079549cc652ff5266a560b5e6a8b4d353784e71fdbceb4e4952a83a5fa7da2628b4",
+      "file": "projects/my-canvas-lib/src/lib/components/margin-ruler/custom-slider-horizontal/custom-slider-horizontal.component.ts",
+      "encapsulation": [],
+      "entryComponents": [],
+      "inputs": [],
+      "outputs": [],
+      "providers": [],
+      "selector": "lib-custom-slider-horizontal",
+      "styleUrls": [],
+      "styles": [],
+      "templateUrl": ["./custom-slider-horizontal.component.html"],
+      "viewProviders": [],
+      "inputsClass": [],
+      "outputsClass": [],
+      "propertiesClass": [
+        {
+          "name": "horizontalMarks",
+          "defaultValue": "new Array(9)\n    .fill(0)\n    .map((ob, i) => ({ value: i * 96, label: i }))",
+          "deprecated": false,
+          "deprecationMessage": "",
+          "type": "",
+          "optional": false,
+          "description": "",
+          "line": 15
+        },
+        {
+          "name": "value",
+          "defaultValue": "new FormControl(0)",
+          "deprecated": false,
+          "deprecationMessage": "",
+          "type": "",
+          "optional": false,
+          "description": "",
+          "line": 14
+        }
+      ],
+      "methodsClass": [
+        {
+          "name": "onInputChange",
+          "args": [
+            {
+              "name": "event",
+              "type": "any",
+              "deprecated": false,
+              "deprecationMessage": ""
+            }
+          ],
+          "optional": false,
+          "returnType": "void",
+          "typeParameters": [],
+          "line": 21,
+          "deprecated": false,
+          "deprecationMessage": "",
+          "jsdoctags": [
+            {
+              "name": "event",
+              "type": "any",
+              "deprecated": false,
+              "deprecationMessage": "",
+              "tagName": {
+                "text": "param"
+              }
+            }
+          ]
+        }
+      ],
+      "deprecated": false,
+      "deprecationMessage": "",
+      "hostBindings": [],
+      "hostListeners": [],
+      "description": "",
+      "rawdescription": "\n",
+      "type": "component",
+      "sourceCode": "import { CommonModule } from '@angular/common';\nimport { Component } from '@angular/core';\nimport { FormControl } from '@angular/forms';\nimport { MatSliderModule } from '@angular/material/slider';\n\n@Component({\n  selector: 'lib-custom-slider-horizontal',\n  standalone: true,\n  imports: [MatSliderModule,CommonModule],\n  templateUrl: './custom-slider-horizontal.component.html',\n  styleUrl: './custom-slider-horizontal.component.css',\n})\nexport class CustomSliderHorizontalComponent {\n  value = new FormControl(0);\n  horizontalMarks = new Array(9)\n    .fill(0)\n    .map((ob, i) => ({ value: i * 96, label: i }));\n\n  constructor() {}\n\n  onInputChange(event: any) {\n    this.value.setValue(event.value);\n  }\n}\n",
+      "styleUrl": "./custom-slider-horizontal.component.css",
+      "assetsDirs": [],
+      "styleUrlsData": "",
+      "stylesData": "",
+      "constructorObj": {
+        "name": "constructor",
+        "description": "",
+        "deprecated": false,
+        "deprecationMessage": "",
+        "args": [],
+        "line": 17
+      },
+      "templateData": "<!-- <div class='ruler'>\n  <div class='cm' *ngFor=\"let i of [].constructor(11); let index = index\">\n    <div class='mm' *ngFor=\"let j of [].constructor(9)\"></div>\n  </div>\n</div> -->\n"
+    },
+    {
+      "name": "CustomSliderVerticalComponent",
+      "id": "component-CustomSliderVerticalComponent-f10669403b5401476cd22243c38982c1dac662328215dc60f6f442d151140329ce86fcd129221e186f4d3f83aaee40349cc61114ab19b8bdb0ed7a0f00bd9557",
+      "file": "projects/my-canvas-lib/src/lib/components/margin-ruler/custom-slider-vertical/custom-slider-vertical.component.ts",
+      "encapsulation": [],
+      "entryComponents": [],
+      "inputs": [],
+      "outputs": [],
+      "providers": [],
+      "selector": "lib-custom-slider-vertical",
+      "styleUrls": [],
+      "styles": [],
+      "templateUrl": ["./custom-slider-vertical.component.html"],
+      "viewProviders": [],
+      "inputsClass": [],
+      "outputsClass": [],
+      "propertiesClass": [
+        {
+          "name": "value",
+          "defaultValue": "new FormControl(0)",
+          "deprecated": false,
+          "deprecationMessage": "",
+          "type": "",
+          "optional": false,
+          "description": "",
+          "line": 13
+        },
+        {
+          "name": "verticalMarks",
+          "defaultValue": "new Array(12)\n    .fill(0)\n    .map((ob, i) => ({ value: -i * 96, label: i }))",
+          "deprecated": false,
+          "deprecationMessage": "",
+          "type": "",
+          "optional": false,
+          "description": "",
+          "line": 14
+        }
+      ],
+      "methodsClass": [
+        {
+          "name": "onInputChange",
+          "args": [
+            {
+              "name": "event",
+              "type": "any",
+              "deprecated": false,
+              "deprecationMessage": ""
+            }
+          ],
+          "optional": false,
+          "returnType": "void",
+          "typeParameters": [],
+          "line": 20,
+          "deprecated": false,
+          "deprecationMessage": "",
+          "jsdoctags": [
+            {
+              "name": "event",
+              "type": "any",
+              "deprecated": false,
+              "deprecationMessage": "",
+              "tagName": {
+                "text": "param"
+              }
+            }
+          ]
+        }
+      ],
+      "deprecated": false,
+      "deprecationMessage": "",
+      "hostBindings": [],
+      "hostListeners": [],
+      "description": "",
+      "rawdescription": "\n",
+      "type": "component",
+      "sourceCode": "import { Component } from '@angular/core';\nimport { FormControl } from '@angular/forms';\nimport { MatSliderModule } from '@angular/material/slider';\n\n@Component({\n  selector: 'lib-custom-slider-vertical',\n  standalone: true,\n  imports: [MatSliderModule],\n  templateUrl: './custom-slider-vertical.component.html',\n  styleUrl: './custom-slider-vertical.component.css',\n})\nexport class CustomSliderVerticalComponent {\n  value = new FormControl(0);\n  verticalMarks = new Array(12)\n    .fill(0)\n    .map((ob, i) => ({ value: -i * 96, label: i }));\n\n  constructor() {}\n\n  onInputChange(event: any) {\n    this.value.setValue(event.value);\n  }\n}\n",
+      "styleUrl": "./custom-slider-vertical.component.css",
+      "assetsDirs": [],
+      "styleUrlsData": "",
+      "stylesData": "",
+      "constructorObj": {
+        "name": "constructor",
+        "description": "",
+        "deprecated": false,
+        "deprecationMessage": "",
+        "args": [],
+        "line": 16
+      },
+      "templateData": "<!-- <mat-slider [min]=\"-1152\" [max]=\"0\" [step]=\"96\" [vertical]=\"true\" [invert]=\"true\"\n            [thumbLabel]=\"true\" [value]=\"value.value\" [tickInterval]=\"96\"\n            (input)=\"onInputChange($event)\">\n</mat-slider> -->\n"
+    },
+    {
+      "name": "EditorFooterComponent",
+      "id": "component-EditorFooterComponent-2d26021f9a438b301feeffec5ab566f79f0fee5730bcdb740a88c81db7fc25f4bda76393eeb18d701693235faa2bdc324f73f3f74a8341cae338877f6b983b1a",
+      "file": "projects/my-canvas-lib/src/lib/components/editor-footer/editor-footer.component.ts",
+      "encapsulation": [],
+      "entryComponents": [],
+      "inputs": [],
+      "outputs": [],
+      "providers": [],
+      "selector": "lib-editor-footer",
+      "styleUrls": [],
+      "styles": [],
+      "templateUrl": ["./editor-footer.component.html"],
+      "viewProviders": [],
+      "inputsClass": [],
+      "outputsClass": [],
+      "propertiesClass": [],
+      "methodsClass": [],
+      "deprecated": false,
+      "deprecationMessage": "",
+      "hostBindings": [],
+      "hostListeners": [],
+      "description": "",
+      "rawdescription": "\n",
+      "type": "component",
+      "sourceCode": "import { Component } from '@angular/core';\nimport { MatToolbarModule } from '@angular/material/toolbar';\nimport { EditorMarginComponent } from '../editor-margin/editor-margin.component';\n@Component({\n  selector: 'lib-editor-footer',\n  standalone: true,\n  imports: [MatToolbarModule,EditorMarginComponent],\n  templateUrl: './editor-footer.component.html',\n  styleUrl: './editor-footer.component.css',\n})\nexport class EditorFooterComponent {}\n",
+      "styleUrl": "./editor-footer.component.css",
+      "assetsDirs": [],
+      "styleUrlsData": "",
+      "stylesData": "",
+      "templateData": "<mat-toolbar color=\"primary\">\n    <mat-toolbar-row>\n      <span class=\"spacer\"></span>\n      <app-editor-margin></app-editor-margin> \n    </mat-toolbar-row>\n  </mat-toolbar>\n  "
+    },
+    {
+      "name": "EditorMarginComponent",
+      "id": "component-EditorMarginComponent-f17584da6a565658101d553447713cab23a1eed2fedae6267100117f8f5a9c94d9e7f372c2ac86a0540ca1b5c9a7dff5014116a91cb9eeb9f329cf906f45c8cb",
+      "file": "projects/my-canvas-lib/src/lib/components/editor-margin/editor-margin.component.ts",
+      "encapsulation": [],
+      "entryComponents": [],
+      "inputs": [],
+      "outputs": [],
+      "providers": [],
+      "selector": "app-editor-margin",
+      "styleUrls": ["./editor-margin.component.css"],
+      "styles": [],
+      "templateUrl": ["./editor-margin.component.html"],
+      "viewProviders": [],
+      "inputsClass": [],
+      "outputsClass": [],
+      "propertiesClass": [
+        {
+          "name": "dialog",
+          "deprecated": false,
+          "deprecationMessage": "",
+          "type": "MatDialog",
+          "optional": false,
+          "description": "",
+          "line": 29,
+          "modifierKind": [123]
+        },
+        {
+          "name": "documentId",
+          "defaultValue": "'123'",
+          "deprecated": false,
+          "deprecationMessage": "",
+          "type": "string",
+          "optional": false,
+          "description": "",
+          "line": 25
+        },
+        {
+          "name": "marginsForm",
+          "deprecated": false,
+          "deprecationMessage": "",
+          "type": "FormGroup",
+          "optional": false,
+          "description": "",
+          "line": 24
+        }
+      ],
+      "methodsClass": [
+        {
+          "name": "ngOnInit",
+          "args": [],
+          "optional": false,
+          "returnType": "void",
+          "typeParameters": [],
+          "line": 40,
+          "deprecated": false,
+          "deprecationMessage": ""
+        },
+        {
+          "name": "openDialog",
+          "args": [],
+          "optional": false,
+          "returnType": "void",
+          "typeParameters": [],
+          "line": 54,
+          "deprecated": false,
+          "deprecationMessage": ""
+        }
+      ],
+      "deprecated": false,
+      "deprecationMessage": "",
+      "hostBindings": [],
+      "hostListeners": [],
+      "description": "",
+      "rawdescription": "\n",
+      "type": "component",
+      "sourceCode": "import { Component, OnInit } from '@angular/core';\nimport { MatDialog, MatDialogModule } from '@angular/material/dialog';\nimport { FormBuilder, FormGroup, ReactiveFormsModule } from '@angular/forms';\nimport { debounceTime } from 'rxjs/operators';\nimport { DocumentService } from '../../services/document.service';\nimport { MarginDialogComponent } from './margin-modal/margin-dialog.component';\nimport { MatButtonModule } from '@angular/material/button';\nimport { MatIconModule } from '@angular/material/icon';\nimport { MatFormFieldModule } from '@angular/material/form-field';\nimport { MatInputModule } from '@angular/material/input';\n@Component({\n  selector: 'app-editor-margin',\n  templateUrl: './editor-margin.component.html',\n  styleUrls: ['./editor-margin.component.css'],\n  standalone: true,\n  imports: [MatDialogModule,\n    MatButtonModule,\n    MatFormFieldModule,\n    MatInputModule,\n    ReactiveFormsModule,\n    MatIconModule]\n})\nexport class EditorMarginComponent implements OnInit {\n  marginsForm: FormGroup;\n  documentId: string = '123';  // Simulated document ID, you can get this dynamically\n\n  constructor(\n    private fb: FormBuilder,\n    public dialog: MatDialog,\n    private documentService: DocumentService\n  ) {\n    this.marginsForm = this.fb.group({\n      top: [0],\n      bottom: [0],\n      left: [0],\n      right: [0]\n    });\n  }\n\n  ngOnInit() {\n    // Fetch the margins state on load\n    this.documentService.margins$.subscribe(margins => {\n      this.marginsForm.patchValue(margins);\n    });\n\n    // Debounce form changes before saving\n    this.marginsForm.valueChanges\n      .pipe(debounceTime(500))\n      .subscribe(margins => {\n        this.documentService.setPaperMargins(margins);\n      });\n  }\n\n  openDialog(): void {\n    const dialogRef = this.dialog.open(MarginDialogComponent, {\n      width: '300px',\n      data: { margins: this.marginsForm.value }\n    });\n\n    dialogRef.afterClosed().subscribe(result => {\n      if (result) {\n        this.marginsForm.setValue(result);\n      }\n    });\n  }\n}\n",
+      "assetsDirs": [],
+      "styleUrlsData": [
+        {
+          "data": "",
+          "styleUrl": "./editor-margin.component.css"
+        }
+      ],
+      "stylesData": "",
+      "constructorObj": {
+        "name": "constructor",
+        "description": "",
+        "deprecated": false,
+        "deprecationMessage": "",
+        "args": [
+          {
+            "name": "fb",
+            "type": "FormBuilder",
+            "deprecated": false,
+            "deprecationMessage": ""
+          },
+          {
+            "name": "dialog",
+            "type": "MatDialog",
+            "deprecated": false,
+            "deprecationMessage": ""
+          },
+          {
+            "name": "documentService",
+            "type": "DocumentService",
+            "deprecated": false,
+            "deprecationMessage": ""
+          }
+        ],
+        "line": 25,
+        "jsdoctags": [
+          {
+            "name": "fb",
+            "type": "FormBuilder",
+            "deprecated": false,
+            "deprecationMessage": "",
+            "tagName": {
+              "text": "param"
+            }
+          },
+          {
+            "name": "dialog",
+            "type": "MatDialog",
+            "deprecated": false,
+            "deprecationMessage": "",
+            "tagName": {
+              "text": "param"
+            }
+          },
+          {
+            "name": "documentService",
+            "type": "DocumentService",
+            "deprecated": false,
+            "deprecationMessage": "",
+            "tagName": {
+              "text": "param"
+            }
+          }
+        ]
+      },
+      "implements": ["OnInit"],
+      "templateData": "<button mat-button (click)=\"openDialog()\">\n    <mat-icon>document_scanner</mat-icon>\n  </button>\n  "
+    },
+    {
+      "name": "EditorToolbarComponent",
+      "id": "component-EditorToolbarComponent-55b33bfeb8d1be3ae8f321438452028d2667e7d8e73b4e040a662ab4bbe18aac496a605cda17061ffbdc3cb9179619d960f88b99df4875dae2babfe6e3c20c80",
+      "file": "projects/my-canvas-lib/src/lib/components/editor-toolbar/editor-toolbar.component.ts",
+      "encapsulation": [],
+      "entryComponents": [],
+      "inputs": [],
+      "outputs": [],
+      "providers": [],
+      "selector": "lib-editor-toolbar",
+      "styleUrls": [],
+      "styles": [],
+      "templateUrl": ["./editor-toolbar.component.html"],
+      "viewProviders": [],
+      "inputsClass": [],
+      "outputsClass": [],
+      "propertiesClass": [
+        {
+          "name": "alignment",
+          "defaultValue": "RowFlex.LEFT",
+          "deprecated": false,
+          "deprecationMessage": "",
+          "type": "string",
+          "optional": false,
+          "description": "",
+          "line": 26
+        },
+        {
+          "name": "contentStyles",
+          "deprecated": false,
+          "deprecationMessage": "",
+          "type": "any",
+          "optional": false,
+          "description": "",
+          "line": 25
+        },
+        {
+          "name": "formats",
+          "defaultValue": "[]",
+          "deprecated": false,
+          "deprecationMessage": "",
+          "type": "string[]",
+          "optional": false,
+          "description": "",
+          "line": 28
+        },
+        {
+          "name": "listType",
+          "defaultValue": "''",
+          "deprecated": false,
+          "deprecationMessage": "",
+          "type": "string",
+          "optional": false,
+          "description": "",
+          "line": 27
+        }
+      ],
+      "methodsClass": [
+        {
+          "name": "addFormat",
+          "args": [
+            {
+              "name": "format",
+              "type": "string",
+              "deprecated": false,
+              "deprecationMessage": ""
+            }
+          ],
+          "optional": false,
+          "returnType": "void",
+          "typeParameters": [],
+          "line": 42,
+          "deprecated": false,
+          "deprecationMessage": "",
+          "jsdoctags": [
+            {
+              "name": "format",
+              "type": "string",
+              "deprecated": false,
+              "deprecationMessage": "",
+              "tagName": {
+                "text": "param"
+              }
+            }
+          ]
+        },
+        {
+          "name": "ngOnInit",
+          "args": [],
+          "optional": false,
+          "returnType": "void",
+          "typeParameters": [],
+          "line": 32,
+          "deprecated": false,
+          "deprecationMessage": ""
+        }
+      ],
+      "deprecated": false,
+      "deprecationMessage": "",
+      "hostBindings": [],
+      "hostListeners": [],
+      "description": "",
+      "rawdescription": "\n",
+      "type": "component",
+      "sourceCode": "import { Component, OnInit } from '@angular/core';\nimport {\n  DOMEventHandlers,\n  ListStyle,\n  ListType,\n  RowFlex,\n} from '@mindfiredigital/canvas-editor';\nimport { MatToolbarModule } from '@angular/material/toolbar';\nimport { MatIconModule } from '@angular/material/icon';\nimport { MatButtonModule } from '@angular/material/button';\nimport { EmphasisComponent } from '../emphasis/emphasis.component';\n@Component({\n  selector: 'lib-editor-toolbar',\n  standalone: true,\n  imports: [\n    MatToolbarModule,\n    MatButtonModule,\n    MatIconModule,\n    EmphasisComponent,\n  ],\n  templateUrl: './editor-toolbar.component.html',\n  styleUrl: './editor-toolbar.component.css',\n})\nexport class EditorToolbarComponent implements OnInit {\n  contentStyles: any;\n  alignment: string = RowFlex.LEFT;\n  listType: string = '';\n  formats: string[] = [];\n\n  constructor() {}\n\n  ngOnInit(): void {\n    // let interval: any;\n    // const timeout = setTimeout(() => {\n    //   interval = setInterval(() => {\n    //     const data = DOMEventHandlers.getContentStyles();\n    //     this.contentStyles = data;\n    //   }, 100);\n    // }, 1000);\n  }\n\n  addFormat(format: string): void {\n    let selectedFormats;\n    if (this.formats.indexOf(format) === -1) {\n      selectedFormats = [...this.formats, format];\n    } else {\n      selectedFormats = this.formats.filter((item) => item !== format);\n    }\n    this.formats = selectedFormats;\n  }\n}\n",
+      "styleUrl": "./editor-toolbar.component.css",
+      "assetsDirs": [],
+      "styleUrlsData": "",
+      "stylesData": "",
+      "constructorObj": {
+        "name": "constructor",
+        "description": "",
+        "deprecated": false,
+        "deprecationMessage": "",
+        "args": [],
+        "line": 28
+      },
+      "implements": ["OnInit"],
+      "templateData": "<mat-toolbar color=\"primary\">\n  <mat-toolbar-row>\n    <lib-emphasis></lib-emphasis>\n  </mat-toolbar-row>\n</mat-toolbar>"
+    },
+    {
+      "name": "EmphasisComponent",
+      "id": "component-EmphasisComponent-da03b7108ee508e1282c500d201f451880289c5465924433af91d28b0ecea62794980ed323631c453e6a5475d665cd7e6033ed5ce2d0ecc48e4c830f2dea8146",
+      "file": "projects/my-canvas-lib/src/lib/components/emphasis/emphasis.component.ts",
+      "encapsulation": [],
+      "entryComponents": [],
+      "inputs": [],
+      "outputs": [],
+      "providers": [],
+      "selector": "lib-emphasis",
+      "styleUrls": [],
+      "styles": [],
+      "templateUrl": ["./emphasis.component.html"],
+      "viewProviders": [],
+      "inputsClass": [
+        {
+          "name": "toolbar",
+          "deprecated": false,
+          "deprecationMessage": "",
+          "line": 36,
+          "type": "any",
+          "decorators": []
+        },
+        {
+          "name": "toolbarClass",
+          "deprecated": false,
+          "deprecationMessage": "",
+          "line": 37,
+          "type": "any",
+          "decorators": []
+        }
+      ],
+      "outputsClass": [],
+      "propertiesClass": [
+        {
+          "name": "alignment",
+          "defaultValue": "RowFlex.LEFT",
+          "deprecated": false,
+          "deprecationMessage": "",
+          "type": "string",
+          "optional": false,
+          "description": "",
+          "line": 45
+        },
+        {
+          "name": "contentStyles",
+          "deprecated": false,
+          "deprecationMessage": "",
+          "type": "IRangeStyle | undefined",
+          "optional": false,
+          "description": "",
+          "line": 44
+        },
+        {
+          "name": "faBold",
+          "defaultValue": "faBold",
+          "deprecated": false,
+          "deprecationMessage": "",
+          "type": "",
+          "optional": false,
+          "description": "",
+          "line": 40
+        },
+        {
+          "name": "faImage",
+          "defaultValue": "faImage",
+          "deprecated": false,
+          "deprecationMessage": "",
+          "type": "",
+          "optional": false,
+          "description": "",
+          "line": 43
+        },
+        {
+          "name": "faItalic",
+          "defaultValue": "faItalic",
+          "deprecated": false,
+          "deprecationMessage": "",
+          "type": "",
+          "optional": false,
+          "description": "",
+          "line": 41
+        },
+        {
+          "name": "faRedo",
+          "defaultValue": "faRedo",
+          "deprecated": false,
+          "deprecationMessage": "",
+          "type": "",
+          "optional": false,
+          "description": "",
+          "line": 39
+        },
+        {
+          "name": "faUnderline",
+          "defaultValue": "faUnderline",
+          "deprecated": false,
+          "deprecationMessage": "",
+          "type": "",
+          "optional": false,
+          "description": "",
+          "line": 42
+        },
+        {
+          "name": "faUndo",
+          "defaultValue": "faUndo",
+          "deprecated": false,
+          "deprecationMessage": "",
+          "type": "",
+          "optional": false,
+          "description": "",
+          "line": 38
+        },
+        {
+          "name": "formats",
+          "defaultValue": "[]",
+          "deprecated": false,
+          "deprecationMessage": "",
+          "type": "string[]",
+          "optional": false,
+          "description": "",
+          "line": 47
+        },
+        {
+          "name": "interval",
+          "deprecated": false,
+          "deprecationMessage": "",
+          "type": "any",
+          "optional": false,
+          "description": "",
+          "line": 48,
+          "modifierKind": [121]
+        },
+        {
+          "name": "listType",
+          "defaultValue": "''",
+          "deprecated": false,
+          "deprecationMessage": "",
+          "type": "string",
+          "optional": false,
+          "description": "",
+          "line": 46
+        }
+      ],
+      "methodsClass": [
+        {
+          "name": "handleAlignment",
+          "args": [
+            {
+              "name": "alignment",
+              "type": "RowFlex",
+              "deprecated": false,
+              "deprecationMessage": ""
+            }
+          ],
+          "optional": false,
+          "returnType": "void",
+          "typeParameters": [],
+          "line": 95,
+          "deprecated": false,
+          "deprecationMessage": "",
+          "jsdoctags": [
+            {
+              "name": "alignment",
+              "type": "RowFlex",
+              "deprecated": false,
+              "deprecationMessage": "",
+              "tagName": {
+                "text": "param"
+              }
+            }
+          ]
+        },
+        {
+          "name": "handleList",
+          "args": [
+            {
+              "name": "type",
+              "type": "ListType",
+              "deprecated": false,
+              "deprecationMessage": ""
+            }
+          ],
+          "optional": false,
+          "returnType": "void",
+          "typeParameters": [],
+          "line": 100,
+          "deprecated": false,
+          "deprecationMessage": "",
+          "jsdoctags": [
+            {
+              "name": "type",
+              "type": "ListType",
+              "deprecated": false,
+              "deprecationMessage": "",
+              "tagName": {
+                "text": "param"
+              }
+            }
+          ]
+        },
+        {
+          "name": "handleRedo",
+          "args": [],
+          "optional": false,
+          "returnType": "void",
+          "typeParameters": [],
+          "line": 91,
+          "deprecated": false,
+          "deprecationMessage": ""
+        },
+        {
+          "name": "handleUndo",
+          "args": [],
+          "optional": false,
+          "returnType": "void",
+          "typeParameters": [],
+          "line": 87,
+          "deprecated": false,
+          "deprecationMessage": ""
+        },
+        {
+          "name": "ngOnDestroy",
+          "args": [],
+          "optional": false,
+          "returnType": "void",
+          "typeParameters": [],
+          "line": 57,
+          "deprecated": false,
+          "deprecationMessage": ""
+        },
+        {
+          "name": "ngOnInit",
+          "args": [],
+          "optional": false,
+          "returnType": "void",
+          "typeParameters": [],
+          "line": 50,
+          "deprecated": false,
+          "deprecationMessage": ""
+        },
+        {
+          "name": "onImageSelected",
+          "args": [
+            {
+              "name": "event",
+              "type": "literal type",
+              "deprecated": false,
+              "deprecationMessage": ""
+            }
+          ],
+          "optional": false,
+          "returnType": "void",
+          "typeParameters": [],
+          "line": 119,
+          "deprecated": false,
+          "deprecationMessage": "",
+          "jsdoctags": [
+            {
+              "name": "event",
+              "type": "literal type",
+              "deprecated": false,
+              "deprecationMessage": "",
+              "tagName": {
+                "text": "param"
+              }
+            }
+          ]
+        },
+        {
+          "name": "setTextColor",
+          "args": [
+            {
+              "name": "event",
+              "type": "Event",
+              "deprecated": false,
+              "deprecationMessage": ""
+            }
+          ],
+          "optional": false,
+          "returnType": "void",
+          "typeParameters": [],
+          "line": 105,
+          "deprecated": false,
+          "deprecationMessage": "",
+          "jsdoctags": [
+            {
+              "name": "event",
+              "type": "Event",
+              "deprecated": false,
+              "deprecationMessage": "",
+              "tagName": {
+                "text": "param"
+              }
+            }
+          ]
+        },
+        {
+          "name": "toggleFormat",
+          "args": [
+            {
+              "name": "format",
+              "type": "string",
+              "deprecated": false,
+              "deprecationMessage": ""
+            }
+          ],
+          "optional": false,
+          "returnType": "void",
+          "typeParameters": [],
+          "line": 63,
+          "deprecated": false,
+          "deprecationMessage": "",
+          "jsdoctags": [
+            {
+              "name": "format",
+              "type": "string",
+              "deprecated": false,
+              "deprecationMessage": "",
+              "tagName": {
+                "text": "param"
+              }
+            }
+          ]
+        }
+      ],
+      "deprecated": false,
+      "deprecationMessage": "",
+      "hostBindings": [],
+      "hostListeners": [],
+      "description": "",
+      "rawdescription": "\n",
+      "type": "component",
+      "sourceCode": "import { Component, Input } from '@angular/core';\nimport { MatButtonToggleModule } from '@angular/material/button-toggle';\nimport { MatIconModule } from '@angular/material/icon';\nimport { ImageUploadButtonComponent } from '../image-upload-button/image-upload-button.component';\nimport {\n  EditorMode,\n  IElement,\n  PageMode,\n  DOMEventHandlers,\n  RowFlex,\n  ListType,\n  ListStyle,\n} from '@mindfiredigital/canvas-editor';\nimport { IRangeStyle } from '@mindfiredigital/canvas-editor/dist/src/editor/interface/Listener';\nimport {\n  faUndo,\n  faRedo,\n  faBold,\n  faItalic,\n  faUnderline,\n  faImage,\n} from '@fortawesome/free-solid-svg-icons';\nimport { FontAwesomeModule } from '@fortawesome/angular-fontawesome';\n@Component({\n  selector: 'lib-emphasis',\n  standalone: true,\n  imports: [\n    MatButtonToggleModule,\n    ImageUploadButtonComponent,\n    FontAwesomeModule,\n  ],\n  templateUrl: './emphasis.component.html',\n  styleUrl: './emphasis.component.css',\n})\nexport class EmphasisComponent {\n  @Input() toolbar: any;\n  @Input() toolbarClass: any;\n  faUndo = faUndo;\n  faRedo = faRedo;\n  faBold = faBold;\n  faItalic = faItalic;\n  faUnderline = faUnderline;\n  faImage = faImage;\n  contentStyles: IRangeStyle | undefined;\n  alignment: string = RowFlex.LEFT;\n  listType: string = '';\n  formats: string[] = [];\n  private interval: any;\n\n  ngOnInit(): void {\n    this.interval = setInterval(() => {\n      const data = DOMEventHandlers.getContentStyles();\n      this.contentStyles = data;\n    }, 100);\n  }\n\n  ngOnDestroy(): void {\n    if (this.interval) {\n      clearInterval(this.interval);\n    }\n  }\n\n  toggleFormat(format: string): void {\n    if (this.formats.indexOf(format) === -1) {\n      this.formats.push(format);\n    } else {\n      this.formats = this.formats.filter(f => f !== format);\n    }\n\n    // Call appropriate formatting function\n    switch (format) {\n      case 'Bold':\n        DOMEventHandlers.handleBold();\n        break;\n      case 'Italic':\n        DOMEventHandlers.handleItalic();\n        break;\n      case 'Underline':\n        DOMEventHandlers.handleUnderline();\n        break;\n      case 'Strikethrough':\n        DOMEventHandlers.handleStrikeout();\n        break;\n    }\n  }\n\n  handleUndo(): void {\n    DOMEventHandlers.handleUndo();\n  }\n\n  handleRedo(): void {\n    DOMEventHandlers.handleRedo();\n  }\n\n  handleAlignment(alignment: RowFlex): void {\n    DOMEventHandlers.handleAlign(alignment);\n    this.alignment = alignment;\n  }\n\n  handleList(type: ListType): void {\n    DOMEventHandlers.handleList(type, ListStyle.DECIMAL);\n    this.listType = this.listType === type ? '' : type;\n  }\n\n  setTextColor(event: Event): void {\n    const color = (event.target as HTMLInputElement).value;\n    DOMEventHandlers.setFontColor(color);\n  }\n\n  // setBackgroundColor(event: Event): void {\n  //   const color = (event.target as HTMLInputElement).value;\n  //   DOMEventHandlers.set(color);\n  // }\n\n  // clearFormatting(): void {\n  //   this.formats = [];\n  //   DOMEventHandlers.clear();\n  // }\n  onImageSelected(event: { base64: string; width: number; height: number }) {\n    DOMEventHandlers.setImage({\n      value: event.base64,\n      height: event.height,\n      width: event.width,\n    });\n  }\n}\n",
+      "styleUrl": "./emphasis.component.css",
+      "assetsDirs": [],
+      "styleUrlsData": "",
+      "stylesData": "",
+      "templateData": "<!-- First section: Undo, Redo -->\n<mat-button-toggle-group name=\"fontStyle\" aria-label=\"Font Style\" multiple appearance=\"standard\">\n  <!-- Undo Button -->\n  <mat-button-toggle value=\"undo\" (click)=\"handleUndo()\">\n    <fa-icon [icon]=\"faUndo\"></fa-icon>\n  </mat-button-toggle>\n\n  <!-- Redo Button -->\n  <mat-button-toggle value=\"redo\" (click)=\"handleRedo()\">\n    <fa-icon [icon]=\"faRedo\"></fa-icon>\n  </mat-button-toggle>\n</mat-button-toggle-group>\n\n<!-- Second section: Bold, Italic, Underline -->\n<mat-button-toggle-group name=\"textStyle\" aria-label=\"Text Style\" multiple appearance=\"standard\">\n  <!-- Bold Button -->\n  <mat-button-toggle value=\"bold\" (click)=\"toggleFormat('Bold')\">\n    <fa-icon [icon]=\"faBold\"></fa-icon>\n  </mat-button-toggle>\n\n  <!-- Italic Button -->\n  <mat-button-toggle value=\"italic\" (click)=\"toggleFormat('Italic')\">\n    <fa-icon [icon]=\"faItalic\"></fa-icon>\n  </mat-button-toggle>\n\n  <!-- Underline Button -->\n  <mat-button-toggle value=\"underline\" (click)=\"toggleFormat('Underline')\">\n    <fa-icon [icon]=\"faUnderline\"></fa-icon>\n  </mat-button-toggle>\n</mat-button-toggle-group>\n\n<!-- Third section: Image upload button -->\n<mat-button-toggle-group name=\"imageUpload\" aria-label=\"Image Upload\" appearance=\"standard\">\n  <mat-button-toggle class=\"upload-image-button\">\n    <fa-icon [icon]=\"faImage\"></fa-icon>\n    <app-image-upload-button (imageSelected)=\"onImageSelected($event)\"></app-image-upload-button>\n  </mat-button-toggle>\n</mat-button-toggle-group>\n"
+    },
+    {
+      "name": "ImageUploadButtonComponent",
+      "id": "component-ImageUploadButtonComponent-304169b4da88be0e1dabaca4f76a7fa4818fb3d73e6559ab1efac6394aa56bc916e4a5921e51d9de00a64083fd5b47be949fb1d559e8a9715b4ed47b324c45ef",
+      "file": "projects/my-canvas-lib/src/lib/components/image-upload-button/image-upload-button.component.ts",
+      "encapsulation": [],
+      "entryComponents": [],
+      "inputs": [],
+      "outputs": [],
+      "providers": [],
+      "selector": "app-image-upload-button",
+      "styleUrls": [],
+      "styles": [],
+      "templateUrl": ["./image-upload-button.component.html"],
+      "viewProviders": [],
+      "inputsClass": [],
+      "outputsClass": [
+        {
+          "name": "imageSelected",
+          "defaultValue": "new EventEmitter<{ base64: string, width: number, height: number }>()",
+          "deprecated": false,
+          "deprecationMessage": "",
+          "line": 11,
+          "type": "EventEmitter"
+        }
+      ],
+      "propertiesClass": [
+        {
+          "name": "fileInput",
+          "deprecated": false,
+          "deprecationMessage": "",
+          "type": "ElementRef<HTMLInputElement>",
+          "optional": false,
+          "description": "",
+          "line": 10,
+          "decorators": [
+            {
+              "name": "ViewChild",
+              "stringifiedArguments": "'fileInput', {static: false}"
+            }
+          ]
+        }
+      ],
+      "methodsClass": [
+        {
+          "name": "handleButtonClick",
+          "args": [],
+          "optional": false,
+          "returnType": "void",
+          "typeParameters": [],
+          "line": 37,
+          "deprecated": false,
+          "deprecationMessage": ""
+        },
+        {
+          "name": "handleFileInputChange",
+          "args": [
+            {
+              "name": "event",
+              "type": "Event",
+              "deprecated": false,
+              "deprecationMessage": ""
+            }
+          ],
+          "optional": false,
+          "returnType": "void",
+          "typeParameters": [],
+          "line": 13,
+          "deprecated": false,
+          "deprecationMessage": "",
+          "jsdoctags": [
+            {
+              "name": "event",
+              "type": "Event",
+              "deprecated": false,
+              "deprecationMessage": "",
+              "tagName": {
+                "text": "param"
+              }
+            }
+          ]
+        }
+      ],
+      "deprecated": false,
+      "deprecationMessage": "",
+      "hostBindings": [],
+      "hostListeners": [],
+      "description": "",
+      "rawdescription": "\n",
+      "type": "component",
+      "sourceCode": "import { Component, EventEmitter, Output, ViewChild, ElementRef } from '@angular/core';\n\n@Component({\n  selector: 'app-image-upload-button',\n  templateUrl: './image-upload-button.component.html',\n  standalone: true\n})\nexport class ImageUploadButtonComponent {\n  @ViewChild('fileInput', { static: false }) fileInput!: ElementRef<HTMLInputElement>;\n  @Output() imageSelected = new EventEmitter<{ base64: string, width: number, height: number }>();\n\n  handleFileInputChange(event: Event) {\n    const input = event.target as HTMLInputElement;\n    if (input.files && input.files.length > 0) {\n      const selectedFile = input.files[0];\n      const reader = new FileReader();\n\n      reader.onloadend = () => {\n        const base64Data = reader.result as string;\n        const img = new Image();\n\n        img.onload = () => {\n          this.imageSelected.emit({\n            base64: base64Data,\n            width: img.width,\n            height: img.height\n          });\n        };\n        img.src = base64Data;\n      };\n\n      reader.readAsDataURL(selectedFile);\n    }\n  }\n\n  handleButtonClick() {\n    this.fileInput.nativeElement.click();\n  }\n}\n",
+      "assetsDirs": [],
+      "styleUrlsData": "",
+      "stylesData": "",
+      "templateData": "<input type=\"file\" #fileInput (change)=\"handleFileInputChange($event)\" accept=\"image/*\" style=\"display: none;\" />\n<button mat-icon-button (click)=\"handleButtonClick()\">\n  <span class=\"material-icons md-18\">\n    image\n    </span>\n</button>"
+    },
+    {
+      "name": "LinkComponent",
+      "id": "component-LinkComponent-8731b4e86806f0f4ee02f44abd574862f79dd4b605775522139784b4f3bc6c323a60d0129d8684f09880de717d127a0f887da0a42890e4ee050b6a857a639f83",
+      "file": "projects/my-canvas-lib/src/lib/components/link/link.component.ts",
+      "encapsulation": [],
+      "entryComponents": [],
+      "inputs": [],
+      "outputs": [],
+      "providers": [],
+      "selector": "app-link",
+      "styleUrls": [],
+      "styles": [],
+      "templateUrl": ["./link.component.html"],
+      "viewProviders": [],
+      "inputsClass": [],
+      "outputsClass": [],
+      "propertiesClass": [],
+      "methodsClass": [],
+      "deprecated": false,
+      "deprecationMessage": "",
+      "hostBindings": [],
+      "hostListeners": [],
+      "description": "",
+      "rawdescription": "\n",
+      "type": "component",
+      "sourceCode": "import { Component } from '@angular/core';\n\n@Component({\n  selector: 'app-link',\n  standalone: true,\n  imports: [],\n  templateUrl: './link.component.html',\n  styleUrl: './link.component.sass'\n})\nexport class LinkComponent {\n\n}\n",
+      "styleUrl": "./link.component.sass",
+      "assetsDirs": [],
+      "styleUrlsData": "",
+      "stylesData": "",
+      "templateData": "<p>link works!</p>\n"
+    },
+    {
+      "name": "MarginDialogComponent",
+      "id": "component-MarginDialogComponent-258d2276bbd950437edc47805191de247ffc8ffd542e618123a20052f8ffd0de2df962e1ffdb27917b98306a158b3d09f2fe57ab5402e5dead60e1870b169521",
+      "file": "projects/my-canvas-lib/src/lib/components/editor-margin/margin-modal/margin-dialog.component.ts",
+      "encapsulation": [],
+      "entryComponents": [],
+      "inputs": [],
+      "outputs": [],
+      "providers": [],
+      "selector": "app-margin-dialog",
+      "styleUrls": [],
+      "styles": [],
+      "templateUrl": ["./margin-dialog.component.html"],
+      "viewProviders": [],
+      "inputsClass": [],
+      "outputsClass": [],
+      "propertiesClass": [
+        {
+          "name": "data",
+          "deprecated": false,
+          "deprecationMessage": "",
+          "type": "any",
+          "optional": false,
+          "description": "",
+          "line": 24,
+          "decorators": [
+            {
+              "name": "Inject",
+              "stringifiedArguments": "MAT_DIALOG_DATA"
+            }
+          ],
+          "modifierKind": [123]
+        },
+        {
+          "name": "dialogRef",
+          "deprecated": false,
+          "deprecationMessage": "",
+          "type": "MatDialogRef<MarginDialogComponent>",
+          "optional": false,
+          "description": "",
+          "line": 23,
+          "modifierKind": [123]
+        },
+        {
+          "name": "marginForm",
+          "deprecated": false,
+          "deprecationMessage": "",
+          "type": "FormGroup",
+          "optional": false,
+          "description": "",
+          "line": 20
+        }
+      ],
+      "methodsClass": [
+        {
+          "name": "onCancel",
+          "args": [],
+          "optional": false,
+          "returnType": "void",
+          "typeParameters": [],
+          "line": 39,
+          "deprecated": false,
+          "deprecationMessage": ""
+        },
+        {
+          "name": "onSave",
+          "args": [],
+          "optional": false,
+          "returnType": "void",
+          "typeParameters": [],
+          "line": 35,
+          "deprecated": false,
+          "deprecationMessage": ""
+        }
+      ],
+      "deprecated": false,
+      "deprecationMessage": "",
+      "hostBindings": [],
+      "hostListeners": [],
+      "description": "",
+      "rawdescription": "\n",
+      "type": "component",
+      "sourceCode": "import { Component, Inject } from '@angular/core';\nimport { MatDialogRef, MAT_DIALOG_DATA, MatDialogModule } from '@angular/material/dialog';\nimport { FormGroup, FormBuilder, ReactiveFormsModule } from '@angular/forms';\nimport { MatButtonModule } from '@angular/material/button';\nimport { MatFormFieldModule } from '@angular/material/form-field';\nimport { MatInputModule } from '@angular/material/input';\n\n@Component({\n  selector: 'app-margin-dialog',\n  templateUrl: './margin-dialog.component.html',\n  styleUrl: './margin-dialog.component.css',\n  standalone: true,\n  imports: [MatDialogModule,\n    MatButtonModule,\n    MatFormFieldModule,\n    MatInputModule,\n    ReactiveFormsModule,]\n})\nexport class MarginDialogComponent {\n  marginForm: FormGroup;\n\n  constructor(\n    public dialogRef: MatDialogRef<MarginDialogComponent>,\n    @Inject(MAT_DIALOG_DATA) public data: any,\n    private fb: FormBuilder\n  ) {\n    this.marginForm = this.fb.group({\n      top: [data.margins.top],\n      bottom: [data.margins.bottom],\n      left: [data.margins.left],\n      right: [data.margins.right]\n    });\n  }\n\n  onSave(): void {\n    this.dialogRef.close(this.marginForm.value);\n  }\n\n  onCancel(): void {\n    this.dialogRef.close();\n  }\n}\n",
+      "styleUrl": "./margin-dialog.component.css",
+      "assetsDirs": [],
+      "styleUrlsData": "",
+      "stylesData": "",
+      "constructorObj": {
+        "name": "constructor",
+        "description": "",
+        "deprecated": false,
+        "deprecationMessage": "",
+        "args": [
+          {
+            "name": "dialogRef",
+            "type": "MatDialogRef<MarginDialogComponent>",
+            "deprecated": false,
+            "deprecationMessage": ""
+          },
+          {
+            "name": "data",
+            "type": "any",
+            "deprecated": false,
+            "deprecationMessage": ""
+          },
+          {
+            "name": "fb",
+            "type": "FormBuilder",
+            "deprecated": false,
+            "deprecationMessage": ""
+          }
+        ],
+        "line": 20,
+        "jsdoctags": [
+          {
+            "name": "dialogRef",
+            "type": "MatDialogRef<MarginDialogComponent>",
+            "deprecated": false,
+            "deprecationMessage": "",
+            "tagName": {
+              "text": "param"
+            }
+          },
+          {
+            "name": "data",
+            "type": "any",
+            "deprecated": false,
+            "deprecationMessage": "",
+            "tagName": {
+              "text": "param"
+            }
+          },
+          {
+            "name": "fb",
+            "type": "FormBuilder",
+            "deprecated": false,
+            "deprecationMessage": "",
+            "tagName": {
+              "text": "param"
+            }
+          }
+        ]
+      },
+      "templateData": "<h1 mat-dialog-title>Margins</h1>\n<div mat-dialog-content>\n  <form [formGroup]=\"marginForm\">\n    <mat-form-field>\n      <mat-label>Top</mat-label>\n      <input matInput type=\"number\" formControlName=\"top\">\n    </mat-form-field>\n\n    <mat-form-field>\n      <mat-label>Bottom</mat-label>\n      <input matInput type=\"number\" formControlName=\"bottom\">\n    </mat-form-field>\n\n    <mat-form-field>\n      <mat-label>Left</mat-label>\n      <input matInput type=\"number\" formControlName=\"left\">\n    </mat-form-field>\n\n    <mat-form-field>\n      <mat-label>Right</mat-label>\n      <input matInput type=\"number\" formControlName=\"right\">\n    </mat-form-field>\n  </form>\n</div>\n<div mat-dialog-actions>\n  <button mat-button (click)=\"onCancel()\">Cancel</button>\n  <button mat-button color=\"primary\" (click)=\"onSave()\">Save</button>\n</div>\n"
+    },
+    {
+      "name": "MarginRulerComponent",
+      "id": "component-MarginRulerComponent-b017144b3da49a45da4af3da69778194c13d53cd1a8930cea91ddb98f11d51e010552c51ac74e772aa186985a09c16013df6b42125750c7e603a3a19e418d243",
+      "file": "projects/my-canvas-lib/src/lib/components/margin-ruler/margin-ruler.component.ts",
+      "encapsulation": [],
+      "entryComponents": [],
+      "inputs": [],
+      "outputs": [],
+      "providers": [],
+      "selector": "lib-margin-ruler",
+      "styleUrls": ["./margin-ruler.component.css"],
+      "styles": [],
+      "templateUrl": ["./margin-ruler.component.html"],
+      "viewProviders": [],
+      "inputsClass": [
+        {
+          "name": "documentId",
+          "deprecated": false,
+          "deprecationMessage": "",
+          "line": 17,
+          "type": "string",
+          "decorators": []
+        }
+      ],
+      "outputsClass": [],
+      "propertiesClass": [
+        {
+          "name": "horizontalSlider",
+          "defaultValue": "[]",
+          "deprecated": false,
+          "deprecationMessage": "",
+          "type": "number[]",
+          "optional": false,
+          "description": "",
+          "line": 19
+        },
+        {
+          "name": "margins",
+          "defaultValue": "[]",
+          "deprecated": false,
+          "deprecationMessage": "",
+          "type": "any",
+          "optional": false,
+          "description": "",
+          "line": 20
+        },
+        {
+          "name": "verticalSlider",
+          "defaultValue": "[]",
+          "deprecated": false,
+          "deprecationMessage": "",
+          "type": "number[]",
+          "optional": false,
+          "description": "",
+          "line": 18
+        }
+      ],
+      "methodsClass": [
+        {
+          "name": "handleChange",
+          "args": [
+            {
+              "name": "event",
+              "type": "Event",
+              "deprecated": false,
+              "deprecationMessage": ""
+            },
+            {
+              "name": "value",
+              "type": "number[]",
+              "deprecated": false,
+              "deprecationMessage": ""
+            }
+          ],
+          "optional": false,
+          "returnType": "void",
+          "typeParameters": [],
+          "line": 51,
+          "deprecated": false,
+          "deprecationMessage": "",
+          "jsdoctags": [
+            {
+              "name": "event",
+              "type": "Event",
+              "deprecated": false,
+              "deprecationMessage": "",
+              "tagName": {
+                "text": "param"
+              }
+            },
+            {
+              "name": "value",
+              "type": "number[]",
+              "deprecated": false,
+              "deprecationMessage": "",
+              "tagName": {
+                "text": "param"
+              }
+            }
+          ]
+        },
+        {
+          "name": "handleChangeHorizontal",
+          "args": [
+            {
+              "name": "event",
+              "type": "Event",
+              "deprecated": false,
+              "deprecationMessage": ""
+            },
+            {
+              "name": "value",
+              "type": "number[]",
+              "deprecated": false,
+              "deprecationMessage": ""
+            }
+          ],
+          "optional": false,
+          "returnType": "void",
+          "typeParameters": [],
+          "line": 63,
+          "deprecated": false,
+          "deprecationMessage": "",
+          "jsdoctags": [
+            {
+              "name": "event",
+              "type": "Event",
+              "deprecated": false,
+              "deprecationMessage": "",
+              "tagName": {
+                "text": "param"
+              }
+            },
+            {
+              "name": "value",
+              "type": "number[]",
+              "deprecated": false,
+              "deprecationMessage": "",
+              "tagName": {
+                "text": "param"
+              }
+            }
+          ]
+        },
+        {
+          "name": "ngOnInit",
+          "args": [],
+          "optional": false,
+          "returnType": "void",
+          "typeParameters": [],
+          "line": 24,
+          "deprecated": false,
+          "deprecationMessage": ""
+        }
+      ],
+      "deprecated": false,
+      "deprecationMessage": "",
+      "hostBindings": [],
+      "hostListeners": [],
+      "description": "",
+      "rawdescription": "\n",
+      "type": "component",
+      "sourceCode": "import { Component, Input, OnInit } from '@angular/core';\nimport { DocumentReducerService } from '../util/document-reducer.service';\nimport { DOMEventHandlers } from '@mindfiredigital/canvas-editor';\nimport { CustomSliderVerticalComponent } from './custom-slider-vertical/custom-slider-vertical.component';\nimport { CustomSliderHorizontalComponent } from './custom-slider-horizontal/custom-slider-horizontal.component';\nimport { store } from '../util/store';\nimport useDebounce from '../util/useDebounce';\n\n@Component({\n  selector: 'lib-margin-ruler',\n  standalone: true,\n  imports: [CustomSliderVerticalComponent, CustomSliderHorizontalComponent],\n  templateUrl: './margin-ruler.component.html',\n  styleUrls: ['./margin-ruler.component.css'],\n})\nexport class MarginRulerComponent implements OnInit {\n  @Input() documentId!: string;\n  verticalSlider: number[] = [];\n  horizontalSlider: number[] = [];\n  margins: any = [];\n\n  constructor(private documentService: DocumentReducerService) {}\n\n  ngOnInit(): void {\n    if (!this.documentId) {\n      console.error('Document ID is not provided.');\n      return;\n    }\n\n    const documentState: any = store();\n\n    if (!documentState || !documentState.margins) {\n      console.error('Margins are not available in the document state.');\n      return;\n    }\n\n    this.margins = useDebounce(documentState.margins, 500);\n\n    if (this.margins.length) {\n      this.verticalSlider = [-956, -100];\n      this.horizontalSlider = [120, 696];\n\n      if (!this.verticalSlider.length && !this.horizontalSlider.length) {\n        DOMEventHandlers.setPaperMargins(this.margins);\n      }\n    }\n\n    // this.documentService = new DocumentService();\n  }\n\n  handleChange(event: Event, value: number[]): void {\n    const [bottom, top] = value;\n    this.verticalSlider = value;\n\n    const margin = [...this.margins];\n    margin[0] = Math.abs(top);\n    margin[1] = 1056 - Math.abs(bottom);\n\n    DOMEventHandlers.setPaperMargins(margin);\n    this.documentService.setDocumentMargins({ margins: margin });\n  }\n\n  handleChangeHorizontal(event: Event, value: number[]): void {\n    const [left, right] = value;\n    this.horizontalSlider = value;\n\n    const margin = [...this.margins];\n    margin[2] = left;\n    margin[3] = 816 - right;\n\n    DOMEventHandlers.setPaperMargins(margin);\n    this.documentService.setDocumentMargins({ margins: margin });\n  }\n}\n",
+      "assetsDirs": [],
+      "styleUrlsData": [
+        {
+          "data": "",
+          "styleUrl": "./margin-ruler.component.css"
+        }
+      ],
+      "stylesData": "",
+      "constructorObj": {
+        "name": "constructor",
+        "description": "",
+        "deprecated": false,
+        "deprecationMessage": "",
+        "args": [
+          {
+            "name": "documentService",
+            "type": "DocumentReducerService",
+            "deprecated": false,
+            "deprecationMessage": ""
+          }
+        ],
+        "line": 20,
+        "jsdoctags": [
+          {
+            "name": "documentService",
+            "type": "DocumentReducerService",
+            "deprecated": false,
+            "deprecationMessage": "",
+            "tagName": {
+              "text": "param"
+            }
+          }
+        ]
+      },
+      "implements": ["OnInit"],
+      "templateData": "<div style=\"position: relative;\">\n  <!-- <lib-custom-slider-vertical [value]=\"verticalSlider.length ? verticalSlider : [-956, -100]\" [min]=\"-1056\" [max]=\"0\"\n    [marks]=\"verticalMarks\" (change)=\"handleChange($event)\" [step]=\"24\" [size]=\"'small'\"\n    [slots]=\"{ thumb: MarginRightArrow }\" valueLabelDisplay=\"off\"></lib-custom-slider-vertical>\n  <lib-custom-slider-horizontal [value]=\"horizontalSlider.length ? horizontalSlider : [120, 696]\" [min]=\"0\" [max]=\"816\"\n    [marks]=\"horizontalMarks\" (change)=\"handleChangeHorizontal($event)\" [step]=\"24\" [size]=\"'small'\"\n    [slots]=\"{ thumb: MarginDownArrow }\" valueLabelDisplay=\"off\"></lib-custom-slider-horizontal> -->\n</div>"
+    },
+    {
+      "name": "MyLibComponent",
+      "id": "component-MyLibComponent-2f8593e79a614aa717e6c7d465cfda5fb59a348fc696b7f5429ded073cb0a1dd064be8d3180cf64e119c945a7b87643fa571305954c74ea39b907d6450999141",
+      "file": "projects/my-canvas-lib/src/lib/my-lib.component.ts",
+      "encapsulation": [],
+      "entryComponents": [],
+      "inputs": [],
+      "outputs": [],
+      "providers": [],
+      "selector": "lib-my-lib",
+      "styleUrls": [],
+      "styles": [""],
+      "template": "<lib-editor-toolbar></lib-editor-toolbar>\n<lib-canvas-editor></lib-canvas-editor>\n<lib-editor-footer></lib-editor-footer>\n",
+      "templateUrl": [],
+      "viewProviders": [],
+      "inputsClass": [],
+      "outputsClass": [],
+      "propertiesClass": [],
+      "methodsClass": [],
+      "deprecated": false,
+      "deprecationMessage": "",
+      "hostBindings": [],
+      "hostListeners": [],
+      "description": "",
+      "rawdescription": "\n",
+      "type": "component",
+      "sourceCode": "import { Component } from '@angular/core';\nimport { EditorFooterComponent } from './components/editor-footer/editor-footer.component';\nimport { CanvasEditorComponent } from './components/canvas-editor/canvas-editor.component';\nimport { EditorToolbarComponent } from './components/editor-toolbar/editor-toolbar.component';\n\n@Component({\n  selector: 'lib-my-lib',\n  template: `\n    <lib-editor-toolbar></lib-editor-toolbar>\n    <lib-canvas-editor></lib-canvas-editor>\n    <lib-editor-footer></lib-editor-footer>\n  `,\n  styles: ``,\n  standalone: true,\n  // Import standalone child components here:\n  imports: [\n    EditorToolbarComponent,\n    CanvasEditorComponent,\n    EditorFooterComponent,\n  ],\n})\nexport class MyLibComponent {}\n",
+      "assetsDirs": [],
+      "styleUrlsData": "",
+      "stylesData": "\n"
+    }
+  ],
+  "modules": [
+    {
+      "name": "MyCanvasLibModule",
+      "id": "module-MyCanvasLibModule-d301a70df1cb9ee328c54779a3108d46f22fe4aa8e415afe7d6b2ba2dbc867dec3bfb144e471d84755ad7cc39a7105316dbcb657a9bad2deb6fed3b43c34e8b5",
+      "description": "",
+      "deprecationMessage": "",
+      "deprecated": false,
+      "file": "projects/my-canvas-lib/src/lib/my-lib.module.ts",
+      "methods": [],
+      "sourceCode": "// projects/my-lib/src/lib/my-lib.module.ts\nimport { NgModule } from '@angular/core';\nimport { MyLibComponent } from './my-lib.component';\nimport { DocumentService } from './services/document.service';\nimport { CommonModule } from '@angular/common';\nimport { MatCommonModule } from '@angular/material/core';\n\n@NgModule({\n  // declarations: [MyLibComponent],\n  imports: [CommonModule, MyLibComponent],\n  exports: [\n    MyLibComponent, // Export standalone component,\n    MatCommonModule\n  ],\n  providers: [\n    DocumentService,\n    MatCommonModule \n    // ... other services\n  ],\n})\nexport class MyCanvasLibModule {}\n",
+      "children": [
+        {
+          "type": "providers",
+          "elements": [
+            {
+              "name": "DocumentService"
+            }
+          ]
+        },
+        {
+          "type": "declarations",
+          "elements": []
+        },
+        {
+          "type": "imports",
+          "elements": [
+            {
+              "name": "MyLibComponent"
+            }
+          ]
+        },
+        {
+          "type": "exports",
+          "elements": [
+            {
+              "name": "MyLibComponent"
+            }
+          ]
+        },
+        {
+          "type": "bootstrap",
+          "elements": []
+        },
+        {
+          "type": "classes",
+          "elements": []
+        }
+      ]
+    }
+  ],
+  "miscellaneous": {
+    "variables": [
+      {
+        "name": "DefaultView",
+        "ctype": "miscellaneous",
+        "subtype": "variable",
+        "file": "projects/my-canvas-lib/src/lib/canvas.editor.stories.ts",
+        "deprecated": false,
+        "deprecationMessage": "",
+        "type": "",
+        "defaultValue": "Template.bind({})"
+      },
+      {
+        "name": "documentReducer",
+        "ctype": "miscellaneous",
+        "subtype": "variable",
+        "file": "projects/my-canvas-lib/src/lib/store/document.reducer.ts",
+        "deprecated": false,
+        "deprecationMessage": "",
+        "type": "",
+        "defaultValue": "createReducer(\n  initialState,\n  on(setDocumentTitle, (state, { title }) => ({\n    ...state,\n    title\n  })),\n  on(reloadRecentDoc, (state, { reloadRecentDoc }) => ({\n    ...state,\n    reloadRecentDoc\n  })),\n  on(setDocumentMargins, (state, { margins }) => ({\n    ...state,\n    margins\n  })),\n  on(setDocumentId, (state, { documentId }) => ({\n    ...state,\n    documentId\n  }))\n)"
+      },
+      {
+        "name": "initialState",
+        "ctype": "miscellaneous",
+        "subtype": "variable",
+        "file": "projects/my-canvas-lib/src/lib/store/document.state.ts",
+        "deprecated": false,
+        "deprecationMessage": "",
+        "type": "DocumentState",
+        "defaultValue": "{\n    documentId: '',\n    title: '',\n    reloadRecentDoc: false,\n    margins: []\n  }"
+      },
+      {
+        "name": "reloadRecentDoc",
+        "ctype": "miscellaneous",
+        "subtype": "variable",
+        "file": "projects/my-canvas-lib/src/lib/store/document.actions.ts",
+        "deprecated": false,
+        "deprecationMessage": "",
+        "type": "",
+        "defaultValue": "createAction(\n  '[Document] Reload Recent Document',\n  props<{ reloadRecentDoc: boolean }>()\n)"
+      },
+      {
+        "name": "selectDocumentId",
+        "ctype": "miscellaneous",
+        "subtype": "variable",
+        "file": "projects/my-canvas-lib/src/lib/store/document.selectors.ts",
+        "deprecated": false,
+        "deprecationMessage": "",
+        "type": "",
+        "defaultValue": "createSelector(\n  selectDocumentState,\n  (state: DocumentState) => state.documentId\n)"
+      },
+      {
+        "name": "selectDocumentMargins",
+        "ctype": "miscellaneous",
+        "subtype": "variable",
+        "file": "projects/my-canvas-lib/src/lib/store/document.selectors.ts",
+        "deprecated": false,
+        "deprecationMessage": "",
+        "type": "",
+        "defaultValue": "createSelector(\n  selectDocumentState,\n  (state: DocumentState) => state.margins\n)"
+      },
+      {
+        "name": "selectDocumentState",
+        "ctype": "miscellaneous",
+        "subtype": "variable",
+        "file": "projects/my-canvas-lib/src/lib/store/document.selectors.ts",
+        "deprecated": false,
+        "deprecationMessage": "",
+        "type": "",
+        "defaultValue": "createFeatureSelector<DocumentState>('document')"
+      },
+      {
+        "name": "selectDocumentTitle",
+        "ctype": "miscellaneous",
+        "subtype": "variable",
+        "file": "projects/my-canvas-lib/src/lib/store/document.selectors.ts",
+        "deprecated": false,
+        "deprecationMessage": "",
+        "type": "",
+        "defaultValue": "createSelector(\n  selectDocumentState,\n  (state: DocumentState) => state.title\n)"
+      },
+      {
+        "name": "setDocumentId",
+        "ctype": "miscellaneous",
+        "subtype": "variable",
+        "file": "projects/my-canvas-lib/src/lib/store/document.actions.ts",
+        "deprecated": false,
+        "deprecationMessage": "",
+        "type": "",
+        "defaultValue": "createAction(\n  '[Document] Set Document ID',\n  props<{ documentId: string }>()\n)"
+      },
+      {
+        "name": "setDocumentMargins",
+        "ctype": "miscellaneous",
+        "subtype": "variable",
+        "file": "projects/my-canvas-lib/src/lib/store/document.actions.ts",
+        "deprecated": false,
+        "deprecationMessage": "",
+        "type": "",
+        "defaultValue": "createAction(\n  '[Document] Set Margins',\n  props<{ margins: number[] }>()\n)"
+      },
+      {
+        "name": "setDocumentTitle",
+        "ctype": "miscellaneous",
+        "subtype": "variable",
+        "file": "projects/my-canvas-lib/src/lib/store/document.actions.ts",
+        "deprecated": false,
+        "deprecationMessage": "",
+        "type": "",
+        "defaultValue": "createAction(\n  '[Document] Set Title',\n  props<{ title: string }>()\n)"
+      },
+      {
+        "name": "store",
+        "ctype": "miscellaneous",
+        "subtype": "variable",
+        "file": "projects/my-canvas-lib/src/lib/components/util/store.ts",
+        "deprecated": false,
+        "deprecationMessage": "",
+        "type": "",
+        "defaultValue": "() => {\n  let result = localStorage.getItem('document');\n  if (result == null) {\n    let doc = new DocumentReducerService();\n    localStorage.setItem('document', JSON.stringify(doc));\n    return doc;\n  }\n\n  return JSON.parse(result) as DocumentState;\n}"
+      },
+      {
+        "name": "Template",
+        "ctype": "miscellaneous",
+        "subtype": "variable",
+        "file": "projects/my-canvas-lib/src/lib/canvas.editor.stories.ts",
+        "deprecated": false,
+        "deprecationMessage": "",
+        "type": "Story<CanvasLibModule>",
+        "defaultValue": "(args: CanvasLibModule) => ({\n  props: args,\n})"
+      },
+      {
+        "name": "useSelectionPosition",
+        "ctype": "miscellaneous",
+        "subtype": "variable",
+        "file": "projects/my-canvas-lib/src/lib/components/util/useSelectionPosition.ts",
+        "deprecated": false,
+        "deprecationMessage": "",
+        "type": "",
+        "defaultValue": "(setSelectedText: any, setElementRects: any) => {\n  const handleSelection =\n    // useCallback(\n    () => {\n      const text = DOMEventHandlers.getSelectedText();\n      const selectedText = text?.toString().trim();\n\n      if (selectedText) {\n        setSelectedText(selectedText);\n        setElementRects((prevState: any) => ({\n          ...prevState,\n          visiblity: true,\n        }));\n      } else {\n        setElementRects((prevState: any) => ({\n          ...prevState,\n          visiblity: false,\n        }));\n      }\n      // }, [setElementRects, setSelectedText]);\n\n      // useEffect(() => {\n      document.addEventListener('mouseup', handleSelection);\n      return () => {\n        document.removeEventListener('mouseup', handleSelection);\n      };\n      // }, [handleSelection]\n      // );\n    };\n}"
+      }
+    ],
+    "functions": [
+      {
+        "name": "useDebounce",
+        "file": "projects/my-canvas-lib/src/lib/components/util/useDebounce.ts",
+        "ctype": "miscellaneous",
+        "subtype": "function",
+        "deprecated": false,
+        "deprecationMessage": "",
+        "description": "",
+        "args": [
+          {
+            "name": "value",
+            "type": "any",
+            "deprecated": false,
+            "deprecationMessage": ""
+          },
+          {
+            "name": "delay",
+            "type": "number",
+            "deprecated": false,
+            "deprecationMessage": ""
+          }
+        ],
+        "jsdoctags": [
+          {
+            "name": "value",
+            "type": "any",
+            "deprecated": false,
+            "deprecationMessage": "",
+            "tagName": {
+              "text": "param"
+            }
+          },
+          {
+            "name": "delay",
+            "type": "number",
+            "deprecated": false,
+            "deprecationMessage": "",
+            "tagName": {
+              "text": "param"
+            }
+          }
+        ]
+      }
+    ],
+    "typealiases": [],
+    "enumerations": [],
+    "groupedVariables": {
+      "projects/my-canvas-lib/src/lib/canvas.editor.stories.ts": [
+        {
+          "name": "DefaultView",
+          "ctype": "miscellaneous",
+          "subtype": "variable",
+          "file": "projects/my-canvas-lib/src/lib/canvas.editor.stories.ts",
+          "deprecated": false,
+          "deprecationMessage": "",
+          "type": "",
+          "defaultValue": "Template.bind({})"
+        },
+        {
+          "name": "Template",
+          "ctype": "miscellaneous",
+          "subtype": "variable",
+          "file": "projects/my-canvas-lib/src/lib/canvas.editor.stories.ts",
+          "deprecated": false,
+          "deprecationMessage": "",
+          "type": "Story<CanvasLibModule>",
+          "defaultValue": "(args: CanvasLibModule) => ({\n  props: args,\n})"
+        }
+      ],
+      "projects/my-canvas-lib/src/lib/store/document.reducer.ts": [
+        {
+          "name": "documentReducer",
+          "ctype": "miscellaneous",
+          "subtype": "variable",
+          "file": "projects/my-canvas-lib/src/lib/store/document.reducer.ts",
+          "deprecated": false,
+          "deprecationMessage": "",
+          "type": "",
+          "defaultValue": "createReducer(\n  initialState,\n  on(setDocumentTitle, (state, { title }) => ({\n    ...state,\n    title\n  })),\n  on(reloadRecentDoc, (state, { reloadRecentDoc }) => ({\n    ...state,\n    reloadRecentDoc\n  })),\n  on(setDocumentMargins, (state, { margins }) => ({\n    ...state,\n    margins\n  })),\n  on(setDocumentId, (state, { documentId }) => ({\n    ...state,\n    documentId\n  }))\n)"
+        }
+      ],
+      "projects/my-canvas-lib/src/lib/store/document.state.ts": [
+        {
+          "name": "initialState",
+          "ctype": "miscellaneous",
+          "subtype": "variable",
+          "file": "projects/my-canvas-lib/src/lib/store/document.state.ts",
+          "deprecated": false,
+          "deprecationMessage": "",
+          "type": "DocumentState",
+          "defaultValue": "{\n    documentId: '',\n    title: '',\n    reloadRecentDoc: false,\n    margins: []\n  }"
+        }
+      ],
+      "projects/my-canvas-lib/src/lib/store/document.actions.ts": [
+        {
+          "name": "reloadRecentDoc",
+          "ctype": "miscellaneous",
+          "subtype": "variable",
+          "file": "projects/my-canvas-lib/src/lib/store/document.actions.ts",
+          "deprecated": false,
+          "deprecationMessage": "",
+          "type": "",
+          "defaultValue": "createAction(\n  '[Document] Reload Recent Document',\n  props<{ reloadRecentDoc: boolean }>()\n)"
+        },
+        {
+          "name": "setDocumentId",
+          "ctype": "miscellaneous",
+          "subtype": "variable",
+          "file": "projects/my-canvas-lib/src/lib/store/document.actions.ts",
+          "deprecated": false,
+          "deprecationMessage": "",
+          "type": "",
+          "defaultValue": "createAction(\n  '[Document] Set Document ID',\n  props<{ documentId: string }>()\n)"
+        },
+        {
+          "name": "setDocumentMargins",
+          "ctype": "miscellaneous",
+          "subtype": "variable",
+          "file": "projects/my-canvas-lib/src/lib/store/document.actions.ts",
+          "deprecated": false,
+          "deprecationMessage": "",
+          "type": "",
+          "defaultValue": "createAction(\n  '[Document] Set Margins',\n  props<{ margins: number[] }>()\n)"
+        },
+        {
+          "name": "setDocumentTitle",
+          "ctype": "miscellaneous",
+          "subtype": "variable",
+          "file": "projects/my-canvas-lib/src/lib/store/document.actions.ts",
+          "deprecated": false,
+          "deprecationMessage": "",
+          "type": "",
+          "defaultValue": "createAction(\n  '[Document] Set Title',\n  props<{ title: string }>()\n)"
+        }
+      ],
+      "projects/my-canvas-lib/src/lib/store/document.selectors.ts": [
+        {
+          "name": "selectDocumentId",
+          "ctype": "miscellaneous",
+          "subtype": "variable",
+          "file": "projects/my-canvas-lib/src/lib/store/document.selectors.ts",
+          "deprecated": false,
+          "deprecationMessage": "",
+          "type": "",
+          "defaultValue": "createSelector(\n  selectDocumentState,\n  (state: DocumentState) => state.documentId\n)"
+        },
+        {
+          "name": "selectDocumentMargins",
+          "ctype": "miscellaneous",
+          "subtype": "variable",
+          "file": "projects/my-canvas-lib/src/lib/store/document.selectors.ts",
+          "deprecated": false,
+          "deprecationMessage": "",
+          "type": "",
+          "defaultValue": "createSelector(\n  selectDocumentState,\n  (state: DocumentState) => state.margins\n)"
+        },
+        {
+          "name": "selectDocumentState",
+          "ctype": "miscellaneous",
+          "subtype": "variable",
+          "file": "projects/my-canvas-lib/src/lib/store/document.selectors.ts",
+          "deprecated": false,
+          "deprecationMessage": "",
+          "type": "",
+          "defaultValue": "createFeatureSelector<DocumentState>('document')"
+        },
+        {
+          "name": "selectDocumentTitle",
+          "ctype": "miscellaneous",
+          "subtype": "variable",
+          "file": "projects/my-canvas-lib/src/lib/store/document.selectors.ts",
+          "deprecated": false,
+          "deprecationMessage": "",
+          "type": "",
+          "defaultValue": "createSelector(\n  selectDocumentState,\n  (state: DocumentState) => state.title\n)"
+        }
+      ],
+      "projects/my-canvas-lib/src/lib/components/util/store.ts": [
+        {
+          "name": "store",
+          "ctype": "miscellaneous",
+          "subtype": "variable",
+          "file": "projects/my-canvas-lib/src/lib/components/util/store.ts",
+          "deprecated": false,
+          "deprecationMessage": "",
+          "type": "",
+          "defaultValue": "() => {\n  let result = localStorage.getItem('document');\n  if (result == null) {\n    let doc = new DocumentReducerService();\n    localStorage.setItem('document', JSON.stringify(doc));\n    return doc;\n  }\n\n  return JSON.parse(result) as DocumentState;\n}"
+        }
+      ],
+      "projects/my-canvas-lib/src/lib/components/util/useSelectionPosition.ts": [
+        {
+          "name": "useSelectionPosition",
+          "ctype": "miscellaneous",
+          "subtype": "variable",
+          "file": "projects/my-canvas-lib/src/lib/components/util/useSelectionPosition.ts",
+          "deprecated": false,
+          "deprecationMessage": "",
+          "type": "",
+          "defaultValue": "(setSelectedText: any, setElementRects: any) => {\n  const handleSelection =\n    // useCallback(\n    () => {\n      const text = DOMEventHandlers.getSelectedText();\n      const selectedText = text?.toString().trim();\n\n      if (selectedText) {\n        setSelectedText(selectedText);\n        setElementRects((prevState: any) => ({\n          ...prevState,\n          visiblity: true,\n        }));\n      } else {\n        setElementRects((prevState: any) => ({\n          ...prevState,\n          visiblity: false,\n        }));\n      }\n      // }, [setElementRects, setSelectedText]);\n\n      // useEffect(() => {\n      document.addEventListener('mouseup', handleSelection);\n      return () => {\n        document.removeEventListener('mouseup', handleSelection);\n      };\n      // }, [handleSelection]\n      // );\n    };\n}"
+        }
+      ]
+    },
+    "groupedFunctions": {
+      "projects/my-canvas-lib/src/lib/components/util/useDebounce.ts": [
+        {
+          "name": "useDebounce",
+          "file": "projects/my-canvas-lib/src/lib/components/util/useDebounce.ts",
+          "ctype": "miscellaneous",
+          "subtype": "function",
+          "deprecated": false,
+          "deprecationMessage": "",
+          "description": "",
+          "args": [
+            {
+              "name": "value",
+              "type": "any",
+              "deprecated": false,
+              "deprecationMessage": ""
+            },
+            {
+              "name": "delay",
+              "type": "number",
+              "deprecated": false,
+              "deprecationMessage": ""
+            }
+          ],
+          "jsdoctags": [
+            {
+              "name": "value",
+              "type": "any",
+              "deprecated": false,
+              "deprecationMessage": "",
+              "tagName": {
+                "text": "param"
+              }
+            },
+            {
+              "name": "delay",
+              "type": "number",
+              "deprecated": false,
+              "deprecationMessage": "",
+              "tagName": {
+                "text": "param"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "groupedEnumerations": {},
+    "groupedTypeAliases": {}
+  },
+  "routes": [],
+  "coverage": {
+    "count": 0,
+    "status": "low",
+    "files": [
+      {
+        "filePath": "projects/my-canvas-lib/src/lib/canvas.editor.stories.ts",
+        "type": "variable",
+        "linktype": "miscellaneous",
+        "linksubtype": "variable",
+        "name": "DefaultView",
+        "coveragePercent": 0,
+        "coverageCount": "0/1",
+        "status": "low"
+      },
+      {
+        "filePath": "projects/my-canvas-lib/src/lib/canvas.editor.stories.ts",
+        "type": "variable",
+        "linktype": "miscellaneous",
+        "linksubtype": "variable",
+        "name": "Template",
+        "coveragePercent": 0,
+        "coverageCount": "0/1",
+        "status": "low"
+      },
+      {
+        "filePath": "projects/my-canvas-lib/src/lib/components/button-wrapper/button-wrapper.component.ts",
+        "type": "component",
+        "linktype": "component",
+        "name": "ButtonWrapperComponent",
+        "coveragePercent": 0,
+        "coverageCount": "0/3",
+        "status": "low"
+      },
+      {
+        "filePath": "projects/my-canvas-lib/src/lib/components/canvas-editor/canvas-editor.component.ts",
+        "type": "component",
+        "linktype": "component",
+        "name": "CanvasEditorComponent",
+        "coveragePercent": 0,
+        "coverageCount": "0/10",
+        "status": "low"
+      },
+      {
+        "filePath": "projects/my-canvas-lib/src/lib/components/color-palette/color-palette.component.ts",
+        "type": "component",
+        "linktype": "component",
+        "name": "ColorPaletteComponent",
+        "coveragePercent": 0,
+        "coverageCount": "0/1",
+        "status": "low"
+      },
+      {
+        "filePath": "projects/my-canvas-lib/src/lib/components/editor-footer/editor-footer.component.ts",
+        "type": "component",
+        "linktype": "component",
+        "name": "EditorFooterComponent",
+        "coveragePercent": 0,
+        "coverageCount": "0/1",
+        "status": "low"
+      },
+      {
+        "filePath": "projects/my-canvas-lib/src/lib/components/editor-margin/editor-margin.component.ts",
+        "type": "component",
+        "linktype": "component",
+        "name": "EditorMarginComponent",
+        "coveragePercent": 0,
+        "coverageCount": "0/7",
+        "status": "low"
+      },
+      {
+        "filePath": "projects/my-canvas-lib/src/lib/components/editor-margin/margin-modal/margin-dialog.component.ts",
+        "type": "component",
+        "linktype": "component",
+        "name": "MarginDialogComponent",
+        "coveragePercent": 0,
+        "coverageCount": "0/7",
+        "status": "low"
+      },
+      {
+        "filePath": "projects/my-canvas-lib/src/lib/components/editor-toolbar/editor-toolbar.component.ts",
+        "type": "component",
+        "linktype": "component",
+        "name": "EditorToolbarComponent",
+        "coveragePercent": 0,
+        "coverageCount": "0/8",
+        "status": "low"
+      },
+      {
+        "filePath": "projects/my-canvas-lib/src/lib/components/emphasis/emphasis.component.ts",
+        "type": "component",
+        "linktype": "component",
+        "name": "EmphasisComponent",
+        "coveragePercent": 0,
+        "coverageCount": "0/23",
+        "status": "low"
+      },
+      {
+        "filePath": "projects/my-canvas-lib/src/lib/components/image-upload-button/image-upload-button.component.ts",
+        "type": "component",
+        "linktype": "component",
+        "name": "ImageUploadButtonComponent",
+        "coveragePercent": 0,
+        "coverageCount": "0/5",
+        "status": "low"
+      },
+      {
+        "filePath": "projects/my-canvas-lib/src/lib/components/link/link.component.ts",
+        "type": "component",
+        "linktype": "component",
+        "name": "LinkComponent",
+        "coveragePercent": 0,
+        "coverageCount": "0/1",
+        "status": "low"
+      },
+      {
+        "filePath": "projects/my-canvas-lib/src/lib/components/margin-ruler/custom-slider-horizontal/custom-slider-horizontal.component.ts",
+        "type": "component",
+        "linktype": "component",
+        "name": "CustomSliderHorizontalComponent",
+        "coveragePercent": 0,
+        "coverageCount": "0/5",
+        "status": "low"
+      },
+      {
+        "filePath": "projects/my-canvas-lib/src/lib/components/margin-ruler/custom-slider-vertical/custom-slider-vertical.component.ts",
+        "type": "component",
+        "linktype": "component",
+        "name": "CustomSliderVerticalComponent",
+        "coveragePercent": 0,
+        "coverageCount": "0/5",
+        "status": "low"
+      },
+      {
+        "filePath": "projects/my-canvas-lib/src/lib/components/margin-ruler/margin-ruler.component.ts",
+        "type": "component",
+        "linktype": "component",
+        "name": "MarginRulerComponent",
+        "coveragePercent": 0,
+        "coverageCount": "0/9",
+        "status": "low"
+      },
+      {
+        "filePath": "projects/my-canvas-lib/src/lib/components/util/document-reducer.service.ts",
+        "type": "injectable",
+        "linktype": "injectable",
+        "name": "DocumentReducerService",
+        "coveragePercent": 0,
+        "coverageCount": "0/9",
+        "status": "low"
+      },
+      {
+        "filePath": "projects/my-canvas-lib/src/lib/components/util/documentReducer.ts",
+        "type": "interface",
+        "linktype": "interface",
+        "name": "DocumentState",
+        "coveragePercent": 0,
+        "coverageCount": "0/5",
+        "status": "low"
+      },
+      {
+        "filePath": "projects/my-canvas-lib/src/lib/components/util/store.ts",
+        "type": "variable",
+        "linktype": "miscellaneous",
+        "linksubtype": "variable",
+        "name": "store",
+        "coveragePercent": 0,
+        "coverageCount": "0/1",
+        "status": "low"
+      },
+      {
+        "filePath": "projects/my-canvas-lib/src/lib/components/util/useDebounce.ts",
+        "type": "function",
+        "linktype": "miscellaneous",
+        "linksubtype": "function",
+        "name": "useDebounce",
+        "coveragePercent": 0,
+        "coverageCount": "0/1",
+        "status": "low"
+      },
+      {
+        "filePath": "projects/my-canvas-lib/src/lib/components/util/useSelectionPosition.ts",
+        "type": "variable",
+        "linktype": "miscellaneous",
+        "linksubtype": "variable",
+        "name": "useSelectionPosition",
+        "coveragePercent": 0,
+        "coverageCount": "0/1",
+        "status": "low"
+      },
+      {
+        "filePath": "projects/my-canvas-lib/src/lib/my-lib.component.ts",
+        "type": "component",
+        "linktype": "component",
+        "name": "MyLibComponent",
+        "coveragePercent": 0,
+        "coverageCount": "0/1",
+        "status": "low"
+      },
+      {
+        "filePath": "projects/my-canvas-lib/src/lib/my-lib.service.ts",
+        "type": "injectable",
+        "linktype": "injectable",
+        "name": "MyLibService",
+        "coveragePercent": 0,
+        "coverageCount": "0/2",
+        "status": "low"
+      },
+      {
+        "filePath": "projects/my-canvas-lib/src/lib/services/document.service.ts",
+        "type": "injectable",
+        "linktype": "injectable",
+        "name": "DocumentService",
+        "coveragePercent": 0,
+        "coverageCount": "0/5",
+        "status": "low"
+      },
+      {
+        "filePath": "projects/my-canvas-lib/src/lib/store/document.actions.ts",
+        "type": "variable",
+        "linktype": "miscellaneous",
+        "linksubtype": "variable",
+        "name": "reloadRecentDoc",
+        "coveragePercent": 0,
+        "coverageCount": "0/1",
+        "status": "low"
+      },
+      {
+        "filePath": "projects/my-canvas-lib/src/lib/store/document.actions.ts",
+        "type": "variable",
+        "linktype": "miscellaneous",
+        "linksubtype": "variable",
+        "name": "setDocumentId",
+        "coveragePercent": 0,
+        "coverageCount": "0/1",
+        "status": "low"
+      },
+      {
+        "filePath": "projects/my-canvas-lib/src/lib/store/document.actions.ts",
+        "type": "variable",
+        "linktype": "miscellaneous",
+        "linksubtype": "variable",
+        "name": "setDocumentMargins",
+        "coveragePercent": 0,
+        "coverageCount": "0/1",
+        "status": "low"
+      },
+      {
+        "filePath": "projects/my-canvas-lib/src/lib/store/document.actions.ts",
+        "type": "variable",
+        "linktype": "miscellaneous",
+        "linksubtype": "variable",
+        "name": "setDocumentTitle",
+        "coveragePercent": 0,
+        "coverageCount": "0/1",
+        "status": "low"
+      },
+      {
+        "filePath": "projects/my-canvas-lib/src/lib/store/document.reducer.ts",
+        "type": "variable",
+        "linktype": "miscellaneous",
+        "linksubtype": "variable",
+        "name": "documentReducer",
+        "coveragePercent": 0,
+        "coverageCount": "0/1",
+        "status": "low"
+      },
+      {
+        "filePath": "projects/my-canvas-lib/src/lib/store/document.selectors.ts",
+        "type": "variable",
+        "linktype": "miscellaneous",
+        "linksubtype": "variable",
+        "name": "selectDocumentId",
+        "coveragePercent": 0,
+        "coverageCount": "0/1",
+        "status": "low"
+      },
+      {
+        "filePath": "projects/my-canvas-lib/src/lib/store/document.selectors.ts",
+        "type": "variable",
+        "linktype": "miscellaneous",
+        "linksubtype": "variable",
+        "name": "selectDocumentMargins",
+        "coveragePercent": 0,
+        "coverageCount": "0/1",
+        "status": "low"
+      },
+      {
+        "filePath": "projects/my-canvas-lib/src/lib/store/document.selectors.ts",
+        "type": "variable",
+        "linktype": "miscellaneous",
+        "linksubtype": "variable",
+        "name": "selectDocumentState",
+        "coveragePercent": 0,
+        "coverageCount": "0/1",
+        "status": "low"
+      },
+      {
+        "filePath": "projects/my-canvas-lib/src/lib/store/document.selectors.ts",
+        "type": "variable",
+        "linktype": "miscellaneous",
+        "linksubtype": "variable",
+        "name": "selectDocumentTitle",
+        "coveragePercent": 0,
+        "coverageCount": "0/1",
+        "status": "low"
+      },
+      {
+        "filePath": "projects/my-canvas-lib/src/lib/store/document.state.ts",
+        "type": "interface",
+        "linktype": "interface",
+        "name": "DocumentState",
+        "coveragePercent": 0,
+        "coverageCount": "0/5",
+        "status": "low"
+      },
+      {
+        "filePath": "projects/my-canvas-lib/src/lib/store/document.state.ts",
+        "type": "variable",
+        "linktype": "miscellaneous",
+        "linksubtype": "variable",
+        "name": "initialState",
+        "coveragePercent": 0,
+        "coverageCount": "0/1",
+        "status": "low"
+      }
+    ]
+  }
+}

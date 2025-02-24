@@ -11,7 +11,7 @@ packages/examples
 .turbo
 # testing
 /coverage
-
+examples
 # production
 /build
 packages/**/dist/

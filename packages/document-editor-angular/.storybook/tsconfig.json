@@ -1,11 +1,14 @@
 {
-  "extends": "../tsconfig.app.json",
+  "extends": "../tsconfig.json",
   "compilerOptions": {
-    "types": ["node"],
-    "allowSyntheticDefaultImports": true,
-    "resolveJsonModule": true
+    "allowSyntheticDefaultImports": true
   },
   "exclude": ["../src/test.ts", "../src/**/*.spec.ts"],
-  "include": ["../src/**/*", "./preview.ts"],
+  "include": [
+    "../src/**/*",
+    "./preview.ts",
+    "../projects/my-canvas-lib/src/lib/**/*.stories.ts",
+    "../stories/**/*.stories.ts"
+  ],
   "files": ["./typings.d.ts"]
 }

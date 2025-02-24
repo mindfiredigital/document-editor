@@ -27,5 +27,18 @@
     "strictInjectionParameters": true,
     "strictInputAccessModifiers": true,
     "strictTemplates": true
-  }
+  },
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.tsx",
+    "libs/**/*.ts",
+    "libs/**/*.tsx",
+    ".storybook/**/*.ts",
+    ".storybook/**/*.tsx",
+    "**/*.stories.ts",
+    "**/*.stories.tsx",
+    "projects/my-canvas-lib/src/lib/**/*.stories.ts",
+    "projects/my-canvas-lib/src/lib/components/link/stories/link.storises.ts"
+  ],
+  "exclude": ["node_modules", "dist"]
 }

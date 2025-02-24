@@ -2,7 +2,11 @@ import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 // import all necessary
 
 import { MarginRulerComponent } from '../margin-ruler/margin-ruler.component';
-import { DOMEventHandlers, EditorMode, PageMode } from '@mindfiredigital/canvas-editor';
+import {
+  DOMEventHandlers,
+  EditorMode,
+  PageMode,
+} from '@mindfiredigital/canvas-editor';
 
 @Component({
   selector: 'lib-canvas-editor',
@@ -56,7 +60,7 @@ export class CanvasEditorComponent implements OnInit {
     //   setEditorContent(text);
     //   _props?.onChange && _props?.onChange(text[0].value);
     // })
-    DOMEventHandlers?.register(container, this.editorContent, {});
+    DOMEventHandlers?.register(container, this.editorContent, editorOptions);
     DOMEventHandlers?.setContent({ main: [{ value: 'hello' }] });
   }
 }
