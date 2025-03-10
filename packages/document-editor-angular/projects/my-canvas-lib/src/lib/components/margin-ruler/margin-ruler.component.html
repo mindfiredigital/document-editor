@@ -8,8 +8,31 @@
 <!-- </div> -->
 
 
-<div class="ruler-container">
-  <div class="ruler vertical">
+
+
+<div class="margin-container">
+  <!-- Vertical Ruler -->
+  <div class="vertical-slider">
+    <ngx-slider [(value)]="verticalSlider[0]" [(highValue)]="verticalSlider[1]" [options]="verticalOptions"
+      (userChangeEnd)="onVerticalChange($event)">
+    </ngx-slider>
+  </div>
+
+  <!-- Horizontal Ruler -->
+  <div class="horizontal-line">
+    <div class="horizontal-slider custom-slider ">
+      <ngx-slider [(value)]="horizontalSlider[0]" [(highValue)]="horizontalSlider[1]" [options]="horizontalOptions"
+        (userChangeEnd)="onHorizontalChange($event)">
+      </ngx-slider>
+    </div>
+  </div>
+</div>
+
+
+
+
+<!-- <div class="ruler-container"> -->
+<!-- <div class="ruler vertical">
     <mat-slider class="vertical-slider"  min="-1056"
     max="0"
     step="24" vertical="true" (input)="handleChange($event)"
@@ -25,9 +48,9 @@
       (input)="handleChange($event)">
       <input matSliderThumb [(ngModel)]="verticalSlider[1]">
     </mat-slider>
-  </div>
+  </div> -->
 
-  <div class="ruler horizontal">
+<!-- <div class="ruler horizontal">
     <mat-slider class="horizontal-slider" horizontal="true" min="-816" max="0" (input)="handleChangeHorizontal($event)" step="24"
       showTickMarks>
       <input matSliderThumb [(ngModel)]="horizontalSlider[0]">
@@ -41,4 +64,4 @@
       <input matSliderThumb [(ngModel)]="horizontalSlider[1]">
     </mat-slider>
   </div>
-</div>
+</div> -->

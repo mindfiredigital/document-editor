@@ -1,5 +1,5 @@
-<mat-toolbar color="primary"> 
+<mat-toolbar color="primary" [ngStyle]="toolbarClass?.item?.container"> 
   <mat-toolbar-row>
-    <lib-emphasis></lib-emphasis>
+    <lib-emphasis [toolbar]="toolbarItem" (change)="onChange($event)" (select)="onSelect($event)" [toolbarClass]="toolbarClass"></lib-emphasis>
   </mat-toolbar-row>
 </mat-toolbar>

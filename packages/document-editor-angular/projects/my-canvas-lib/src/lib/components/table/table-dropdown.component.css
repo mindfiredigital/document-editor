@@ -1,0 +1,48 @@
+.tableContainer {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .tableButton {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  
+  .tableCollapse {
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 139px;
+    background: white;
+    border: 1px solid #ddd;
+    padding: 10px;
+    z-index: 10;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2);
+  }
+  
+  .tableTitle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.8rem;
+    margin-bottom: 5px;
+  }
+  
+  .tableGrid {
+    border-collapse: separate;
+    border-spacing: 4px;
+  }
+  
+  .tableGrid td {
+    width: 16px;
+    height: 16px;
+    border: 1px solid #e2e6ed;
+    background: #fff;
+    cursor: pointer;
+  }
+  
+  .activeCell {
+    background-color: #1a73e8;
+  }
+  

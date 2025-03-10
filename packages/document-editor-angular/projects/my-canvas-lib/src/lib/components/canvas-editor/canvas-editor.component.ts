@@ -1,39 +1,43 @@
-import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
-// import all necessary
-
-import { MarginRulerComponent } from '../margin-ruler/margin-ruler.component';
+import {
+  Component,
+  ElementRef,
+  EventEmitter,
+  Input,
+  OnInit,
+  Output,
+  ViewChild,
+  AfterViewInit,
+} from '@angular/core';
 import {
   DOMEventHandlers,
   EditorMode,
   PageMode,
 } from '@mindfiredigital/canvas-editor';
-
+import { MarginRulerComponent } from '../margin-ruler/margin-ruler.component';
+import { CommonModule } from '@angular/common';
 @Component({
   selector: 'lib-canvas-editor',
-  standalone: true,
-  imports: [MarginRulerComponent],
   templateUrl: './canvas-editor.component.html',
-  styleUrl: './canvas-editor.component.css',
+  styleUrls: ['./canvas-editor.component.css'],
+  imports: [MarginRulerComponent, CommonModule],
 })
-export class CanvasEditorComponent implements OnInit {
-  props: any = {};
-  documentId: string = '0';
-  canvasEditorRef: any;
-  dropdown = {
-    left: 1180,
-    top: 250,
-    visiblity: false,
-  };
-  editorContent: any = [];
+export class CanvasEditorComponent implements OnInit, AfterViewInit {
+  @Input() style: any = {}; // Equivalent to `_props.style`
+  @Input() data: any = ''; // Equivalent to `_props.data`
+  @Output() onChange = new EventEmitter<string>(); // Equivalent to `_props.onChange`
+  @Output() onSelect = new EventEmitter<string>(); // Equivalent to `_props.onSelect`
 
-  selectedText = '';
-  instance: any;
+  @ViewChild('canvasEditorRef', { static: false }) canvasEditorRef!: ElementRef;
+  documentId: string = '';
+  editorContent: any = [];
+  selectedText: string = '';
+
   constructor() {}
 
-  ngOnInit(): void {
-    const container = document.querySelector(
-      '.canvas-editor'
-    ) as HTMLDivElement;
+  ngOnInit(): void {}
+
+  ngAfterViewInit(): void {
+    const container = this.canvasEditorRef.nativeElement as HTMLDivElement;
 
     if (container.querySelector('[editor-component="main"]')) {
       return;
@@ -51,16 +55,29 @@ export class CanvasEditorComponent implements OnInit {
       maxSize: 72,
     };
 
-    // container.addEventListener('mouseup', (e) => {
-    //   _props.onSelect && _props?.onSelect(DOMEventHandlers.getSelectedText());
-    // })
+    // MouseUp Event to Detect Text Selection
+    container.addEventListener('mouseup', () => {
+      const selectedText = DOMEventHandlers.getSelectedText();
+      if (selectedText) {
+        this.onSelect.emit(selectedText);
+      }
+    });
 
-    // container.addEventListener('keydown', (e) => {
-    //   const text = DOMEventHandlers.getContent()?.data?.main;
-    //   setEditorContent(text);
-    //   _props?.onChange && _props?.onChange(text[0].value);
-    // })
-    DOMEventHandlers?.register(container, this.editorContent, editorOptions);
-    DOMEventHandlers?.setContent({ main: [{ value: 'hello' }] });
+    // KeyDown Event to Capture Content Changes
+    container.addEventListener('keydown', () => {
+      const text = DOMEventHandlers.getContent()?.data?.main;
+      this.editorContent = text;
+      if (text && text.length) {
+        console.log(text);
+        this.onChange.emit(text[0]?.value);
+      }
+    });
+
+    // Initialize Canvas Editor
+    DOMEventHandlers.register(container, this.editorContent, editorOptions);
+    if (this.data) {
+      this.editorContent = this.data;
+      DOMEventHandlers.setContent({ main: [{ value: this.data }] });
+    }
   }
 }

@@ -1,0 +1,10 @@
+<button #buttonRef mat-icon-button (click)="handleClick()">
+  <fa-icon [icon]="faHighlighter"></fa-icon>
+</button>
+
+<app-color-palette 
+  *ngIf="anchorEl"
+  [anchorEl]="anchorEl.nativeElement" 
+  (close)="handleClose()"
+  [feature]="Color.HIGHLIGHT">
+</app-color-palette>

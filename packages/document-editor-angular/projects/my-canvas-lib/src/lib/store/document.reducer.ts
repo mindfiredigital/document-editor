@@ -6,7 +6,7 @@ export interface DocumentState {
 }
 
 const initialState: DocumentState = {
-  margins: [], // Default margins
+  margins: [],
 };
 
 export const documentReducer = createReducer(

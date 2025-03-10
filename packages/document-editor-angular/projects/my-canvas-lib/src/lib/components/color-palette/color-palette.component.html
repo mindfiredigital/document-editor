@@ -1,52 +1,36 @@
-<!-- <ng-container>
-    <mat-popover
-      [open]="!!anchorEl"
-      [anchorEl]="anchorEl"
-      (close)="onClose()"
-      [anchorOrigin]="{ vertical: 'bottom', horizontal: 'center' }"
-      [transformOrigin]="{ vertical: 'top', horizontal: 'center' }"
-    >
-      <div class="palette-grid">
-        <div *ngFor="let color of colors; let i = index" class="palette-item">
-          <div
-            class="palette-circle"
-            [ngStyle]="{ 'background-color': color }"
-            (click)="handleColor(color)"
-            [ngClass]="{ 'selected': color === definedColor }"
-          >
-            <mat-icon *ngIf="color === definedColor">check</mat-icon>
-          </div>
-        </div>
+<div class="menu-container">
+  <mat-menu
+    #popover="matMenu"
+    [overlapTrigger]="false"
+    class="color-popover"
+    (closed)="close.emit()"
+    [xPosition]="'after'"
+    [yPosition]="'below'"
+  >
+    <div class="color-grid">
+      <div
+        *ngFor="let color of colors"
+        class="color-box"
+        [style.backgroundColor]="color"
+        (click)="handleColor(color)"
+      >
+        <fa-icon *ngIf="color === definedColor" [icon]="faCheck"></fa-icon>
       </div>
-  
-      <div class="custom-colors-label">
-        <mat-typography variant="body2" class="bold">CUSTOM</mat-typography>
-      </div>
-  
-      <div class="custom-colors-container">
-        <div *ngFor="let color of customColors" class="palette-item">
-          <div
-            class="palette-circle"
-            [ngStyle]="{ 'background-color': color }"
-            (click)="handleColor(color)"
-            [ngClass]="{ 'selected': color === definedColor }"
-          >
-            <mat-icon *ngIf="color === definedColor">check</mat-icon>
-          </div>
-        </div>
-  
-        <button mat-icon-button (click)="handleClick($event)">
-          <mat-icon>color_lens</mat-icon>
-        </button>
-      </div>
-    </mat-popover>
-  
-    <app-color-picker
-      *ngIf="colorPickerAnchor"
-      [anchorEl]="colorPickerAnchor"
-      [color]="definedColor"
-      [feature]="feature"
-      (close)="colorPickerHandleClose()"
-    ></app-color-picker>
-  </ng-container>
-   -->
+    </div>
+
+    <div class="custom-text">CUSTOM</div>
+    <button mat-icon-button class="add-color-btn" (click)="handleClick($event)">
+      <fa-icon [icon]="faPalette"></fa-icon>
+    </button>
+  </mat-menu>
+</div>
+
+<app-color-picker
+  *ngIf="colorPickerAnchor"
+  [colorPickerAnchor]="colorPickerAnchor"
+  [color]="definedColor"
+  [feature]="feature"
+  (close)="colorPickerHandleClose()"
+></app-color-picker>
+<!-- Manual trigger -->
+<button mat-button [matMenuTriggerFor]="popover" #menuTrigger="matMenuTrigger" hidden></button>

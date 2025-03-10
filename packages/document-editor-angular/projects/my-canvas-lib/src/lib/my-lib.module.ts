@@ -8,9 +8,9 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatSliderModule } from '@angular/material/slider';
 import { StoreModule } from '@ngrx/store';
 import { documentReducer } from './store/document.reducer';
-
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 @NgModule({
-  // declarations: [MyLibComponent],
+  declarations: [],
   imports: [
     CommonModule,
     MyLibComponent,
@@ -18,13 +18,15 @@ import { documentReducer } from './store/document.reducer';
     MatIconModule,
     ReactiveFormsModule,
     StoreModule.forRoot({ document: documentReducer }),
+    BrowserAnimationsModule,
   ],
   exports: [
     MyLibComponent, // Export standalone component
+    BrowserAnimationsModule,
   ],
   providers: [
     DocumentService,
     // ... other services
   ],
 })
-export class MyCanvasLibModule {}
+export class DocumentEditorModule {}
