@@ -9,13 +9,13 @@
           "badge": false,
           "noIndex": false,
           "className": "docs-version-current",
-          "path": "/react-canvas-editor/docs",
-          "tagsPath": "/react-canvas-editor/docs/tags",
+          "path": "/document-editor/docs",
+          "tagsPath": "/document-editor/docs/tags",
           "isLast": true,
           "routePriority": -1,
-          "sidebarFilePath": "D:\\document-editor\\packages\\document-editor-react\\docusaurus\\sidebars.js",
-          "contentPath": "D:\\document-editor\\packages\\document-editor-react\\docusaurus\\docs",
-          "contentPathLocalized": "D:\\document-editor\\packages\\document-editor-react\\docusaurus\\i18n\\en\\docusaurus-plugin-content-docs\\current",
+          "sidebarFilePath": "D:\\document-editor\\documentation\\sidebars.js",
+          "contentPath": "D:\\document-editor\\documentation\\docs",
+          "contentPathLocalized": "D:\\document-editor\\documentation\\i18n\\en\\docusaurus-plugin-content-docs\\current",
           "docs": [
             {
               "unversionedId": "contributors/code-of-conduct",
@@ -25,7 +25,7 @@
               "source": "@site/docs/contributors/code-of-conduct.md",
               "sourceDirName": "contributors",
               "slug": "/contributors/code-of-conduct",
-              "permalink": "/react-canvas-editor/docs/contributors/code-of-conduct",
+              "permalink": "/document-editor/docs/contributors/code-of-conduct",
               "draft": false,
               "tags": [],
               "version": "current",
@@ -36,11 +36,11 @@
               "sidebar": "tutorialSidebar",
               "previous": {
                 "title": "How to Contribute",
-                "permalink": "/react-canvas-editor/docs/contributors/how-to-contribute"
+                "permalink": "/document-editor/docs/contributors/how-to-contribute"
               },
               "next": {
                 "title": "Release",
-                "permalink": "/react-canvas-editor/docs/category/release"
+                "permalink": "/document-editor/docs/category/release"
               }
             },
             {
@@ -51,7 +51,7 @@
               "source": "@site/docs/contributors/contributors.md",
               "sourceDirName": "contributors",
               "slug": "/contributors/",
-              "permalink": "/react-canvas-editor/docs/contributors/",
+              "permalink": "/document-editor/docs/contributors/",
               "draft": false,
               "tags": [],
               "version": "current",
@@ -62,11 +62,11 @@
               "sidebar": "tutorialSidebar",
               "previous": {
                 "title": "Contribution Guide",
-                "permalink": "/react-canvas-editor/docs/category/contribution-guide"
+                "permalink": "/document-editor/docs/category/contribution-guide"
               },
               "next": {
                 "title": "How to Contribute",
-                "permalink": "/react-canvas-editor/docs/contributors/how-to-contribute"
+                "permalink": "/document-editor/docs/contributors/how-to-contribute"
               }
             },
             {
@@ -77,7 +77,7 @@
               "source": "@site/docs/contributors/how-to-contribute.md",
               "sourceDirName": "contributors",
               "slug": "/contributors/how-to-contribute",
-              "permalink": "/react-canvas-editor/docs/contributors/how-to-contribute",
+              "permalink": "/document-editor/docs/contributors/how-to-contribute",
               "draft": false,
               "tags": [],
               "version": "current",
@@ -88,11 +88,11 @@
               "sidebar": "tutorialSidebar",
               "previous": {
                 "title": "Contributors",
-                "permalink": "/react-canvas-editor/docs/contributors/"
+                "permalink": "/document-editor/docs/contributors/"
               },
               "next": {
                 "title": "Code of conduct",
-                "permalink": "/react-canvas-editor/docs/contributors/code-of-conduct"
+                "permalink": "/document-editor/docs/contributors/code-of-conduct"
               }
             },
             {
@@ -103,7 +103,7 @@
               "source": "@site/docs/Get-started/Installation.md",
               "sourceDirName": "Get-started",
               "slug": "/Get-started/Installation",
-              "permalink": "/react-canvas-editor/docs/Get-started/Installation",
+              "permalink": "/document-editor/docs/Get-started/Installation",
               "draft": false,
               "tags": [],
               "version": "current",
@@ -114,11 +114,11 @@
               "sidebar": "tutorialSidebar",
               "previous": {
                 "title": "Get Started",
-                "permalink": "/react-canvas-editor/docs/category/get-started"
+                "permalink": "/document-editor/docs/category/get-started"
               },
               "next": {
                 "title": "Quick Start",
-                "permalink": "/react-canvas-editor/docs/Get-started/quickstart"
+                "permalink": "/document-editor/docs/Get-started/quickstart"
               }
             },
             {
@@ -129,7 +129,7 @@
               "source": "@site/docs/Get-started/quickstart.md",
               "sourceDirName": "Get-started",
               "slug": "/Get-started/quickstart",
-              "permalink": "/react-canvas-editor/docs/Get-started/quickstart",
+              "permalink": "/document-editor/docs/Get-started/quickstart",
               "draft": false,
               "tags": [],
               "version": "current",
@@ -140,11 +140,11 @@
               "sidebar": "tutorialSidebar",
               "previous": {
                 "title": "Installation",
-                "permalink": "/react-canvas-editor/docs/Get-started/Installation"
+                "permalink": "/document-editor/docs/Get-started/Installation"
               },
               "next": {
                 "title": "Tutorials",
-                "permalink": "/react-canvas-editor/docs/category/tutorials"
+                "permalink": "/document-editor/docs/category/tutorials"
               }
             },
             {
@@ -155,7 +155,7 @@
               "source": "@site/docs/references/dom-event.md",
               "sourceDirName": "references",
               "slug": "/references/dom-event",
-              "permalink": "/react-canvas-editor/docs/references/dom-event",
+              "permalink": "/document-editor/docs/references/dom-event",
               "draft": false,
               "tags": [],
               "version": "current",
@@ -166,22 +166,22 @@
               "sidebar": "tutorialSidebar",
               "previous": {
                 "title": "References",
-                "permalink": "/react-canvas-editor/docs/category/references"
+                "permalink": "/document-editor/docs/category/references"
               },
               "next": {
                 "title": "Toolbar Options",
-                "permalink": "/react-canvas-editor/docs/references/toolbar-option"
+                "permalink": "/document-editor/docs/references/toolbar-option"
               }
             },
             {
               "unversionedId": "references/toolbar-option",
               "id": "references/toolbar-option",
               "title": "Toolbar Options",
-              "description": "| Option     |        Purpose         |",
+              "description": "| Option              | Purpose                                                                                                                                                       |",
               "source": "@site/docs/references/toolbar-option.md",
               "sourceDirName": "references",
               "slug": "/references/toolbar-option",
-              "permalink": "/react-canvas-editor/docs/references/toolbar-option",
+              "permalink": "/document-editor/docs/references/toolbar-option",
               "draft": false,
               "tags": [],
               "version": "current",
@@ -192,11 +192,11 @@
               "sidebar": "tutorialSidebar",
               "previous": {
                 "title": "DOM Events",
-                "permalink": "/react-canvas-editor/docs/references/dom-event"
+                "permalink": "/document-editor/docs/references/dom-event"
               },
               "next": {
                 "title": "Contribution Guide",
-                "permalink": "/react-canvas-editor/docs/category/contribution-guide"
+                "permalink": "/document-editor/docs/category/contribution-guide"
               }
             },
             {
@@ -207,7 +207,7 @@
               "source": "@site/docs/release/change-logs.md",
               "sourceDirName": "release",
               "slug": "/release/change-logs",
-              "permalink": "/react-canvas-editor/docs/release/change-logs",
+              "permalink": "/document-editor/docs/release/change-logs",
               "draft": false,
               "tags": [],
               "version": "current",
@@ -218,11 +218,11 @@
               "sidebar": "tutorialSidebar",
               "previous": {
                 "title": "Release",
-                "permalink": "/react-canvas-editor/docs/category/release"
+                "permalink": "/document-editor/docs/category/release"
               },
               "next": {
                 "title": "Release notes",
-                "permalink": "/react-canvas-editor/docs/release/release-notes"
+                "permalink": "/document-editor/docs/release/release-notes"
               }
             },
             {
@@ -233,7 +233,7 @@
               "source": "@site/docs/release/release-notes.md",
               "sourceDirName": "release",
               "slug": "/release/release-notes",
-              "permalink": "/react-canvas-editor/docs/release/release-notes",
+              "permalink": "/document-editor/docs/release/release-notes",
               "draft": false,
               "tags": [],
               "version": "current",
@@ -241,7 +241,7 @@
               "sidebar": "tutorialSidebar",
               "previous": {
                 "title": "Change logs",
-                "permalink": "/react-canvas-editor/docs/release/change-logs"
+                "permalink": "/document-editor/docs/release/change-logs"
               }
             },
             {
@@ -252,7 +252,7 @@
               "source": "@site/docs/tutorial-basics/customized-style.md",
               "sourceDirName": "tutorial-basics",
               "slug": "/tutorial-basics/customized-style",
-              "permalink": "/react-canvas-editor/docs/tutorial-basics/customized-style",
+              "permalink": "/document-editor/docs/tutorial-basics/customized-style",
               "draft": false,
               "tags": [],
               "version": "current",
@@ -263,11 +263,11 @@
               "sidebar": "tutorialSidebar",
               "previous": {
                 "title": "How to customize toolbar",
-                "permalink": "/react-canvas-editor/docs/tutorial-basics/customized-tool"
+                "permalink": "/document-editor/docs/tutorial-basics/customized-tool"
               },
               "next": {
                 "title": "How to use DOM events",
-                "permalink": "/react-canvas-editor/docs/tutorial-basics/dom-handle"
+                "permalink": "/document-editor/docs/tutorial-basics/dom-handle"
               }
             },
             {
@@ -278,7 +278,7 @@
               "source": "@site/docs/tutorial-basics/customized-tool.md",
               "sourceDirName": "tutorial-basics",
               "slug": "/tutorial-basics/customized-tool",
-              "permalink": "/react-canvas-editor/docs/tutorial-basics/customized-tool",
+              "permalink": "/document-editor/docs/tutorial-basics/customized-tool",
               "draft": false,
               "tags": [],
               "version": "current",
@@ -289,11 +289,11 @@
               "sidebar": "tutorialSidebar",
               "previous": {
                 "title": "Tutorials",
-                "permalink": "/react-canvas-editor/docs/category/tutorials"
+                "permalink": "/document-editor/docs/category/tutorials"
               },
               "next": {
                 "title": "How to customize style",
-                "permalink": "/react-canvas-editor/docs/tutorial-basics/customized-style"
+                "permalink": "/document-editor/docs/tutorial-basics/customized-style"
               }
             },
             {
@@ -304,7 +304,7 @@
               "source": "@site/docs/tutorial-basics/dom-handle.md",
               "sourceDirName": "tutorial-basics",
               "slug": "/tutorial-basics/dom-handle",
-              "permalink": "/react-canvas-editor/docs/tutorial-basics/dom-handle",
+              "permalink": "/document-editor/docs/tutorial-basics/dom-handle",
               "draft": false,
               "tags": [],
               "version": "current",
@@ -315,11 +315,11 @@
               "sidebar": "tutorialSidebar",
               "previous": {
                 "title": "How to customize style",
-                "permalink": "/react-canvas-editor/docs/tutorial-basics/customized-style"
+                "permalink": "/document-editor/docs/tutorial-basics/customized-style"
               },
               "next": {
                 "title": "References",
-                "permalink": "/react-canvas-editor/docs/category/references"
+                "permalink": "/document-editor/docs/category/references"
               }
             },
             {
@@ -330,7 +330,7 @@
               "source": "@site/docs/what-is-document-editor.md",
               "sourceDirName": ".",
               "slug": "/what-is-document-editor",
-              "permalink": "/react-canvas-editor/docs/what-is-document-editor",
+              "permalink": "/document-editor/docs/what-is-document-editor",
               "draft": false,
               "tags": [],
               "version": "current",
@@ -341,7 +341,7 @@
               "sidebar": "tutorialSidebar",
               "next": {
                 "title": "Why we use Canvas",
-                "permalink": "/react-canvas-editor/docs/category/why-we-use-canvas"
+                "permalink": "/document-editor/docs/category/why-we-use-canvas"
               }
             },
             {
@@ -352,7 +352,7 @@
               "source": "@site/docs/Why-we-use-canvas/Why-we-use-canvas.md",
               "sourceDirName": "Why-we-use-canvas",
               "slug": "/Why-we-use-canvas/",
-              "permalink": "/react-canvas-editor/docs/Why-we-use-canvas/",
+              "permalink": "/document-editor/docs/Why-we-use-canvas/",
               "draft": false,
               "tags": [],
               "version": "current",
@@ -363,11 +363,11 @@
               "sidebar": "tutorialSidebar",
               "previous": {
                 "title": "Why we use Canvas",
-                "permalink": "/react-canvas-editor/docs/category/why-we-use-canvas"
+                "permalink": "/document-editor/docs/category/why-we-use-canvas"
               },
               "next": {
                 "title": "Get Started",
-                "permalink": "/react-canvas-editor/docs/category/get-started"
+                "permalink": "/document-editor/docs/category/get-started"
               }
             }
           ],
@@ -392,7 +392,7 @@
                 "link": {
                   "type": "generated-index",
                   "slug": "/category/why-we-use-canvas",
-                  "permalink": "/react-canvas-editor/docs/category/why-we-use-canvas"
+                  "permalink": "/document-editor/docs/category/why-we-use-canvas"
                 }
               },
               {
@@ -413,7 +413,7 @@
                 "link": {
                   "type": "generated-index",
                   "slug": "/category/get-started",
-                  "permalink": "/react-canvas-editor/docs/category/get-started"
+                  "permalink": "/document-editor/docs/category/get-started"
                 }
               },
               {
@@ -438,7 +438,7 @@
                 "link": {
                   "type": "generated-index",
                   "slug": "/category/tutorials",
-                  "permalink": "/react-canvas-editor/docs/category/tutorials"
+                  "permalink": "/document-editor/docs/category/tutorials"
                 }
               },
               {
@@ -459,7 +459,7 @@
                 "link": {
                   "type": "generated-index",
                   "slug": "/category/references",
-                  "permalink": "/react-canvas-editor/docs/category/references"
+                  "permalink": "/document-editor/docs/category/references"
                 }
               },
               {
@@ -484,7 +484,7 @@
                 "link": {
                   "type": "generated-index",
                   "slug": "/category/contribution-guide",
-                  "permalink": "/react-canvas-editor/docs/category/contribution-guide"
+                  "permalink": "/document-editor/docs/category/contribution-guide"
                 }
               },
               {
@@ -505,7 +505,7 @@
                 "link": {
                   "type": "generated-index",
                   "slug": "/category/release",
-                  "permalink": "/react-canvas-editor/docs/category/release"
+                  "permalink": "/document-editor/docs/category/release"
                 }
               }
             ]
@@ -520,7 +520,7 @@
       "blogPosts": [],
       "blogListPaginated": [],
       "blogTags": {},
-      "blogTagsListPath": "/react-canvas-editor/blog/tags",
+      "blogTagsListPath": "/document-editor/blog/tags",
       "blogTagsPaginated": []
     }
   },
@@ -528,12 +528,12 @@
     "default": [
       {
         "type": "jsx",
-        "permalink": "/react-canvas-editor/",
+        "permalink": "/document-editor/",
         "source": "@site/src/pages/index.js"
       },
       {
         "type": "mdx",
-        "permalink": "/react-canvas-editor/markdown-page",
+        "permalink": "/document-editor/markdown-page",
         "source": "@site/src/pages/markdown-page.md",
         "title": "Markdown page example",
         "description": "You don't need React to write simple standalone pages.",

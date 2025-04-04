@@ -6,7 +6,7 @@
   "source": "@site/docs/Get-started/quickstart.md",
   "sourceDirName": "Get-started",
   "slug": "/Get-started/quickstart",
-  "permalink": "/react-canvas-editor/docs/Get-started/quickstart",
+  "permalink": "/document-editor/docs/Get-started/quickstart",
   "draft": false,
   "tags": [],
   "version": "current",
@@ -17,10 +17,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "Installation",
-    "permalink": "/react-canvas-editor/docs/Get-started/Installation"
+    "permalink": "/document-editor/docs/Get-started/Installation"
   },
   "next": {
     "title": "Tutorials",
-    "permalink": "/react-canvas-editor/docs/category/tutorials"
+    "permalink": "/document-editor/docs/category/tutorials"
   }
 }
