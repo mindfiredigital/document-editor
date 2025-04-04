@@ -2,7 +2,7 @@
   "unversionedId": "references/toolbar-option",
   "id": "references/toolbar-option",
   "title": "Toolbar Options",
-  "description": "| Option     |        Purpose         |",
+  "description": "| Option              | Purpose                                                                                                                                                       |",
   "source": "@site/docs/references/toolbar-option.md",
   "sourceDirName": "references",
   "slug": "/references/toolbar-option",

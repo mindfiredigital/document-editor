@@ -189,7 +189,7 @@
     "references/toolbar-option": {
       "id": "references/toolbar-option",
       "title": "Toolbar Options",
-      "description": "| Option     |        Purpose         |",
+      "description": "| Option              | Purpose                                                                                                                                                       |",
       "sidebar": "tutorialSidebar"
     },
     "release/change-logs": {

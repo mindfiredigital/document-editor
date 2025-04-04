@@ -13,9 +13,9 @@
           "tagsPath": "/react-canvas-editor/docs/tags",
           "isLast": true,
           "routePriority": -1,
-          "sidebarFilePath": "D:\\document-editor\\packages\\document-editor-react\\docusaurus\\sidebars.js",
-          "contentPath": "D:\\document-editor\\packages\\document-editor-react\\docusaurus\\docs",
-          "contentPathLocalized": "D:\\document-editor\\packages\\document-editor-react\\docusaurus\\i18n\\en\\docusaurus-plugin-content-docs\\current",
+          "sidebarFilePath": "D:\\document-editor\\documentation\\sidebars.js",
+          "contentPath": "D:\\document-editor\\documentation\\docs",
+          "contentPathLocalized": "D:\\document-editor\\documentation\\i18n\\en\\docusaurus-plugin-content-docs\\current",
           "docs": [
             {
               "unversionedId": "contributors/code-of-conduct",
@@ -177,7 +177,7 @@
               "unversionedId": "references/toolbar-option",
               "id": "references/toolbar-option",
               "title": "Toolbar Options",
-              "description": "| Option     |        Purpose         |",
+              "description": "| Option              | Purpose                                                                                                                                                       |",
               "source": "@site/docs/references/toolbar-option.md",
               "sourceDirName": "references",
               "slug": "/references/toolbar-option",

@@ -3,6 +3,62 @@ import ComponentCreator from '@docusaurus/ComponentCreator';
 
 export default [
   {
+    path: '/react-canvas-editor/__docusaurus/debug',
+    component: ComponentCreator(
+      '/react-canvas-editor/__docusaurus/debug',
+      '800'
+    ),
+    exact: true,
+  },
+  {
+    path: '/react-canvas-editor/__docusaurus/debug/config',
+    component: ComponentCreator(
+      '/react-canvas-editor/__docusaurus/debug/config',
+      'a09'
+    ),
+    exact: true,
+  },
+  {
+    path: '/react-canvas-editor/__docusaurus/debug/content',
+    component: ComponentCreator(
+      '/react-canvas-editor/__docusaurus/debug/content',
+      '632'
+    ),
+    exact: true,
+  },
+  {
+    path: '/react-canvas-editor/__docusaurus/debug/globalData',
+    component: ComponentCreator(
+      '/react-canvas-editor/__docusaurus/debug/globalData',
+      'ede'
+    ),
+    exact: true,
+  },
+  {
+    path: '/react-canvas-editor/__docusaurus/debug/metadata',
+    component: ComponentCreator(
+      '/react-canvas-editor/__docusaurus/debug/metadata',
+      'dc0'
+    ),
+    exact: true,
+  },
+  {
+    path: '/react-canvas-editor/__docusaurus/debug/registry',
+    component: ComponentCreator(
+      '/react-canvas-editor/__docusaurus/debug/registry',
+      'c10'
+    ),
+    exact: true,
+  },
+  {
+    path: '/react-canvas-editor/__docusaurus/debug/routes',
+    component: ComponentCreator(
+      '/react-canvas-editor/__docusaurus/debug/routes',
+      '3a9'
+    ),
+    exact: true,
+  },
+  {
     path: '/react-canvas-editor/markdown-page',
     component: ComponentCreator('/react-canvas-editor/markdown-page', '98c'),
     exact: true,
