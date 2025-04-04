@@ -1,14 +1,15 @@
 <h1 align="center">Document Editor </h1><br><br>
 <p align="center">
-<a href="https://www.npmjs.com/package/@mindfiredigital/react-canvas-editor"><img src="https://img.shields.io/npm/v/@mindfiredigital/react-canvas-editor.svg?sanitize=true" alt="Version"></a>
-<a href="https://www.npmjs.com/package/@mindfiredigital/react-canvas-editor"><img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg" alt="PRs"></a>
+<a href="https://www.npmjs.com/package/@mindfiredigital/react-canvas-editor"><img src="https://img.shields.io/npm/v/@mindfiredigital/react-canvas-editor.svg?sanitize=true" alt="React Version"></a>
+<a href="https://www.npmjs.com/package/@mindfiredigital/angular-canvas-editor"><img src="https://img.shields.io/npm/v/@mindfiredigital/angular-canvas-editor.svg?sanitize=true" alt="Angular Version"></a>
+<a href="https://github.com/mindfiredigital/document-editor"><img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg" alt="PRs Welcome"></a>
 </p>
 
 <br>
 
-<p align="center"> Experience powerful document creation with our React-based canvas editor. Craft and manage multi-page documents effortlessly </p>
+<p align="center"> Experience powerful document creation with our document editor based on html5 canvas. Craft and manage multi-page documents effortlessly </p>
 
-It is a tool that allows developers to integrate multi page document editors built on top of document editor based on html5 canvas.
+It is a tool that allows developers to integrate multi page document editors built on top of html5 canvas.
 
 <br>
 
