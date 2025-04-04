@@ -2,30 +2,150 @@
  * CSS files with the .module.css suffix will be treated as CSS modules
  * and scoped locally.
  */
- html[data-theme='light'] {
-  --background: #f0f2f4;
+:root {
+  --primary-red: #e53e3e;
+  --primary-black: #1a202c;
+  --primary-gray: #4a5568;
+  --primary-white: #ffffff;
+}
+
+html[data-theme='light'] {
+  --background: var(--primary-white);
+  --background-gradient: linear-gradient(135deg, #f7fafc 0%, #edf2f7 100%);
+  --text-primary: var(--primary-black);
+  --text-secondary: var(--primary-gray);
 }
 
 html[data-theme='dark'] {
-  --background: #242526;
+  --background: var(--primary-black);
+  --background-gradient: linear-gradient(135deg, #2d3748 0%, #1a202c 100%);
+  --text-primary: var(--primary-white);
+  --text-secondary: #a0aec0;
 }
 
 .heroBanner {
-  padding: 4rem 0;
+  padding: 6rem 0;
   text-align: center;
   position: relative;
   overflow: hidden;
-  background: var(--background);
+  background: var(--background-gradient);
+  animation: fadeIn 1s ease-in;
 }
 
-@media screen and (max-width: 996px) {
-  .heroBanner {
-    padding: 2rem;
-  }
+.heroBanner::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(circle at top right, rgba(229, 62, 62, 0.1) 0%, transparent 60%);
+  pointer-events: none;
+}
+
+.heroBanner h1 {
+  font-size: 4rem;
+  margin-bottom: 1.5rem;
+  color: var(--text-primary);
+  animation: slideDown 1s ease-out;
+  position: relative;
+}
+
+.heroBanner p {
+  font-size: 1.5rem;
+  color: var(--text-secondary);
+  max-width: 800px;
+  margin: 0 auto;
+  animation: slideUp 1s ease-out;
+  position: relative;
 }
 
 .buttons {
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 1rem;
+  margin-top: 2rem;
+  animation: fadeIn 1.5s ease-in;
+  position: relative;
+}
+
+.button {
+  padding: 0.8rem 2rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.buttonPrimary {
+  background: var(--primary-red);
+  color: var(--primary-white);
+  border: none;
+}
+
+.buttonPrimary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(229, 62, 62, 0.3);
+  text-decoration: none;
+  color: var(--primary-white);
+}
+
+.buttonSecondary {
+  background: transparent;
+  color: var(--text-primary);
+  border: 2px solid var(--primary-red);
+}
+
+.buttonSecondary:hover {
+  background: rgba(229, 62, 62, 0.1);
+  transform: translateY(-2px);
+  text-decoration: none;
+  color: var(--text-primary);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideDown {
+  from {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: 996px) {
+  .heroBanner {
+    padding: 3rem 1rem;
+  }
+
+  .heroBanner h1 {
+    font-size: 2.5rem;
+  }
+
+  .heroBanner p {
+    font-size: 1.2rem;
+  }
 }

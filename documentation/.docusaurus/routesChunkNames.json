@@ -1,142 +1,302 @@
 {
-  "/react-canvas-editor/__docusaurus/debug-800": {
+  "/document-editor/__docusaurus/debug-0fe": {
     "__comp": "__comp---theme-debug-config-23-a-2ff",
     "__context": {
       "plugin": "plugin---document-editor-docusaurus-debug-239-f3c"
     }
   },
-  "/react-canvas-editor/__docusaurus/debug/config-a09": {
+  "/document-editor/__docusaurus/debug/config-bc8": {
     "__comp": "__comp---theme-debug-config-23-a-2ff",
     "__context": {
       "plugin": "plugin---document-editor-docusaurus-debug-239-f3c"
     }
   },
-  "/react-canvas-editor/__docusaurus/debug/content-632": {
+  "/document-editor/__docusaurus/debug/content-6d8": {
     "__comp": "__comp---theme-debug-contentba-8-ce7",
     "__context": {
       "plugin": "plugin---document-editor-docusaurus-debug-239-f3c"
     },
     "allContent": "allContent---document-editor-docusaurus-debug-content-246-b2c"
   },
-  "/react-canvas-editor/__docusaurus/debug/globalData-ede": {
+  "/document-editor/__docusaurus/debug/globalData-6ba": {
     "__comp": "__comp---theme-debug-global-dataede-0fa",
     "__context": {
       "plugin": "plugin---document-editor-docusaurus-debug-239-f3c"
     }
   },
-  "/react-canvas-editor/__docusaurus/debug/metadata-dc0": {
+  "/document-editor/__docusaurus/debug/metadata-ad4": {
     "__comp": "__comp---theme-debug-site-metadata-68-e-3d4",
     "__context": {
       "plugin": "plugin---document-editor-docusaurus-debug-239-f3c"
     }
   },
-  "/react-canvas-editor/__docusaurus/debug/registry-c10": {
+  "/document-editor/__docusaurus/debug/registry-7df": {
     "__comp": "__comp---theme-debug-registry-679-501",
     "__context": {
       "plugin": "plugin---document-editor-docusaurus-debug-239-f3c"
     }
   },
-  "/react-canvas-editor/__docusaurus/debug/routes-3a9": {
+  "/document-editor/__docusaurus/debug/routes-ac8": {
     "__comp": "__comp---theme-debug-routes-946-699",
     "__context": {
       "plugin": "plugin---document-editor-docusaurus-debug-239-f3c"
     }
   },
-  "/react-canvas-editor/markdown-page-98c": {
+  "/document-editor/markdown-page-ec1": {
     "__comp": "__comp---theme-mdx-page-1-f-3-b90",
     "__context": {
       "plugin": "plugin---document-editor-markdown-pagecf-2-d0e"
     },
     "content": "content---document-editor-markdown-page-393-aad"
   },
-  "/react-canvas-editor/docs-250": {
+  "/document-editor/docs-3ee": {
     "__comp": "__comp---theme-doc-page-1-be-9be",
     "__context": {
       "plugin": "plugin---document-editor-docsf-99-ef7"
     },
     "versionMetadata": "versionMetadata---document-editor-docs-935-bba"
   },
-  "/react-canvas-editor/docs/category/contribution-guide-a45": {
-    "__comp": "__comp---theme-doc-category-generated-index-page-14-e-640",
-    "categoryGeneratedIndex": "categoryGeneratedIndex---react-canvas-editor-docs-category-contribution-guided-4-d-c33"
+  "/document-editor/docs/angular/contributors/-454": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---document-editor-docs-angular-contributors-6-b-5-b41"
   },
-  "/react-canvas-editor/docs/category/get-started-3a7": {
-    "__comp": "__comp---theme-doc-category-generated-index-page-14-e-640",
-    "categoryGeneratedIndex": "categoryGeneratedIndex---react-canvas-editor-docs-category-get-started-837-d4a"
+  "/document-editor/docs/angular/contributors/code-of-conduct-b15": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---document-editor-docs-angular-contributors-code-of-conduct-10-a-0b5"
   },
-  "/react-canvas-editor/docs/category/references-7c6": {
-    "__comp": "__comp---theme-doc-category-generated-index-page-14-e-640",
-    "categoryGeneratedIndex": "categoryGeneratedIndex---react-canvas-editor-docs-category-references-03-d-28d"
+  "/document-editor/docs/angular/contributors/how-to-contribute-e9f": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---document-editor-docs-angular-contributors-how-to-contribute-319-bec"
   },
-  "/react-canvas-editor/docs/category/release-79e": {
-    "__comp": "__comp---theme-doc-category-generated-index-page-14-e-640",
-    "categoryGeneratedIndex": "categoryGeneratedIndex---react-canvas-editor-docs-category-releaseead-e38"
+  "/document-editor/docs/angular/Get-started/Installation-104": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---document-editor-docs-angular-get-started-installation-11-a-21a"
   },
-  "/react-canvas-editor/docs/category/tutorials-360": {
-    "__comp": "__comp---theme-doc-category-generated-index-page-14-e-640",
-    "categoryGeneratedIndex": "categoryGeneratedIndex---react-canvas-editor-docs-category-tutorials-714-6aa"
+  "/document-editor/docs/angular/Get-started/quickstart-d09": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---document-editor-docs-angular-get-started-quickstart-3-f-9-7f1"
   },
-  "/react-canvas-editor/docs/category/why-we-use-canvas-c4b": {
-    "__comp": "__comp---theme-doc-category-generated-index-page-14-e-640",
-    "categoryGeneratedIndex": "categoryGeneratedIndex---react-canvas-editor-docs-category-why-we-use-canvasec-1-45c"
+  "/document-editor/docs/angular/references/dom-event-662": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---document-editor-docs-angular-references-dom-eventb-24-292"
   },
-  "/react-canvas-editor/docs/contributors/-da6": {
+  "/document-editor/docs/angular/references/toolbar-option-df5": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---document-editor-docs-angular-references-toolbar-optione-44-6a7"
+  },
+  "/document-editor/docs/angular/release/change-logs-bf7": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---document-editor-docs-angular-release-change-logs-319-16c"
+  },
+  "/document-editor/docs/angular/release/release-notes-609": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---document-editor-docs-angular-release-release-notes-0-f-5-22e"
+  },
+  "/document-editor/docs/angular/tutorial-basics/customized-style-43b": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---document-editor-docs-angular-tutorial-basics-customized-style-827-332"
+  },
+  "/document-editor/docs/angular/tutorial-basics/customized-tool-b38": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---document-editor-docs-angular-tutorial-basics-customized-toolb-4-a-401"
+  },
+  "/document-editor/docs/angular/tutorial-basics/dom-handle-09d": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---document-editor-docs-angular-tutorial-basics-dom-handle-3-ff-0f9"
+  },
+  "/document-editor/docs/angular/what-is-document-editor-fe2": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---document-editor-docs-angular-what-is-document-editorc-4-c-29f"
+  },
+  "/document-editor/docs/angular/Why-we-use-canvas/-ece": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---document-editor-docs-angular-why-we-use-canvas-005-5cb"
+  },
+  "/document-editor/docs/category/contribution-guide-af4": {
+    "__comp": "__comp---theme-doc-category-generated-index-page-14-e-640",
+    "categoryGeneratedIndex": "categoryGeneratedIndex---document-editor-docs-category-contribution-guidec-63-49e"
+  },
+  "/document-editor/docs/category/contribution-guide-1-4f2": {
+    "__comp": "__comp---theme-doc-category-generated-index-page-14-e-640",
+    "categoryGeneratedIndex": "categoryGeneratedIndex---document-editor-docs-category-contribution-guide-160-c-4f8"
+  },
+  "/document-editor/docs/category/contribution-guide-2-03f": {
+    "__comp": "__comp---theme-doc-category-generated-index-page-14-e-640",
+    "categoryGeneratedIndex": "categoryGeneratedIndex---document-editor-docs-category-contribution-guide-2-fe-2-8a2"
+  },
+  "/document-editor/docs/category/get-started-5b7": {
+    "__comp": "__comp---theme-doc-category-generated-index-page-14-e-640",
+    "categoryGeneratedIndex": "categoryGeneratedIndex---document-editor-docs-category-get-started-4-d-6-f56"
+  },
+  "/document-editor/docs/category/get-started-1-c15": {
+    "__comp": "__comp---theme-doc-category-generated-index-page-14-e-640",
+    "categoryGeneratedIndex": "categoryGeneratedIndex---document-editor-docs-category-get-started-1-ce-0-30a"
+  },
+  "/document-editor/docs/category/get-started-2-ca4": {
+    "__comp": "__comp---theme-doc-category-generated-index-page-14-e-640",
+    "categoryGeneratedIndex": "categoryGeneratedIndex---document-editor-docs-category-get-started-2601-8f4"
+  },
+  "/document-editor/docs/category/references-ab0": {
+    "__comp": "__comp---theme-doc-category-generated-index-page-14-e-640",
+    "categoryGeneratedIndex": "categoryGeneratedIndex---document-editor-docs-category-referencesecc-71a"
+  },
+  "/document-editor/docs/category/references-1-a1b": {
+    "__comp": "__comp---theme-doc-category-generated-index-page-14-e-640",
+    "categoryGeneratedIndex": "categoryGeneratedIndex---document-editor-docs-category-references-1241-063"
+  },
+  "/document-editor/docs/category/references-2-629": {
+    "__comp": "__comp---theme-doc-category-generated-index-page-14-e-640",
+    "categoryGeneratedIndex": "categoryGeneratedIndex---document-editor-docs-category-references-2-dd-6-479"
+  },
+  "/document-editor/docs/category/release-de3": {
+    "__comp": "__comp---theme-doc-category-generated-index-page-14-e-640",
+    "categoryGeneratedIndex": "categoryGeneratedIndex---document-editor-docs-category-release-876-bc7"
+  },
+  "/document-editor/docs/category/release-1-fb6": {
+    "__comp": "__comp---theme-doc-category-generated-index-page-14-e-640",
+    "categoryGeneratedIndex": "categoryGeneratedIndex---document-editor-docs-category-release-12-bd-b97"
+  },
+  "/document-editor/docs/category/release-2-6d1": {
+    "__comp": "__comp---theme-doc-category-generated-index-page-14-e-640",
+    "categoryGeneratedIndex": "categoryGeneratedIndex---document-editor-docs-category-release-278-d-a41"
+  },
+  "/document-editor/docs/category/tutorials-66a": {
+    "__comp": "__comp---theme-doc-category-generated-index-page-14-e-640",
+    "categoryGeneratedIndex": "categoryGeneratedIndex---document-editor-docs-category-tutorials-961-e0f"
+  },
+  "/document-editor/docs/category/tutorials-1-9b8": {
+    "__comp": "__comp---theme-doc-category-generated-index-page-14-e-640",
+    "categoryGeneratedIndex": "categoryGeneratedIndex---document-editor-docs-category-tutorials-1-d-49-3c4"
+  },
+  "/document-editor/docs/category/tutorials-2-997": {
+    "__comp": "__comp---theme-doc-category-generated-index-page-14-e-640",
+    "categoryGeneratedIndex": "categoryGeneratedIndex---document-editor-docs-category-tutorials-20-c-4-111"
+  },
+  "/document-editor/docs/category/why-we-use-canvas-403": {
+    "__comp": "__comp---theme-doc-category-generated-index-page-14-e-640",
+    "categoryGeneratedIndex": "categoryGeneratedIndex---document-editor-docs-category-why-we-use-canvas-7-c-6-fc5"
+  },
+  "/document-editor/docs/category/why-we-use-canvas-1-693": {
+    "__comp": "__comp---theme-doc-category-generated-index-page-14-e-640",
+    "categoryGeneratedIndex": "categoryGeneratedIndex---document-editor-docs-category-why-we-use-canvas-1440-3d3"
+  },
+  "/document-editor/docs/category/why-we-use-canvas-2-216": {
+    "__comp": "__comp---theme-doc-category-generated-index-page-14-e-640",
+    "categoryGeneratedIndex": "categoryGeneratedIndex---document-editor-docs-category-why-we-use-canvas-2-d-64-903"
+  },
+  "/document-editor/docs/contributors/-392": {
     "__comp": "__comp---theme-doc-item-178-a40",
     "content": "content---document-editor-docs-contributors-6-f-4-c6c"
   },
-  "/react-canvas-editor/docs/contributors/code-of-conduct-34b": {
+  "/document-editor/docs/contributors/code-of-conduct-69f": {
     "__comp": "__comp---theme-doc-item-178-a40",
     "content": "content---document-editor-docs-contributors-code-of-conductf-3-e-9fa"
   },
-  "/react-canvas-editor/docs/contributors/how-to-contribute-a7b": {
+  "/document-editor/docs/contributors/how-to-contribute-695": {
     "__comp": "__comp---theme-doc-item-178-a40",
     "content": "content---document-editor-docs-contributors-how-to-contribute-42-f-1de"
   },
-  "/react-canvas-editor/docs/Get-started/Installation-aa6": {
+  "/document-editor/docs/Get-started/Installation-00d": {
     "__comp": "__comp---theme-doc-item-178-a40",
     "content": "content---document-editor-docs-get-started-installation-8-f-7-03c"
   },
-  "/react-canvas-editor/docs/Get-started/quickstart-e3c": {
+  "/document-editor/docs/Get-started/quickstart-0bb": {
     "__comp": "__comp---theme-doc-item-178-a40",
     "content": "content---document-editor-docs-get-started-quickstart-8-e-6-a99"
   },
-  "/react-canvas-editor/docs/references/dom-event-f39": {
+  "/document-editor/docs/react/contributors/-118": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---document-editor-docs-react-contributors-ab-0-059"
+  },
+  "/document-editor/docs/react/contributors/code-of-conduct-541": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---document-editor-docs-react-contributors-code-of-conductb-9-b-2e7"
+  },
+  "/document-editor/docs/react/contributors/how-to-contribute-27b": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---document-editor-docs-react-contributors-how-to-contribute-52-d-4d9"
+  },
+  "/document-editor/docs/react/Get-started/Installation-3f8": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---document-editor-docs-react-get-started-installation-80-d-ba9"
+  },
+  "/document-editor/docs/react/Get-started/quickstart-e7b": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---document-editor-docs-react-get-started-quickstart-797-80c"
+  },
+  "/document-editor/docs/react/references/dom-event-575": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---document-editor-docs-react-references-dom-event-015-2ce"
+  },
+  "/document-editor/docs/react/references/toolbar-option-bd4": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---document-editor-docs-react-references-toolbar-optionbf-3-f92"
+  },
+  "/document-editor/docs/react/release/change-logs-48e": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---document-editor-docs-react-release-change-logs-16-d-47a"
+  },
+  "/document-editor/docs/react/release/release-notes-d1d": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---document-editor-docs-react-release-release-notes-0-a-2-cda"
+  },
+  "/document-editor/docs/react/tutorial-basics/customized-style-67c": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---document-editor-docs-react-tutorial-basics-customized-stylef-22-5c6"
+  },
+  "/document-editor/docs/react/tutorial-basics/customized-tool-f3b": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---document-editor-docs-react-tutorial-basics-customized-tool-175-8c7"
+  },
+  "/document-editor/docs/react/tutorial-basics/dom-handle-f64": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---document-editor-docs-react-tutorial-basics-dom-handle-779-f97"
+  },
+  "/document-editor/docs/react/what-is-document-editor-ffc": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---document-editor-docs-react-what-is-document-editorf-2-c-b4b"
+  },
+  "/document-editor/docs/react/Why-we-use-canvas/-967": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---document-editor-docs-react-why-we-use-canvas-957-77d"
+  },
+  "/document-editor/docs/references/dom-event-cf2": {
     "__comp": "__comp---theme-doc-item-178-a40",
     "content": "content---document-editor-docs-references-dom-eventbed-398"
   },
-  "/react-canvas-editor/docs/references/toolbar-option-ffd": {
+  "/document-editor/docs/references/toolbar-option-c7d": {
     "__comp": "__comp---theme-doc-item-178-a40",
     "content": "content---document-editor-docs-references-toolbar-optioncd-7-7d2"
   },
-  "/react-canvas-editor/docs/release/change-logs-335": {
+  "/document-editor/docs/release/change-logs-965": {
     "__comp": "__comp---theme-doc-item-178-a40",
     "content": "content---document-editor-docs-release-change-logs-90-d-413"
   },
-  "/react-canvas-editor/docs/release/release-notes-a21": {
+  "/document-editor/docs/release/release-notes-de4": {
     "__comp": "__comp---theme-doc-item-178-a40",
     "content": "content---document-editor-docs-release-release-notes-5-b-7-029"
   },
-  "/react-canvas-editor/docs/tutorial-basics/customized-style-c86": {
+  "/document-editor/docs/tutorial-basics/customized-style-02e": {
     "__comp": "__comp---theme-doc-item-178-a40",
     "content": "content---document-editor-docs-tutorial-basics-customized-stylefc-5-0d0"
   },
-  "/react-canvas-editor/docs/tutorial-basics/customized-tool-bb9": {
+  "/document-editor/docs/tutorial-basics/customized-tool-18b": {
     "__comp": "__comp---theme-doc-item-178-a40",
     "content": "content---document-editor-docs-tutorial-basics-customized-tool-348-fa2"
   },
-  "/react-canvas-editor/docs/tutorial-basics/dom-handle-4e2": {
+  "/document-editor/docs/tutorial-basics/dom-handle-954": {
     "__comp": "__comp---theme-doc-item-178-a40",
     "content": "content---document-editor-docs-tutorial-basics-dom-handlee-57-ff3"
   },
-  "/react-canvas-editor/docs/what-is-document-editor-cd3": {
+  "/document-editor/docs/what-is-document-editor-d76": {
     "__comp": "__comp---theme-doc-item-178-a40",
     "content": "content---document-editor-docs-what-is-document-editor-111-ed0"
   },
-  "/react-canvas-editor/docs/Why-we-use-canvas/-ffd": {
+  "/document-editor/docs/Why-we-use-canvas/-af9": {
     "__comp": "__comp---theme-doc-item-178-a40",
     "content": "content---document-editor-docs-why-we-use-canvas-29-f-a8d"
   },
-  "/react-canvas-editor/-b36": {
+  "/document-editor/-b94": {
     "__comp": "__comp---site-src-pages-index-jsc-4-f-f99",
     "__context": {
       "plugin": "plugin---document-editor-markdown-pagecf-2-d0e"

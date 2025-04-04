@@ -1,0 +1,26 @@
+{
+  "unversionedId": "react/contributors/how-to-contribute",
+  "id": "react/contributors/how-to-contribute",
+  "title": "How to Contribute",
+  "description": "We genuinely appreciate your interest in contributing to the React Document Editor project. Your invaluable contributions play a pivotal role in enhancing this project. Before you embark on your journey, please take a moment to familiarize yourself with the following guidelines:",
+  "source": "@site/docs/react/contributors/how-to-contribute.md",
+  "sourceDirName": "react/contributors",
+  "slug": "/react/contributors/how-to-contribute",
+  "permalink": "/document-editor/docs/react/contributors/how-to-contribute",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "sidebar_position": 1
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Contributors",
+    "permalink": "/document-editor/docs/react/contributors/"
+  },
+  "next": {
+    "title": "Code of conduct",
+    "permalink": "/document-editor/docs/react/contributors/code-of-conduct"
+  }
+}

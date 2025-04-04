@@ -6,7 +6,7 @@
   "source": "@site/docs/what-is-document-editor.md",
   "sourceDirName": ".",
   "slug": "/what-is-document-editor",
-  "permalink": "/react-canvas-editor/docs/what-is-document-editor",
+  "permalink": "/document-editor/docs/what-is-document-editor",
   "draft": false,
   "tags": [],
   "version": "current",
@@ -17,6 +17,6 @@
   "sidebar": "tutorialSidebar",
   "next": {
     "title": "Why we use Canvas",
-    "permalink": "/react-canvas-editor/docs/category/why-we-use-canvas"
+    "permalink": "/document-editor/docs/category/why-we-use-canvas"
   }
 }

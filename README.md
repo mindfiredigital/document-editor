@@ -1,18 +1,21 @@
 <h1 align="center">Document Editor </h1><br><br>
 <p align="center">
-<a href="https://www.npmjs.com/package/@mindfiredigital/react-canvas-editor"><img src="https://img.shields.io/npm/v/@mindfiredigital/react-canvas-editor.svg?sanitize=true" alt="Version"></a>
-<a href="https://www.npmjs.com/package/@mindfiredigital/react-canvas-editor"><img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg" alt="PRs"></a>
+<a href="https://www.npmjs.com/package/@mindfiredigital/react-canvas-editor"><img src="https://img.shields.io/npm/v/@mindfiredigital/react-canvas-editor.svg?sanitize=true" alt="React Version"></a>
+<a href="https://www.npmjs.com/package/@mindfiredigital/angular-canvas-editor"><img src="https://img.shields.io/npm/v/@mindfiredigital/angular-canvas-editor.svg?sanitize=true" alt="Angular Version"></a>
+<a href="https://github.com/mindfiredigital/document-editor"><img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg" alt="PRs Welcome"></a>
 </p>
 
 <br>
 
-<p align="center"> Experience powerful document creation with our React-based canvas editor. Craft and manage multi-page documents effortlessly </p>
+<p align="center">
+  <strong>Experience seamless and powerful document creation</strong> with our advanced HTML5 Canvas-based Document Editor. Effortlessly craft, edit, and manage multi-page documents with precision and flexibility.
+</p>
 
-The `@mindfiredigital/react-canvas-editor` is a tool that allows developers to integrate multi page document editors built on top of Canvas using React.
+This tool empowers developers to easily integrate a fully customizable, multi-page document editor into their web applications — all built on the robust and scalable foundation of HTML5 Canvas.
 
 <br>
 
-## Table of Contents
+## Table of Content
 
 - [Why canvas over HTML Editor](#why-canvas-over-html-editor)
 - [Features](#features)
@@ -72,12 +75,18 @@ To know more you can check the link
 
 <br>
 
-## Installation
+## Canvas Editor Installation
 
-To install the `@mindfiredigital/react-canvas-editor` npm package in your project, use the following command:
+### 👉 For **React** Projects:
 
 ```bash
 npm install @mindfiredigital/react-canvas-editor
+```
+
+### 👉 For **Angular** Projects:
+
+```bash
+npm install @mindfiredigital/angular-canvas-editor
 ```
 
 <br>
@@ -91,6 +100,7 @@ npm install @mindfiredigital/react-canvas-editor
     <th>React Component</th>
     <th>Web Component for React</th>
     <th>Web Component for JavaScript</th>
+    <th>Angular Component</th>
   </tr>
   <tr>
   <td>
@@ -205,6 +215,58 @@ DocumentEditorWebComponent({
 ```
 
   </td>
+  <td>
+
+```typescript
+// app.module.ts
+import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+import { DocumentEditorModule } from '@mindfiredigital/angular-canvas-editor';
+import { AppComponent } from './app.component';
+
+@NgModule({
+  declarations: [AppComponent],
+  imports: [BrowserModule, DocumentEditorModule],
+  providers: [],
+  bootstrap: [AppComponent],
+})
+export class AppModule {}
+
+// app.component.ts
+import { Component } from '@angular/core';
+
+@Component({
+  selector: 'app-root',
+  template: `
+    <document-editor
+      [toolbar]="toolbarItem"
+      (onChange)="handleChange($event)"
+      (onSelect)="handleSelectedText($event)"
+      [value]="'Hello world'"
+    ></document-editor>
+  `,
+})
+export class AppComponent {
+  toolbarItem = {
+    bold: true,
+    italic: true,
+    underline: true,
+    undo: true,
+    redo: true,
+    image: true,
+  };
+
+  handleChange(data: any) {
+    console.log('test ->', data);
+  }
+
+  handleSelectedText(text: string) {
+    console.log(text);
+  }
+}
+```
+
+  </td>
   </tr>
 </table>
 <br>
@@ -216,6 +278,7 @@ DocumentEditorWebComponent({
     <th>React Component</th>
     <th>Web Component for React</th>
     <th>Web Component for JavaScript</th>
+    <th>Angular Component</th>
   </tr>
   <tr>
   <td>
@@ -459,6 +522,88 @@ DocumentEditorWebComponent({
 ```
 
   </td>
+  <td>
+
+```typescript
+// app.component.ts
+import { Component } from '@angular/core';
+
+@Component({
+  selector: 'app-root',
+  template: `
+    <document-editor
+      [toolbar_class]="toolbarClass"
+      [canvas_class]="canvasClass"
+    ></document-editor>
+  `,
+})
+export class AppComponent {
+  toolbarClass = {
+    container: {
+      // backgroundColor: "red"
+    },
+    primaryToolbar: {
+      justifyContent: 'center',
+    },
+    item: {
+      undo: {
+        // border: 'red solid 2px',
+        // background:'yellow'
+      },
+      redo: {
+        // border: 'black solid 3px',
+        // background:'blue'
+      },
+      bold: {
+        // border: 'black solid 3px',
+        // background:'blue'
+      },
+      italic: {
+        // border: 'black solid 3px',
+        // background:'blue'
+      },
+      underline: {
+        // border: 'black solid 3px',
+        // background:'blue'
+      },
+      image: {
+        // border: 'black solid 3px',
+        // background:'blue'
+      },
+      fontType: {
+        // background:'green'
+      },
+      table: {
+        // background:'green'
+      },
+      fontColor: {
+        // background:'green'
+      },
+      highlight: {
+        // background:'green'
+      },
+      fontSize: {
+        // background:'green'
+      },
+      heading: {
+        // background:'green'
+      },
+      selectedToolbarItemColor: {
+        // color: "#1a73e8",
+      },
+    },
+  };
+
+  canvasClass = {
+    editorMain: {
+      // background:'antiquewhite'
+    },
+    margin: {},
+  };
+}
+```
+
+  </td>
   </tr>
 </table>
 
@@ -474,6 +619,8 @@ DocumentEditorWebComponent({
 ## Demo
 
 [React Canvas Editor](https://canvas-editor-htfx.vercel.app/)
+
+[Angular Canvas Editor](https://canvas-editor-htfx.vercel.app/)
 
 ## Contributing
 

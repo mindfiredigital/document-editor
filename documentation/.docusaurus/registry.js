@@ -95,69 +95,197 @@ export default {
     '~debug/default/docusaurus-debug-all-content-673.json',
     require.resolveWeak('~debug/default/docusaurus-debug-all-content-673.json'),
   ],
-  'categoryGeneratedIndex---react-canvas-editor-docs-category-contribution-guided-4-d-c33':
+  'categoryGeneratedIndex---document-editor-docs-category-contribution-guide-160-c-4f8':
     [
       () =>
         import(
-          /* webpackChunkName: 'categoryGeneratedIndex---react-canvas-editor-docs-category-contribution-guided-4-d-c33' */ '~docs/default/category-react-canvas-editordocs-tutorialsidebar-category-contribution-guide-4fa.json'
+          /* webpackChunkName: 'categoryGeneratedIndex---document-editor-docs-category-contribution-guide-160-c-4f8' */ '~docs/default/category-document-editordocs-tutorialsidebar-category-contribution-guide-1-05b.json'
         ),
-      '~docs/default/category-react-canvas-editordocs-tutorialsidebar-category-contribution-guide-4fa.json',
+      '~docs/default/category-document-editordocs-tutorialsidebar-category-contribution-guide-1-05b.json',
       require.resolveWeak(
-        '~docs/default/category-react-canvas-editordocs-tutorialsidebar-category-contribution-guide-4fa.json'
+        '~docs/default/category-document-editordocs-tutorialsidebar-category-contribution-guide-1-05b.json'
       ),
     ],
-  'categoryGeneratedIndex---react-canvas-editor-docs-category-get-started-837-d4a':
+  'categoryGeneratedIndex---document-editor-docs-category-contribution-guide-2-fe-2-8a2':
     [
       () =>
         import(
-          /* webpackChunkName: 'categoryGeneratedIndex---react-canvas-editor-docs-category-get-started-837-d4a' */ '~docs/default/category-react-canvas-editordocs-tutorialsidebar-category-get-started-568.json'
+          /* webpackChunkName: 'categoryGeneratedIndex---document-editor-docs-category-contribution-guide-2-fe-2-8a2' */ '~docs/default/category-document-editordocs-tutorialsidebar-category-contribution-guide-2-9fd.json'
         ),
-      '~docs/default/category-react-canvas-editordocs-tutorialsidebar-category-get-started-568.json',
+      '~docs/default/category-document-editordocs-tutorialsidebar-category-contribution-guide-2-9fd.json',
       require.resolveWeak(
-        '~docs/default/category-react-canvas-editordocs-tutorialsidebar-category-get-started-568.json'
+        '~docs/default/category-document-editordocs-tutorialsidebar-category-contribution-guide-2-9fd.json'
       ),
     ],
-  'categoryGeneratedIndex---react-canvas-editor-docs-category-references-03-d-28d':
+  'categoryGeneratedIndex---document-editor-docs-category-contribution-guidec-63-49e':
     [
       () =>
         import(
-          /* webpackChunkName: 'categoryGeneratedIndex---react-canvas-editor-docs-category-references-03-d-28d' */ '~docs/default/category-react-canvas-editordocs-tutorialsidebar-category-references-a68.json'
+          /* webpackChunkName: 'categoryGeneratedIndex---document-editor-docs-category-contribution-guidec-63-49e' */ '~docs/default/category-document-editordocs-tutorialsidebar-category-contribution-guide-6d7.json'
         ),
-      '~docs/default/category-react-canvas-editordocs-tutorialsidebar-category-references-a68.json',
+      '~docs/default/category-document-editordocs-tutorialsidebar-category-contribution-guide-6d7.json',
       require.resolveWeak(
-        '~docs/default/category-react-canvas-editordocs-tutorialsidebar-category-references-a68.json'
+        '~docs/default/category-document-editordocs-tutorialsidebar-category-contribution-guide-6d7.json'
       ),
     ],
-  'categoryGeneratedIndex---react-canvas-editor-docs-category-releaseead-e38': [
+  'categoryGeneratedIndex---document-editor-docs-category-get-started-1-ce-0-30a':
+    [
+      () =>
+        import(
+          /* webpackChunkName: 'categoryGeneratedIndex---document-editor-docs-category-get-started-1-ce-0-30a' */ '~docs/default/category-document-editordocs-tutorialsidebar-category-get-started-1-f5c.json'
+        ),
+      '~docs/default/category-document-editordocs-tutorialsidebar-category-get-started-1-f5c.json',
+      require.resolveWeak(
+        '~docs/default/category-document-editordocs-tutorialsidebar-category-get-started-1-f5c.json'
+      ),
+    ],
+  'categoryGeneratedIndex---document-editor-docs-category-get-started-2601-8f4':
+    [
+      () =>
+        import(
+          /* webpackChunkName: 'categoryGeneratedIndex---document-editor-docs-category-get-started-2601-8f4' */ '~docs/default/category-document-editordocs-tutorialsidebar-category-get-started-2-9ca.json'
+        ),
+      '~docs/default/category-document-editordocs-tutorialsidebar-category-get-started-2-9ca.json',
+      require.resolveWeak(
+        '~docs/default/category-document-editordocs-tutorialsidebar-category-get-started-2-9ca.json'
+      ),
+    ],
+  'categoryGeneratedIndex---document-editor-docs-category-get-started-4-d-6-f56':
+    [
+      () =>
+        import(
+          /* webpackChunkName: 'categoryGeneratedIndex---document-editor-docs-category-get-started-4-d-6-f56' */ '~docs/default/category-document-editordocs-tutorialsidebar-category-get-started-047.json'
+        ),
+      '~docs/default/category-document-editordocs-tutorialsidebar-category-get-started-047.json',
+      require.resolveWeak(
+        '~docs/default/category-document-editordocs-tutorialsidebar-category-get-started-047.json'
+      ),
+    ],
+  'categoryGeneratedIndex---document-editor-docs-category-references-1241-063':
+    [
+      () =>
+        import(
+          /* webpackChunkName: 'categoryGeneratedIndex---document-editor-docs-category-references-1241-063' */ '~docs/default/category-document-editordocs-tutorialsidebar-category-references-1-e1c.json'
+        ),
+      '~docs/default/category-document-editordocs-tutorialsidebar-category-references-1-e1c.json',
+      require.resolveWeak(
+        '~docs/default/category-document-editordocs-tutorialsidebar-category-references-1-e1c.json'
+      ),
+    ],
+  'categoryGeneratedIndex---document-editor-docs-category-references-2-dd-6-479':
+    [
+      () =>
+        import(
+          /* webpackChunkName: 'categoryGeneratedIndex---document-editor-docs-category-references-2-dd-6-479' */ '~docs/default/category-document-editordocs-tutorialsidebar-category-references-2-449.json'
+        ),
+      '~docs/default/category-document-editordocs-tutorialsidebar-category-references-2-449.json',
+      require.resolveWeak(
+        '~docs/default/category-document-editordocs-tutorialsidebar-category-references-2-449.json'
+      ),
+    ],
+  'categoryGeneratedIndex---document-editor-docs-category-referencesecc-71a': [
     () =>
       import(
-        /* webpackChunkName: 'categoryGeneratedIndex---react-canvas-editor-docs-category-releaseead-e38' */ '~docs/default/category-react-canvas-editordocs-tutorialsidebar-category-release-6f8.json'
+        /* webpackChunkName: 'categoryGeneratedIndex---document-editor-docs-category-referencesecc-71a' */ '~docs/default/category-document-editordocs-tutorialsidebar-category-references-876.json'
       ),
-    '~docs/default/category-react-canvas-editordocs-tutorialsidebar-category-release-6f8.json',
+    '~docs/default/category-document-editordocs-tutorialsidebar-category-references-876.json',
     require.resolveWeak(
-      '~docs/default/category-react-canvas-editordocs-tutorialsidebar-category-release-6f8.json'
+      '~docs/default/category-document-editordocs-tutorialsidebar-category-references-876.json'
     ),
   ],
-  'categoryGeneratedIndex---react-canvas-editor-docs-category-tutorials-714-6aa':
+  'categoryGeneratedIndex---document-editor-docs-category-release-12-bd-b97': [
+    () =>
+      import(
+        /* webpackChunkName: 'categoryGeneratedIndex---document-editor-docs-category-release-12-bd-b97' */ '~docs/default/category-document-editordocs-tutorialsidebar-category-release-1-2b7.json'
+      ),
+    '~docs/default/category-document-editordocs-tutorialsidebar-category-release-1-2b7.json',
+    require.resolveWeak(
+      '~docs/default/category-document-editordocs-tutorialsidebar-category-release-1-2b7.json'
+    ),
+  ],
+  'categoryGeneratedIndex---document-editor-docs-category-release-278-d-a41': [
+    () =>
+      import(
+        /* webpackChunkName: 'categoryGeneratedIndex---document-editor-docs-category-release-278-d-a41' */ '~docs/default/category-document-editordocs-tutorialsidebar-category-release-2-0e7.json'
+      ),
+    '~docs/default/category-document-editordocs-tutorialsidebar-category-release-2-0e7.json',
+    require.resolveWeak(
+      '~docs/default/category-document-editordocs-tutorialsidebar-category-release-2-0e7.json'
+    ),
+  ],
+  'categoryGeneratedIndex---document-editor-docs-category-release-876-bc7': [
+    () =>
+      import(
+        /* webpackChunkName: 'categoryGeneratedIndex---document-editor-docs-category-release-876-bc7' */ '~docs/default/category-document-editordocs-tutorialsidebar-category-release-1fc.json'
+      ),
+    '~docs/default/category-document-editordocs-tutorialsidebar-category-release-1fc.json',
+    require.resolveWeak(
+      '~docs/default/category-document-editordocs-tutorialsidebar-category-release-1fc.json'
+    ),
+  ],
+  'categoryGeneratedIndex---document-editor-docs-category-tutorials-1-d-49-3c4':
     [
       () =>
         import(
-          /* webpackChunkName: 'categoryGeneratedIndex---react-canvas-editor-docs-category-tutorials-714-6aa' */ '~docs/default/category-react-canvas-editordocs-tutorialsidebar-category-tutorials-2c6.json'
+          /* webpackChunkName: 'categoryGeneratedIndex---document-editor-docs-category-tutorials-1-d-49-3c4' */ '~docs/default/category-document-editordocs-tutorialsidebar-category-tutorials-1-e61.json'
         ),
-      '~docs/default/category-react-canvas-editordocs-tutorialsidebar-category-tutorials-2c6.json',
+      '~docs/default/category-document-editordocs-tutorialsidebar-category-tutorials-1-e61.json',
       require.resolveWeak(
-        '~docs/default/category-react-canvas-editordocs-tutorialsidebar-category-tutorials-2c6.json'
+        '~docs/default/category-document-editordocs-tutorialsidebar-category-tutorials-1-e61.json'
       ),
     ],
-  'categoryGeneratedIndex---react-canvas-editor-docs-category-why-we-use-canvasec-1-45c':
+  'categoryGeneratedIndex---document-editor-docs-category-tutorials-20-c-4-111':
     [
       () =>
         import(
-          /* webpackChunkName: 'categoryGeneratedIndex---react-canvas-editor-docs-category-why-we-use-canvasec-1-45c' */ '~docs/default/category-react-canvas-editordocs-tutorialsidebar-category-why-we-use-canvas-325.json'
+          /* webpackChunkName: 'categoryGeneratedIndex---document-editor-docs-category-tutorials-20-c-4-111' */ '~docs/default/category-document-editordocs-tutorialsidebar-category-tutorials-2-5b6.json'
         ),
-      '~docs/default/category-react-canvas-editordocs-tutorialsidebar-category-why-we-use-canvas-325.json',
+      '~docs/default/category-document-editordocs-tutorialsidebar-category-tutorials-2-5b6.json',
       require.resolveWeak(
-        '~docs/default/category-react-canvas-editordocs-tutorialsidebar-category-why-we-use-canvas-325.json'
+        '~docs/default/category-document-editordocs-tutorialsidebar-category-tutorials-2-5b6.json'
+      ),
+    ],
+  'categoryGeneratedIndex---document-editor-docs-category-tutorials-961-e0f': [
+    () =>
+      import(
+        /* webpackChunkName: 'categoryGeneratedIndex---document-editor-docs-category-tutorials-961-e0f' */ '~docs/default/category-document-editordocs-tutorialsidebar-category-tutorials-c7c.json'
+      ),
+    '~docs/default/category-document-editordocs-tutorialsidebar-category-tutorials-c7c.json',
+    require.resolveWeak(
+      '~docs/default/category-document-editordocs-tutorialsidebar-category-tutorials-c7c.json'
+    ),
+  ],
+  'categoryGeneratedIndex---document-editor-docs-category-why-we-use-canvas-1440-3d3':
+    [
+      () =>
+        import(
+          /* webpackChunkName: 'categoryGeneratedIndex---document-editor-docs-category-why-we-use-canvas-1440-3d3' */ '~docs/default/category-document-editordocs-tutorialsidebar-category-why-we-use-canvas-1-aaf.json'
+        ),
+      '~docs/default/category-document-editordocs-tutorialsidebar-category-why-we-use-canvas-1-aaf.json',
+      require.resolveWeak(
+        '~docs/default/category-document-editordocs-tutorialsidebar-category-why-we-use-canvas-1-aaf.json'
+      ),
+    ],
+  'categoryGeneratedIndex---document-editor-docs-category-why-we-use-canvas-2-d-64-903':
+    [
+      () =>
+        import(
+          /* webpackChunkName: 'categoryGeneratedIndex---document-editor-docs-category-why-we-use-canvas-2-d-64-903' */ '~docs/default/category-document-editordocs-tutorialsidebar-category-why-we-use-canvas-2-668.json'
+        ),
+      '~docs/default/category-document-editordocs-tutorialsidebar-category-why-we-use-canvas-2-668.json',
+      require.resolveWeak(
+        '~docs/default/category-document-editordocs-tutorialsidebar-category-why-we-use-canvas-2-668.json'
+      ),
+    ],
+  'categoryGeneratedIndex---document-editor-docs-category-why-we-use-canvas-7-c-6-fc5':
+    [
+      () =>
+        import(
+          /* webpackChunkName: 'categoryGeneratedIndex---document-editor-docs-category-why-we-use-canvas-7-c-6-fc5' */ '~docs/default/category-document-editordocs-tutorialsidebar-category-why-we-use-canvas-946.json'
+        ),
+      '~docs/default/category-document-editordocs-tutorialsidebar-category-why-we-use-canvas-946.json',
+      require.resolveWeak(
+        '~docs/default/category-document-editordocs-tutorialsidebar-category-why-we-use-canvas-946.json'
       ),
     ],
   'config---document-editor-5-e-9-85e': [
@@ -167,6 +295,131 @@ export default {
       ),
     '@generated/docusaurus.config',
     require.resolveWeak('@generated/docusaurus.config'),
+  ],
+  'content---document-editor-docs-angular-contributors-6-b-5-b41': [
+    () =>
+      import(
+        /* webpackChunkName: 'content---document-editor-docs-angular-contributors-6-b-5-b41' */ '@site/docs/angular/contributors/contributors.md'
+      ),
+    '@site/docs/angular/contributors/contributors.md',
+    require.resolveWeak('@site/docs/angular/contributors/contributors.md'),
+  ],
+  'content---document-editor-docs-angular-contributors-code-of-conduct-10-a-0b5':
+    [
+      () =>
+        import(
+          /* webpackChunkName: 'content---document-editor-docs-angular-contributors-code-of-conduct-10-a-0b5' */ '@site/docs/angular/contributors/code-of-conduct.md'
+        ),
+      '@site/docs/angular/contributors/code-of-conduct.md',
+      require.resolveWeak('@site/docs/angular/contributors/code-of-conduct.md'),
+    ],
+  'content---document-editor-docs-angular-contributors-how-to-contribute-319-bec':
+    [
+      () =>
+        import(
+          /* webpackChunkName: 'content---document-editor-docs-angular-contributors-how-to-contribute-319-bec' */ '@site/docs/angular/contributors/how-to-contribute.md'
+        ),
+      '@site/docs/angular/contributors/how-to-contribute.md',
+      require.resolveWeak(
+        '@site/docs/angular/contributors/how-to-contribute.md'
+      ),
+    ],
+  'content---document-editor-docs-angular-get-started-installation-11-a-21a': [
+    () =>
+      import(
+        /* webpackChunkName: 'content---document-editor-docs-angular-get-started-installation-11-a-21a' */ '@site/docs/angular/Get-started/Installation.md'
+      ),
+    '@site/docs/angular/Get-started/Installation.md',
+    require.resolveWeak('@site/docs/angular/Get-started/Installation.md'),
+  ],
+  'content---document-editor-docs-angular-get-started-quickstart-3-f-9-7f1': [
+    () =>
+      import(
+        /* webpackChunkName: 'content---document-editor-docs-angular-get-started-quickstart-3-f-9-7f1' */ '@site/docs/angular/Get-started/quickstart.md'
+      ),
+    '@site/docs/angular/Get-started/quickstart.md',
+    require.resolveWeak('@site/docs/angular/Get-started/quickstart.md'),
+  ],
+  'content---document-editor-docs-angular-references-dom-eventb-24-292': [
+    () =>
+      import(
+        /* webpackChunkName: 'content---document-editor-docs-angular-references-dom-eventb-24-292' */ '@site/docs/angular/references/dom-event.md'
+      ),
+    '@site/docs/angular/references/dom-event.md',
+    require.resolveWeak('@site/docs/angular/references/dom-event.md'),
+  ],
+  'content---document-editor-docs-angular-references-toolbar-optione-44-6a7': [
+    () =>
+      import(
+        /* webpackChunkName: 'content---document-editor-docs-angular-references-toolbar-optione-44-6a7' */ '@site/docs/angular/references/toolbar-option.md'
+      ),
+    '@site/docs/angular/references/toolbar-option.md',
+    require.resolveWeak('@site/docs/angular/references/toolbar-option.md'),
+  ],
+  'content---document-editor-docs-angular-release-change-logs-319-16c': [
+    () =>
+      import(
+        /* webpackChunkName: 'content---document-editor-docs-angular-release-change-logs-319-16c' */ '@site/docs/angular/release/change-logs.md'
+      ),
+    '@site/docs/angular/release/change-logs.md',
+    require.resolveWeak('@site/docs/angular/release/change-logs.md'),
+  ],
+  'content---document-editor-docs-angular-release-release-notes-0-f-5-22e': [
+    () =>
+      import(
+        /* webpackChunkName: 'content---document-editor-docs-angular-release-release-notes-0-f-5-22e' */ '@site/docs/angular/release/release-notes.md'
+      ),
+    '@site/docs/angular/release/release-notes.md',
+    require.resolveWeak('@site/docs/angular/release/release-notes.md'),
+  ],
+  'content---document-editor-docs-angular-tutorial-basics-customized-style-827-332':
+    [
+      () =>
+        import(
+          /* webpackChunkName: 'content---document-editor-docs-angular-tutorial-basics-customized-style-827-332' */ '@site/docs/angular/tutorial-basics/customized-style.md'
+        ),
+      '@site/docs/angular/tutorial-basics/customized-style.md',
+      require.resolveWeak(
+        '@site/docs/angular/tutorial-basics/customized-style.md'
+      ),
+    ],
+  'content---document-editor-docs-angular-tutorial-basics-customized-toolb-4-a-401':
+    [
+      () =>
+        import(
+          /* webpackChunkName: 'content---document-editor-docs-angular-tutorial-basics-customized-toolb-4-a-401' */ '@site/docs/angular/tutorial-basics/customized-tool.md'
+        ),
+      '@site/docs/angular/tutorial-basics/customized-tool.md',
+      require.resolveWeak(
+        '@site/docs/angular/tutorial-basics/customized-tool.md'
+      ),
+    ],
+  'content---document-editor-docs-angular-tutorial-basics-dom-handle-3-ff-0f9':
+    [
+      () =>
+        import(
+          /* webpackChunkName: 'content---document-editor-docs-angular-tutorial-basics-dom-handle-3-ff-0f9' */ '@site/docs/angular/tutorial-basics/dom-handle.md'
+        ),
+      '@site/docs/angular/tutorial-basics/dom-handle.md',
+      require.resolveWeak('@site/docs/angular/tutorial-basics/dom-handle.md'),
+    ],
+  'content---document-editor-docs-angular-what-is-document-editorc-4-c-29f': [
+    () =>
+      import(
+        /* webpackChunkName: 'content---document-editor-docs-angular-what-is-document-editorc-4-c-29f' */ '@site/docs/angular/what-is-document-editor.md'
+      ),
+    '@site/docs/angular/what-is-document-editor.md',
+    require.resolveWeak('@site/docs/angular/what-is-document-editor.md'),
+  ],
+  'content---document-editor-docs-angular-why-we-use-canvas-005-5cb': [
+    () =>
+      import(
+        /* webpackChunkName: 'content---document-editor-docs-angular-why-we-use-canvas-005-5cb' */ '@site/docs/angular/Why-we-use-canvas/Why-we-use-canvas.md'
+      ),
+    '@site/docs/angular/Why-we-use-canvas/Why-we-use-canvas.md',
+    require.resolveWeak(
+      '@site/docs/angular/Why-we-use-canvas/Why-we-use-canvas.md'
+    ),
   ],
   'content---document-editor-docs-contributors-6-f-4-c6c': [
     () =>
@@ -207,6 +460,128 @@ export default {
       ),
     '@site/docs/Get-started/quickstart.md',
     require.resolveWeak('@site/docs/Get-started/quickstart.md'),
+  ],
+  'content---document-editor-docs-react-contributors-ab-0-059': [
+    () =>
+      import(
+        /* webpackChunkName: 'content---document-editor-docs-react-contributors-ab-0-059' */ '@site/docs/react/contributors/contributors.md'
+      ),
+    '@site/docs/react/contributors/contributors.md',
+    require.resolveWeak('@site/docs/react/contributors/contributors.md'),
+  ],
+  'content---document-editor-docs-react-contributors-code-of-conductb-9-b-2e7':
+    [
+      () =>
+        import(
+          /* webpackChunkName: 'content---document-editor-docs-react-contributors-code-of-conductb-9-b-2e7' */ '@site/docs/react/contributors/code-of-conduct.md'
+        ),
+      '@site/docs/react/contributors/code-of-conduct.md',
+      require.resolveWeak('@site/docs/react/contributors/code-of-conduct.md'),
+    ],
+  'content---document-editor-docs-react-contributors-how-to-contribute-52-d-4d9':
+    [
+      () =>
+        import(
+          /* webpackChunkName: 'content---document-editor-docs-react-contributors-how-to-contribute-52-d-4d9' */ '@site/docs/react/contributors/how-to-contribute.md'
+        ),
+      '@site/docs/react/contributors/how-to-contribute.md',
+      require.resolveWeak('@site/docs/react/contributors/how-to-contribute.md'),
+    ],
+  'content---document-editor-docs-react-get-started-installation-80-d-ba9': [
+    () =>
+      import(
+        /* webpackChunkName: 'content---document-editor-docs-react-get-started-installation-80-d-ba9' */ '@site/docs/react/Get-started/Installation.md'
+      ),
+    '@site/docs/react/Get-started/Installation.md',
+    require.resolveWeak('@site/docs/react/Get-started/Installation.md'),
+  ],
+  'content---document-editor-docs-react-get-started-quickstart-797-80c': [
+    () =>
+      import(
+        /* webpackChunkName: 'content---document-editor-docs-react-get-started-quickstart-797-80c' */ '@site/docs/react/Get-started/quickstart.md'
+      ),
+    '@site/docs/react/Get-started/quickstart.md',
+    require.resolveWeak('@site/docs/react/Get-started/quickstart.md'),
+  ],
+  'content---document-editor-docs-react-references-dom-event-015-2ce': [
+    () =>
+      import(
+        /* webpackChunkName: 'content---document-editor-docs-react-references-dom-event-015-2ce' */ '@site/docs/react/references/dom-event.md'
+      ),
+    '@site/docs/react/references/dom-event.md',
+    require.resolveWeak('@site/docs/react/references/dom-event.md'),
+  ],
+  'content---document-editor-docs-react-references-toolbar-optionbf-3-f92': [
+    () =>
+      import(
+        /* webpackChunkName: 'content---document-editor-docs-react-references-toolbar-optionbf-3-f92' */ '@site/docs/react/references/toolbar-option.md'
+      ),
+    '@site/docs/react/references/toolbar-option.md',
+    require.resolveWeak('@site/docs/react/references/toolbar-option.md'),
+  ],
+  'content---document-editor-docs-react-release-change-logs-16-d-47a': [
+    () =>
+      import(
+        /* webpackChunkName: 'content---document-editor-docs-react-release-change-logs-16-d-47a' */ '@site/docs/react/release/change-logs.md'
+      ),
+    '@site/docs/react/release/change-logs.md',
+    require.resolveWeak('@site/docs/react/release/change-logs.md'),
+  ],
+  'content---document-editor-docs-react-release-release-notes-0-a-2-cda': [
+    () =>
+      import(
+        /* webpackChunkName: 'content---document-editor-docs-react-release-release-notes-0-a-2-cda' */ '@site/docs/react/release/release-notes.md'
+      ),
+    '@site/docs/react/release/release-notes.md',
+    require.resolveWeak('@site/docs/react/release/release-notes.md'),
+  ],
+  'content---document-editor-docs-react-tutorial-basics-customized-stylef-22-5c6':
+    [
+      () =>
+        import(
+          /* webpackChunkName: 'content---document-editor-docs-react-tutorial-basics-customized-stylef-22-5c6' */ '@site/docs/react/tutorial-basics/customized-style.md'
+        ),
+      '@site/docs/react/tutorial-basics/customized-style.md',
+      require.resolveWeak(
+        '@site/docs/react/tutorial-basics/customized-style.md'
+      ),
+    ],
+  'content---document-editor-docs-react-tutorial-basics-customized-tool-175-8c7':
+    [
+      () =>
+        import(
+          /* webpackChunkName: 'content---document-editor-docs-react-tutorial-basics-customized-tool-175-8c7' */ '@site/docs/react/tutorial-basics/customized-tool.md'
+        ),
+      '@site/docs/react/tutorial-basics/customized-tool.md',
+      require.resolveWeak(
+        '@site/docs/react/tutorial-basics/customized-tool.md'
+      ),
+    ],
+  'content---document-editor-docs-react-tutorial-basics-dom-handle-779-f97': [
+    () =>
+      import(
+        /* webpackChunkName: 'content---document-editor-docs-react-tutorial-basics-dom-handle-779-f97' */ '@site/docs/react/tutorial-basics/dom-handle.md'
+      ),
+    '@site/docs/react/tutorial-basics/dom-handle.md',
+    require.resolveWeak('@site/docs/react/tutorial-basics/dom-handle.md'),
+  ],
+  'content---document-editor-docs-react-what-is-document-editorf-2-c-b4b': [
+    () =>
+      import(
+        /* webpackChunkName: 'content---document-editor-docs-react-what-is-document-editorf-2-c-b4b' */ '@site/docs/react/what-is-document-editor.md'
+      ),
+    '@site/docs/react/what-is-document-editor.md',
+    require.resolveWeak('@site/docs/react/what-is-document-editor.md'),
+  ],
+  'content---document-editor-docs-react-why-we-use-canvas-957-77d': [
+    () =>
+      import(
+        /* webpackChunkName: 'content---document-editor-docs-react-why-we-use-canvas-957-77d' */ '@site/docs/react/Why-we-use-canvas/Why-we-use-canvas.md'
+      ),
+    '@site/docs/react/Why-we-use-canvas/Why-we-use-canvas.md',
+    require.resolveWeak(
+      '@site/docs/react/Why-we-use-canvas/Why-we-use-canvas.md'
+    ),
   ],
   'content---document-editor-docs-references-dom-eventbed-398': [
     () =>

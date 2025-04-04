@@ -6,7 +6,7 @@
   "source": "@site/docs/contributors/how-to-contribute.md",
   "sourceDirName": "contributors",
   "slug": "/contributors/how-to-contribute",
-  "permalink": "/react-canvas-editor/docs/contributors/how-to-contribute",
+  "permalink": "/document-editor/docs/contributors/how-to-contribute",
   "draft": false,
   "tags": [],
   "version": "current",
@@ -17,10 +17,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "Contributors",
-    "permalink": "/react-canvas-editor/docs/contributors/"
+    "permalink": "/document-editor/docs/contributors/"
   },
   "next": {
     "title": "Code of conduct",
-    "permalink": "/react-canvas-editor/docs/contributors/code-of-conduct"
+    "permalink": "/document-editor/docs/contributors/code-of-conduct"
   }
 }

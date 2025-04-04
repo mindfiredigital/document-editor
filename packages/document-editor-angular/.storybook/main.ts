@@ -1,10 +1,7 @@
 import type { StorybookConfig } from '@storybook/angular';
 
 const config: StorybookConfig = {
-  stories: [
-    '../projects/my-canvas-lib/src/lib/**/*.stories.ts',
-    '../stories/**/*.stories.ts',
-  ],
+  stories: ['../projects/my-canvas-lib/src/lib/**/*.stories.ts'],
   addons: [
     '@storybook/addon-links',
     '@storybook/addon-essentials',

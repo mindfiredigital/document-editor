@@ -3,246 +3,603 @@ import ComponentCreator from '@docusaurus/ComponentCreator';
 
 export default [
   {
-    path: '/react-canvas-editor/__docusaurus/debug',
+    path: '/document-editor/__docusaurus/debug',
+    component: ComponentCreator('/document-editor/__docusaurus/debug', '0fe'),
+    exact: true,
+  },
+  {
+    path: '/document-editor/__docusaurus/debug/config',
     component: ComponentCreator(
-      '/react-canvas-editor/__docusaurus/debug',
-      '800'
+      '/document-editor/__docusaurus/debug/config',
+      'bc8'
     ),
     exact: true,
   },
   {
-    path: '/react-canvas-editor/__docusaurus/debug/config',
+    path: '/document-editor/__docusaurus/debug/content',
     component: ComponentCreator(
-      '/react-canvas-editor/__docusaurus/debug/config',
-      'a09'
+      '/document-editor/__docusaurus/debug/content',
+      '6d8'
     ),
     exact: true,
   },
   {
-    path: '/react-canvas-editor/__docusaurus/debug/content',
+    path: '/document-editor/__docusaurus/debug/globalData',
     component: ComponentCreator(
-      '/react-canvas-editor/__docusaurus/debug/content',
-      '632'
+      '/document-editor/__docusaurus/debug/globalData',
+      '6ba'
     ),
     exact: true,
   },
   {
-    path: '/react-canvas-editor/__docusaurus/debug/globalData',
+    path: '/document-editor/__docusaurus/debug/metadata',
     component: ComponentCreator(
-      '/react-canvas-editor/__docusaurus/debug/globalData',
-      'ede'
+      '/document-editor/__docusaurus/debug/metadata',
+      'ad4'
     ),
     exact: true,
   },
   {
-    path: '/react-canvas-editor/__docusaurus/debug/metadata',
+    path: '/document-editor/__docusaurus/debug/registry',
     component: ComponentCreator(
-      '/react-canvas-editor/__docusaurus/debug/metadata',
-      'dc0'
+      '/document-editor/__docusaurus/debug/registry',
+      '7df'
     ),
     exact: true,
   },
   {
-    path: '/react-canvas-editor/__docusaurus/debug/registry',
+    path: '/document-editor/__docusaurus/debug/routes',
     component: ComponentCreator(
-      '/react-canvas-editor/__docusaurus/debug/registry',
-      'c10'
+      '/document-editor/__docusaurus/debug/routes',
+      'ac8'
     ),
     exact: true,
   },
   {
-    path: '/react-canvas-editor/__docusaurus/debug/routes',
-    component: ComponentCreator(
-      '/react-canvas-editor/__docusaurus/debug/routes',
-      '3a9'
-    ),
+    path: '/document-editor/markdown-page',
+    component: ComponentCreator('/document-editor/markdown-page', 'ec1'),
     exact: true,
   },
   {
-    path: '/react-canvas-editor/markdown-page',
-    component: ComponentCreator('/react-canvas-editor/markdown-page', '98c'),
-    exact: true,
-  },
-  {
-    path: '/react-canvas-editor/docs',
-    component: ComponentCreator('/react-canvas-editor/docs', '250'),
+    path: '/document-editor/docs',
+    component: ComponentCreator('/document-editor/docs', '3ee'),
     routes: [
       {
-        path: '/react-canvas-editor/docs/category/contribution-guide',
+        path: '/document-editor/docs/angular/contributors/',
         component: ComponentCreator(
-          '/react-canvas-editor/docs/category/contribution-guide',
-          'a45'
+          '/document-editor/docs/angular/contributors/',
+          '454'
         ),
         exact: true,
         sidebar: 'tutorialSidebar',
       },
       {
-        path: '/react-canvas-editor/docs/category/get-started',
+        path: '/document-editor/docs/angular/contributors/code-of-conduct',
         component: ComponentCreator(
-          '/react-canvas-editor/docs/category/get-started',
-          '3a7'
+          '/document-editor/docs/angular/contributors/code-of-conduct',
+          'b15'
         ),
         exact: true,
         sidebar: 'tutorialSidebar',
       },
       {
-        path: '/react-canvas-editor/docs/category/references',
+        path: '/document-editor/docs/angular/contributors/how-to-contribute',
         component: ComponentCreator(
-          '/react-canvas-editor/docs/category/references',
-          '7c6'
+          '/document-editor/docs/angular/contributors/how-to-contribute',
+          'e9f'
         ),
         exact: true,
         sidebar: 'tutorialSidebar',
       },
       {
-        path: '/react-canvas-editor/docs/category/release',
+        path: '/document-editor/docs/angular/Get-started/Installation',
         component: ComponentCreator(
-          '/react-canvas-editor/docs/category/release',
-          '79e'
+          '/document-editor/docs/angular/Get-started/Installation',
+          '104'
         ),
         exact: true,
         sidebar: 'tutorialSidebar',
       },
       {
-        path: '/react-canvas-editor/docs/category/tutorials',
+        path: '/document-editor/docs/angular/Get-started/quickstart',
         component: ComponentCreator(
-          '/react-canvas-editor/docs/category/tutorials',
-          '360'
+          '/document-editor/docs/angular/Get-started/quickstart',
+          'd09'
         ),
         exact: true,
         sidebar: 'tutorialSidebar',
       },
       {
-        path: '/react-canvas-editor/docs/category/why-we-use-canvas',
+        path: '/document-editor/docs/angular/references/dom-event',
         component: ComponentCreator(
-          '/react-canvas-editor/docs/category/why-we-use-canvas',
-          'c4b'
+          '/document-editor/docs/angular/references/dom-event',
+          '662'
         ),
         exact: true,
         sidebar: 'tutorialSidebar',
       },
       {
-        path: '/react-canvas-editor/docs/contributors/',
+        path: '/document-editor/docs/angular/references/toolbar-option',
         component: ComponentCreator(
-          '/react-canvas-editor/docs/contributors/',
-          'da6'
+          '/document-editor/docs/angular/references/toolbar-option',
+          'df5'
         ),
         exact: true,
         sidebar: 'tutorialSidebar',
       },
       {
-        path: '/react-canvas-editor/docs/contributors/code-of-conduct',
+        path: '/document-editor/docs/angular/release/change-logs',
         component: ComponentCreator(
-          '/react-canvas-editor/docs/contributors/code-of-conduct',
-          '34b'
+          '/document-editor/docs/angular/release/change-logs',
+          'bf7'
         ),
         exact: true,
         sidebar: 'tutorialSidebar',
       },
       {
-        path: '/react-canvas-editor/docs/contributors/how-to-contribute',
+        path: '/document-editor/docs/angular/release/release-notes',
         component: ComponentCreator(
-          '/react-canvas-editor/docs/contributors/how-to-contribute',
-          'a7b'
+          '/document-editor/docs/angular/release/release-notes',
+          '609'
         ),
         exact: true,
         sidebar: 'tutorialSidebar',
       },
       {
-        path: '/react-canvas-editor/docs/Get-started/Installation',
+        path: '/document-editor/docs/angular/tutorial-basics/customized-style',
         component: ComponentCreator(
-          '/react-canvas-editor/docs/Get-started/Installation',
-          'aa6'
+          '/document-editor/docs/angular/tutorial-basics/customized-style',
+          '43b'
         ),
         exact: true,
         sidebar: 'tutorialSidebar',
       },
       {
-        path: '/react-canvas-editor/docs/Get-started/quickstart',
+        path: '/document-editor/docs/angular/tutorial-basics/customized-tool',
         component: ComponentCreator(
-          '/react-canvas-editor/docs/Get-started/quickstart',
-          'e3c'
+          '/document-editor/docs/angular/tutorial-basics/customized-tool',
+          'b38'
         ),
         exact: true,
         sidebar: 'tutorialSidebar',
       },
       {
-        path: '/react-canvas-editor/docs/references/dom-event',
+        path: '/document-editor/docs/angular/tutorial-basics/dom-handle',
         component: ComponentCreator(
-          '/react-canvas-editor/docs/references/dom-event',
-          'f39'
+          '/document-editor/docs/angular/tutorial-basics/dom-handle',
+          '09d'
         ),
         exact: true,
         sidebar: 'tutorialSidebar',
       },
       {
-        path: '/react-canvas-editor/docs/references/toolbar-option',
+        path: '/document-editor/docs/angular/what-is-document-editor',
         component: ComponentCreator(
-          '/react-canvas-editor/docs/references/toolbar-option',
-          'ffd'
+          '/document-editor/docs/angular/what-is-document-editor',
+          'fe2'
         ),
         exact: true,
         sidebar: 'tutorialSidebar',
       },
       {
-        path: '/react-canvas-editor/docs/release/change-logs',
+        path: '/document-editor/docs/angular/Why-we-use-canvas/',
         component: ComponentCreator(
-          '/react-canvas-editor/docs/release/change-logs',
-          '335'
+          '/document-editor/docs/angular/Why-we-use-canvas/',
+          'ece'
         ),
         exact: true,
         sidebar: 'tutorialSidebar',
       },
       {
-        path: '/react-canvas-editor/docs/release/release-notes',
+        path: '/document-editor/docs/category/contribution-guide',
         component: ComponentCreator(
-          '/react-canvas-editor/docs/release/release-notes',
-          'a21'
+          '/document-editor/docs/category/contribution-guide',
+          'af4'
         ),
         exact: true,
         sidebar: 'tutorialSidebar',
       },
       {
-        path: '/react-canvas-editor/docs/tutorial-basics/customized-style',
+        path: '/document-editor/docs/category/contribution-guide-1',
         component: ComponentCreator(
-          '/react-canvas-editor/docs/tutorial-basics/customized-style',
-          'c86'
+          '/document-editor/docs/category/contribution-guide-1',
+          '4f2'
         ),
         exact: true,
         sidebar: 'tutorialSidebar',
       },
       {
-        path: '/react-canvas-editor/docs/tutorial-basics/customized-tool',
+        path: '/document-editor/docs/category/contribution-guide-2',
         component: ComponentCreator(
-          '/react-canvas-editor/docs/tutorial-basics/customized-tool',
-          'bb9'
+          '/document-editor/docs/category/contribution-guide-2',
+          '03f'
         ),
         exact: true,
         sidebar: 'tutorialSidebar',
       },
       {
-        path: '/react-canvas-editor/docs/tutorial-basics/dom-handle',
+        path: '/document-editor/docs/category/get-started',
         component: ComponentCreator(
-          '/react-canvas-editor/docs/tutorial-basics/dom-handle',
-          '4e2'
+          '/document-editor/docs/category/get-started',
+          '5b7'
         ),
         exact: true,
         sidebar: 'tutorialSidebar',
       },
       {
-        path: '/react-canvas-editor/docs/what-is-document-editor',
+        path: '/document-editor/docs/category/get-started-1',
         component: ComponentCreator(
-          '/react-canvas-editor/docs/what-is-document-editor',
-          'cd3'
+          '/document-editor/docs/category/get-started-1',
+          'c15'
         ),
         exact: true,
         sidebar: 'tutorialSidebar',
       },
       {
-        path: '/react-canvas-editor/docs/Why-we-use-canvas/',
+        path: '/document-editor/docs/category/get-started-2',
         component: ComponentCreator(
-          '/react-canvas-editor/docs/Why-we-use-canvas/',
-          'ffd'
+          '/document-editor/docs/category/get-started-2',
+          'ca4'
+        ),
+        exact: true,
+        sidebar: 'tutorialSidebar',
+      },
+      {
+        path: '/document-editor/docs/category/references',
+        component: ComponentCreator(
+          '/document-editor/docs/category/references',
+          'ab0'
+        ),
+        exact: true,
+        sidebar: 'tutorialSidebar',
+      },
+      {
+        path: '/document-editor/docs/category/references-1',
+        component: ComponentCreator(
+          '/document-editor/docs/category/references-1',
+          'a1b'
+        ),
+        exact: true,
+        sidebar: 'tutorialSidebar',
+      },
+      {
+        path: '/document-editor/docs/category/references-2',
+        component: ComponentCreator(
+          '/document-editor/docs/category/references-2',
+          '629'
+        ),
+        exact: true,
+        sidebar: 'tutorialSidebar',
+      },
+      {
+        path: '/document-editor/docs/category/release',
+        component: ComponentCreator(
+          '/document-editor/docs/category/release',
+          'de3'
+        ),
+        exact: true,
+        sidebar: 'tutorialSidebar',
+      },
+      {
+        path: '/document-editor/docs/category/release-1',
+        component: ComponentCreator(
+          '/document-editor/docs/category/release-1',
+          'fb6'
+        ),
+        exact: true,
+        sidebar: 'tutorialSidebar',
+      },
+      {
+        path: '/document-editor/docs/category/release-2',
+        component: ComponentCreator(
+          '/document-editor/docs/category/release-2',
+          '6d1'
+        ),
+        exact: true,
+        sidebar: 'tutorialSidebar',
+      },
+      {
+        path: '/document-editor/docs/category/tutorials',
+        component: ComponentCreator(
+          '/document-editor/docs/category/tutorials',
+          '66a'
+        ),
+        exact: true,
+        sidebar: 'tutorialSidebar',
+      },
+      {
+        path: '/document-editor/docs/category/tutorials-1',
+        component: ComponentCreator(
+          '/document-editor/docs/category/tutorials-1',
+          '9b8'
+        ),
+        exact: true,
+        sidebar: 'tutorialSidebar',
+      },
+      {
+        path: '/document-editor/docs/category/tutorials-2',
+        component: ComponentCreator(
+          '/document-editor/docs/category/tutorials-2',
+          '997'
+        ),
+        exact: true,
+        sidebar: 'tutorialSidebar',
+      },
+      {
+        path: '/document-editor/docs/category/why-we-use-canvas',
+        component: ComponentCreator(
+          '/document-editor/docs/category/why-we-use-canvas',
+          '403'
+        ),
+        exact: true,
+        sidebar: 'tutorialSidebar',
+      },
+      {
+        path: '/document-editor/docs/category/why-we-use-canvas-1',
+        component: ComponentCreator(
+          '/document-editor/docs/category/why-we-use-canvas-1',
+          '693'
+        ),
+        exact: true,
+        sidebar: 'tutorialSidebar',
+      },
+      {
+        path: '/document-editor/docs/category/why-we-use-canvas-2',
+        component: ComponentCreator(
+          '/document-editor/docs/category/why-we-use-canvas-2',
+          '216'
+        ),
+        exact: true,
+        sidebar: 'tutorialSidebar',
+      },
+      {
+        path: '/document-editor/docs/contributors/',
+        component: ComponentCreator(
+          '/document-editor/docs/contributors/',
+          '392'
+        ),
+        exact: true,
+        sidebar: 'tutorialSidebar',
+      },
+      {
+        path: '/document-editor/docs/contributors/code-of-conduct',
+        component: ComponentCreator(
+          '/document-editor/docs/contributors/code-of-conduct',
+          '69f'
+        ),
+        exact: true,
+        sidebar: 'tutorialSidebar',
+      },
+      {
+        path: '/document-editor/docs/contributors/how-to-contribute',
+        component: ComponentCreator(
+          '/document-editor/docs/contributors/how-to-contribute',
+          '695'
+        ),
+        exact: true,
+        sidebar: 'tutorialSidebar',
+      },
+      {
+        path: '/document-editor/docs/Get-started/Installation',
+        component: ComponentCreator(
+          '/document-editor/docs/Get-started/Installation',
+          '00d'
+        ),
+        exact: true,
+        sidebar: 'tutorialSidebar',
+      },
+      {
+        path: '/document-editor/docs/Get-started/quickstart',
+        component: ComponentCreator(
+          '/document-editor/docs/Get-started/quickstart',
+          '0bb'
+        ),
+        exact: true,
+        sidebar: 'tutorialSidebar',
+      },
+      {
+        path: '/document-editor/docs/react/contributors/',
+        component: ComponentCreator(
+          '/document-editor/docs/react/contributors/',
+          '118'
+        ),
+        exact: true,
+        sidebar: 'tutorialSidebar',
+      },
+      {
+        path: '/document-editor/docs/react/contributors/code-of-conduct',
+        component: ComponentCreator(
+          '/document-editor/docs/react/contributors/code-of-conduct',
+          '541'
+        ),
+        exact: true,
+        sidebar: 'tutorialSidebar',
+      },
+      {
+        path: '/document-editor/docs/react/contributors/how-to-contribute',
+        component: ComponentCreator(
+          '/document-editor/docs/react/contributors/how-to-contribute',
+          '27b'
+        ),
+        exact: true,
+        sidebar: 'tutorialSidebar',
+      },
+      {
+        path: '/document-editor/docs/react/Get-started/Installation',
+        component: ComponentCreator(
+          '/document-editor/docs/react/Get-started/Installation',
+          '3f8'
+        ),
+        exact: true,
+        sidebar: 'tutorialSidebar',
+      },
+      {
+        path: '/document-editor/docs/react/Get-started/quickstart',
+        component: ComponentCreator(
+          '/document-editor/docs/react/Get-started/quickstart',
+          'e7b'
+        ),
+        exact: true,
+        sidebar: 'tutorialSidebar',
+      },
+      {
+        path: '/document-editor/docs/react/references/dom-event',
+        component: ComponentCreator(
+          '/document-editor/docs/react/references/dom-event',
+          '575'
+        ),
+        exact: true,
+        sidebar: 'tutorialSidebar',
+      },
+      {
+        path: '/document-editor/docs/react/references/toolbar-option',
+        component: ComponentCreator(
+          '/document-editor/docs/react/references/toolbar-option',
+          'bd4'
+        ),
+        exact: true,
+        sidebar: 'tutorialSidebar',
+      },
+      {
+        path: '/document-editor/docs/react/release/change-logs',
+        component: ComponentCreator(
+          '/document-editor/docs/react/release/change-logs',
+          '48e'
+        ),
+        exact: true,
+        sidebar: 'tutorialSidebar',
+      },
+      {
+        path: '/document-editor/docs/react/release/release-notes',
+        component: ComponentCreator(
+          '/document-editor/docs/react/release/release-notes',
+          'd1d'
+        ),
+        exact: true,
+        sidebar: 'tutorialSidebar',
+      },
+      {
+        path: '/document-editor/docs/react/tutorial-basics/customized-style',
+        component: ComponentCreator(
+          '/document-editor/docs/react/tutorial-basics/customized-style',
+          '67c'
+        ),
+        exact: true,
+        sidebar: 'tutorialSidebar',
+      },
+      {
+        path: '/document-editor/docs/react/tutorial-basics/customized-tool',
+        component: ComponentCreator(
+          '/document-editor/docs/react/tutorial-basics/customized-tool',
+          'f3b'
+        ),
+        exact: true,
+        sidebar: 'tutorialSidebar',
+      },
+      {
+        path: '/document-editor/docs/react/tutorial-basics/dom-handle',
+        component: ComponentCreator(
+          '/document-editor/docs/react/tutorial-basics/dom-handle',
+          'f64'
+        ),
+        exact: true,
+        sidebar: 'tutorialSidebar',
+      },
+      {
+        path: '/document-editor/docs/react/what-is-document-editor',
+        component: ComponentCreator(
+          '/document-editor/docs/react/what-is-document-editor',
+          'ffc'
+        ),
+        exact: true,
+        sidebar: 'tutorialSidebar',
+      },
+      {
+        path: '/document-editor/docs/react/Why-we-use-canvas/',
+        component: ComponentCreator(
+          '/document-editor/docs/react/Why-we-use-canvas/',
+          '967'
+        ),
+        exact: true,
+        sidebar: 'tutorialSidebar',
+      },
+      {
+        path: '/document-editor/docs/references/dom-event',
+        component: ComponentCreator(
+          '/document-editor/docs/references/dom-event',
+          'cf2'
+        ),
+        exact: true,
+        sidebar: 'tutorialSidebar',
+      },
+      {
+        path: '/document-editor/docs/references/toolbar-option',
+        component: ComponentCreator(
+          '/document-editor/docs/references/toolbar-option',
+          'c7d'
+        ),
+        exact: true,
+        sidebar: 'tutorialSidebar',
+      },
+      {
+        path: '/document-editor/docs/release/change-logs',
+        component: ComponentCreator(
+          '/document-editor/docs/release/change-logs',
+          '965'
+        ),
+        exact: true,
+        sidebar: 'tutorialSidebar',
+      },
+      {
+        path: '/document-editor/docs/release/release-notes',
+        component: ComponentCreator(
+          '/document-editor/docs/release/release-notes',
+          'de4'
+        ),
+        exact: true,
+        sidebar: 'tutorialSidebar',
+      },
+      {
+        path: '/document-editor/docs/tutorial-basics/customized-style',
+        component: ComponentCreator(
+          '/document-editor/docs/tutorial-basics/customized-style',
+          '02e'
+        ),
+        exact: true,
+        sidebar: 'tutorialSidebar',
+      },
+      {
+        path: '/document-editor/docs/tutorial-basics/customized-tool',
+        component: ComponentCreator(
+          '/document-editor/docs/tutorial-basics/customized-tool',
+          '18b'
+        ),
+        exact: true,
+        sidebar: 'tutorialSidebar',
+      },
+      {
+        path: '/document-editor/docs/tutorial-basics/dom-handle',
+        component: ComponentCreator(
+          '/document-editor/docs/tutorial-basics/dom-handle',
+          '954'
+        ),
+        exact: true,
+        sidebar: 'tutorialSidebar',
+      },
+      {
+        path: '/document-editor/docs/what-is-document-editor',
+        component: ComponentCreator(
+          '/document-editor/docs/what-is-document-editor',
+          'd76'
+        ),
+        exact: true,
+        sidebar: 'tutorialSidebar',
+      },
+      {
+        path: '/document-editor/docs/Why-we-use-canvas/',
+        component: ComponentCreator(
+          '/document-editor/docs/Why-we-use-canvas/',
+          'af9'
         ),
         exact: true,
         sidebar: 'tutorialSidebar',
@@ -250,8 +607,8 @@ export default [
     ],
   },
   {
-    path: '/react-canvas-editor/',
-    component: ComponentCreator('/react-canvas-editor/', 'b36'),
+    path: '/document-editor/',
+    component: ComponentCreator('/document-editor/', 'b94'),
     exact: true,
   },
   {

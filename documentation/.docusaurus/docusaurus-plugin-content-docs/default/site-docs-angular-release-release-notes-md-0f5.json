@@ -1,0 +1,23 @@
+{
+  "unversionedId": "angular/release/release-notes",
+  "id": "angular/release/release-notes",
+  "title": "Release notes",
+  "description": "",
+  "source": "@site/docs/angular/release/release-notes.md",
+  "sourceDirName": "angular/release",
+  "slug": "/angular/release/release-notes",
+  "permalink": "/document-editor/docs/angular/release/release-notes",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Change logs",
+    "permalink": "/document-editor/docs/angular/release/change-logs"
+  },
+  "next": {
+    "title": "What is React Document Editor?",
+    "permalink": "/document-editor/docs/react/what-is-document-editor"
+  }
+}

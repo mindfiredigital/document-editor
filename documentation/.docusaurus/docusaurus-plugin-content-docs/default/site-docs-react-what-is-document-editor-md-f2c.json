@@ -1,0 +1,26 @@
+{
+  "unversionedId": "react/what-is-document-editor",
+  "id": "react/what-is-document-editor",
+  "title": "What is React Document Editor?",
+  "description": "react-document-editor is a tool that allows developers to integrate multipage document editor inside react application.",
+  "source": "@site/docs/react/what-is-document-editor.md",
+  "sourceDirName": "react",
+  "slug": "/react/what-is-document-editor",
+  "permalink": "/document-editor/docs/react/what-is-document-editor",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "sidebar_position": 1
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Release notes",
+    "permalink": "/document-editor/docs/angular/release/release-notes"
+  },
+  "next": {
+    "title": "Why we use Canvas",
+    "permalink": "/document-editor/docs/category/why-we-use-canvas-2"
+  }
+}

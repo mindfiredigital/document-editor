@@ -1,0 +1,26 @@
+{
+  "unversionedId": "react/contributors/code-of-conduct",
+  "id": "react/contributors/code-of-conduct",
+  "title": "Code of conduct",
+  "description": "As contributors and maintainers of the React Document Editor package, we are dedicated to demonstrating respect to all individuals who contribute to this project. This respect encompasses actions such as posting issues, updating documentation, submitting pull requests, providing constructive feedback in comments, and engaging in any other project-related activities.",
+  "source": "@site/docs/react/contributors/code-of-conduct.md",
+  "sourceDirName": "react/contributors",
+  "slug": "/react/contributors/code-of-conduct",
+  "permalink": "/document-editor/docs/react/contributors/code-of-conduct",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "sidebar_position": 2
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "How to Contribute",
+    "permalink": "/document-editor/docs/react/contributors/how-to-contribute"
+  },
+  "next": {
+    "title": "Release",
+    "permalink": "/document-editor/docs/category/release-2"
+  }
+}

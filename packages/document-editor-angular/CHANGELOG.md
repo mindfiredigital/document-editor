@@ -1,5 +1,11 @@
 # @mindfiredigital/angular-canvas-editor
 
+## 0.6.0
+
+### Minor Changes
+
+- add pnpm lock
+
 ## 0.5.0
 
 ### Minor Changes

@@ -1,0 +1,19 @@
+{
+  "unversionedId": "react/release/release-notes",
+  "id": "react/release/release-notes",
+  "title": "Release notes",
+  "description": "",
+  "source": "@site/docs/react/release/release-notes.md",
+  "sourceDirName": "react/release",
+  "slug": "/react/release/release-notes",
+  "permalink": "/document-editor/docs/react/release/release-notes",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Change logs",
+    "permalink": "/document-editor/docs/react/release/change-logs"
+  }
+}

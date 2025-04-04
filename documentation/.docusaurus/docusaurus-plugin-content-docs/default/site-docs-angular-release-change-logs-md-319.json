@@ -1,0 +1,26 @@
+{
+  "unversionedId": "angular/release/change-logs",
+  "id": "angular/release/change-logs",
+  "title": "Change logs",
+  "description": "Version 1",
+  "source": "@site/docs/angular/release/change-logs.md",
+  "sourceDirName": "angular/release",
+  "slug": "/angular/release/change-logs",
+  "permalink": "/document-editor/docs/angular/release/change-logs",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "sidebar_position": 1
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Release",
+    "permalink": "/document-editor/docs/category/release-1"
+  },
+  "next": {
+    "title": "Release notes",
+    "permalink": "/document-editor/docs/angular/release/release-notes"
+  }
+}

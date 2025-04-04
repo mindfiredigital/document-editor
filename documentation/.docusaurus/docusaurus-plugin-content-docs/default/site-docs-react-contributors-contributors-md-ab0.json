@@ -1,0 +1,26 @@
+{
+  "unversionedId": "react/contributors/contributors",
+  "id": "react/contributors/contributors",
+  "title": "Contributors",
+  "description": "- Ashutosh Jena",
+  "source": "@site/docs/react/contributors/contributors.md",
+  "sourceDirName": "react/contributors",
+  "slug": "/react/contributors/",
+  "permalink": "/document-editor/docs/react/contributors/",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "sidebar_position": 1
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Contribution Guide",
+    "permalink": "/document-editor/docs/category/contribution-guide-2"
+  },
+  "next": {
+    "title": "How to Contribute",
+    "permalink": "/document-editor/docs/react/contributors/how-to-contribute"
+  }
+}

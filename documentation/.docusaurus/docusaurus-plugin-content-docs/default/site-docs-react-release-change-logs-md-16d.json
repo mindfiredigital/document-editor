@@ -1,0 +1,26 @@
+{
+  "unversionedId": "react/release/change-logs",
+  "id": "react/release/change-logs",
+  "title": "Change logs",
+  "description": "Version 1",
+  "source": "@site/docs/react/release/change-logs.md",
+  "sourceDirName": "react/release",
+  "slug": "/react/release/change-logs",
+  "permalink": "/document-editor/docs/react/release/change-logs",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "sidebar_position": 1
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Release",
+    "permalink": "/document-editor/docs/category/release-2"
+  },
+  "next": {
+    "title": "Release notes",
+    "permalink": "/document-editor/docs/react/release/release-notes"
+  }
+}

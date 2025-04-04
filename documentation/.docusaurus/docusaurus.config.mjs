@@ -4,13 +4,13 @@
  * Modify the docusaurus.config.js file at your site's root instead.
  */
 export default {
-  "title": "React Document Editor",
+  "title": "Document Editor",
   "tagline": "Experience powerful document creation with our React-based editor. Craft and manage multi-page documents effortlessly",
   "favicon": "img/mindfire.ico",
   "url": "https://mindfiredigital.github.io",
-  "baseUrl": "/react-canvas-editor/",
+  "baseUrl": "/document-editor/",
   "organizationName": "mindfiredigital",
-  "projectName": "react-canvas-editor",
+  "projectName": "document-editor",
   "onBrokenLinks": "throw",
   "onBrokenMarkdownLinks": "warn",
   "i18n": {
@@ -35,7 +35,7 @@ export default {
     ]
   ],
   "themeConfig": {
-    "image": "img/docusaurus-social-card.jpg",
+    "image": "img/Documentsocialcard.png",
     "navbar": {
       "title": "",
       "logo": {
@@ -55,7 +55,7 @@ export default {
           "label": "Tutorials"
         },
         {
-          "href": "https://github.com/mindfiredigital/react-canvas-editor.git",
+          "href": "https://github.com/mindfiredigital/document-editor.git",
           "label": "GitHub",
           "position": "right"
         }

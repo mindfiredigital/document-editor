@@ -1,0 +1,26 @@
+{
+  "unversionedId": "react/references/toolbar-option",
+  "id": "react/references/toolbar-option",
+  "title": "Toolbar Options",
+  "description": "| Option              | Purpose                                                                                                                                                       |",
+  "source": "@site/docs/react/references/toolbar-option.md",
+  "sourceDirName": "react/references",
+  "slug": "/react/references/toolbar-option",
+  "permalink": "/document-editor/docs/react/references/toolbar-option",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "sidebar_position": 1
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "DOM Events",
+    "permalink": "/document-editor/docs/react/references/dom-event"
+  },
+  "next": {
+    "title": "Contribution Guide",
+    "permalink": "/document-editor/docs/category/contribution-guide-2"
+  }
+}

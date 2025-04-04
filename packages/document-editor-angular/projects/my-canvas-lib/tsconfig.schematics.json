@@ -9,6 +9,7 @@
     "noFallthroughCasesInSwitch": true,
     "noImplicitAny": true,
     "noImplicitThis": true,
+    "experimentalDecorators": true,
     "noUnusedParameters": true,
     "noUnusedLocals": true,
     "rootDir": "schematics",

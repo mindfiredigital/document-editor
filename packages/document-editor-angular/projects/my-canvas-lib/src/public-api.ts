@@ -8,3 +8,6 @@ export * from './lib/components/editor-toolbar/editor-toolbar.component';
 export * from './lib/components/canvas-editor/canvas-editor.component';
 export * from './lib/services/document.service';
 export * from './lib/my-lib.module';
+export * from './lib/pages/document-editor-web-component';
+export * from './lib/pages/document-editor.component';
+export * from './bootsrap';

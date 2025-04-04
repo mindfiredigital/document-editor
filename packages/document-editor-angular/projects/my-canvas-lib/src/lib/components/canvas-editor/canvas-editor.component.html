@@ -1,8 +1,13 @@
-<div class="canvas-editor-main">
+<!-- <div class="canvas-editor-main">
   <div class="canvas-editor editor" id="canvasEditorRef">
-    <!-- <lib-margin-ruler [documentId]="documentId"></lib-margin-ruler> -->
-     <!-- <app-margin-ruler [documentId]="documentId"></app-margin-ruler>
-     <app-custom-slider orientation="vertical" [marks]="verticalMarks"></app-custom-slider> -->
+    <lib-margin-ruler [documentId]="documentId"></lib-margin-ruler> 
      <app-margin-ruler [documentId]="documentId"></app-margin-ruler>
+     <app-custom-slider orientation="vertical" [marks]="verticalMarks"></app-custom-slider> 
+     <app-margin-ruler [documentId]="documentId"></app-margin-ruler>
+  </div>
+</div> -->
+<div class="canvas-editor-main" [ngStyle]="style?.editorMain">
+  <div class="canvas-editor editor" #canvasEditorRef [ngStyle]="style?.margin">
+    <app-margin-ruler [documentId]="documentId"></app-margin-ruler>
   </div>
 </div>

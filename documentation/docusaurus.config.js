@@ -6,7 +6,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'React Document Editor',
+  title: 'Document Editor',
   tagline:
     'Experience powerful document creation with our React-based editor. Craft and manage multi-page documents effortlessly',
   favicon: 'img/mindfire.ico',
@@ -15,12 +15,12 @@ const config = {
   url: 'https://mindfiredigital.github.io',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/react-canvas-editor',
+  baseUrl: '/document-editor',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'mindfiredigital', // Usually your GitHub org/user name.
-  projectName: 'react-canvas-editor', // Usually your repo name.
+  projectName: 'document-editor', // Usually your repo name.
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -54,7 +54,7 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       // Replace with your project's social card
-      image: 'img/docusaurus-social-card.jpg',
+      image: 'img/Documentsocialcard.png',
       navbar: {
         title: '',
         logo: {
@@ -70,7 +70,7 @@ const config = {
             label: 'Tutorials',
           },
           {
-            href: 'https://github.com/mindfiredigital/react-canvas-editor.git',
+            href: 'https://github.com/mindfiredigital/document-editor.git',
             label: 'GitHub',
             position: 'right',
           },

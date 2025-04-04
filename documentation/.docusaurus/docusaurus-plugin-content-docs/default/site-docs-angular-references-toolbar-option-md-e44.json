@@ -1,0 +1,26 @@
+{
+  "unversionedId": "angular/references/toolbar-option",
+  "id": "angular/references/toolbar-option",
+  "title": "Toolbar Options",
+  "description": "| Option              | Purpose                                                                                                                                                       |",
+  "source": "@site/docs/angular/references/toolbar-option.md",
+  "sourceDirName": "angular/references",
+  "slug": "/angular/references/toolbar-option",
+  "permalink": "/document-editor/docs/angular/references/toolbar-option",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "sidebar_position": 1
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "DOM Events",
+    "permalink": "/document-editor/docs/angular/references/dom-event"
+  },
+  "next": {
+    "title": "Contribution Guide",
+    "permalink": "/document-editor/docs/category/contribution-guide-1"
+  }
+}
