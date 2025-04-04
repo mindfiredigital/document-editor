@@ -18,6 +18,367 @@
           "contentPathLocalized": "D:\\document-editor\\documentation\\i18n\\en\\docusaurus-plugin-content-docs\\current",
           "docs": [
             {
+              "unversionedId": "angular/contributors/code-of-conduct",
+              "id": "angular/contributors/code-of-conduct",
+              "title": "Code of conduct",
+              "description": "As contributors and maintainers of the React Document Editor package, we are dedicated to demonstrating respect to all individuals who contribute to this project. This respect encompasses actions such as posting issues, updating documentation, submitting pull requests, providing constructive feedback in comments, and engaging in any other project-related activities.",
+              "source": "@site/docs/angular/contributors/code-of-conduct.md",
+              "sourceDirName": "angular/contributors",
+              "slug": "/angular/contributors/code-of-conduct",
+              "permalink": "/document-editor/docs/angular/contributors/code-of-conduct",
+              "draft": false,
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 2,
+              "frontMatter": {
+                "sidebar_position": 2
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "How to Contribute",
+                "permalink": "/document-editor/docs/angular/contributors/how-to-contribute"
+              },
+              "next": {
+                "title": "Release",
+                "permalink": "/document-editor/docs/category/release-1"
+              }
+            },
+            {
+              "unversionedId": "angular/contributors/contributors",
+              "id": "angular/contributors/contributors",
+              "title": "Contributors",
+              "description": "- Ashutosh Jena",
+              "source": "@site/docs/angular/contributors/contributors.md",
+              "sourceDirName": "angular/contributors",
+              "slug": "/angular/contributors/",
+              "permalink": "/document-editor/docs/angular/contributors/",
+              "draft": false,
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 1,
+              "frontMatter": {
+                "sidebar_position": 1
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Contribution Guide",
+                "permalink": "/document-editor/docs/category/contribution-guide-1"
+              },
+              "next": {
+                "title": "How to Contribute",
+                "permalink": "/document-editor/docs/angular/contributors/how-to-contribute"
+              }
+            },
+            {
+              "unversionedId": "angular/contributors/how-to-contribute",
+              "id": "angular/contributors/how-to-contribute",
+              "title": "How to Contribute",
+              "description": "We genuinely appreciate your interest in contributing to the React Document Editor project. Your invaluable contributions play a pivotal role in enhancing this project. Before you embark on your journey, please take a moment to familiarize yourself with the following guidelines:",
+              "source": "@site/docs/angular/contributors/how-to-contribute.md",
+              "sourceDirName": "angular/contributors",
+              "slug": "/angular/contributors/how-to-contribute",
+              "permalink": "/document-editor/docs/angular/contributors/how-to-contribute",
+              "draft": false,
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 1,
+              "frontMatter": {
+                "sidebar_position": 1
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Contributors",
+                "permalink": "/document-editor/docs/angular/contributors/"
+              },
+              "next": {
+                "title": "Code of conduct",
+                "permalink": "/document-editor/docs/angular/contributors/code-of-conduct"
+              }
+            },
+            {
+              "unversionedId": "angular/Get-started/Installation",
+              "id": "angular/Get-started/Installation",
+              "title": "Installation",
+              "description": "The Angular Document Editor is a collection of npm packages, which can be found on GitHub.",
+              "source": "@site/docs/angular/Get-started/Installation.md",
+              "sourceDirName": "angular/Get-started",
+              "slug": "/angular/Get-started/Installation",
+              "permalink": "/document-editor/docs/angular/Get-started/Installation",
+              "draft": false,
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 1,
+              "frontMatter": {
+                "sidebar_position": 1
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Get Started",
+                "permalink": "/document-editor/docs/category/get-started-1"
+              },
+              "next": {
+                "title": "Quick Start",
+                "permalink": "/document-editor/docs/angular/Get-started/quickstart"
+              }
+            },
+            {
+              "unversionedId": "angular/Get-started/quickstart",
+              "id": "angular/Get-started/quickstart",
+              "title": "Quick Start",
+              "description": "Let's explore the Document Editor in less than 5 minutes.",
+              "source": "@site/docs/angular/Get-started/quickstart.md",
+              "sourceDirName": "angular/Get-started",
+              "slug": "/angular/Get-started/quickstart",
+              "permalink": "/document-editor/docs/angular/Get-started/quickstart",
+              "draft": false,
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 2,
+              "frontMatter": {
+                "sidebar_position": 2
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Installation",
+                "permalink": "/document-editor/docs/angular/Get-started/Installation"
+              },
+              "next": {
+                "title": "Tutorials",
+                "permalink": "/document-editor/docs/category/tutorials-1"
+              }
+            },
+            {
+              "unversionedId": "angular/references/dom-event",
+              "id": "angular/references/dom-event",
+              "title": "DOM Events",
+              "description": "| Event         |                                                                                |",
+              "source": "@site/docs/angular/references/dom-event.md",
+              "sourceDirName": "angular/references",
+              "slug": "/angular/references/dom-event",
+              "permalink": "/document-editor/docs/angular/references/dom-event",
+              "draft": false,
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 1,
+              "frontMatter": {
+                "sidebar_position": 1
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "References",
+                "permalink": "/document-editor/docs/category/references-1"
+              },
+              "next": {
+                "title": "Toolbar Options",
+                "permalink": "/document-editor/docs/angular/references/toolbar-option"
+              }
+            },
+            {
+              "unversionedId": "angular/references/toolbar-option",
+              "id": "angular/references/toolbar-option",
+              "title": "Toolbar Options",
+              "description": "| Option              | Purpose                                                                                                                                                       |",
+              "source": "@site/docs/angular/references/toolbar-option.md",
+              "sourceDirName": "angular/references",
+              "slug": "/angular/references/toolbar-option",
+              "permalink": "/document-editor/docs/angular/references/toolbar-option",
+              "draft": false,
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 1,
+              "frontMatter": {
+                "sidebar_position": 1
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "DOM Events",
+                "permalink": "/document-editor/docs/angular/references/dom-event"
+              },
+              "next": {
+                "title": "Contribution Guide",
+                "permalink": "/document-editor/docs/category/contribution-guide-1"
+              }
+            },
+            {
+              "unversionedId": "angular/release/change-logs",
+              "id": "angular/release/change-logs",
+              "title": "Change logs",
+              "description": "Version 1",
+              "source": "@site/docs/angular/release/change-logs.md",
+              "sourceDirName": "angular/release",
+              "slug": "/angular/release/change-logs",
+              "permalink": "/document-editor/docs/angular/release/change-logs",
+              "draft": false,
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 1,
+              "frontMatter": {
+                "sidebar_position": 1
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Release",
+                "permalink": "/document-editor/docs/category/release-1"
+              },
+              "next": {
+                "title": "Release notes",
+                "permalink": "/document-editor/docs/angular/release/release-notes"
+              }
+            },
+            {
+              "unversionedId": "angular/release/release-notes",
+              "id": "angular/release/release-notes",
+              "title": "Release notes",
+              "description": "",
+              "source": "@site/docs/angular/release/release-notes.md",
+              "sourceDirName": "angular/release",
+              "slug": "/angular/release/release-notes",
+              "permalink": "/document-editor/docs/angular/release/release-notes",
+              "draft": false,
+              "tags": [],
+              "version": "current",
+              "frontMatter": {},
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Change logs",
+                "permalink": "/document-editor/docs/angular/release/change-logs"
+              },
+              "next": {
+                "title": "What is React Document Editor?",
+                "permalink": "/document-editor/docs/react/what-is-document-editor"
+              }
+            },
+            {
+              "unversionedId": "angular/tutorial-basics/customized-style",
+              "id": "angular/tutorial-basics/customized-style",
+              "title": "How to customize style",
+              "description": "Tailor the editor's user interface to align with the specific requirements of your application.",
+              "source": "@site/docs/angular/tutorial-basics/customized-style.md",
+              "sourceDirName": "angular/tutorial-basics",
+              "slug": "/angular/tutorial-basics/customized-style",
+              "permalink": "/document-editor/docs/angular/tutorial-basics/customized-style",
+              "draft": false,
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 2,
+              "frontMatter": {
+                "sidebar_position": 2
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "How to customize toolbar",
+                "permalink": "/document-editor/docs/angular/tutorial-basics/customized-tool"
+              },
+              "next": {
+                "title": "How to use DOM events",
+                "permalink": "/document-editor/docs/angular/tutorial-basics/dom-handle"
+              }
+            },
+            {
+              "unversionedId": "angular/tutorial-basics/customized-tool",
+              "id": "angular/tutorial-basics/customized-tool",
+              "title": "How to customize toolbar",
+              "description": "Customizing the user interface and actions of the editor to align with your application's requirements is essential.",
+              "source": "@site/docs/angular/tutorial-basics/customized-tool.md",
+              "sourceDirName": "angular/tutorial-basics",
+              "slug": "/angular/tutorial-basics/customized-tool",
+              "permalink": "/document-editor/docs/angular/tutorial-basics/customized-tool",
+              "draft": false,
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 1,
+              "frontMatter": {
+                "sidebar_position": 1
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Tutorials",
+                "permalink": "/document-editor/docs/category/tutorials-1"
+              },
+              "next": {
+                "title": "How to customize style",
+                "permalink": "/document-editor/docs/angular/tutorial-basics/customized-style"
+              }
+            },
+            {
+              "unversionedId": "angular/tutorial-basics/dom-handle",
+              "id": "angular/tutorial-basics/dom-handle",
+              "title": "How to use DOM events",
+              "description": "Mastering the handling of DOM events is crucial for effective React development. Below are key events and how to use them:",
+              "source": "@site/docs/angular/tutorial-basics/dom-handle.md",
+              "sourceDirName": "angular/tutorial-basics",
+              "slug": "/angular/tutorial-basics/dom-handle",
+              "permalink": "/document-editor/docs/angular/tutorial-basics/dom-handle",
+              "draft": false,
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 3,
+              "frontMatter": {
+                "sidebar_position": 3
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "How to customize style",
+                "permalink": "/document-editor/docs/angular/tutorial-basics/customized-style"
+              },
+              "next": {
+                "title": "References",
+                "permalink": "/document-editor/docs/category/references-1"
+              }
+            },
+            {
+              "unversionedId": "angular/what-is-document-editor",
+              "id": "angular/what-is-document-editor",
+              "title": "What is Angular Document Editor?",
+              "description": "angular-canvas-editor is a tool that allows developers to integrate multipage document editor inside react application.",
+              "source": "@site/docs/angular/what-is-document-editor.md",
+              "sourceDirName": "angular",
+              "slug": "/angular/what-is-document-editor",
+              "permalink": "/document-editor/docs/angular/what-is-document-editor",
+              "draft": false,
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 1,
+              "frontMatter": {
+                "sidebar_position": 1
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Release notes",
+                "permalink": "/document-editor/docs/release/release-notes"
+              },
+              "next": {
+                "title": "Why we use Canvas",
+                "permalink": "/document-editor/docs/category/why-we-use-canvas-1"
+              }
+            },
+            {
+              "unversionedId": "angular/Why-we-use-canvas/Why-we-use-canvas",
+              "id": "angular/Why-we-use-canvas/Why-we-use-canvas",
+              "title": "Why Canvas Editor",
+              "description": "Canvas vs HTML Editor",
+              "source": "@site/docs/angular/Why-we-use-canvas/Why-we-use-canvas.md",
+              "sourceDirName": "angular/Why-we-use-canvas",
+              "slug": "/angular/Why-we-use-canvas/",
+              "permalink": "/document-editor/docs/angular/Why-we-use-canvas/",
+              "draft": false,
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 1,
+              "frontMatter": {
+                "sidebar_position": 1
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Why we use Canvas",
+                "permalink": "/document-editor/docs/category/why-we-use-canvas-1"
+              },
+              "next": {
+                "title": "Get Started",
+                "permalink": "/document-editor/docs/category/get-started-1"
+              }
+            },
+            {
               "unversionedId": "contributors/code-of-conduct",
               "id": "contributors/code-of-conduct",
               "title": "Code of conduct",
@@ -148,6 +509,363 @@
               }
             },
             {
+              "unversionedId": "react/contributors/code-of-conduct",
+              "id": "react/contributors/code-of-conduct",
+              "title": "Code of conduct",
+              "description": "As contributors and maintainers of the React Document Editor package, we are dedicated to demonstrating respect to all individuals who contribute to this project. This respect encompasses actions such as posting issues, updating documentation, submitting pull requests, providing constructive feedback in comments, and engaging in any other project-related activities.",
+              "source": "@site/docs/react/contributors/code-of-conduct.md",
+              "sourceDirName": "react/contributors",
+              "slug": "/react/contributors/code-of-conduct",
+              "permalink": "/document-editor/docs/react/contributors/code-of-conduct",
+              "draft": false,
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 2,
+              "frontMatter": {
+                "sidebar_position": 2
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "How to Contribute",
+                "permalink": "/document-editor/docs/react/contributors/how-to-contribute"
+              },
+              "next": {
+                "title": "Release",
+                "permalink": "/document-editor/docs/category/release-2"
+              }
+            },
+            {
+              "unversionedId": "react/contributors/contributors",
+              "id": "react/contributors/contributors",
+              "title": "Contributors",
+              "description": "- Ashutosh Jena",
+              "source": "@site/docs/react/contributors/contributors.md",
+              "sourceDirName": "react/contributors",
+              "slug": "/react/contributors/",
+              "permalink": "/document-editor/docs/react/contributors/",
+              "draft": false,
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 1,
+              "frontMatter": {
+                "sidebar_position": 1
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Contribution Guide",
+                "permalink": "/document-editor/docs/category/contribution-guide-2"
+              },
+              "next": {
+                "title": "How to Contribute",
+                "permalink": "/document-editor/docs/react/contributors/how-to-contribute"
+              }
+            },
+            {
+              "unversionedId": "react/contributors/how-to-contribute",
+              "id": "react/contributors/how-to-contribute",
+              "title": "How to Contribute",
+              "description": "We genuinely appreciate your interest in contributing to the React Document Editor project. Your invaluable contributions play a pivotal role in enhancing this project. Before you embark on your journey, please take a moment to familiarize yourself with the following guidelines:",
+              "source": "@site/docs/react/contributors/how-to-contribute.md",
+              "sourceDirName": "react/contributors",
+              "slug": "/react/contributors/how-to-contribute",
+              "permalink": "/document-editor/docs/react/contributors/how-to-contribute",
+              "draft": false,
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 1,
+              "frontMatter": {
+                "sidebar_position": 1
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Contributors",
+                "permalink": "/document-editor/docs/react/contributors/"
+              },
+              "next": {
+                "title": "Code of conduct",
+                "permalink": "/document-editor/docs/react/contributors/code-of-conduct"
+              }
+            },
+            {
+              "unversionedId": "react/Get-started/Installation",
+              "id": "react/Get-started/Installation",
+              "title": "Installation",
+              "description": "The React Document Editor is a collection of npm packages, which can be found on GitHub.",
+              "source": "@site/docs/react/Get-started/Installation.md",
+              "sourceDirName": "react/Get-started",
+              "slug": "/react/Get-started/Installation",
+              "permalink": "/document-editor/docs/react/Get-started/Installation",
+              "draft": false,
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 1,
+              "frontMatter": {
+                "sidebar_position": 1
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Get Started",
+                "permalink": "/document-editor/docs/category/get-started-2"
+              },
+              "next": {
+                "title": "Quick Start",
+                "permalink": "/document-editor/docs/react/Get-started/quickstart"
+              }
+            },
+            {
+              "unversionedId": "react/Get-started/quickstart",
+              "id": "react/Get-started/quickstart",
+              "title": "Quick Start",
+              "description": "Let's explore the Document Editor in less than 5 minutes.",
+              "source": "@site/docs/react/Get-started/quickstart.md",
+              "sourceDirName": "react/Get-started",
+              "slug": "/react/Get-started/quickstart",
+              "permalink": "/document-editor/docs/react/Get-started/quickstart",
+              "draft": false,
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 2,
+              "frontMatter": {
+                "sidebar_position": 2
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Installation",
+                "permalink": "/document-editor/docs/react/Get-started/Installation"
+              },
+              "next": {
+                "title": "Tutorials",
+                "permalink": "/document-editor/docs/category/tutorials-2"
+              }
+            },
+            {
+              "unversionedId": "react/references/dom-event",
+              "id": "react/references/dom-event",
+              "title": "DOM Events",
+              "description": "| Event         |                                                                                |",
+              "source": "@site/docs/react/references/dom-event.md",
+              "sourceDirName": "react/references",
+              "slug": "/react/references/dom-event",
+              "permalink": "/document-editor/docs/react/references/dom-event",
+              "draft": false,
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 1,
+              "frontMatter": {
+                "sidebar_position": 1
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "References",
+                "permalink": "/document-editor/docs/category/references-2"
+              },
+              "next": {
+                "title": "Toolbar Options",
+                "permalink": "/document-editor/docs/react/references/toolbar-option"
+              }
+            },
+            {
+              "unversionedId": "react/references/toolbar-option",
+              "id": "react/references/toolbar-option",
+              "title": "Toolbar Options",
+              "description": "| Option              | Purpose                                                                                                                                                       |",
+              "source": "@site/docs/react/references/toolbar-option.md",
+              "sourceDirName": "react/references",
+              "slug": "/react/references/toolbar-option",
+              "permalink": "/document-editor/docs/react/references/toolbar-option",
+              "draft": false,
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 1,
+              "frontMatter": {
+                "sidebar_position": 1
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "DOM Events",
+                "permalink": "/document-editor/docs/react/references/dom-event"
+              },
+              "next": {
+                "title": "Contribution Guide",
+                "permalink": "/document-editor/docs/category/contribution-guide-2"
+              }
+            },
+            {
+              "unversionedId": "react/release/change-logs",
+              "id": "react/release/change-logs",
+              "title": "Change logs",
+              "description": "Version 1",
+              "source": "@site/docs/react/release/change-logs.md",
+              "sourceDirName": "react/release",
+              "slug": "/react/release/change-logs",
+              "permalink": "/document-editor/docs/react/release/change-logs",
+              "draft": false,
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 1,
+              "frontMatter": {
+                "sidebar_position": 1
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Release",
+                "permalink": "/document-editor/docs/category/release-2"
+              },
+              "next": {
+                "title": "Release notes",
+                "permalink": "/document-editor/docs/react/release/release-notes"
+              }
+            },
+            {
+              "unversionedId": "react/release/release-notes",
+              "id": "react/release/release-notes",
+              "title": "Release notes",
+              "description": "",
+              "source": "@site/docs/react/release/release-notes.md",
+              "sourceDirName": "react/release",
+              "slug": "/react/release/release-notes",
+              "permalink": "/document-editor/docs/react/release/release-notes",
+              "draft": false,
+              "tags": [],
+              "version": "current",
+              "frontMatter": {},
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Change logs",
+                "permalink": "/document-editor/docs/react/release/change-logs"
+              }
+            },
+            {
+              "unversionedId": "react/tutorial-basics/customized-style",
+              "id": "react/tutorial-basics/customized-style",
+              "title": "How to customize style",
+              "description": "Tailor the editor's user interface to align with the specific requirements of your application.",
+              "source": "@site/docs/react/tutorial-basics/customized-style.md",
+              "sourceDirName": "react/tutorial-basics",
+              "slug": "/react/tutorial-basics/customized-style",
+              "permalink": "/document-editor/docs/react/tutorial-basics/customized-style",
+              "draft": false,
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 2,
+              "frontMatter": {
+                "sidebar_position": 2
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "How to customize toolbar",
+                "permalink": "/document-editor/docs/react/tutorial-basics/customized-tool"
+              },
+              "next": {
+                "title": "How to use DOM events",
+                "permalink": "/document-editor/docs/react/tutorial-basics/dom-handle"
+              }
+            },
+            {
+              "unversionedId": "react/tutorial-basics/customized-tool",
+              "id": "react/tutorial-basics/customized-tool",
+              "title": "How to customize toolbar",
+              "description": "Customizing the user interface and actions of the editor to align with your application's requirements is essential.",
+              "source": "@site/docs/react/tutorial-basics/customized-tool.md",
+              "sourceDirName": "react/tutorial-basics",
+              "slug": "/react/tutorial-basics/customized-tool",
+              "permalink": "/document-editor/docs/react/tutorial-basics/customized-tool",
+              "draft": false,
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 1,
+              "frontMatter": {
+                "sidebar_position": 1
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Tutorials",
+                "permalink": "/document-editor/docs/category/tutorials-2"
+              },
+              "next": {
+                "title": "How to customize style",
+                "permalink": "/document-editor/docs/react/tutorial-basics/customized-style"
+              }
+            },
+            {
+              "unversionedId": "react/tutorial-basics/dom-handle",
+              "id": "react/tutorial-basics/dom-handle",
+              "title": "How to use DOM events",
+              "description": "Mastering the handling of DOM events is crucial for effective React development. Below are key events and how to use them:",
+              "source": "@site/docs/react/tutorial-basics/dom-handle.md",
+              "sourceDirName": "react/tutorial-basics",
+              "slug": "/react/tutorial-basics/dom-handle",
+              "permalink": "/document-editor/docs/react/tutorial-basics/dom-handle",
+              "draft": false,
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 3,
+              "frontMatter": {
+                "sidebar_position": 3
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "How to customize style",
+                "permalink": "/document-editor/docs/react/tutorial-basics/customized-style"
+              },
+              "next": {
+                "title": "References",
+                "permalink": "/document-editor/docs/category/references-2"
+              }
+            },
+            {
+              "unversionedId": "react/what-is-document-editor",
+              "id": "react/what-is-document-editor",
+              "title": "What is React Document Editor?",
+              "description": "react-document-editor is a tool that allows developers to integrate multipage document editor inside react application.",
+              "source": "@site/docs/react/what-is-document-editor.md",
+              "sourceDirName": "react",
+              "slug": "/react/what-is-document-editor",
+              "permalink": "/document-editor/docs/react/what-is-document-editor",
+              "draft": false,
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 1,
+              "frontMatter": {
+                "sidebar_position": 1
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Release notes",
+                "permalink": "/document-editor/docs/angular/release/release-notes"
+              },
+              "next": {
+                "title": "Why we use Canvas",
+                "permalink": "/document-editor/docs/category/why-we-use-canvas-2"
+              }
+            },
+            {
+              "unversionedId": "react/Why-we-use-canvas/Why-we-use-canvas",
+              "id": "react/Why-we-use-canvas/Why-we-use-canvas",
+              "title": "Why Canvas Editor",
+              "description": "Canvas vs HTML Editor",
+              "source": "@site/docs/react/Why-we-use-canvas/Why-we-use-canvas.md",
+              "sourceDirName": "react/Why-we-use-canvas",
+              "slug": "/react/Why-we-use-canvas/",
+              "permalink": "/document-editor/docs/react/Why-we-use-canvas/",
+              "draft": false,
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 1,
+              "frontMatter": {
+                "sidebar_position": 1
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Why we use Canvas",
+                "permalink": "/document-editor/docs/category/why-we-use-canvas-2"
+              },
+              "next": {
+                "title": "Get Started",
+                "permalink": "/document-editor/docs/category/get-started-2"
+              }
+            },
+            {
               "unversionedId": "references/dom-event",
               "id": "references/dom-event",
               "title": "DOM Events",
@@ -242,6 +960,10 @@
               "previous": {
                 "title": "Change logs",
                 "permalink": "/document-editor/docs/release/change-logs"
+              },
+              "next": {
+                "title": "What is Angular Document Editor?",
+                "permalink": "/document-editor/docs/angular/what-is-document-editor"
               }
             },
             {
@@ -507,6 +1229,290 @@
                   "slug": "/category/release",
                   "permalink": "/document-editor/docs/category/release"
                 }
+              },
+              {
+                "type": "category",
+                "label": "angular",
+                "collapsible": true,
+                "collapsed": true,
+                "items": [
+                  {
+                    "type": "doc",
+                    "id": "angular/what-is-document-editor"
+                  },
+                  {
+                    "type": "category",
+                    "label": "Why we use Canvas",
+                    "collapsible": true,
+                    "collapsed": true,
+                    "items": [
+                      {
+                        "type": "doc",
+                        "id": "angular/Why-we-use-canvas/Why-we-use-canvas"
+                      }
+                    ],
+                    "link": {
+                      "type": "generated-index",
+                      "slug": "/category/why-we-use-canvas-1",
+                      "permalink": "/document-editor/docs/category/why-we-use-canvas-1"
+                    }
+                  },
+                  {
+                    "type": "category",
+                    "label": "Get Started",
+                    "collapsible": true,
+                    "collapsed": true,
+                    "items": [
+                      {
+                        "type": "doc",
+                        "id": "angular/Get-started/Installation"
+                      },
+                      {
+                        "type": "doc",
+                        "id": "angular/Get-started/quickstart"
+                      }
+                    ],
+                    "link": {
+                      "type": "generated-index",
+                      "slug": "/category/get-started-1",
+                      "permalink": "/document-editor/docs/category/get-started-1"
+                    }
+                  },
+                  {
+                    "type": "category",
+                    "label": "Tutorials",
+                    "collapsible": true,
+                    "collapsed": true,
+                    "items": [
+                      {
+                        "type": "doc",
+                        "id": "angular/tutorial-basics/customized-tool"
+                      },
+                      {
+                        "type": "doc",
+                        "id": "angular/tutorial-basics/customized-style"
+                      },
+                      {
+                        "type": "doc",
+                        "id": "angular/tutorial-basics/dom-handle"
+                      }
+                    ],
+                    "link": {
+                      "type": "generated-index",
+                      "slug": "/category/tutorials-1",
+                      "permalink": "/document-editor/docs/category/tutorials-1"
+                    }
+                  },
+                  {
+                    "type": "category",
+                    "label": "References",
+                    "collapsible": true,
+                    "collapsed": true,
+                    "items": [
+                      {
+                        "type": "doc",
+                        "id": "angular/references/dom-event"
+                      },
+                      {
+                        "type": "doc",
+                        "id": "angular/references/toolbar-option"
+                      }
+                    ],
+                    "link": {
+                      "type": "generated-index",
+                      "slug": "/category/references-1",
+                      "permalink": "/document-editor/docs/category/references-1"
+                    }
+                  },
+                  {
+                    "type": "category",
+                    "label": "Contribution Guide",
+                    "collapsible": true,
+                    "collapsed": true,
+                    "items": [
+                      {
+                        "type": "doc",
+                        "id": "angular/contributors/contributors"
+                      },
+                      {
+                        "type": "doc",
+                        "id": "angular/contributors/how-to-contribute"
+                      },
+                      {
+                        "type": "doc",
+                        "id": "angular/contributors/code-of-conduct"
+                      }
+                    ],
+                    "link": {
+                      "type": "generated-index",
+                      "slug": "/category/contribution-guide-1",
+                      "permalink": "/document-editor/docs/category/contribution-guide-1"
+                    }
+                  },
+                  {
+                    "type": "category",
+                    "label": "Release",
+                    "collapsible": true,
+                    "collapsed": true,
+                    "items": [
+                      {
+                        "type": "doc",
+                        "id": "angular/release/change-logs"
+                      },
+                      {
+                        "type": "doc",
+                        "id": "angular/release/release-notes"
+                      }
+                    ],
+                    "link": {
+                      "type": "generated-index",
+                      "slug": "/category/release-1",
+                      "permalink": "/document-editor/docs/category/release-1"
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "category",
+                "label": "react",
+                "collapsible": true,
+                "collapsed": true,
+                "items": [
+                  {
+                    "type": "doc",
+                    "id": "react/what-is-document-editor"
+                  },
+                  {
+                    "type": "category",
+                    "label": "Why we use Canvas",
+                    "collapsible": true,
+                    "collapsed": true,
+                    "items": [
+                      {
+                        "type": "doc",
+                        "id": "react/Why-we-use-canvas/Why-we-use-canvas"
+                      }
+                    ],
+                    "link": {
+                      "type": "generated-index",
+                      "slug": "/category/why-we-use-canvas-2",
+                      "permalink": "/document-editor/docs/category/why-we-use-canvas-2"
+                    }
+                  },
+                  {
+                    "type": "category",
+                    "label": "Get Started",
+                    "collapsible": true,
+                    "collapsed": true,
+                    "items": [
+                      {
+                        "type": "doc",
+                        "id": "react/Get-started/Installation"
+                      },
+                      {
+                        "type": "doc",
+                        "id": "react/Get-started/quickstart"
+                      }
+                    ],
+                    "link": {
+                      "type": "generated-index",
+                      "slug": "/category/get-started-2",
+                      "permalink": "/document-editor/docs/category/get-started-2"
+                    }
+                  },
+                  {
+                    "type": "category",
+                    "label": "Tutorials",
+                    "collapsible": true,
+                    "collapsed": true,
+                    "items": [
+                      {
+                        "type": "doc",
+                        "id": "react/tutorial-basics/customized-tool"
+                      },
+                      {
+                        "type": "doc",
+                        "id": "react/tutorial-basics/customized-style"
+                      },
+                      {
+                        "type": "doc",
+                        "id": "react/tutorial-basics/dom-handle"
+                      }
+                    ],
+                    "link": {
+                      "type": "generated-index",
+                      "slug": "/category/tutorials-2",
+                      "permalink": "/document-editor/docs/category/tutorials-2"
+                    }
+                  },
+                  {
+                    "type": "category",
+                    "label": "References",
+                    "collapsible": true,
+                    "collapsed": true,
+                    "items": [
+                      {
+                        "type": "doc",
+                        "id": "react/references/dom-event"
+                      },
+                      {
+                        "type": "doc",
+                        "id": "react/references/toolbar-option"
+                      }
+                    ],
+                    "link": {
+                      "type": "generated-index",
+                      "slug": "/category/references-2",
+                      "permalink": "/document-editor/docs/category/references-2"
+                    }
+                  },
+                  {
+                    "type": "category",
+                    "label": "Contribution Guide",
+                    "collapsible": true,
+                    "collapsed": true,
+                    "items": [
+                      {
+                        "type": "doc",
+                        "id": "react/contributors/contributors"
+                      },
+                      {
+                        "type": "doc",
+                        "id": "react/contributors/how-to-contribute"
+                      },
+                      {
+                        "type": "doc",
+                        "id": "react/contributors/code-of-conduct"
+                      }
+                    ],
+                    "link": {
+                      "type": "generated-index",
+                      "slug": "/category/contribution-guide-2",
+                      "permalink": "/document-editor/docs/category/contribution-guide-2"
+                    }
+                  },
+                  {
+                    "type": "category",
+                    "label": "Release",
+                    "collapsible": true,
+                    "collapsed": true,
+                    "items": [
+                      {
+                        "type": "doc",
+                        "id": "react/release/change-logs"
+                      },
+                      {
+                        "type": "doc",
+                        "id": "react/release/release-notes"
+                      }
+                    ],
+                    "link": {
+                      "type": "generated-index",
+                      "slug": "/category/release-2",
+                      "permalink": "/document-editor/docs/category/release-2"
+                    }
+                  }
+                ]
               }
             ]
           }

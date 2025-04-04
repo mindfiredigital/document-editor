@@ -35,7 +35,7 @@ export default {
     ]
   ],
   "themeConfig": {
-    "image": "img/docusaurus-social-card.jpg",
+    "image": "img/Documentsocialcard.png",
     "navbar": {
       "title": "",
       "logo": {

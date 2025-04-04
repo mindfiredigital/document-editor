@@ -1,0 +1,26 @@
+{
+  "unversionedId": "angular/contributors/contributors",
+  "id": "angular/contributors/contributors",
+  "title": "Contributors",
+  "description": "- Ashutosh Jena",
+  "source": "@site/docs/angular/contributors/contributors.md",
+  "sourceDirName": "angular/contributors",
+  "slug": "/angular/contributors/",
+  "permalink": "/document-editor/docs/angular/contributors/",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "sidebar_position": 1
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Contribution Guide",
+    "permalink": "/document-editor/docs/category/contribution-guide-1"
+  },
+  "next": {
+    "title": "How to Contribute",
+    "permalink": "/document-editor/docs/angular/contributors/how-to-contribute"
+  }
+}

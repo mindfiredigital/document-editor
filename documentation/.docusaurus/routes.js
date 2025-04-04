@@ -62,13 +62,157 @@ export default [
   },
   {
     path: '/document-editor/docs',
-    component: ComponentCreator('/document-editor/docs', '174'),
+    component: ComponentCreator('/document-editor/docs', '3ee'),
     routes: [
+      {
+        path: '/document-editor/docs/angular/contributors/',
+        component: ComponentCreator(
+          '/document-editor/docs/angular/contributors/',
+          '454'
+        ),
+        exact: true,
+        sidebar: 'tutorialSidebar',
+      },
+      {
+        path: '/document-editor/docs/angular/contributors/code-of-conduct',
+        component: ComponentCreator(
+          '/document-editor/docs/angular/contributors/code-of-conduct',
+          'b15'
+        ),
+        exact: true,
+        sidebar: 'tutorialSidebar',
+      },
+      {
+        path: '/document-editor/docs/angular/contributors/how-to-contribute',
+        component: ComponentCreator(
+          '/document-editor/docs/angular/contributors/how-to-contribute',
+          'e9f'
+        ),
+        exact: true,
+        sidebar: 'tutorialSidebar',
+      },
+      {
+        path: '/document-editor/docs/angular/Get-started/Installation',
+        component: ComponentCreator(
+          '/document-editor/docs/angular/Get-started/Installation',
+          '104'
+        ),
+        exact: true,
+        sidebar: 'tutorialSidebar',
+      },
+      {
+        path: '/document-editor/docs/angular/Get-started/quickstart',
+        component: ComponentCreator(
+          '/document-editor/docs/angular/Get-started/quickstart',
+          'd09'
+        ),
+        exact: true,
+        sidebar: 'tutorialSidebar',
+      },
+      {
+        path: '/document-editor/docs/angular/references/dom-event',
+        component: ComponentCreator(
+          '/document-editor/docs/angular/references/dom-event',
+          '662'
+        ),
+        exact: true,
+        sidebar: 'tutorialSidebar',
+      },
+      {
+        path: '/document-editor/docs/angular/references/toolbar-option',
+        component: ComponentCreator(
+          '/document-editor/docs/angular/references/toolbar-option',
+          'df5'
+        ),
+        exact: true,
+        sidebar: 'tutorialSidebar',
+      },
+      {
+        path: '/document-editor/docs/angular/release/change-logs',
+        component: ComponentCreator(
+          '/document-editor/docs/angular/release/change-logs',
+          'bf7'
+        ),
+        exact: true,
+        sidebar: 'tutorialSidebar',
+      },
+      {
+        path: '/document-editor/docs/angular/release/release-notes',
+        component: ComponentCreator(
+          '/document-editor/docs/angular/release/release-notes',
+          '609'
+        ),
+        exact: true,
+        sidebar: 'tutorialSidebar',
+      },
+      {
+        path: '/document-editor/docs/angular/tutorial-basics/customized-style',
+        component: ComponentCreator(
+          '/document-editor/docs/angular/tutorial-basics/customized-style',
+          '43b'
+        ),
+        exact: true,
+        sidebar: 'tutorialSidebar',
+      },
+      {
+        path: '/document-editor/docs/angular/tutorial-basics/customized-tool',
+        component: ComponentCreator(
+          '/document-editor/docs/angular/tutorial-basics/customized-tool',
+          'b38'
+        ),
+        exact: true,
+        sidebar: 'tutorialSidebar',
+      },
+      {
+        path: '/document-editor/docs/angular/tutorial-basics/dom-handle',
+        component: ComponentCreator(
+          '/document-editor/docs/angular/tutorial-basics/dom-handle',
+          '09d'
+        ),
+        exact: true,
+        sidebar: 'tutorialSidebar',
+      },
+      {
+        path: '/document-editor/docs/angular/what-is-document-editor',
+        component: ComponentCreator(
+          '/document-editor/docs/angular/what-is-document-editor',
+          'fe2'
+        ),
+        exact: true,
+        sidebar: 'tutorialSidebar',
+      },
+      {
+        path: '/document-editor/docs/angular/Why-we-use-canvas/',
+        component: ComponentCreator(
+          '/document-editor/docs/angular/Why-we-use-canvas/',
+          'ece'
+        ),
+        exact: true,
+        sidebar: 'tutorialSidebar',
+      },
       {
         path: '/document-editor/docs/category/contribution-guide',
         component: ComponentCreator(
           '/document-editor/docs/category/contribution-guide',
           'af4'
+        ),
+        exact: true,
+        sidebar: 'tutorialSidebar',
+      },
+      {
+        path: '/document-editor/docs/category/contribution-guide-1',
+        component: ComponentCreator(
+          '/document-editor/docs/category/contribution-guide-1',
+          '4f2'
+        ),
+        exact: true,
+        sidebar: 'tutorialSidebar',
+      },
+      {
+        path: '/document-editor/docs/category/contribution-guide-2',
+        component: ComponentCreator(
+          '/document-editor/docs/category/contribution-guide-2',
+          '03f'
         ),
         exact: true,
         sidebar: 'tutorialSidebar',
@@ -83,10 +227,46 @@ export default [
         sidebar: 'tutorialSidebar',
       },
       {
+        path: '/document-editor/docs/category/get-started-1',
+        component: ComponentCreator(
+          '/document-editor/docs/category/get-started-1',
+          'c15'
+        ),
+        exact: true,
+        sidebar: 'tutorialSidebar',
+      },
+      {
+        path: '/document-editor/docs/category/get-started-2',
+        component: ComponentCreator(
+          '/document-editor/docs/category/get-started-2',
+          'ca4'
+        ),
+        exact: true,
+        sidebar: 'tutorialSidebar',
+      },
+      {
         path: '/document-editor/docs/category/references',
         component: ComponentCreator(
           '/document-editor/docs/category/references',
           'ab0'
+        ),
+        exact: true,
+        sidebar: 'tutorialSidebar',
+      },
+      {
+        path: '/document-editor/docs/category/references-1',
+        component: ComponentCreator(
+          '/document-editor/docs/category/references-1',
+          'a1b'
+        ),
+        exact: true,
+        sidebar: 'tutorialSidebar',
+      },
+      {
+        path: '/document-editor/docs/category/references-2',
+        component: ComponentCreator(
+          '/document-editor/docs/category/references-2',
+          '629'
         ),
         exact: true,
         sidebar: 'tutorialSidebar',
@@ -101,6 +281,24 @@ export default [
         sidebar: 'tutorialSidebar',
       },
       {
+        path: '/document-editor/docs/category/release-1',
+        component: ComponentCreator(
+          '/document-editor/docs/category/release-1',
+          'fb6'
+        ),
+        exact: true,
+        sidebar: 'tutorialSidebar',
+      },
+      {
+        path: '/document-editor/docs/category/release-2',
+        component: ComponentCreator(
+          '/document-editor/docs/category/release-2',
+          '6d1'
+        ),
+        exact: true,
+        sidebar: 'tutorialSidebar',
+      },
+      {
         path: '/document-editor/docs/category/tutorials',
         component: ComponentCreator(
           '/document-editor/docs/category/tutorials',
@@ -110,10 +308,46 @@ export default [
         sidebar: 'tutorialSidebar',
       },
       {
+        path: '/document-editor/docs/category/tutorials-1',
+        component: ComponentCreator(
+          '/document-editor/docs/category/tutorials-1',
+          '9b8'
+        ),
+        exact: true,
+        sidebar: 'tutorialSidebar',
+      },
+      {
+        path: '/document-editor/docs/category/tutorials-2',
+        component: ComponentCreator(
+          '/document-editor/docs/category/tutorials-2',
+          '997'
+        ),
+        exact: true,
+        sidebar: 'tutorialSidebar',
+      },
+      {
         path: '/document-editor/docs/category/why-we-use-canvas',
         component: ComponentCreator(
           '/document-editor/docs/category/why-we-use-canvas',
           '403'
+        ),
+        exact: true,
+        sidebar: 'tutorialSidebar',
+      },
+      {
+        path: '/document-editor/docs/category/why-we-use-canvas-1',
+        component: ComponentCreator(
+          '/document-editor/docs/category/why-we-use-canvas-1',
+          '693'
+        ),
+        exact: true,
+        sidebar: 'tutorialSidebar',
+      },
+      {
+        path: '/document-editor/docs/category/why-we-use-canvas-2',
+        component: ComponentCreator(
+          '/document-editor/docs/category/why-we-use-canvas-2',
+          '216'
         ),
         exact: true,
         sidebar: 'tutorialSidebar',
@@ -159,6 +393,132 @@ export default [
         component: ComponentCreator(
           '/document-editor/docs/Get-started/quickstart',
           '0bb'
+        ),
+        exact: true,
+        sidebar: 'tutorialSidebar',
+      },
+      {
+        path: '/document-editor/docs/react/contributors/',
+        component: ComponentCreator(
+          '/document-editor/docs/react/contributors/',
+          '118'
+        ),
+        exact: true,
+        sidebar: 'tutorialSidebar',
+      },
+      {
+        path: '/document-editor/docs/react/contributors/code-of-conduct',
+        component: ComponentCreator(
+          '/document-editor/docs/react/contributors/code-of-conduct',
+          '541'
+        ),
+        exact: true,
+        sidebar: 'tutorialSidebar',
+      },
+      {
+        path: '/document-editor/docs/react/contributors/how-to-contribute',
+        component: ComponentCreator(
+          '/document-editor/docs/react/contributors/how-to-contribute',
+          '27b'
+        ),
+        exact: true,
+        sidebar: 'tutorialSidebar',
+      },
+      {
+        path: '/document-editor/docs/react/Get-started/Installation',
+        component: ComponentCreator(
+          '/document-editor/docs/react/Get-started/Installation',
+          '3f8'
+        ),
+        exact: true,
+        sidebar: 'tutorialSidebar',
+      },
+      {
+        path: '/document-editor/docs/react/Get-started/quickstart',
+        component: ComponentCreator(
+          '/document-editor/docs/react/Get-started/quickstart',
+          'e7b'
+        ),
+        exact: true,
+        sidebar: 'tutorialSidebar',
+      },
+      {
+        path: '/document-editor/docs/react/references/dom-event',
+        component: ComponentCreator(
+          '/document-editor/docs/react/references/dom-event',
+          '575'
+        ),
+        exact: true,
+        sidebar: 'tutorialSidebar',
+      },
+      {
+        path: '/document-editor/docs/react/references/toolbar-option',
+        component: ComponentCreator(
+          '/document-editor/docs/react/references/toolbar-option',
+          'bd4'
+        ),
+        exact: true,
+        sidebar: 'tutorialSidebar',
+      },
+      {
+        path: '/document-editor/docs/react/release/change-logs',
+        component: ComponentCreator(
+          '/document-editor/docs/react/release/change-logs',
+          '48e'
+        ),
+        exact: true,
+        sidebar: 'tutorialSidebar',
+      },
+      {
+        path: '/document-editor/docs/react/release/release-notes',
+        component: ComponentCreator(
+          '/document-editor/docs/react/release/release-notes',
+          'd1d'
+        ),
+        exact: true,
+        sidebar: 'tutorialSidebar',
+      },
+      {
+        path: '/document-editor/docs/react/tutorial-basics/customized-style',
+        component: ComponentCreator(
+          '/document-editor/docs/react/tutorial-basics/customized-style',
+          '67c'
+        ),
+        exact: true,
+        sidebar: 'tutorialSidebar',
+      },
+      {
+        path: '/document-editor/docs/react/tutorial-basics/customized-tool',
+        component: ComponentCreator(
+          '/document-editor/docs/react/tutorial-basics/customized-tool',
+          'f3b'
+        ),
+        exact: true,
+        sidebar: 'tutorialSidebar',
+      },
+      {
+        path: '/document-editor/docs/react/tutorial-basics/dom-handle',
+        component: ComponentCreator(
+          '/document-editor/docs/react/tutorial-basics/dom-handle',
+          'f64'
+        ),
+        exact: true,
+        sidebar: 'tutorialSidebar',
+      },
+      {
+        path: '/document-editor/docs/react/what-is-document-editor',
+        component: ComponentCreator(
+          '/document-editor/docs/react/what-is-document-editor',
+          'ffc'
+        ),
+        exact: true,
+        sidebar: 'tutorialSidebar',
+      },
+      {
+        path: '/document-editor/docs/react/Why-we-use-canvas/',
+        component: ComponentCreator(
+          '/document-editor/docs/react/Why-we-use-canvas/',
+          '967'
         ),
         exact: true,
         sidebar: 'tutorialSidebar',

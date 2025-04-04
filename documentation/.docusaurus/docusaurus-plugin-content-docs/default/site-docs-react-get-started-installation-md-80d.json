@@ -1,0 +1,26 @@
+{
+  "unversionedId": "react/Get-started/Installation",
+  "id": "react/Get-started/Installation",
+  "title": "Installation",
+  "description": "The React Document Editor is a collection of npm packages, which can be found on GitHub.",
+  "source": "@site/docs/react/Get-started/Installation.md",
+  "sourceDirName": "react/Get-started",
+  "slug": "/react/Get-started/Installation",
+  "permalink": "/document-editor/docs/react/Get-started/Installation",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "sidebar_position": 1
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Get Started",
+    "permalink": "/document-editor/docs/category/get-started-2"
+  },
+  "next": {
+    "title": "Quick Start",
+    "permalink": "/document-editor/docs/react/Get-started/quickstart"
+  }
+}

@@ -15,5 +15,9 @@
   "previous": {
     "title": "Change logs",
     "permalink": "/document-editor/docs/release/change-logs"
+  },
+  "next": {
+    "title": "What is Angular Document Editor?",
+    "permalink": "/document-editor/docs/angular/what-is-document-editor"
   }
 }

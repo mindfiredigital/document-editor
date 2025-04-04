@@ -1,0 +1,26 @@
+{
+  "unversionedId": "angular/references/dom-event",
+  "id": "angular/references/dom-event",
+  "title": "DOM Events",
+  "description": "| Event         |                                                                                |",
+  "source": "@site/docs/angular/references/dom-event.md",
+  "sourceDirName": "angular/references",
+  "slug": "/angular/references/dom-event",
+  "permalink": "/document-editor/docs/angular/references/dom-event",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "sidebar_position": 1
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "References",
+    "permalink": "/document-editor/docs/category/references-1"
+  },
+  "next": {
+    "title": "Toolbar Options",
+    "permalink": "/document-editor/docs/angular/references/toolbar-option"
+  }
+}

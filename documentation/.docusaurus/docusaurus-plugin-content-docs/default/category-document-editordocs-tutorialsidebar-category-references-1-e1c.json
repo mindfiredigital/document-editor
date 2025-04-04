@@ -1,0 +1,15 @@
+{
+  "title": "References",
+  "slug": "/category/references-1",
+  "permalink": "/document-editor/docs/category/references-1",
+  "navigation": {
+    "previous": {
+      "title": "How to use DOM events",
+      "permalink": "/document-editor/docs/angular/tutorial-basics/dom-handle"
+    },
+    "next": {
+      "title": "DOM Events",
+      "permalink": "/document-editor/docs/angular/references/dom-event"
+    }
+  }
+}

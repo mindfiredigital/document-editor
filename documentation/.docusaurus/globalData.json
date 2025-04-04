@@ -11,6 +11,76 @@
           "mainDocId": "what-is-document-editor",
           "docs": [
             {
+              "id": "angular/contributors/code-of-conduct",
+              "path": "/document-editor/docs/angular/contributors/code-of-conduct",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "angular/contributors/contributors",
+              "path": "/document-editor/docs/angular/contributors/",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "angular/contributors/how-to-contribute",
+              "path": "/document-editor/docs/angular/contributors/how-to-contribute",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "angular/Get-started/Installation",
+              "path": "/document-editor/docs/angular/Get-started/Installation",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "angular/Get-started/quickstart",
+              "path": "/document-editor/docs/angular/Get-started/quickstart",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "angular/references/dom-event",
+              "path": "/document-editor/docs/angular/references/dom-event",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "angular/references/toolbar-option",
+              "path": "/document-editor/docs/angular/references/toolbar-option",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "angular/release/change-logs",
+              "path": "/document-editor/docs/angular/release/change-logs",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "angular/release/release-notes",
+              "path": "/document-editor/docs/angular/release/release-notes",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "angular/tutorial-basics/customized-style",
+              "path": "/document-editor/docs/angular/tutorial-basics/customized-style",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "angular/tutorial-basics/customized-tool",
+              "path": "/document-editor/docs/angular/tutorial-basics/customized-tool",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "angular/tutorial-basics/dom-handle",
+              "path": "/document-editor/docs/angular/tutorial-basics/dom-handle",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "angular/what-is-document-editor",
+              "path": "/document-editor/docs/angular/what-is-document-editor",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "angular/Why-we-use-canvas/Why-we-use-canvas",
+              "path": "/document-editor/docs/angular/Why-we-use-canvas/",
+              "sidebar": "tutorialSidebar"
+            },
+            {
               "id": "contributors/code-of-conduct",
               "path": "/document-editor/docs/contributors/code-of-conduct",
               "sidebar": "tutorialSidebar"
@@ -33,6 +103,76 @@
             {
               "id": "Get-started/quickstart",
               "path": "/document-editor/docs/Get-started/quickstart",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "react/contributors/code-of-conduct",
+              "path": "/document-editor/docs/react/contributors/code-of-conduct",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "react/contributors/contributors",
+              "path": "/document-editor/docs/react/contributors/",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "react/contributors/how-to-contribute",
+              "path": "/document-editor/docs/react/contributors/how-to-contribute",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "react/Get-started/Installation",
+              "path": "/document-editor/docs/react/Get-started/Installation",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "react/Get-started/quickstart",
+              "path": "/document-editor/docs/react/Get-started/quickstart",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "react/references/dom-event",
+              "path": "/document-editor/docs/react/references/dom-event",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "react/references/toolbar-option",
+              "path": "/document-editor/docs/react/references/toolbar-option",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "react/release/change-logs",
+              "path": "/document-editor/docs/react/release/change-logs",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "react/release/release-notes",
+              "path": "/document-editor/docs/react/release/release-notes",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "react/tutorial-basics/customized-style",
+              "path": "/document-editor/docs/react/tutorial-basics/customized-style",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "react/tutorial-basics/customized-tool",
+              "path": "/document-editor/docs/react/tutorial-basics/customized-tool",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "react/tutorial-basics/dom-handle",
+              "path": "/document-editor/docs/react/tutorial-basics/dom-handle",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "react/what-is-document-editor",
+              "path": "/document-editor/docs/react/what-is-document-editor",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "react/Why-we-use-canvas/Why-we-use-canvas",
+              "path": "/document-editor/docs/react/Why-we-use-canvas/",
               "sidebar": "tutorialSidebar"
             },
             {
@@ -108,6 +248,66 @@
             {
               "id": "/category/release",
               "path": "/document-editor/docs/category/release",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "/category/why-we-use-canvas-1",
+              "path": "/document-editor/docs/category/why-we-use-canvas-1",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "/category/get-started-1",
+              "path": "/document-editor/docs/category/get-started-1",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "/category/tutorials-1",
+              "path": "/document-editor/docs/category/tutorials-1",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "/category/references-1",
+              "path": "/document-editor/docs/category/references-1",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "/category/contribution-guide-1",
+              "path": "/document-editor/docs/category/contribution-guide-1",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "/category/release-1",
+              "path": "/document-editor/docs/category/release-1",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "/category/why-we-use-canvas-2",
+              "path": "/document-editor/docs/category/why-we-use-canvas-2",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "/category/get-started-2",
+              "path": "/document-editor/docs/category/get-started-2",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "/category/tutorials-2",
+              "path": "/document-editor/docs/category/tutorials-2",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "/category/references-2",
+              "path": "/document-editor/docs/category/references-2",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "/category/contribution-guide-2",
+              "path": "/document-editor/docs/category/contribution-guide-2",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "/category/release-2",
+              "path": "/document-editor/docs/category/release-2",
               "sidebar": "tutorialSidebar"
             }
           ],
