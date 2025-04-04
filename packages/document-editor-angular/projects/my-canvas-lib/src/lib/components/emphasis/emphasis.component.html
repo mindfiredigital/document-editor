@@ -1,42 +1,158 @@
-<div class="button-group-container">
+<div [ngStyle]="toolbarClass?.item?.buttonGroupContainer" class="buttonGroupContainer">
+
   <!-- First section: Undo, Redo -->
   <mat-button-toggle-group name="fontStyle" aria-label="Font Style" multiple appearance="standard"
     [hideMultipleSelectionIndicator]="true">
-    <!-- Undo Button -->
-    <mat-button-toggle value="undo" (click)="handleUndo()">
+    <lib-button-wrapper *ngIf="!toolbar || toolbar?.undo"
+      [ngClass]="isUndoActive ? selectedItemStyle : toolbarClass?.item?.undo" value="undo" (click)="handleUndo()">
       <fa-icon [icon]="faUndo"></fa-icon>
-    </mat-button-toggle>
+    </lib-button-wrapper>
 
-    <!-- Redo Button -->
-    <mat-button-toggle value="redo" (click)="handleRedo()">
+    <lib-button-wrapper *ngIf="!toolbar || toolbar?.redo"
+      [ngClass]="isRedoActive ? selectedItemStyle : toolbarClass?.item?.redo" value="redo" (click)="handleRedo()">
       <fa-icon [icon]="faRedo"></fa-icon>
-    </mat-button-toggle>
+    </lib-button-wrapper>
   </mat-button-toggle-group>
   <div class="vertical-line"></div>
-  <!-- Second section: Bold, Italic, Underline -->
+  <!-- Third section: Bold, Italic, Underline -->
   <mat-button-toggle-group name="textStyle" aria-label="Text Style" multiple appearance="standard"
     [hideMultipleSelectionIndicator]="true">
-    <!-- Bold Button -->
-    <mat-button-toggle value="bold" (click)="toggleFormat('Bold')">
+    <lib-button-wrapper *ngIf="!toolbar || toolbar?.bold"
+      [ngClass]="formats.includes('Bold') ? selectedItemStyle : toolbarClass?.item?.bold" value="bold"
+      (click)="toggleFormat('Bold')">
       <fa-icon [icon]="faBold"></fa-icon>
-    </mat-button-toggle>
+    </lib-button-wrapper>
 
-    <!-- Italic Button -->
-    <mat-button-toggle value="italic" (click)="toggleFormat('Italic')">
+    <lib-button-wrapper *ngIf="!toolbar || toolbar?.italic"
+      [ngClass]="formats.includes('Italic') ? selectedItemStyle : toolbarClass?.item?.italic" value="italic"
+      (click)="toggleFormat('Italic')">
       <fa-icon [icon]="faItalic"></fa-icon>
-    </mat-button-toggle>
+    </lib-button-wrapper>
 
-    <!-- Underline Button -->
-    <mat-button-toggle value="underline" (click)="toggleFormat('Underline')">
+    <lib-button-wrapper *ngIf="!toolbar || toolbar?.underline"
+      [ngClass]="formats.includes('Underline') ? selectedItemStyle : toolbarClass?.item?.underline" value="underline"
+      (click)="toggleFormat('Underline')">
       <fa-icon [icon]="faUnderline"></fa-icon>
-    </mat-button-toggle>
+    </lib-button-wrapper>
+  </mat-button-toggle-group>
+
+  <div class="vertical-line"></div>
+  <mat-button-toggle-group name="alignment" aria-label="Text Alignment" multiple appearance="standard"
+    [hideMultipleSelectionIndicator]="true">
+
+    <lib-button-wrapper *ngIf="!toolbar || toolbar?.superscript"
+      [ngClass]="formats.includes('Superscript') ? selectedItemStyle : toolbarClass?.item?.superscript"
+      value="superscript" (click)="toggleFormat('Superscript')">
+      <fa-icon [icon]="faSuperscript"></fa-icon>
+    </lib-button-wrapper>
+
+    <lib-button-wrapper *ngIf="!toolbar || toolbar?.subscript"
+      [ngClass]="formats.includes('Subscript') ? selectedItemStyle : toolbarClass?.item?.subscript" value="subscript"
+      (click)="toggleFormat('Subscript')">
+      <fa-icon [icon]="faSubscript"></fa-icon>
+    </lib-button-wrapper>
+
+    <lib-button-wrapper *ngIf="!toolbar || toolbar?.strikethrough"
+      [ngClass]="formats.includes('Strikethrough') ? selectedItemStyle : toolbarClass?.item?.strikethrough"
+      value="strikethrough" (click)="toggleFormat('Strikethrough')">
+      <fa-icon [icon]="faStrikethrough"></fa-icon>
+    </lib-button-wrapper>
+
+  </mat-button-toggle-group>
+
+  <div class="vertical-line"></div>
+  <!-- Fifth section: Alignment -->
+  <mat-button-toggle-group name="alignment" aria-label="Text Alignment" multiple appearance="standard"
+    [hideMultipleSelectionIndicator]="true">
+    <lib-button-wrapper *ngIf="!toolbar || toolbar?.leftAlign"
+      [ngClass]="alignment === 'left' ? selectedItemStyle : toolbarClass?.item?.leftAlign" value="left"
+      (click)="handleAlignment('left')">
+      <fa-icon [icon]="faAlignLeft"></fa-icon>
+    </lib-button-wrapper>
+
+    <lib-button-wrapper *ngIf="!toolbar || toolbar?.centerAlign"
+      [ngClass]="alignment === 'center' ? selectedItemStyle : toolbarClass?.item?.centerAlign" value="center"
+      (click)="handleAlignment('center')">
+      <fa-icon [icon]="faAlignCenter"></fa-icon>
+    </lib-button-wrapper>
+
+    <lib-button-wrapper *ngIf="!toolbar || toolbar?.rightAlign"
+      [ngClass]="alignment === 'right' ? selectedItemStyle : toolbarClass?.item?.rightAlign" value="right"
+      (click)="handleAlignment('right')">
+      <fa-icon [icon]="faAlignRight"></fa-icon>
+    </lib-button-wrapper>
+
+    <lib-button-wrapper *ngIf="!toolbar || toolbar?.justify"
+      [ngClass]="alignment === 'justify' ? selectedItemStyle : toolbarClass?.item?.justify" value="right"
+      (click)="handleAlignment('justify')">
+      <fa-icon [icon]="faAlignJustify"></fa-icon>
+    </lib-button-wrapper>
   </mat-button-toggle-group>
   <div class="vertical-line"></div>
-  <!-- Third section: Image upload button -->
+
+
+  <!-- Sixth section: List (Ordered, Unordered) -->
+  <mat-button-toggle-group name="list" aria-label="Text List" multiple appearance="standard"
+    [hideMultipleSelectionIndicator]="true">
+    <lib-button-wrapper *ngIf="!toolbar || toolbar?.orderedList"
+      [ngClass]="isOrderedList ? selectedItemStyle : toolbarClass?.item?.orderedList" value="ordered-list"
+      (click)="toggleList('ordered')">
+      <fa-icon [icon]="faListOl"></fa-icon>
+    </lib-button-wrapper>
+
+    <lib-button-wrapper *ngIf="!toolbar || toolbar?.unorderedList"
+      [ngClass]="isUnorderedList ? selectedItemStyle : toolbarClass?.item?.unorderedList" value="unordered-list"
+      (click)="toggleList('unordered')">
+      <fa-icon [icon]="faListUl"></fa-icon>
+    </lib-button-wrapper>
+  </mat-button-toggle-group>
+
+  <div class="vertical-line"></div>
+
+  <!-- Seventh section: Table, Image Upload -->
+  <app-font-dropdown *ngIf="!toolbar || toolbar?.fontType"
+    [ngClass]="formats.includes('fontType') ? selectedItemStyle : toolbarClass?.item?.fontType"></app-font-dropdown>
+  <app-table-dropdown *ngIf="!toolbar || toolbar?.table"
+    [ngClass]="formats.includes('table') ? selectedItemStyle : toolbarClass?.item?.table"></app-table-dropdown>
+  <!-- Second section: Heading, Font Size -->
+
+  <app-font-color-button [color]="selectedFontColor" *ngIf="!toolbar || toolbar?.fontColor"
+    [ngClass]="formats.includes('fontColor') ? selectedItemStyle : toolbarClass?.item?.fontColor"></app-font-color-button>
+  <app-highlight-text-button *ngIf="!toolbar || toolbar?.highlight"
+    [ngClass]="formats.includes('highlight') ? selectedItemStyle : toolbarClass?.item?.highlight"></app-highlight-text-button>
+  <div class="vertical-line"></div>
+
+  <app-font-size-button *ngIf="!toolbar || toolbar?.fontSize"
+    [ngClass]="formats.includes('fontSize') ? selectedItemStyle : toolbarClass?.item?.fontSize"></app-font-size-button>
+  <div class="vertical-line"></div>
+  <app-heading-dropdown-button *ngIf="!toolbar || toolbar?.heading"
+    [ngClass]="toolbarClass?.item?.heading"></app-heading-dropdown-button>
+  <div class="vertical-line"></div>
+
+  <!-- Fourth section: Font Color, Highlight Text -->
+
+
+
+
+
   <mat-button-toggle-group name="imageUpload" aria-label="Image Upload" multiple appearance="standard"
     [hideMultipleSelectionIndicator]="true">
-    <mat-button-toggle class="upload-image-button">
+    <lib-button-wrapper *ngIf="!toolbar || toolbar?.image"
+      [ngClass]="isImageSelected ? selectedItemStyle : toolbarClass?.item?.imageUpload" class="upload-image-button">
       <app-image-upload-button (imageSelected)="onImageSelected($event)"></app-image-upload-button>
-    </mat-button-toggle>
+    </lib-button-wrapper>
   </mat-button-toggle-group>
+
+  <div class="vertical-line"></div>
+
+  <!-- Eighth section: Hyperlink -->
+  <mat-button-toggle-group name="hyperlink" aria-label="Insert Hyperlink" multiple appearance="standard"
+    [hideMultipleSelectionIndicator]="true">
+    <lib-button-wrapper *ngIf="!toolbar || toolbar?.hyperlink"
+      [ngClass]="isHyperlinkActive ? selectedItemStyle : toolbarClass?.item?.hyperlink" value="hyperlink"
+      (click)="createHyperlink()">
+      <fa-icon [icon]="faLink"></fa-icon>
+    </lib-button-wrapper>
+  </mat-button-toggle-group>
+
 </div>

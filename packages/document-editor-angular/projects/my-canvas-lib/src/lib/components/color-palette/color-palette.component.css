@@ -1,39 +1,48 @@
-.palette-grid {
-  width: 14.1rem;
+::ng-deep .color-popover {
+  padding: 10px;
+  width: 180px;
+  background-color: white !important;
+  background-color: white !important;
+  margin-left: 100%;
+  min-width: 318px !important;
+  margin-top: 45px;
+}
+
+.color-grid {
   display: flex;
   flex-wrap: wrap;
-  padding: 10px;
+  gap: 8px;
+
 }
 
-.palette-item {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 1.4rem;
-  width: 1.4rem;
-  margin: 2px;
-}
-
-.palette-circle {
-  width: .7rem;
-  height: .7rem;
+.color-box {
+  width: 20px;
+  height: 20px;
   border-radius: 50%;
   cursor: pointer;
-  padding: 4px;
   display: flex;
+  align-items: center;
   justify-content: center;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.color-box.selected {
+  border: 2px solid black;
+}
+
+.custom-text {
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.custom-colors {
+  display: flex;
+  gap: 5px;
   align-items: center;
 }
 
-.selected {
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
-}
-
-.custom-colors-label {
-  margin: 0 10px;
-}
-
-.custom-colors-container {
-  display: flex;
-  margin: 8px 10px;
+.add-color-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
 }

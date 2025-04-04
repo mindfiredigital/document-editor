@@ -1,0 +1,13 @@
+<div class="wrap" title="Font">
+  <div class="select-material">
+    <select class="select-text" [formControl]="headingControl" (change)="handleHeadingSelect($event)" required>
+      <option *ngFor="let level of headingLevels" [value]="level">
+        <span [ngStyle]="{ 'font-size': getHeadingFontSize(level), 'font-weight': level === 'Normal' ? 'normal' : 'bold' }">
+          {{ level }}
+        </span>
+      </option>
+    </select>
+    <span class="select-highlight"></span>
+    <span class="select-bar"></span>
+  </div>
+</div>

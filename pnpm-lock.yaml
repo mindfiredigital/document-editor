@@ -83,6 +83,9 @@ importers:
 
   packages/document-editor-angular:
     dependencies:
+      '@angular-slider/ngx-slider':
+        specifier: ^19.0.0
+        version: 19.0.0(@angular/common@19.1.0)(@angular/core@19.1.0)(@angular/forms@19.1.0)
       '@angular/animations':
         specifier: ^19.1.0
         version: 19.1.0(@angular/core@19.1.0)
@@ -119,6 +122,9 @@ importers:
       '@ngrx/store':
         specifier: ^19.0.1
         version: 19.0.1(@angular/core@19.1.0)(rxjs@7.8.1)
+      ngx-color:
+        specifier: ^10.0.0
+        version: 10.0.0(@angular/common@19.1.0)(@angular/core@19.1.0)
       rxjs:
         specifier: ~7.8.0
         version: 7.8.1
@@ -882,6 +888,21 @@ packages:
     transitivePeerDependencies:
       - chokidar
     dev: true
+
+  /@angular-slider/ngx-slider@19.0.0(@angular/common@19.1.0)(@angular/core@19.1.0)(@angular/forms@19.1.0):
+    resolution: {integrity: sha512-VVJ+Fij5SKnbltxh6TdoBAUAKWfCnSLRPZ7e+r2uO88t8qte5/KHqVOdK4DWCjBr3rEr4YrPR4ylqBCuAWPsKQ==}
+    peerDependencies:
+      '@angular/common': ^19.0.0
+      '@angular/core': ^19.0.0
+      '@angular/forms': ^19.0.0
+    dependencies:
+      '@angular/common': 19.1.0(@angular/core@19.1.0)(rxjs@7.8.1)
+      '@angular/core': 19.1.0(rxjs@7.8.1)(zone.js@0.15.0)
+      '@angular/forms': 19.1.0(@angular/common@19.1.0)(@angular/core@19.1.0)(@angular/platform-browser@19.1.0)(rxjs@7.8.1)
+      detect-passive-events: 2.0.3
+      rxjs: 7.8.1
+      tslib: 2.8.1
+    dev: false
 
   /@angular/animations@19.1.0(@angular/core@19.1.0):
     resolution: {integrity: sha512-8Q3MqtcBFQqxmL+arJBiKX2YPlFAl9MZKPNAQNCl8QsGN+TF3JROf8mATOuTbfNF8jqtvKUpcLUBKwOEgS67HA==}
@@ -6219,6 +6240,11 @@ packages:
       postcss-selector-parser: ^6.0.10
     dependencies:
       postcss-selector-parser: 6.1.2
+    dev: false
+
+  /@ctrl/tinycolor@4.1.0:
+    resolution: {integrity: sha512-WyOx8cJQ+FQus4Mm4uPIZA64gbk3Wxh0so5Lcii0aJifqwoVOlfFtorjLE0Hen4OYyHZMXDWqMmaQemBhgxFRQ==}
+    engines: {node: '>=14'}
     dev: false
 
   /@discoveryjs/json-ext@0.5.7:
@@ -16155,6 +16181,10 @@ packages:
     engines: {node: '>=8'}
     dev: true
 
+  /detect-it@4.0.1:
+    resolution: {integrity: sha512-dg5YBTJYvogK1+dA2mBUDKzOWfYZtHVba89SyZUhc4+e3i2tzgjANFg5lDRCd3UOtRcw00vUTMK8LELcMdicug==}
+    dev: false
+
   /detect-libc@1.0.3:
     resolution: {integrity: sha512-pGjwhsmsp4kL2RTz08wcOlGN83otlqHeD/Z5T8GXZB+/YcpQ/dgo+lbU8ZsGxV0HIvqqxo9l7mqYwyYMD9bKDg==}
     engines: {node: '>=0.10'}
@@ -16185,6 +16215,12 @@ packages:
     dependencies:
       execa: 5.1.1
     dev: true
+
+  /detect-passive-events@2.0.3:
+    resolution: {integrity: sha512-QN/1X65Axis6a9D8qg8Py9cwY/fkWAmAH/edTbmLMcv4m5dboLJ7LcAi8CfaCON2tjk904KwKX/HTdsHC6yeRg==}
+    dependencies:
+      detect-it: 4.0.1
+    dev: false
 
   /detect-port-alt@1.1.6:
     resolution: {integrity: sha512-5tQykt+LqfJFBEYaDITx7S7cR7mJ/zQmLXZ2qt5w04ainYZw6tBf9dBunMjVeVOdYVRUzUOE4HkY5J7+uttb5Q==}
@@ -21385,6 +21421,7 @@ packages:
   /make-dir@2.1.0:
     resolution: {integrity: sha512-LS9X+dc8KLxXCb8dni79fLIIUA5VyZoyjSMCwTluaXA0o27cCK0bhXkpgw+sTXVpPy/lSO57ilRixqk0vDmtRA==}
     engines: {node: '>=6'}
+    requiresBuild: true
     dependencies:
       pify: 4.0.1
       semver: 5.7.2
@@ -21912,6 +21949,19 @@ packages:
     optionalDependencies:
       rollup: 4.30.1
     dev: true
+
+  /ngx-color@10.0.0(@angular/common@19.1.0)(@angular/core@19.1.0):
+    resolution: {integrity: sha512-WYNB/JWE8DzedJz7CuI9ewKFbRngeeTESXQKvHhdgymhil5enhlVFdufNTE6LMctAW5gZAmt/meNVtjNhZknlw==}
+    peerDependencies:
+      '@angular/common': '>=19.0.0-0'
+      '@angular/core': '>=19.0.0-0'
+    dependencies:
+      '@angular/common': 19.1.0(@angular/core@19.1.0)(rxjs@7.8.1)
+      '@angular/core': 19.1.0(rxjs@7.8.1)(zone.js@0.15.0)
+      '@ctrl/tinycolor': 4.1.0
+      material-colors: 1.2.6
+      tslib: 2.8.1
+    dev: false
 
   /nice-napi@1.0.2:
     resolution: {integrity: sha512-px/KnJAJZf5RuBGcfD+Sp2pAKq0ytz8j+1NehvgIGFkvtvFrDM3T8E4x/JJODXK9WZow8RRGrbA9QQ3hs+pDhA==}

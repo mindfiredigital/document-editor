@@ -6,7 +6,14 @@
     height: 30px;
     background-color: #ccc;
   }
-  .button-group-container {
+  .buttonGroupContainer{
     display: flex;
     align-items: center;
   }
+  .mat-button-toggle{
+    font-size: small ; 
+  }
+  .mat-icon{
+    font-size: large;
+  }
+  

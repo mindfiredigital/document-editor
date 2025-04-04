@@ -1,0 +1,12 @@
+
+<div class="wrap" matTooltip="Font">
+    <div class="select-material">
+        <select class="select-text" [(ngModel)]="selectedFont" (change)="handleChange($event)" required>
+            <option *ngFor="let fontFamily of fonts" [value]="fontFamily" [ngStyle]="{ fontFamily: fontFamily }">
+                {{ fontFamily }}
+            </option>
+        </select>
+        <span class="select-highlight"></span>
+        <span class="select-bar"></span>
+    </div>
+</div>

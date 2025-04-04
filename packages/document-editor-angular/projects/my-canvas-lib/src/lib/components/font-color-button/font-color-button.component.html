@@ -1,0 +1,12 @@
+<div>
+  <button mat-icon-button matTooltip="Text color" [ngStyle]="style" (click)="handleClick($event)">
+    <fa-icon [icon]="faPalette"></fa-icon>
+  </button>
+
+  <app-color-palette
+    *ngIf="anchorEl"
+    [anchorEl]="anchorEl.nativeElement"
+    (close)="handleClose()"
+    [feature]="Color.COLOR"
+  ></app-color-palette>
+</div>

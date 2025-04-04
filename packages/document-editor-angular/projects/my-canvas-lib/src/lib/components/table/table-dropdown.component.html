@@ -1,0 +1,26 @@
+<div class="tableContainer">
+    <button mat-button (click)="handleTableClick()" [ngStyle]="style" class="tableButton">
+      <fa-icon [icon]="faTable"></fa-icon>
+    </button>
+  
+    <div *ngIf="tablePanelVisible" class="tableCollapse">
+      <div class="tableTitle">
+        <span>{{ tableTitle }}</span>
+        <button mat-icon-button (click)="handleCloseTable()">
+          <mat-icon>close</mat-icon>
+        </button>
+      </div>
+  
+      <table class="tableGrid" (mousemove)="handleTableCellHover($event)" (click)="handleApplyTable()">
+        <tbody>
+          <tr *ngFor="let tr of [].constructor(10); let trIndex = index">
+            <td
+              *ngFor="let td of [].constructor(10); let tdIndex = index"
+              [class.activeCell]="trIndex < rowIndex && tdIndex < colIndex">
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  

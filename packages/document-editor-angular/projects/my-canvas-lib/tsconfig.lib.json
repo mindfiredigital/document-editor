@@ -5,9 +5,11 @@
     "target": "es2015",
     "declaration": true,
     "inlineSources": true,
+    "experimentalDecorators": true,
     "types": [],
     "lib": ["dom", "es2018"]
   },
+  "files": ["src/bootstrap.ts"],
   "angularCompilerOptions": {
     "preserveSymlinks": true,
     "annotateForClosureCompiler": true,

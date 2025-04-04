@@ -1,0 +1,9 @@
+<div class="color-picker-container">
+  <color-photoshop
+    [color]="fontColor"
+    (onChangeComplete)="handleChangeColor($event)"
+    (onAccept)="handleOnAccept()"
+    (onCancel)="handleOnCancel()"
+    header="Pick Your Color"
+  ></color-photoshop>
+</div>
