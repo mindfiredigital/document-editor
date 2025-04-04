@@ -7,9 +7,11 @@
 
 <br>
 
-<p align="center"> Experience powerful document creation with our document editor based on html5 canvas. Craft and manage multi-page documents effortlessly </p>
+<p align="center">
+  <strong>Experience seamless and powerful document creation</strong> with our advanced HTML5 Canvas-based Document Editor. Effortlessly craft, edit, and manage multi-page documents with precision and flexibility.
+</p>
 
-It is a tool that allows developers to integrate multi page document editors built on top of html5 canvas.
+This tool empowers developers to easily integrate a fully customizable, multi-page document editor into their web applications — all built on the robust and scalable foundation of HTML5 Canvas.
 
 <br>
 
@@ -73,10 +75,6 @@ To know more you can check the link
 
 <br>
 
-Got it! Here's a clean and focused version just for **installation**:
-
----
-
 ## Canvas Editor Installation
 
 ### 👉 For **React** Projects:
@@ -90,10 +88,6 @@ npm install @mindfiredigital/react-canvas-editor
 ```bash
 npm install @mindfiredigital/angular-canvas-editor
 ```
-
----
-
-Let me know if you want setup or usage instructions next!
 
 <br>
 
