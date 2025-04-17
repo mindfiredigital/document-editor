@@ -25,12 +25,29 @@
   </mat-menu>
 </div>
 
-<app-color-picker
+<!-- 
+  The `app-color-picker` component is currently commented out because:
+  1. Its input properties (`colorPickerAnchor`, `color`, `feature`) and output property (`close`) 
+     are not defined or implemented in the parent component.
+  2. If this component has a valid use case, it requires further discussion and implementation 
+     in the child component (`ColorPickerComponent`) to ensure proper functionality.
+  3. Until the requirements and design are clarified, the component remains inactive to avoid 
+     runtime errors or unused code.
+
+  TODO: Discuss with the team to determine if this component is needed and implement the necessary 
+  logic in both the parent and child components if required.
+-->
+<!-- <app-color-picker
   *ngIf="colorPickerAnchor"
   [colorPickerAnchor]="colorPickerAnchor"
   [color]="definedColor"
   [feature]="feature"
   (close)="colorPickerHandleClose()"
-></app-color-picker>
+></app-color-picker> -->
 <!-- Manual trigger -->
-<button mat-button [matMenuTriggerFor]="popover" #menuTrigger="matMenuTrigger" hidden></button>
+<button
+  mat-button
+  [matMenuTriggerFor]="popover"
+  #menuTrigger="matMenuTrigger"
+  hidden
+></button>
