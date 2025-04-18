@@ -2,9 +2,17 @@
   <fa-icon [icon]="faHighlighter"></fa-icon>
 </button>
 
-<app-color-palette 
+<!-- 
+    [anchorEl]="anchorEl.nativeElement" 
+    The `anchorEl` input property is currently removed out because:
+    1. It is not defined or implemented in the `app-color-palette` component.
+    2. Its purpose and usage are unclear, and it may be unnecessary or obsolete.
+    3. If this property is required for positioning or functionality, it needs clarification 
+       and implementation in both the parent and child components.
+  -->
+<app-color-palette
   *ngIf="anchorEl"
-  [anchorEl]="anchorEl.nativeElement" 
   (close)="handleClose()"
-  [feature]="Color.HIGHLIGHT">
+  [feature]="Color.HIGHLIGHT"
+>
 </app-color-palette>
