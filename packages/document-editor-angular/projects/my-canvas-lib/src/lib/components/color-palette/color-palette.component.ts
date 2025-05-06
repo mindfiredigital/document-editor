@@ -34,7 +34,6 @@ import { ColorPickerComponent } from '../color-picker/color-picker.component';
 export class ColorPaletteComponent implements AfterViewInit {
   @ViewChild(MatMenuTrigger, { static: false }) menuTrigger!: MatMenuTrigger;
 
-  @Input() anchorEl!: HTMLElement | null;
   @Input() definedColor!: string;
   @Input() feature!: string;
   @Output() close = new EventEmitter<void>();
