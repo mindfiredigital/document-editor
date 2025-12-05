@@ -62,6 +62,12 @@
     "turbo": "^1.10.0",
     "typescript": "^5.7.3"
   },
+  "pnpm": {
+    "overrides": {
+      "react": "18.3.1",
+      "react-dom": "18.3.1"
+    }
+  },
   "lint-staged": {
     "**/*.{js,ts}": [
       "prettier --write"
