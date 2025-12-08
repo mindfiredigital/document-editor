@@ -68,8 +68,13 @@ const CanvasEditor = forwardRef<HTMLDivElement, content>(function Editor(
       setEditorContent(text);
       _props?.onChange && _props?.onChange(text[0].value);
     })
+     const instance = DOMEventHandlers.register(container, editorContent, editorOptions);
 
-    DOMEventHandlers.register(container, editorContent, editorOptions);
+     return () => {
+      if (instance && instance.destroy) {
+        instance.destroy(); 
+      }
+    };
   }, []);
 
   useEffect(() => {
