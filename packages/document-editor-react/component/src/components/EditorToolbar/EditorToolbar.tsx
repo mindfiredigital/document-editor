@@ -77,9 +77,7 @@ const EditorToolbar = forwardRef<HTMLDivElement, content>(function Toolbar(
         }
         try {
           const data = DOMEventHandlers.getContentStyles();
-          console.log(data,"llkko jnndkaka")
           if (data) {
-            console.log(data,"sasa")
              setContentStyles(data);
           }
         } catch (e) {}
