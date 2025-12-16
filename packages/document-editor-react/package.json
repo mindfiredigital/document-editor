@@ -96,12 +96,13 @@
     "storybook": "^7.4.6"
   },
   "peerDependencies": {
-    "react": "^18.2.0"
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   },
   "dependencies": {
     "@emotion/react": "^11.11.1",
     "@emotion/styled": "^11.11.0",
-    "@mindfiredigital/canvas-editor": "^1.2.1",
+    "@mindfiredigital/canvas-editor": "^1.2.6",
     "@mui/icons-material": "^5.11.16",
     "@mui/material": "^5.13.5",
     "@r2wc/react-to-web-component": "^2.0.3",
@@ -111,7 +112,8 @@
     "react-redux": "^8.1.1",
     "react-router-dom": "^6.12.0",
     "react-scripts": "^5.0.1",
-    "typescript": "^4.9.5"
+    "typescript": "^4.9.5",
+    "react-dom": "^18.2.0"
   },
   "engines": {
     "node": ">=12.0.0"

@@ -68,10 +68,19 @@ const EditorToolbar = forwardRef<HTMLDivElement, content>(function Toolbar(
 
   useEffect(() => {
     let interval: NodeJS.Timeout;
+
     const timeout = setTimeout(() => {
       interval = setInterval(() => {
-        const data = DOMEventHandlers.getContentStyles();
-        setContentStyles(data);
+        const editorDom = document.querySelector('.canvas-editor');       
+        if (!editorDom) {
+            return; 
+        }
+        try {
+          const data = DOMEventHandlers.getContentStyles();
+          if (data) {
+             setContentStyles(data);
+          }
+        } catch (e) {}
       }, 100);
     }, 1000);
 
@@ -79,7 +88,7 @@ const EditorToolbar = forwardRef<HTMLDivElement, content>(function Toolbar(
       clearInterval(interval);
       clearTimeout(timeout);
     };
-  }, []);
+}, []);
 
   return (
     <Box sx={{ flexGrow: 1 }}>
