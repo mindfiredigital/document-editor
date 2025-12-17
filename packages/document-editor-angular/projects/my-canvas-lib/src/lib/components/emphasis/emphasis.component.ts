@@ -14,8 +14,8 @@ import {
   RowFlex,
   ListType,
   ListStyle,
+  IRangeStyle,
 } from '@mindfiredigital/canvas-editor';
-import { IRangeStyle } from '@mindfiredigital/canvas-editor/dist/src/editor/interface/Listener';
 import {
   faUndo,
   faRedo,
