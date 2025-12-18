@@ -1,6 +1,6 @@
 {
   "name": "@mindfiredigital/core-canvas-editor",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "type": "module",
   "private": true,
   "repository": {
