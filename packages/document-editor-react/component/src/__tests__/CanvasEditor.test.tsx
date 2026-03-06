@@ -132,14 +132,14 @@ describe('CanvasEditor', () => {
   // ── data prop (setContent) ───────────────────────────────────────────────
 
   it('calls DOMEventHandlers.setContent when data prop is provided', () => {
-    renderWithStore(<CanvasEditor data="initial content" documentId="doc-1" />);
+    renderWithStore(<CanvasEditor data="initial content" />);
     expect(mockSetContent).toHaveBeenCalledWith({
       main: [{ value: 'initial content' }],
     });
   });
 
   it('does not call DOMEventHandlers.setContent when data is undefined', () => {
-    renderWithStore(<CanvasEditor documentId="doc-1" />);
+    renderWithStore(<CanvasEditor />);
     expect(mockSetContent).not.toHaveBeenCalled();
   });
 
