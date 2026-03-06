@@ -43,10 +43,12 @@ const CanvasEditor = forwardRef<HTMLDivElement, content>(function Editor(
       ".canvas-editor"
     ) as HTMLDivElement;
 
+    if (!container) return;
+
     if(container.querySelector('[editor-component="main"]')) {
-      return 
+      return
     }
-    
+
     const editorOptions = {
       height: 1056,
       width: 816,
@@ -59,20 +61,28 @@ const CanvasEditor = forwardRef<HTMLDivElement, content>(function Editor(
       maxSize: 72,
     };
 
-    container.addEventListener('mouseup', (e) => {
+    const handleMouseUp = () => {
       _props.onSelect && _props?.onSelect(DOMEventHandlers.getSelectedText());
-    })
+    };
 
-    container.addEventListener('keydown', (e) => {
+    const handleKeyDown = () => {
       const text = DOMEventHandlers.getContent()?.data?.main;
-      setEditorContent(text);
-      _props?.onChange && _props?.onChange(text[0].value);
-    })
-     const instance = DOMEventHandlers.register(container, editorContent, editorOptions);
+      if (text?.length) {
+        setEditorContent(text);
+        _props?.onChange && _props?.onChange(text[0].value);
+      }
+    };
 
-     return () => {
+    container.addEventListener('mouseup', handleMouseUp);
+    container.addEventListener('keydown', handleKeyDown);
+
+    const instance = DOMEventHandlers.register(container, editorContent, editorOptions);
+
+    return () => {
+      container.removeEventListener('mouseup', handleMouseUp);
+      container.removeEventListener('keydown', handleKeyDown);
       if (instance && instance.destroy) {
-        instance.destroy(); 
+        instance.destroy();
       }
     };
   }, []);
