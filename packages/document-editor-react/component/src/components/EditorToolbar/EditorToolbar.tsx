@@ -8,6 +8,7 @@ import {
   ListStyle,
   ListType,
   RowFlex,
+  IRangeStyle,
 } from "@mindfiredigital/canvas-editor";
 import ButtonWrapper from "../ButtonWrapper/ButtonWrapper";
 import FormatItalicIcon from "@mui/icons-material/FormatItalic";
@@ -30,7 +31,6 @@ import FontColorButton from "../FontColorButton/FontColorButton";
 import HighlightTextButton from "../HighlightTextButton/HighlightTextButton";
 import FontSizeButton from "../FontSizeButton/FontSizeButton";
 import HeadingButton from "../HeadingButton/HeadingButton";
-import { IRangeStyle } from "@mindfiredigital/canvas-editor/dist/canvas-editor.es";
 import InsertLinkIcon from "@mui/icons-material/InsertLink";
 import ImageUploadButton from "../ImageUploadButton/ImageUploadButton";
 import Divider from "@mui/material/Divider";
@@ -77,9 +77,7 @@ const EditorToolbar = forwardRef<HTMLDivElement, content>(function Toolbar(
         }
         try {
           const data = DOMEventHandlers.getContentStyles();
-          console.log(data,"llkko jnndkaka")
           if (data) {
-            console.log(data,"sasa")
              setContentStyles(data);
           }
         } catch (e) {}
