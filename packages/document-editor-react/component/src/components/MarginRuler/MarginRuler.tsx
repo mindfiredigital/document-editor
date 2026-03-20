@@ -60,7 +60,7 @@ export default function MarginRuler({ documentId }: { documentId: string | undef
                     min={-1056}
                     max={0}
                     marks={verticalMarks}
-                    onChange={event => handleChange}
+                    onChange={handleChange}
                     step={24}
                     track="inverted"
                     scale={x => -1056}
@@ -76,7 +76,7 @@ export default function MarginRuler({ documentId }: { documentId: string | undef
                     min={0}
                     max={816}
                     marks={horizontalMarks}
-                    onChange={(event) => handleChangeHorizontal}
+                    onChange={handleChangeHorizontal}
                     step={24}
                     size="small"
                     scale={x => 816}

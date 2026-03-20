@@ -51,6 +51,7 @@
     "html"
   ],
   "dependencies": {
+    "@mindfiredigital/canvas-editor": "^1.2.7",
     "@angular-slider/ngx-slider": "^19.0.0",
     "@angular/animations": "^19.1.0",
     "@angular/common": "^19.1.0",
