@@ -10,14 +10,9 @@
     "allowSyntheticDefaultImports": true,
     "moduleResolution": "Node",
     "declaration": true,
-    "declarationDir": "dist"
+    "declarationDir": "dist",
+    "types": ["@testing-library/jest-dom"]
   },
-  "include": [
-    "component",
-    "./component/src/declaration.d.ts"
-  ],
-  "exclude": [
-    "node_modules",
-    "dist"
-  ]
+  "include": ["component", "./component/src/declaration.d.ts"],
+  "exclude": ["node_modules", "dist"]
 }
