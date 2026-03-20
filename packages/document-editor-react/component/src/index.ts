@@ -18,3 +18,4 @@
 
 export * from './pages';
 export * from './components';
+export { DOMEventHandlers } from '@mindfiredigital/canvas-editor';
