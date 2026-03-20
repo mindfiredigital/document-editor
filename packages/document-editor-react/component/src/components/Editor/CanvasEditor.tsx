@@ -44,9 +44,9 @@ const CanvasEditor = forwardRef<HTMLDivElement, content>(function Editor(
     ) as HTMLDivElement;
 
     if(container.querySelector('[editor-component="main"]')) {
-      return 
+      return
     }
-    
+
     const editorOptions = {
       height: 1056,
       width: 816,
@@ -68,11 +68,21 @@ const CanvasEditor = forwardRef<HTMLDivElement, content>(function Editor(
       setEditorContent(text);
       _props?.onChange && _props?.onChange(text[0].value);
     })
+
+    const handleMouseDown = () => {
+      const activeEl = document.activeElement as HTMLElement;
+      if (activeEl && activeEl.classList.contains('MuiSlider-thumb')) {
+        activeEl.blur();
+      }
+    };
+    container.addEventListener('mousedown', handleMouseDown, true);
+
      const instance = DOMEventHandlers.register(container, editorContent, editorOptions);
 
      return () => {
+      container.removeEventListener('mousedown', handleMouseDown, true);
       if (instance && instance.destroy) {
-        instance.destroy(); 
+        instance.destroy();
       }
     };
   }, []);
