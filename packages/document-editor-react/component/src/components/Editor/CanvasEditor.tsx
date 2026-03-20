@@ -65,6 +65,16 @@ const CanvasEditor = forwardRef<HTMLDivElement, content>(function Editor(
       _props.onSelect && _props?.onSelect(DOMEventHandlers.getSelectedText());
     };
 
+    // Blur any focused slider thumb when clicking in the editor area so the
+    // canvas-editor regains keyboard focus after a ruler drag.
+    const handleMouseDown = () => {
+      const active = document.activeElement as HTMLElement | null;
+      if (active && container.contains(active) && active.closest('.MuiSlider-root')) {
+        active.blur();
+      }
+    };
+
+    container.addEventListener('mousedown', handleMouseDown, true);
     container.addEventListener('mouseup', handleMouseUp);
 
     const instance = DOMEventHandlers.register(container, editorContent, editorOptions);
@@ -81,6 +91,7 @@ const CanvasEditor = forwardRef<HTMLDivElement, content>(function Editor(
 
     return () => {
       instance.listener.contentChange = undefined;
+      container.removeEventListener('mousedown', handleMouseDown, true);
       container.removeEventListener('mouseup', handleMouseUp);
       if (instance && instance.destroy) {
         instance.destroy();
