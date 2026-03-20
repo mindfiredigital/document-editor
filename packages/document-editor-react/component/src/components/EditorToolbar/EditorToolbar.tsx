@@ -92,7 +92,7 @@ const EditorToolbar = forwardRef<HTMLDivElement, content>(function Toolbar(
 
   return (
     <Box sx={{ flexGrow: 1 }}>
-      <AppBar position='fixed' sx={_props?.toolbarClass?.container}>
+      <AppBar position='static' sx={_props?.toolbarClass?.container}>
         <Stack sx={_props?.toolbarClass?.primaryToolbar}>
           {(!_props?.toolbar || _props?.toolbar?.undo) && (
             <ButtonWrapper
@@ -120,8 +120,9 @@ const EditorToolbar = forwardRef<HTMLDivElement, content>(function Toolbar(
           {(!_props?.toolbar || _props?.toolbar?.bold) && (
             <ButtonWrapper
               sx={
-                (_props?.toolbarClass?.item?.bold,
-                  formats.indexOf("Bold") > -1 && selectedItemStyle)
+                formats.indexOf("Bold") > -1
+                  ? { ..._props?.toolbarClass?.item?.bold, ...selectedItemStyle }
+                  : _props?.toolbarClass?.item?.bold
               }
               title='Bold'
               handleClick={() => {
@@ -134,8 +135,9 @@ const EditorToolbar = forwardRef<HTMLDivElement, content>(function Toolbar(
           {(!_props?.toolbar || _props?.toolbar?.italic) && (
             <ButtonWrapper
               sx={
-                (_props?.toolbarClass?.item?.italic,
-                  formats.indexOf("Italic") > -1 && selectedItemStyle)
+                formats.indexOf("Italic") > -1
+                  ? { ..._props?.toolbarClass?.item?.italic, ...selectedItemStyle }
+                  : _props?.toolbarClass?.item?.italic
               }
               title='Italic'
               handleClick={() => {
@@ -148,8 +150,9 @@ const EditorToolbar = forwardRef<HTMLDivElement, content>(function Toolbar(
           {(!_props?.toolbar || _props?.toolbar?.underline) && (
             <ButtonWrapper
               sx={
-                (_props?.toolbarClass?.item?.underline,
-                  formats.indexOf("Underline") > -1 && selectedItemStyle)
+                formats.indexOf("Underline") > -1
+                  ? { ..._props?.toolbarClass?.item?.underline, ...selectedItemStyle }
+                  : _props?.toolbarClass?.item?.underline
               }
               title='Underline'
               handleClick={() => {
@@ -200,8 +203,9 @@ const EditorToolbar = forwardRef<HTMLDivElement, content>(function Toolbar(
           {(!_props?.toolbar || _props?.toolbar?.leftAlign) && (
             <ButtonWrapper
               sx={
-                (_props?.toolbarClass?.item?.leftAlign,
-                  alignment === RowFlex.LEFT && selectedItemStyle)
+                alignment === RowFlex.LEFT
+                  ? { ..._props?.toolbarClass?.item?.leftAlign, ...selectedItemStyle }
+                  : _props?.toolbarClass?.item?.leftAlign
               }
               title='Left align'
               handleClick={() => {
@@ -214,8 +218,9 @@ const EditorToolbar = forwardRef<HTMLDivElement, content>(function Toolbar(
           {(!_props?.toolbar || _props?.toolbar?.centerAlign) && (
             <ButtonWrapper
               sx={
-                (_props?.toolbarClass?.item?.centerAlign,
-                  alignment === RowFlex.CENTER && selectedItemStyle)
+                alignment === RowFlex.CENTER
+                  ? { ..._props?.toolbarClass?.item?.centerAlign, ...selectedItemStyle }
+                  : _props?.toolbarClass?.item?.centerAlign
               }
               title='Center align'
               handleClick={() => {
@@ -228,8 +233,9 @@ const EditorToolbar = forwardRef<HTMLDivElement, content>(function Toolbar(
           {(!_props?.toolbar || _props?.toolbar?.rightAlign) && (
             <ButtonWrapper
               sx={
-                (_props?.toolbarClass?.item?.rightAlign,
-                  alignment === RowFlex.RIGHT && selectedItemStyle)
+                alignment === RowFlex.RIGHT
+                  ? { ..._props?.toolbarClass?.item?.rightAlign, ...selectedItemStyle }
+                  : _props?.toolbarClass?.item?.rightAlign
               }
               title='Right align'
               handleClick={() => {
@@ -242,8 +248,9 @@ const EditorToolbar = forwardRef<HTMLDivElement, content>(function Toolbar(
           {(!_props?.toolbar || _props?.toolbar?.justify) && (
             <ButtonWrapper
               sx={
-                (_props?.toolbarClass?.item?.justify,
-                  alignment === RowFlex.ALIGNMENT && selectedItemStyle)
+                alignment === RowFlex.ALIGNMENT
+                  ? { ..._props?.toolbarClass?.item?.justify, ...selectedItemStyle }
+                  : _props?.toolbarClass?.item?.justify
               }
               title='Justify'
               handleClick={() => {
@@ -263,8 +270,9 @@ const EditorToolbar = forwardRef<HTMLDivElement, content>(function Toolbar(
           {(!_props?.toolbar || _props?.toolbar?.bulletList) && (
             <ButtonWrapper
               sx={
-                (_props?.toolbarClass?.item?.bulletList,
-                  listType === ListType.UL && selectedItemStyle)
+                listType === ListType.UL
+                  ? { ..._props?.toolbarClass?.item?.bulletList, ...selectedItemStyle }
+                  : _props?.toolbarClass?.item?.bulletList
               }
               title='Bullet list'
               handleClick={() => {
@@ -279,8 +287,9 @@ const EditorToolbar = forwardRef<HTMLDivElement, content>(function Toolbar(
           {(!_props?.toolbar || _props?.toolbar?.numberedList) && (
             <ButtonWrapper
               sx={
-                (_props?.toolbarClass?.item?.numberedList,
-                  listType === ListType.OL && selectedItemStyle)
+                listType === ListType.OL
+                  ? { ..._props?.toolbarClass?.item?.numberedList, ...selectedItemStyle }
+                  : _props?.toolbarClass?.item?.numberedList
               }
               title='Numbered list'
               handleClick={() => {
