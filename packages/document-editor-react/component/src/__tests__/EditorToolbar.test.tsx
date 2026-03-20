@@ -314,6 +314,59 @@ describe('EditorToolbar', () => {
     });
   });
 
+  // ── toolbarClass item styles (ISSUE-07) ─────────────────────────────────
+  // The sx prop previously used the comma operator which silently dropped the
+  // custom toolbarClass styles. Now it uses a ternary that merges both objects.
+
+  describe('toolbarClass item styles', () => {
+    it('renders Bold button without crashing when toolbarClass.item.bold is provided', () => {
+      renderWithProvider(undefined, { item: { bold: { background: 'blue' } } });
+      expect(screen.getByRole('button', { name: 'Bold' })).toBeInTheDocument();
+    });
+
+    it('renders all alignment buttons without crashing when toolbarClass item styles are provided', () => {
+      const toolbarClass = {
+        item: {
+          leftAlign: { color: 'red' },
+          centerAlign: { color: 'green' },
+          rightAlign: { color: 'blue' },
+          justify: { color: 'purple' },
+        },
+      };
+      renderWithProvider(undefined, toolbarClass);
+      expect(screen.getByRole('button', { name: 'Left align' })).toBeInTheDocument();
+      expect(screen.getByRole('button', { name: 'Center align' })).toBeInTheDocument();
+      expect(screen.getByRole('button', { name: 'Right align' })).toBeInTheDocument();
+      expect(screen.getByRole('button', { name: 'Justify' })).toBeInTheDocument();
+    });
+
+    it('renders list buttons without crashing when toolbarClass item styles are provided', () => {
+      const toolbarClass = {
+        item: {
+          bulletList: { fontWeight: 'bold' },
+          numberedList: { fontWeight: 'bold' },
+        },
+      };
+      renderWithProvider(undefined, toolbarClass);
+      expect(screen.getByRole('button', { name: 'Bullet list' })).toBeInTheDocument();
+      expect(screen.getByRole('button', { name: 'Numbered list' })).toBeInTheDocument();
+    });
+
+    it('Bold button remains functional with toolbarClass item styles', () => {
+      renderWithProvider(undefined, { item: { bold: { background: 'blue' } } });
+      fireEvent.click(screen.getByRole('button', { name: 'Bold' }));
+      expect(mockHandleBold).toHaveBeenCalledTimes(1);
+    });
+
+    it('active Bold button (after click) still calls handler correctly', () => {
+      renderWithProvider({ bold: true }, { item: { bold: { background: 'blue' } } });
+      const boldBtn = screen.getByRole('button', { name: 'Bold' });
+      fireEvent.click(boldBtn); // activate
+      fireEvent.click(boldBtn); // deactivate
+      expect(mockHandleBold).toHaveBeenCalledTimes(2);
+    });
+  });
+
   // ── Format toggle (local state) ──────────────────────────────────────────
 
   describe('format active-state toggling', () => {

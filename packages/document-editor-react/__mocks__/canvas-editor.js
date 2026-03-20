@@ -1,5 +1,5 @@
 const DOMEventHandlers = {
-  register: jest.fn(() => ({ destroy: jest.fn() })),
+  register: jest.fn(() => ({ destroy: jest.fn(), listener: {} })),
   handleBold: jest.fn(),
   handleItalic: jest.fn(),
   handleUnderline: jest.fn(),

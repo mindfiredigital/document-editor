@@ -73,6 +73,7 @@ const DocumentEditor: FC<DocumentEditorProps> = ({
       : defaultToolbarClass;
 
   const canvasRef = useRef(null);
+
   return (
     <Provider store={store}>
       <>

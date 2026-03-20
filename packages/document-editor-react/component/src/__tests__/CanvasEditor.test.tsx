@@ -23,8 +23,11 @@ const renderWithStore = (ui: React.ReactElement) => {
 };
 
 describe('CanvasEditor', () => {
+  let mockInstance: { destroy: jest.Mock; listener: { contentChange?: () => void } };
+
   beforeEach(() => {
-    mockRegister.mockReturnValue({ destroy: jest.fn() });
+    mockInstance = { destroy: jest.fn(), listener: {} };
+    mockRegister.mockReturnValue(mockInstance);
     mockGetContent.mockReturnValue({ data: { main: [{ value: 'hello' }] } });
     mockGetSelectedText.mockReturnValue('');
   });
@@ -67,31 +70,34 @@ describe('CanvasEditor', () => {
     expect(mockRegister).toHaveBeenCalledWith(editorEl, expect.any(Array), expect.any(Object));
   });
 
-  // ── Event listeners ──────────────────────────────────────────────────────
+  // ── contentChange listener (covers toolbar, typing, undo/redo, etc.) ─────
+  // onChange is now triggered via instance.listener.contentChange, not keydown.
 
-  it('calls onChange with text content on keydown', () => {
+  it('assigns listener.contentChange on mount', () => {
+    renderWithStore(<CanvasEditor onChange={jest.fn()} />);
+    expect(typeof mockInstance.listener.contentChange).toBe('function');
+  });
+
+  it('calls onChange with JSON-stringified content when contentChange fires', () => {
     const onChange = jest.fn();
-    const { container } = renderWithStore(<CanvasEditor onChange={onChange} />);
-    const editorEl = container.querySelector('.canvas-editor') as HTMLElement;
-    fireEvent.keyDown(editorEl);
-    expect(onChange).toHaveBeenCalledWith('hello');
+    renderWithStore(<CanvasEditor onChange={onChange} />);
+    mockInstance.listener.contentChange!();
+    expect(onChange).toHaveBeenCalledWith(JSON.stringify([{ value: 'hello' }]));
   });
 
   it('does not call onChange when getContent returns empty main array', () => {
     mockGetContent.mockReturnValue({ data: { main: [] } });
     const onChange = jest.fn();
-    const { container } = renderWithStore(<CanvasEditor onChange={onChange} />);
-    const editorEl = container.querySelector('.canvas-editor') as HTMLElement;
-    fireEvent.keyDown(editorEl);
+    renderWithStore(<CanvasEditor onChange={onChange} />);
+    mockInstance.listener.contentChange!();
     expect(onChange).not.toHaveBeenCalled();
   });
 
   it('does not call onChange when getContent returns undefined', () => {
     mockGetContent.mockReturnValue(undefined);
     const onChange = jest.fn();
-    const { container } = renderWithStore(<CanvasEditor onChange={onChange} />);
-    const editorEl = container.querySelector('.canvas-editor') as HTMLElement;
-    fireEvent.keyDown(editorEl);
+    renderWithStore(<CanvasEditor onChange={onChange} />);
+    mockInstance.listener.contentChange!();
     expect(onChange).not.toHaveBeenCalled();
   });
 
@@ -114,19 +120,18 @@ describe('CanvasEditor', () => {
 
   it('calls instance.destroy on unmount', () => {
     const destroy = jest.fn();
-    mockRegister.mockReturnValue({ destroy });
+    mockRegister.mockReturnValue({ destroy, listener: {} });
     const { unmount } = renderWithStore(<CanvasEditor />);
     unmount();
     expect(destroy).toHaveBeenCalledTimes(1);
   });
 
-  it('removes keydown listener on unmount', () => {
+  it('clears listener.contentChange on unmount', () => {
     const onChange = jest.fn();
-    const { container, unmount } = renderWithStore(<CanvasEditor onChange={onChange} />);
-    const editorEl = container.querySelector('.canvas-editor') as HTMLElement;
+    const { unmount } = renderWithStore(<CanvasEditor onChange={onChange} />);
+    expect(mockInstance.listener.contentChange).toBeDefined();
     unmount();
-    fireEvent.keyDown(editorEl);
-    expect(onChange).not.toHaveBeenCalled();
+    expect(mockInstance.listener.contentChange).toBeUndefined();
   });
 
   // ── data prop (setContent) ───────────────────────────────────────────────
