@@ -43,6 +43,8 @@ const CanvasEditor = forwardRef<HTMLDivElement, content>(function Editor(
       ".canvas-editor"
     ) as HTMLDivElement;
 
+    if (!container) return;
+
     if(container.querySelector('[editor-component="main"]')) {
       return
     }
@@ -59,28 +61,38 @@ const CanvasEditor = forwardRef<HTMLDivElement, content>(function Editor(
       maxSize: 72,
     };
 
-    container.addEventListener('mouseup', (e) => {
+    const handleMouseUp = () => {
       _props.onSelect && _props?.onSelect(DOMEventHandlers.getSelectedText());
-    })
+    };
 
-    container.addEventListener('keydown', (e) => {
-      const text = DOMEventHandlers.getContent()?.data?.main;
-      setEditorContent(text);
-      _props?.onChange && _props?.onChange(text[0].value);
-    })
-
+    // Blur any focused slider thumb when clicking in the editor area so the
+    // canvas-editor regains keyboard focus after a ruler drag.
     const handleMouseDown = () => {
-      const activeEl = document.activeElement as HTMLElement;
-      if (activeEl && activeEl.classList.contains('MuiSlider-thumb')) {
-        activeEl.blur();
+      const active = document.activeElement as HTMLElement | null;
+      if (active && container.contains(active) && active.closest('.MuiSlider-root')) {
+        active.blur();
       }
     };
+
     container.addEventListener('mousedown', handleMouseDown, true);
+    container.addEventListener('mouseup', handleMouseUp);
 
-     const instance = DOMEventHandlers.register(container, editorContent, editorOptions);
+    const instance = DOMEventHandlers.register(container, editorContent, editorOptions);
 
-     return () => {
+    // contentChange fires after every draw.render() — covers typing, toolbar actions
+    // (bold, font, size, table insert, align, undo/redo, etc.)
+    instance.listener.contentChange = () => {
+      const text = DOMEventHandlers.getContent()?.data?.main;
+      if (text?.length) {
+        setEditorContent(text);
+        _props?.onChange && _props?.onChange(JSON.stringify(text));
+      }
+    };
+
+    return () => {
+      instance.listener.contentChange = undefined;
       container.removeEventListener('mousedown', handleMouseDown, true);
+      container.removeEventListener('mouseup', handleMouseUp);
       if (instance && instance.destroy) {
         instance.destroy();
       }
@@ -89,10 +101,19 @@ const CanvasEditor = forwardRef<HTMLDivElement, content>(function Editor(
 
   useEffect(() => {
     if (_props?.data) {
-
-      setEditorContent(_props?.data);
-
-      DOMEventHandlers.setContent({ main: [{ value: _props?.data }] });
+      try {
+        const main = JSON.parse(_props?.data);
+        if (Array.isArray(main) && main.length > 0) {
+          setEditorContent(main);
+          DOMEventHandlers.setContent({ main });
+        } else if (!Array.isArray(main)) {
+          // Fallback: legacy plain-text format
+          DOMEventHandlers.setContent({ main: [{ value: _props?.data }] });
+        }
+      } catch {
+        // Fallback: legacy plain-text format
+        DOMEventHandlers.setContent({ main: [{ value: _props?.data }] });
+      }
     }
   }, [documentId, dispatch, _props?.data]);
 

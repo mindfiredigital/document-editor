@@ -88,9 +88,7 @@ export const CustomSliderHorizontal: any = styled(Slider)(() => ({
         pointerEvents: 'none',
     },
     '& .MuiSlider-markLabel': {
-        fontSize: 12,
-        fontWeight: 'normal',
-        top: -27,
+        display: 'none',
     },
     '& .MuiSlider-thumb': {
         backgroundColor: 'transparent',
@@ -116,7 +114,7 @@ export const CustomSliderHorizontal: any = styled(Slider)(() => ({
 
 export const verticalMarks = new Array(12).fill(0).map((ob, i) => ({ value: -i * 96, label: i }));
 
-export const horizontalMarks = new Array(9).fill(0).map((ob, i) => ({ value: i * 96, label: i }));
+export const horizontalMarks = new Array(9).fill(0).map((ob, i) => ({ value: i * 96, label: undefined }));
 
 export function MarginRightArrow(props: any) {
     const { children, ...other } = props;
