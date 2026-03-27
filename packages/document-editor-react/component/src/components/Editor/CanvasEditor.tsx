@@ -12,7 +12,7 @@ import {
 } from "../../redux/documentReducer";
 import { RootState } from "../../redux/store";
 import { SelectionRect } from "../../utils/types";
-import MarginRuler from "../MarginRuler/MarginRuler";
+import VerticalRuler from "../MarginRuler/VerticalRuler";
 
 interface content {
   style?: any,
@@ -120,7 +120,7 @@ const CanvasEditor = forwardRef<HTMLDivElement, content>(function Editor(
   return (
     <div className="canvas-editor-main" style={_props?.style?.editorMain}>
       <div className="canvas-editor editor" ref={ref} style={_props?.style?.margin}>
-        <MarginRuler documentId={documentId} />
+        <VerticalRuler documentId={documentId} />
       </div>
     </div>
   );

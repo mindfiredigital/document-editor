@@ -1,7 +1,7 @@
 import React, { FC, useRef } from "react";
 import CanvasEditor from "../../components/Editor/CanvasEditor";
 import EditorToolbar from "../../components/EditorToolbar/EditorToolbar";
-import EditorFooter from "../../components/EditorFooter/EditorFooter";
+import HorizontalRuler from "../../components/MarginRuler/HorizontalRuler";
 import { Provider } from "react-redux";
 import { store } from "../../redux/store";
 import {
@@ -82,6 +82,7 @@ const DocumentEditor: FC<DocumentEditorProps> = ({
           toolbar={toolbar}
           toolbarClass={toolbarClass}
         />
+        <HorizontalRuler />
         <CanvasEditor
           ref={canvasRef}
           style={canvas_class}
@@ -89,7 +90,6 @@ const DocumentEditor: FC<DocumentEditorProps> = ({
           onSelect={on_select}
           data={value}
         />
-        <EditorFooter />
       </>
     </Provider>
   );
