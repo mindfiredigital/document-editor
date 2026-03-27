@@ -1,6 +1,5 @@
 import React, { forwardRef, useEffect, useState } from "react";
 
-import Box from "@mui/material/Box";
 import AppBar from "@mui/material/AppBar";
 import FormatBoldIcon from "@mui/icons-material/FormatBold";
 import {
@@ -91,8 +90,7 @@ const EditorToolbar = forwardRef<HTMLDivElement, content>(function Toolbar(
 }, []);
 
   return (
-    <Box sx={{ flexGrow: 1 }}>
-      <AppBar position='static' sx={_props?.toolbarClass?.container}>
+    <AppBar position='sticky' className='ce-editor-toolbar' sx={_props?.toolbarClass?.container}>
         <Stack sx={_props?.toolbarClass?.primaryToolbar}>
           {(!_props?.toolbar || _props?.toolbar?.undo) && (
             <ButtonWrapper
@@ -383,8 +381,7 @@ const EditorToolbar = forwardRef<HTMLDivElement, content>(function Toolbar(
             />
           )}
         </Stack>
-      </AppBar>
-    </Box>
+    </AppBar>
   );
 });
 
