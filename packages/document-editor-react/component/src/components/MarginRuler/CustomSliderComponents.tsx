@@ -42,6 +42,10 @@ export const CustomSliderVertical: any = styled(Slider)(() => ({
         backgroundColor: 'transparent',
         pointerEvents: 'auto',
         overflow: 'visible',
+        '& svg': {
+            pointerEvents: 'auto',
+            filter: 'drop-shadow(0 1px 1px rgba(0,0,0,0.15))',
+        },
         '&:hover': {
             backgroundColor: 'transparent',
             boxShadow: "none"
@@ -51,10 +55,6 @@ export const CustomSliderVertical: any = styled(Slider)(() => ({
         },
         '&.Mui-focusVisible': {
             boxShadow: "none"
-        },
-        '& svg': {
-            pointerEvents: 'auto',
-            filter: 'drop-shadow(0px 0px 1px rgba(0,0,0,0.3))',
         },
     },
 }));
@@ -95,6 +95,10 @@ export const CustomSliderHorizontal: any = styled(Slider)(() => ({
         top: 3,
         pointerEvents: 'auto',
         overflow: 'visible',
+        '& svg': {
+            pointerEvents: 'auto',
+            filter: 'drop-shadow(0 1px 1px rgba(0,0,0,0.15))',
+        },
         '&:hover': {
             backgroundColor: 'transparent',
             boxShadow: "none"
@@ -104,10 +108,6 @@ export const CustomSliderHorizontal: any = styled(Slider)(() => ({
         },
         '&.Mui-focusVisible': {
             boxShadow: "none"
-        },
-        '& svg': {
-            pointerEvents: 'auto',
-            filter: 'drop-shadow(0px 0px 1px rgba(0,0,0,0.3))',
         },
     },
 }));

@@ -16,6 +16,9 @@ examples
 # production
 /build
 packages/**/dist/
+packages/**/docusaurus/build/
+packages/**/docusaurus/.docusaurus/
+packages/document-editor-react/docs/
 
 # misc
 .DS_Store

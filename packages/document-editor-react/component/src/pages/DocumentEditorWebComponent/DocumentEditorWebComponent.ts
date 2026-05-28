@@ -1,13 +1,13 @@
-import React from 'react';
-import r2wc from '@r2wc/react-to-web-component';
-import DocumentEditor from '../DocumentEditor';
+import React from "react";
+import r2wc from "@r2wc/react-to-web-component";
+import DocumentEditor from "../DocumentEditor";
 import {
   defaultText,
   toolbarClass,
   canvasClass,
   handleChange,
   handleSelectedText,
-} from '../../utils/document-editor-props';
+} from "../../utils/document-editor-props";
 declare global {
   interface Window {
     handleChange: any;
@@ -16,17 +16,17 @@ declare global {
 }
 const WebApp = r2wc(DocumentEditor, {
   props: {
-    value: 'string',
-    toolbar: 'json',
-    toolbar_class: 'json',
-    canvas_class: 'json',
-    on_change: 'function',
-    on_select: 'function',
+    value: "string",
+    toolbar: "json",
+    toolbar_class: "json",
+    canvas_class: "json",
+    on_change: "function",
+    on_select: "function",
   },
 });
 
-if (!customElements.get('web-doc')) {
-  customElements.define('web-doc', WebApp);
+if (!customElements.get("web-doc")) {
+  customElements.define("web-doc", WebApp);
 }
 
 const DocumentEditorWebComponent = (props: {
@@ -37,27 +37,26 @@ const DocumentEditorWebComponent = (props: {
   on_select?: Function | undefined;
   value?: string | undefined;
 }) => {
+
   window.handleChange = props?.on_change ?? handleChange;
   window.handleSelectedText = props?.on_select ?? handleSelectedText;
 
   setTimeout(() => {
-    const container = document.getElementById('document-editor');
+    const container = document.getElementById("document-editor");
     if (!container) return;
     container.innerHTML = `<web-doc
       value='${props ? (props.value ? props.value : defaultText) : defaultText}'
-      toolbar_class='${
-        props
-          ? props.toolbar_class
-            ? JSON.stringify(props.toolbar_class)
-            : JSON.stringify(toolbarClass)
+      toolbar_class='${props
+        ? props.toolbar_class
+          ? JSON.stringify(props.toolbar_class)
           : JSON.stringify(toolbarClass)
+        : JSON.stringify(toolbarClass)
       }' 
-      canvas_class='${
-        props
-          ? props.canvas_class
-            ? JSON.stringify(props.canvas_class)
-            : JSON.stringify(canvasClass)
+      canvas_class='${props
+        ? props.canvas_class
+          ? JSON.stringify(props.canvas_class)
           : JSON.stringify(canvasClass)
+        : JSON.stringify(canvasClass)
       }'
       on_change='handleChange'
       on_select='handleSelectedText'

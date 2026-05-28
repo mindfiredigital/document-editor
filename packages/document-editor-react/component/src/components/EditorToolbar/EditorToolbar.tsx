@@ -1,5 +1,6 @@
 import React, { forwardRef, useEffect, useState } from "react";
 
+import Box from "@mui/material/Box";
 import AppBar from "@mui/material/AppBar";
 import FormatBoldIcon from "@mui/icons-material/FormatBold";
 import {
@@ -32,11 +33,16 @@ import FontSizeButton from "../FontSizeButton/FontSizeButton";
 import HeadingButton from "../HeadingButton/HeadingButton";
 import InsertLinkIcon from "@mui/icons-material/InsertLink";
 import ImageUploadButton from "../ImageUploadButton/ImageUploadButton";
+import DocxImportButton from "../DocxImportButton/DocxImportButton";
+import LineSpacingButton from "../LineSpacingButton/LineSpacingButton";
+import ParagraphSpacingButton from "../ParagraphSpacingButton/ParagraphSpacingButton";
 import Divider from "@mui/material/Divider";
 
 interface content {
   toolbar: any;
   toolbarClass: any;
+  apiBaseUrl?: string;
+  onClientDocxImport?: (file: File) => Promise<unknown[]>;
 }
 
 const EditorToolbar = forwardRef<HTMLDivElement, content>(function Toolbar(
@@ -44,53 +50,69 @@ const EditorToolbar = forwardRef<HTMLDivElement, content>(function Toolbar(
   ref
 ) {
   const [contentStyles, setContentStyles] = useState<IRangeStyle | undefined>();
-  const [alignment, setAlignment] = useState<string>(RowFlex.LEFT);
-  const [listType, setListType] = useState<string>("");
-  const [formats, setFormats] = useState<string[]>([]);
+
+  const alignment = contentStyles?.rowFlex ?? RowFlex.LEFT;
+  const listType = contentStyles?.listType ?? "";
+  const isBold = !!contentStyles?.bold;
+  const isItalic = !!contentStyles?.italic;
+  const isUnderline = !!contentStyles?.underline;
+  const isStrikeout = !!contentStyles?.strikeout;
+  const isSubscript = (contentStyles as any)?.type === "subscript";
+  const isSuperscript = (contentStyles as any)?.type === "superscript";
 
   const selectedItemStyle = {
     color:
       _props?.toolbarClass?.item?.selectedToolbarItemColor?.color !== undefined
         ? _props?.toolbarClass?.item?.selectedToolbarItemColor?.color
         : "#1a73e8",
-  };
-
-  const addFormat = (format) => {
-    let selectedFormats;
-    if (formats.indexOf(format) === -1) {
-      selectedFormats = [...formats, format];
-    } else {
-      selectedFormats = formats.filter((item) => item !== format);
-    }
-    setFormats(selectedFormats);
+    backgroundColor: "#e8f0fe",
   };
 
   useEffect(() => {
     let interval: NodeJS.Timeout;
+    let unsubscribe: (() => void) | undefined;
+
+    const tryAttachListener = () => {
+      try {
+        const instance: any = (DOMEventHandlers as any).getEditorInstance?.();
+        if (instance?.listener) {
+          const prev = instance.listener.rangeStyleChange;
+          instance.listener.rangeStyleChange = (style: IRangeStyle) => {
+            setContentStyles(style);
+            if (typeof prev === "function") prev(style);
+          };
+          unsubscribe = () => {
+            if (instance.listener) instance.listener.rangeStyleChange = prev;
+          };
+          return true;
+        }
+      } catch (e) {}
+      return false;
+    };
 
     const timeout = setTimeout(() => {
+      const attached = tryAttachListener();
+      // poll as fallback / initial fetch (lower freq if listener attached)
+      const freq = attached ? 500 : 100;
       interval = setInterval(() => {
-        const editorDom = document.querySelector('.canvas-editor');       
-        if (!editorDom) {
-            return; 
-        }
+        const editorDom = document.querySelector('.canvas-editor');
+        if (!editorDom) return;
         try {
           const data = DOMEventHandlers.getContentStyles();
-          if (data) {
-             setContentStyles(data);
-          }
+          if (data) setContentStyles(data);
         } catch (e) {}
-      }, 100);
+      }, freq);
     }, 1000);
 
     return () => {
       clearInterval(interval);
       clearTimeout(timeout);
+      if (unsubscribe) unsubscribe();
     };
-}, []);
+  }, []);
 
   return (
-    <AppBar position='sticky' className='ce-editor-toolbar' sx={_props?.toolbarClass?.container}>
+    <AppBar position='sticky' className="ce-editor-toolbar" sx={{ top: 0, zIndex: 10, ..._props?.toolbarClass?.container }}>
         <Stack sx={_props?.toolbarClass?.primaryToolbar}>
           {(!_props?.toolbar || _props?.toolbar?.undo) && (
             <ButtonWrapper
@@ -118,14 +140,13 @@ const EditorToolbar = forwardRef<HTMLDivElement, content>(function Toolbar(
           {(!_props?.toolbar || _props?.toolbar?.bold) && (
             <ButtonWrapper
               sx={
-                formats.indexOf("Bold") > -1
+                isBold
                   ? { ..._props?.toolbarClass?.item?.bold, ...selectedItemStyle }
                   : _props?.toolbarClass?.item?.bold
               }
               title='Bold'
               handleClick={() => {
                 DOMEventHandlers.handleBold();
-                addFormat("Bold");
               }}>
               <FormatBoldIcon style={{ fontSize: "large" }} />
             </ButtonWrapper>
@@ -133,14 +154,13 @@ const EditorToolbar = forwardRef<HTMLDivElement, content>(function Toolbar(
           {(!_props?.toolbar || _props?.toolbar?.italic) && (
             <ButtonWrapper
               sx={
-                formats.indexOf("Italic") > -1
+                isItalic
                   ? { ..._props?.toolbarClass?.item?.italic, ...selectedItemStyle }
                   : _props?.toolbarClass?.item?.italic
               }
               title='Italic'
               handleClick={() => {
                 DOMEventHandlers.handleItalic();
-                addFormat("Italic");
               }}>
               <FormatItalicIcon style={{ fontSize: "large" }} />
             </ButtonWrapper>
@@ -148,14 +168,13 @@ const EditorToolbar = forwardRef<HTMLDivElement, content>(function Toolbar(
           {(!_props?.toolbar || _props?.toolbar?.underline) && (
             <ButtonWrapper
               sx={
-                formats.indexOf("Underline") > -1
+                isUnderline
                   ? { ..._props?.toolbarClass?.item?.underline, ...selectedItemStyle }
                   : _props?.toolbarClass?.item?.underline
               }
               title='Underline'
               handleClick={() => {
                 DOMEventHandlers.handleUnderline();
-                addFormat("Underline");
               }}>
               <FormatUnderlinedIcon style={{ fontSize: "large" }} />
             </ButtonWrapper>
@@ -169,7 +188,11 @@ const EditorToolbar = forwardRef<HTMLDivElement, content>(function Toolbar(
 
           {(!_props?.toolbar || _props?.toolbar?.subscript) && (
             <ButtonWrapper
-              sx={_props?.toolbarClass?.item?.subscript}
+              sx={
+                isSubscript
+                  ? { ..._props?.toolbarClass?.item?.subscript, ...selectedItemStyle }
+                  : _props?.toolbarClass?.item?.subscript
+              }
               title='Subscript'
               handleClick={DOMEventHandlers.handleSubscript}>
               <SubscriptIcon style={{ fontSize: "large" }} />
@@ -177,7 +200,11 @@ const EditorToolbar = forwardRef<HTMLDivElement, content>(function Toolbar(
           )}
           {(!_props?.toolbar || _props?.toolbar?.superscript) && (
             <ButtonWrapper
-              sx={_props?.toolbarClass?.item?.superscript}
+              sx={
+                isSuperscript
+                  ? { ..._props?.toolbarClass?.item?.superscript, ...selectedItemStyle }
+                  : _props?.toolbarClass?.item?.superscript
+              }
               title='Superscript'
               handleClick={DOMEventHandlers.handleSuperscript}>
               <SuperscriptIcon style={{ fontSize: "large" }} />
@@ -185,7 +212,11 @@ const EditorToolbar = forwardRef<HTMLDivElement, content>(function Toolbar(
           )}
           {(!_props?.toolbar || _props?.toolbar?.strikethrough) && (
             <ButtonWrapper
-              sx={_props?.toolbarClass?.item?.strikethrough}
+              sx={
+                isStrikeout
+                  ? { ..._props?.toolbarClass?.item?.strikethrough, ...selectedItemStyle }
+                  : _props?.toolbarClass?.item?.strikethrough
+              }
               title='Strikethrough'
               handleClick={DOMEventHandlers.handleStrikeout}>
               <StrikethroughSIcon style={{ fontSize: "large" }} />
@@ -208,7 +239,6 @@ const EditorToolbar = forwardRef<HTMLDivElement, content>(function Toolbar(
               title='Left align'
               handleClick={() => {
                 DOMEventHandlers.handleAlign(RowFlex.LEFT);
-                setAlignment(RowFlex.LEFT);
               }}>
               <FormatAlignLeftIcon style={{ fontSize: "large" }} />
             </ButtonWrapper>
@@ -223,7 +253,6 @@ const EditorToolbar = forwardRef<HTMLDivElement, content>(function Toolbar(
               title='Center align'
               handleClick={() => {
                 DOMEventHandlers.handleAlign(RowFlex.CENTER);
-                setAlignment(RowFlex.CENTER);
               }}>
               <FormatAlignCenterIcon style={{ fontSize: "large" }} />
             </ButtonWrapper>
@@ -238,7 +267,6 @@ const EditorToolbar = forwardRef<HTMLDivElement, content>(function Toolbar(
               title='Right align'
               handleClick={() => {
                 DOMEventHandlers.handleAlign(RowFlex.RIGHT);
-                setAlignment(RowFlex.RIGHT);
               }}>
               <FormatAlignRightIcon style={{ fontSize: "large" }} />
             </ButtonWrapper>
@@ -253,7 +281,6 @@ const EditorToolbar = forwardRef<HTMLDivElement, content>(function Toolbar(
               title='Justify'
               handleClick={() => {
                 DOMEventHandlers.handleAlign(RowFlex.ALIGNMENT);
-                setAlignment(RowFlex.ALIGNMENT);
               }}>
               <FormatAlignJustifyIcon style={{ fontSize: "large" }} />
             </ButtonWrapper>
@@ -275,9 +302,6 @@ const EditorToolbar = forwardRef<HTMLDivElement, content>(function Toolbar(
               title='Bullet list'
               handleClick={() => {
                 DOMEventHandlers.handleList(ListType.UL, ListStyle.DECIMAL);
-                listType === ListType.UL
-                  ? setListType("")
-                  : setListType(ListType.UL);
               }}>
               <FormatListBulletedIcon style={{ fontSize: "large" }} />
             </ButtonWrapper>
@@ -292,12 +316,15 @@ const EditorToolbar = forwardRef<HTMLDivElement, content>(function Toolbar(
               title='Numbered list'
               handleClick={() => {
                 DOMEventHandlers.handleList(ListType.OL, ListStyle.DECIMAL);
-                listType === ListType.OL
-                  ? setListType("")
-                  : setListType(ListType.OL);
               }}>
               <FormatListNumberedIcon style={{ fontSize: "large" }} />
             </ButtonWrapper>
+          )}
+          {(!_props?.toolbar || _props?.toolbar?.lineSpacing) && (
+            <LineSpacingButton style={_props?.toolbarClass?.item?.lineSpacing} />
+          )}
+          {(!_props?.toolbar || _props?.toolbar?.paragraphSpacing) && (   
+            <ParagraphSpacingButton style={_props?.toolbarClass?.item?.paragraphSpacing} />
           )}
           <Divider
             flexItem
@@ -308,7 +335,10 @@ const EditorToolbar = forwardRef<HTMLDivElement, content>(function Toolbar(
 
           {(!_props?.toolbar || _props?.toolbar?.fontType) && (
             <FontDropdown
-              {...({ style: _props?.toolbarClass?.item?.fontType } as any)}
+              {...({
+                style: _props?.toolbarClass?.item?.fontType,
+                font: contentStyles?.font,
+              } as any)}
             />
           )}
           <Divider
@@ -379,6 +409,21 @@ const EditorToolbar = forwardRef<HTMLDivElement, content>(function Toolbar(
             <ImageUploadButton
               {...({ style: _props?.toolbarClass?.item?.image } as any)}
             />
+          )}
+          {(!_props?.toolbar || _props?.toolbar?.docxImport) && (
+            <>
+              <Divider
+                flexItem
+                orientation='vertical'
+                sx={{ mx: 0.5, my: 1 }}
+                style={{ marginLeft: -5, marginRight: 5 }}
+              />
+              <DocxImportButton
+                {...({ style: _props?.toolbarClass?.item?.docxImport } as any)}
+                apiBaseUrl={_props.apiBaseUrl}
+                onClientImport={_props.onClientDocxImport}
+              />
+            </>
           )}
         </Stack>
     </AppBar>
