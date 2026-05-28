@@ -1,0 +1,27 @@
+{
+  "unversionedId": "Get-started/quickstart",
+  "id": "Get-started/quickstart",
+  "title": "Quick Start",
+  "description": "Let's explore the Document Editor in less than 5 minutes.",
+  "source": "@site/docs/Get-started/quickstart.md",
+  "sourceDirName": "Get-started",
+  "slug": "/Get-started/quickstart",
+  "permalink": "/react-canvas-editor/docs/Get-started/quickstart",
+  "draft": false,
+  "editUrl": "https://github.com/mindfiredigital/react-canvas-editor/tree/main/docusaurus/docs/Get-started/quickstart.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "sidebar_position": 2
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Installation",
+    "permalink": "/react-canvas-editor/docs/Get-started/Installation"
+  },
+  "next": {
+    "title": "Tutorials",
+    "permalink": "/react-canvas-editor/docs/category/tutorials"
+  }
+}

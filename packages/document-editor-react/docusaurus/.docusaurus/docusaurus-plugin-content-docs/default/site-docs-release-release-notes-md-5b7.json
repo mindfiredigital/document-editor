@@ -1,0 +1,20 @@
+{
+  "unversionedId": "release/release-notes",
+  "id": "release/release-notes",
+  "title": "Release notes",
+  "description": "",
+  "source": "@site/docs/release/release-notes.md",
+  "sourceDirName": "release",
+  "slug": "/release/release-notes",
+  "permalink": "/react-canvas-editor/docs/release/release-notes",
+  "draft": false,
+  "editUrl": "https://github.com/mindfiredigital/react-canvas-editor/tree/main/docusaurus/docs/release/release-notes.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Release",
+    "permalink": "/react-canvas-editor/docs/category/release"
+  }
+}

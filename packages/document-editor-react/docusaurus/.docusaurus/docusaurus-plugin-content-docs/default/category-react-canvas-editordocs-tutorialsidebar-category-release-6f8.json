@@ -1,0 +1,15 @@
+{
+  "title": "Release",
+  "slug": "/category/release",
+  "permalink": "/react-canvas-editor/docs/category/release",
+  "navigation": {
+    "previous": {
+      "title": "Toolbar Options",
+      "permalink": "/react-canvas-editor/docs/references/toolbar-option"
+    },
+    "next": {
+      "title": "Release notes",
+      "permalink": "/react-canvas-editor/docs/release/release-notes"
+    }
+  }
+}

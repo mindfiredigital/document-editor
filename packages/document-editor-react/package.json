@@ -1,48 +1,10 @@
 {
   "name": "@mindfiredigital/react-canvas-editor",
-  "version": "1.4.0",
-  "type": "module",
-  "private": false,
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/mindfiredigital/document-editor.git"
-  },
+  "version": "0.0.0-development",
   "publishConfig": {
     "registry": "https://registry.npmjs.org/",
     "access": "public"
   },
-  "keywords": [
-    "text-editor",
-    "document",
-    "react",
-    "googledocs",
-    "document-editor",
-    "html5canvas",
-    "google-doc-clone",
-    "multi-page-viewer",
-    "typescript",
-    "framework",
-    "cli",
-    "javascript",
-    "npm-package",
-    "no-code",
-    "low-code",
-    "component-based",
-    "responsive-design",
-    "components",
-    "component",
-    "react-component",
-    "ui",
-    "vue",
-    "angular",
-    "modern",
-    "plugin",
-    "eslint",
-    "web",
-    "webpack",
-    "css",
-    "html"
-  ],
   "files": [
     "dist"
   ],
@@ -50,12 +12,28 @@
   "main": "dist/index.js",
   "scripts": {
     "build-lib": "rm -rf dist && npm cache clean --force && rollup -c",
-    "publish-locally": "npx yalc publish",
-    "build": "npm run build-lib && npm run publish-locally",
+    "build": "npm run build-lib",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
-    "test": "jest",
-    "test:coverage": "jest --coverage"
+    "lint-staged": "lint-staged",
+    "prepare": "husky",
+    "commit": "git cz"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "src/**/*.{js,jsx,ts,tsx,json,css,scss}": [
+      "prettier --single-quote --write",
+      "git add"
+    ]
   },
   "browserslist": {
     "production": [
@@ -70,6 +48,8 @@
     ]
   },
   "devDependencies": {
+    "@commitlint/cli": "^18.6.0",
+    "@commitlint/config-conventional": "^18.6.0",
     "@rollup/plugin-babel": "^6.0.3",
     "@rollup/plugin-commonjs": "^25.0.4",
     "@rollup/plugin-node-resolve": "^15.2.1",
@@ -87,19 +67,19 @@
     "@types/react": "^18.2.8",
     "@types/react-color": "^3.0.6",
     "@types/react-dom": "^18.2.4",
-    "@babel/core": "^7.23.0",
-    "@babel/preset-env": "^7.23.0",
-    "@babel/preset-react": "^7.22.0",
-    "@babel/preset-typescript": "^7.23.0",
-    "@testing-library/jest-dom": "^6.1.0",
-    "@testing-library/react": "^14.0.0",
-    "@testing-library/user-event": "^14.5.0",
-    "babel-jest": "^29.7.0",
+    "@typescript-eslint/eslint-plugin": "^5.59.9",
+    "@typescript-eslint/parser": "^5.59.9",
+    "commitizen": "^4.3.0",
+    "cz-conventional-changelog": "^3.3.0",
+    "eslint": "^8.42.0",
+    "eslint-plugin-react": "^7.32.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
     "git-format-staged": "^3.0.0",
-    "identity-obj-proxy": "^3.0.0",
-    "jest": "^29.7.0",
-    "jest-environment-jsdom": "^29.7.0",
-    "react": "^18.2.0",
+    "husky": "^9.0.10",
+    "lint-staged": "^13.2.2",
+    "prettier": "^2.8.8",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
     "rollup-plugin-peer-deps-external": "^2.2.4",
     "rollup-plugin-postcss": "^4.0.2",
     "rollup-plugin-scss": "^4.0.0",
@@ -109,26 +89,38 @@
     "storybook": "^7.4.6"
   },
   "peerDependencies": {
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react": "^18.2.0"
   },
   "dependencies": {
+    "@mindfiredigital/canvas-editor": "^1.3.0",
     "@emotion/react": "^11.11.1",
     "@emotion/styled": "^11.11.0",
-    "@mindfiredigital/canvas-editor": "^1.2.7",
     "@mui/icons-material": "^5.11.16",
     "@mui/material": "^5.13.5",
     "@r2wc/react-to-web-component": "^2.0.3",
     "@reduxjs/toolkit": "^1.9.5",
     "@storybook/preset-scss": "^1.0.3",
+    "jszip": "^3.10.1",
     "react-color": "^2.19.3",
     "react-redux": "^8.1.1",
     "react-router-dom": "^6.12.0",
     "react-scripts": "^5.0.1",
-    "typescript": "^4.9.5",
-    "react-dom": "^18.2.0"
+    "typescript": "^4.9.5"
   },
   "engines": {
     "node": ">=12.0.0"
-  }
+  },
+  "release": {
+    "repositoryUrl": "https://github.com/mindfiredigital/react-canvas-editor.git",
+    "branches": [
+      "main",
+      "next"
+    ]
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
+  "packageManager": "yarn@1.22.22+sha512.a6b2f7906b721bba3d67d4aff083df04dad64c399707841b7acf00f6b133b7ac24255f2652fa22ae3534329dc6180534e98d17432037ff6fd140556e2bb3137e"
 }

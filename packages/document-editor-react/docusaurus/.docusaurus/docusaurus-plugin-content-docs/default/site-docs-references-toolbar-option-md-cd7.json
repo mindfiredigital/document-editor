@@ -1,0 +1,27 @@
+{
+  "unversionedId": "references/toolbar-option",
+  "id": "references/toolbar-option",
+  "title": "Toolbar Options",
+  "description": "| Option     |        Purpose         |",
+  "source": "@site/docs/references/toolbar-option.md",
+  "sourceDirName": "references",
+  "slug": "/references/toolbar-option",
+  "permalink": "/react-canvas-editor/docs/references/toolbar-option",
+  "draft": false,
+  "editUrl": "https://github.com/mindfiredigital/react-canvas-editor/tree/main/docusaurus/docs/references/toolbar-option.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "sidebar_position": 1
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "DOM Events",
+    "permalink": "/react-canvas-editor/docs/references/dom-event"
+  },
+  "next": {
+    "title": "Release",
+    "permalink": "/react-canvas-editor/docs/category/release"
+  }
+}

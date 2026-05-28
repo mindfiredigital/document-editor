@@ -9,7 +9,18 @@ import {
     DOMEventHandlers
 } from "@mindfiredigital/canvas-editor";
 
+// Default margins as actual margin values [top, bottom, left, right]:
+// vertical default [-956, -100] → top=100, bottom=1056-956=100
+// horizontal default [120, 696]  → left=120, right=816-696=120
 const DEFAULT_MARGINS = [100, 100, 120, 120];
+
+/** After a slider interaction, refocus the canvas so keyboard input works. */
+function refocusCanvas() {
+    const canvasArea = window.document.querySelector<HTMLDivElement>('[editor-component="main"]');
+    if (canvasArea) {
+        canvasArea.focus({ preventScroll: true });
+    }
+}
 
 export default function MarginRuler({ documentId }: { documentId: string | undefined }) {
     const dispatch = useDispatch();
@@ -23,13 +34,7 @@ export default function MarginRuler({ documentId }: { documentId: string | undef
 
     const margins: any = useDebounce(document.margins, 500);
 
-    const refocusCanvas = () => {
-        const canvas = window.document.querySelector('.canvas-editor') as HTMLDivElement;
-        if (canvas) {
-            canvas.focus();
-        }
-    };
-
+    // Track slider values during drag, apply margins only on commit
     const handleChange = useCallback((e: any, value: Array<Number>) => {
         setVerticalSlider(value);
     }, []);
@@ -37,13 +42,13 @@ export default function MarginRuler({ documentId }: { documentId: string | undef
     const handleChangeCommitted = useCallback((e: any, value: Array<Number>) => {
         let [bottom, top]: any[] = value;
         setVerticalSlider(value);
-        let margin = [...(margins || DEFAULT_MARGINS)];
-        margin[0] = Math.abs(top);
-        margin[1] = 1056 - Math.abs(bottom);
-        DOMEventHandlers.setPaperMargins(margin);
-        dispatch(setDocumentMargins({ margins: margin }));
+        const base = document.margins?.length === 4 ? [...document.margins] : [...DEFAULT_MARGINS];
+        base[0] = Math.abs(top);
+        base[1] = 1056 - Math.abs(bottom);
+        DOMEventHandlers.setPaperMargins(base);
+        dispatch(setDocumentMargins({ margins: base }));
         refocusCanvas();
-    }, [margins, dispatch]);
+    }, [document.margins, dispatch]);
 
     const handleChangeHorizontal = useCallback((e: any, value: Array<Number>) => {
         setHorizontalSlider(value);
@@ -52,13 +57,13 @@ export default function MarginRuler({ documentId }: { documentId: string | undef
     const handleChangeHorizontalCommitted = useCallback((e: any, value: Array<Number>) => {
         let [left, right]: any[] = value;
         setHorizontalSlider(value);
-        let margin = [...(margins || DEFAULT_MARGINS)];
-        margin[2] = left;
-        margin[3] = 816 - right;
-        DOMEventHandlers.setPaperMargins(margin);
-        dispatch(setDocumentMargins({ margins: margin }));
+        const base = document.margins?.length === 4 ? [...document.margins] : [...DEFAULT_MARGINS];
+        base[2] = left;
+        base[3] = 816 - right;
+        DOMEventHandlers.setPaperMargins(base);
+        dispatch(setDocumentMargins({ margins: base }));
         refocusCanvas();
-    }, [margins, dispatch]);
+    }, [document.margins, dispatch]);
 
     useEffect(() => {
         if (margins?.length && documentId) {
