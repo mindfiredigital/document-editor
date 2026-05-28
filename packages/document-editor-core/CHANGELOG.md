@@ -1,5 +1,11 @@
 # @mindfiredigital/core-canvas-editor
 
+## 0.2.1
+
+### Patch Changes
+
+- Merge pull request #39 from mindfiredigital/dev
+
 ## 0.2.0
 
 ### Minor Changes
