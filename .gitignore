@@ -16,6 +16,8 @@ examples
 # production
 /build
 packages/**/dist/
+packages/**/docusaurus/build/
+packages/**/docusaurus/.docusaurus/
 
 # misc
 .DS_Store
