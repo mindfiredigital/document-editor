@@ -7,10 +7,10 @@
   border-left: 1px solid rgba(0, 0, 0, 0.3);
   border-top: 1px solid rgba(0, 0, 0, 0.3);
   padding-top: 10px;
-  padding-left: 30px;
 }
 
 .canvas-editor-main {
-  padding: 0 30px 80px;
+  padding: 0 30px 80px 36px; /* extra 36 px on left for the vertical ruler */
   margin: auto;
+  position: relative;
 }

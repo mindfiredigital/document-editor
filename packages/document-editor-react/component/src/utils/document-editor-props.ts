@@ -12,7 +12,7 @@ export const toolbarClass: any = {
     // backgroundColor: "red"
   },
   primaryToolbar: {
-    justifyContent: 'center',
+    justifyContent: "center",
   },
   item: {
     undo: {
@@ -74,4 +74,4 @@ export function handleChange(_data) {}
 
 export function handleSelectedText(_text) {}
 
-export const defaultText = 'Hello world';
+export const defaultText = "Hello world";
