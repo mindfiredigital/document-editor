@@ -1,6 +1,12 @@
 {
   "name": "@mindfiredigital/react-canvas-editor",
-  "version": "0.0.0-development",
+  "version": "1.5.0",
+  "type": "module",
+  "private": false,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mindfiredigital/document-editor.git"
+  },
   "publishConfig": {
     "registry": "https://registry.npmjs.org/",
     "access": "public"
