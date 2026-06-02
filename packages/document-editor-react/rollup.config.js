@@ -24,7 +24,7 @@ export default [
                 exclude: 'node_modules/**',
                 presets: ['@babel/preset-react']
             }),
-            typescript({ tsconfig: './tsconfig.json', declarationDir: '.', rootDir: './component' }),
+            typescript({ tsconfig: './tsconfig.json', declarationDir: 'dist', rootDir: './component' }),
             commonjs(),
             scss({
                 insert: true
